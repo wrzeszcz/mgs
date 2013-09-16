@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="open">img/open.png</file>
+        <file alias="nowy">img/new.png</file>
+        <file alias="cut">img/cut.png</file>
+        <file alias="copy">img/copy.png</file>
+        <file alias="paste">img/paste.png</file>
+        <file alias="save">img/save.png</file>
+        <file alias="exit">img/exit.png</file>
+        <file alias="map">img/map.png</file>
+        <file alias="data">img/database.png</file>
+        <file alias="box">img/box.png</file>
+        <file alias="mw">img/mw.32.ico</file>
+        <file alias="map1">img/map1.png</file>
+        <file alias="model">img/model.png</file>
+        <file alias="raport">img/raport.png</file>
+        <file alias="grid">img/grid.png</file>
+        <file alias="zasoby">img/zasoby.png</file>
+        <file alias="table">img/table.png</file>
+        <file alias="vario">img/vario.png</file>
+        <file alias="krige">img/kriging.png</file>
+        <file alias="vario_img">img/semiwariogram.png</file>
+        <file alias="zoomfit">img/zoom_fit.png</file>
+        <file alias="zoomminus">img/zoom_out.png</file>
+        <file alias="zoomplus">img/zoom_in.png</file>
+        <file alias="zoomselect">img/zoom_selection.png</file>
+        <file alias="calc">img/calculator.png</file>
+        <file alias="instr">img/instr.png</file>
+        <file alias="email">img/email.png</file>
+        <file alias="pdf">img/pdf.png</file>
+        <file alias="analiza">img/analiza.png</file>
+    </qresource>
+</RCC>
