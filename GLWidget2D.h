@@ -26,7 +26,7 @@ private:
     void paint_dane();
     void paint_zakres();
 
-    void RenderString(float x, float y, QColor rgb);
+    void RenderString(float x, float y, QColor rgb, QString text);
     void paintPkt    (wektor3d pkt, float size);
     void paintBlok  (wektor3d srod, double bok, float kolor);
     void paintBlok  (wektor3d srod, double bok);

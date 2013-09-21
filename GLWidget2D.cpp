@@ -19,10 +19,7 @@ GLWidget2D::~GLWidget2D()
 }
 //------------------------------------------------------------------------------
 void GLWidget2D::paintGL()
-//void GLWidget2D::paintEvent(QPaintEvent *event)
 {
-    //initializeGL();
-
     //glEnable(GL_BLEND);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -50,7 +47,7 @@ void GLWidget2D::paintGL()
         glColor3f(0.0,1.0,0.0);
         paintPkt(curPoint-sett->wym/2,5);
 
-        RenderString(0.0f,0.0f,Qt::red);
+        RenderString(0.0f,0.0f,Qt::red, QString::number(Z));
 
         glLineWidth(2);
         if(widok.zakres)
@@ -62,7 +59,6 @@ void GLWidget2D::paintGL()
         {
             paint_model();
         }
-    //glFlush();
 
     glPopMatrix();
     glLoadIdentity();
@@ -161,12 +157,11 @@ void GLWidget2D::paint_zakres()
         glVertex2f(-x,-y);
         glEnd();
 }
-
-void GLWidget2D::RenderString(float x, float y, QColor rgb)
+//------------------------------------------------------------------------------
+void GLWidget2D::RenderString(float x, float y, QColor rgb, QString text)
 {
     glColor3f(rgb.redF(), rgb.greenF(), rgb.blueF());
-    renderText(x,y,0,"qwerty");
-
+    renderText(x,y,0, text, QFont("Helvetica [Cronyx]", 20, QFont::Bold));
 }
 //------------------------------------------------------------------------------
 void GLWidget2D::paintPkt(wektor3d pkt, float roz)
