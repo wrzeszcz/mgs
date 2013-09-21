@@ -195,7 +195,7 @@ public:
     /// \brief raport_add
     /// \param str
     ///
-    void raport_add(string str){strRaport.append(str);}
+    void raport_add(string str){strRaport.insert(0,str);}
     ///
     /// \brief raport_get
     /// \return

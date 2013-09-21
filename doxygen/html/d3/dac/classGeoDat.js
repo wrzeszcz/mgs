@@ -14,7 +14,7 @@ var classGeoDat =
     [ "get_max_zakres", "d3/dac/classGeoDat.html#a483cae09678e878e80bd21de9b4658e1", null ],
     [ "get_min_value", "d3/dac/classGeoDat.html#affafbe82a5e328894eed3c0944928f6c", null ],
     [ "get_min_zakres", "d3/dac/classGeoDat.html#ab18b785b4c67468e5aa942cc5de0aab0", null ],
-    [ "get_rek", "d3/dac/classGeoDat.html#a260dae905ee04a44bb5acb309952004b", null ],
+    [ "get_rek", "d3/dac/classGeoDat.html#a18e9270a4537e0b85b4ca0bb3f14026d", null ],
     [ "get_rek", "d3/dac/classGeoDat.html#a554d083485b5022e799a9145484a6e12", null ],
     [ "get_rek", "d3/dac/classGeoDat.html#aef0435d98a064d1a5a96ad13d0031fd4", null ],
     [ "get_size", "d3/dac/classGeoDat.html#ac5437f85e155804000bc65409a1b7f32", null ],

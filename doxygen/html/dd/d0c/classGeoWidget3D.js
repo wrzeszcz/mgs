@@ -9,6 +9,8 @@ var classGeoWidget3D =
     [ "slot_update_model", "dd/d0c/classGeoWidget3D.html#ad4a17af02cccc453b858b24fb7864d8d", null ],
     [ "slot_update_view", "dd/d0c/classGeoWidget3D.html#a1a5429e60a863f617804787d613b6a5d", null ],
     [ "slot_zoom_fit", "dd/d0c/classGeoWidget3D.html#ac6f94a379e050250b8c12ae60677b083", null ],
+    [ "slot_zoom_in", "dd/d0c/classGeoWidget3D.html#a7c6ab010f58afe92ca4c088ce18dcb72", null ],
+    [ "slot_zoom_out", "dd/d0c/classGeoWidget3D.html#a01d3cb99638469438782df60b57e3bce", null ],
     [ "slotDane", "dd/d0c/classGeoWidget3D.html#a1a7f49361b0cd0459b9f632abab3571a", null ],
     [ "slotSiatka", "dd/d0c/classGeoWidget3D.html#afcf282cb11b20f02c2da72ecae07b389", null ],
     [ "slotWezel", "dd/d0c/classGeoWidget3D.html#a457e10dd5495de05a015609e8a7fbade", null ],

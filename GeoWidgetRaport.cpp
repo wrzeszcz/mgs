@@ -19,6 +19,7 @@
 *******************************************************************************/
 
 #include "GeoWidgetRaport.h"
+#include <QScrollBar>
 //------------------------------------------------------------------------------
 GeoWidgetRaport::GeoWidgetRaport(GeoModel *ptrModel, QWidget *parent):
     GeoWidget(ptrModel, parent)
@@ -47,17 +48,28 @@ void GeoWidgetRaport::slot_update_dane()
 {
     textEdit->clear();
     textEdit->append(QString::fromStdString(gModel->raport_get()));
+    textEdit -> moveCursor (QTextCursor::Start) ;
+    textEdit -> ensureCursorVisible() ;
+
+
 }
 //------------------------------------------------------------------------------
 void GeoWidgetRaport::slot_update_model()
 {
     textEdit->clear();
     textEdit->append(QString::fromStdString(gModel->raport_get()));
+    textEdit -> moveCursor (QTextCursor::Start) ;
+    textEdit -> ensureCursorVisible() ;
 }
 //------------------------------------------------------------------------------
 void GeoWidgetRaport::slot_create_report()
 {
     textEdit->clear();
+    gModel->raport_add("nowy raport \n");
+    textEdit->append(QString::fromStdString(gModel->raport_get()));
+    textEdit -> moveCursor (QTextCursor::Start) ;
+    textEdit -> ensureCursorVisible() ;
+    //textEdit->scroll();
     //to do
 }
 //------------------------------------------------------------------------------

@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"de/d72/structSet__interpolacja.html#a8a6b9fdee0807d5433dfcdadc8535757":[1,0,35,1],
+"de/d72/structSet__interpolacja.html#ab3a085263565a75360fbec4e070b15cc":[1,0,35,6],
+"de/d72/structSet__interpolacja.html#abf59ad7980e7826eb4e9a2753037d336":[1,0,35,2],
 "de/d72/structSet__interpolacja.html#aca237fccda0fada7d7ea8eb1915a6295":[1,0,35,8],
 "de/d72/structSet__interpolacja.html#adc2d4ce5c05b21b06d217ba22fa0fe8e":[1,0,35,5],
 "de/dc1/GeoVariogramModel_8cpp.html":[2,0,10],
