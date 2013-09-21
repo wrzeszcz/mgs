@@ -61,7 +61,7 @@ public:
     /// \param nr
     /// \return
     ///
-    geo3d get_rek(unsigned nr);
+    geo3d get_rek(unsigned int nr);
     ///
     /// \brief get_rek
     /// \param wsp

@@ -1,10 +1,10 @@
 #include "GeoCube.h"
 //------------------------------------------------------------------------------
 GeoCube::GeoCube(wektor3d start, double blok, wektor3i dim):
+    cube(0),
     start3d(start),
-    spacing(blok),
     dim3i(dim),
-    cube(0)
+    spacing(blok)
 {
     inicjuj();
     reset_min_max();
@@ -102,11 +102,11 @@ void GeoCube::wypiszGlo(ostream &os, bool tylkoXYZ, double limit)
                         //if(cube [a][b][c].x)
                         {
                         os << (a*spacing+start3d.x) <<"\t"
-                             << (b*spacing+start3d.y) <<"\t"
-                             << (c*spacing+start3d.z) << "\t"
-                             <<  cube [a][b][c].x << "\t"
-                             <<  cube [a][b][c].y << "\t"
-                             <<  cube [a][b][c].z << endl;
+                           << (b*spacing+start3d.y) <<"\t"
+                           << (c*spacing+start3d.z) << "\t"
+                           <<  cube [a][b][c].x << "\t"
+                           <<  cube [a][b][c].y << "\t"
+                           <<  cube [a][b][c].z << endl;
                         }
     }
 }

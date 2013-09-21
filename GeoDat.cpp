@@ -87,15 +87,15 @@ void GeoDat::usun ()
     min_zakres = max_zakres = min_value = max_value = wektor3d();
 }
 //------------------------------------------------------------------------------
-geo3d GeoDat::get_rek(unsigned nr)
+geo3d GeoDat::get_rek(unsigned int nr)
 {
     geo3d ret;
     if (nr < geoMap.size())
     {
-        int licz=0;
+        unsigned int licz=0;
         for(it=geoMap.begin();it !=geoMap.end(); ++it)
         {
-            if(licz=nr) ret = geo3d(it->first,it->second);
+            if(licz==nr) ret = geo3d(it->first,it->second);
             ++licz;
         }
     }
@@ -233,11 +233,6 @@ bool GeoDat::wypisz_plik (string fileName, string sep)
     return true;
 }
 //------------------------------------------------------------------------------
-int GeoDat::polacz(const GeoDat& tab2, int  od_poz)
-{
-    return 0;
-}
-//------------------------------------------------------------------------------
 int GeoDat::dolacz(GeoDat& tab2, bool nadpisz)
 {
     GeoMapa::iterator git;
@@ -255,8 +250,8 @@ wektor3d GeoDat::calc_min_zakres()
     wektor3d w = it->first;
     x = w.x;
     y = w.y;
-    z = w.z;
-    for(it; it!=geoMap.end(); ++it)
+    z = w.z;  
+    for(; it!=geoMap.end(); ++it)
     {
         w = it->first;
         if ( x > w.x ) x = w.x;
@@ -274,8 +269,8 @@ wektor3d GeoDat::calc_max_zakres()
     wektor3d w = it->first;
     x = w.x;
     y = w.y;
-    z = w.z;
-    for(it; it!=geoMap.end(); ++it)
+    z = w.z;  
+    for(; it!=geoMap.end(); ++it)
     {
         w = it->first;
         if ( x < w.x ) x = w.x;
@@ -296,7 +291,7 @@ void GeoDat::update_min_max()
     }
     else
     {
-        for(it; it!=geoMap.end(); ++it)
+        for(; it!=geoMap.end(); ++it)
         {
             wsp = it->first;
             dat = it->second;

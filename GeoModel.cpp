@@ -150,19 +150,13 @@ void GeoModel::calc_okriging(Set_interpolacja ustaw)
 wektor3d GeoModel::policzZasoby()
 {
     GeoZasoby gZasoby(modset,cube);
-//    vector<geo3d> analiza = gZasoby.analiza_zasoby();
-//    for(vector<geo3d>::iterator it = analiza.begin(); it!=analiza.end();++it)
-//    {
-//        cout<<it->xyz<<" "<<it->dat <<endl;
-//    }
-
     return gZasoby.get_zasoby();
 }
-
+//------------------------------------------------------------------------------
 std::vector<geo3d> GeoModel::analizaZasoby(int _ileKlas)
 {
     GeoZasoby gZasoby(modset,cube);
-    vector<geo3d> analiza = gZasoby.analiza_zasoby();
+    vector<geo3d> analiza = gZasoby.analiza_zasoby(_ileKlas);
     return analiza;
 }
 //------------------------------------------------------------------------------
@@ -253,10 +247,8 @@ wektor3d GeoModel::lok2glob(wektor3d wsp)
 //------------------------------------------------------------------------------
 wektor3d GeoModel::inv_dist(const wektor3d& pkt, double promien, float potega)
 {
-    wektor3d x,r;
-    double val, waga, odl, suma1(0.0), suma2(0.0);
-
-    wektor3d wsp2;
+    wektor3d x,r, wsp2;
+    double val(0.0), waga(0.0), odl(0.0), suma1(0.0), suma2(0.0);
 
     for (GeoMapa::iterator it = dane->get_begin(); it !=dane->get_end(); ++it)
     {

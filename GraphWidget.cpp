@@ -2,14 +2,14 @@
 #include <QPainter>
 #include <QPainterPath>
 #include "GeoVariogramModel.h"
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 GraphWidget::GraphWidget(QWidget *parent) :
     QWidget(parent)
 {
 
     function_set = Set_interpolacja();
 }
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GraphWidget::draw_funkction(Set_interpolacja par)
 {
     GeoVariogramModel funk(par.vario,
@@ -84,7 +84,7 @@ void GraphWidget::draw_ox()
     QPainter p(this);
     p.setPen(Qt::red);
     int hor = this->width()-60;
-    for(unsigned i=0; i<hor; i+=30)
+    for(int i=0; i<hor; i+=30)
     {
         int a = i+40;
         QPoint pkt(a,this->height()-5);
@@ -97,7 +97,7 @@ void GraphWidget::draw_oy()
     int wer = this->height()-40;
     QPainter p(this);
     p.setPen(Qt::red);
-    for(unsigned i=0; i<wer; i+=30)
+    for(int i=0; i<wer; i+=30)
     {
         int a = wer+20-i;
         QPoint pkt(2,a);

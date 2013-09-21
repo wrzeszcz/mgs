@@ -1,10 +1,10 @@
 #include "GProDialog.h"
 //-----------------------------------------------------------------------------------------
-GProDialog::GProDialog(Set_interpolacja s,METODA m, QWidget *parent): 
-    set_in(s),
-    metoda(m),
+GProDialog::GProDialog(Set_interpolacja s,METODA m, QWidget *parent):   
     QDialog(parent),
-    mainLayout(0)
+    mainLayout(0),
+    set_in(s),
+    metoda(m)
 {
     this->setModal(true);
     butBox = new QDialogButtonBox((QDialogButtonBox::Ok | QDialogButtonBox::Cancel), Qt::Horizontal,this);

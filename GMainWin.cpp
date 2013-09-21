@@ -497,7 +497,7 @@ void GMainWin::slot_tool_send()
 void GMainWin::slot_tool_pdf()
 {
     slot_open_win("RAPORT");
-    GeoWidgetRaport *r;
+    GeoWidgetRaport *r = 0;
     if(QMdiSubWindow *activeSubWindow = mdiArea->activeSubWindow())
     r = qobject_cast<GeoWidgetRaport *> (activeSubWindow->widget());
     if(!r) return;
