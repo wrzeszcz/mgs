@@ -1,3 +1,23 @@
+/*******************************************************************************
+**  Copyright (C) 2013  Marek Wrzeszcz
+**  mail: marek.wrzeszcz@hotmail.com
+**
+**  This file is part of the MGEOSTAT.
+**
+**  This program is free software: you can redistribute it and/or modify
+**  it under the terms of the GNU General Public License as published by
+**  the Free Software Foundation, either version 3 of the License, or
+**  (at your option) any later version.
+**
+**  This program is distributed in the hope that it will be useful,
+**  but WITHOUT ANY WARRANTY; without even the implied warranty of
+**  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+**  GNU General Public License for more details.
+**
+**  You should have received a copy of the GNU General Public License
+**  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+
 #include "GeoCube.h"
 //------------------------------------------------------------------------------
 GeoCube::GeoCube(wektor3d start, double blok, wektor3i dim):
@@ -137,12 +157,12 @@ wektor3d GeoCube::getRekGlo(wektor3d poz)
     lokal.z = (int)((poz.z-start3d.z)/spacing);
     return getRekLok(lokal);
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 wektor3d GeoCube::getRek(wektor3i poz)
 {
     return cube[poz.x][poz.y][poz.z];
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoCube::setRekLok(wektor3i poz, wektor3d dane)
 {
     cube[poz.x][poz.y][poz.z]=dane;
@@ -161,7 +181,7 @@ void GeoCube::setRekLok(wektor3i poz, wektor3d dane)
          if ( tmp.z < w_min.z) w_min.z = tmp.z;
 
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoCube::setRekGlo(wektor3d poz, wektor3d dane)
 {
     wektor3i lokal;
@@ -170,19 +190,19 @@ void GeoCube::setRekGlo(wektor3d poz, wektor3d dane)
     lokal.z = (int)((poz.z-start3d.z)/spacing);
     setRekLok(lokal,dane);
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 wektor3d GeoCube::getRek(int a,int b, int c)
 {
     return cube[a][b][c];
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoCube::min_max(wektor3d &min, wektor3d &max)
 {
     min_max();
     min = w_min;
     max = w_max;
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoCube::min_max()
 {
     if(!cube)return;
@@ -208,11 +228,11 @@ void GeoCube::min_max()
 
             }
 }
-
+//------------------------------------------------------------------------------
 void GeoCube::reset_min_max()
 {
     w_max = wektor3d(NULLDAT,NULLDAT,NULLDAT);
     w_min = wektor3d(-1.0*NULLDAT,-1.0*NULLDAT,-1.0*NULLDAT);
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 
