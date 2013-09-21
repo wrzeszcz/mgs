@@ -1,9 +1,10 @@
 #include "GLWidget.h"
 
 GLWidget::GLWidget(QWidget *parent) :
+    model(NULL),
     QGLWidget(parent)
 {
-    model = NULL;
+
 }
 
 GLWidget::GLWidget(GeoModel *_model, Vset _widok, QWidget *parent):

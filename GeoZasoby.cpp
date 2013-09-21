@@ -8,7 +8,7 @@ GeoZasoby::GeoZasoby(Mset *_modelSet, GeoCube *_geoCube):
     zasoby = przelicz_zasoby();
     ustaw_klasy();
 }
-
+//------------------------------------------------------------------------------
 GeoZasoby::~GeoZasoby()
 {
 

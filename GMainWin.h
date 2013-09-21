@@ -6,6 +6,10 @@
 #include <QDockWidget>
 #include <QMainWindow>
 #include <QApplication>
+#include <QCloseEvent>
+#include <QAction>
+#include <QFutureWatcher>
+#include <QTime>
 
 class QMenuBar;
 class QMenu;
@@ -16,9 +20,6 @@ class QFileDialog;
 class QSettings;
 class QProgressBar;
 
-#include <QCloseEvent>
-#include <QAction>
-
 #include "GProTree.h"
 #include "GProSet.h"
 #include "GeoModel.h"
@@ -26,9 +27,9 @@ class QProgressBar;
 #include "GeoVariogram.h"
 #include "GProDialog.h"
 
-#include <QFutureWatcher>
-#include <QTime>
-
+///
+/// \brief APPNAME
+///
 QString const APPNAME = "GeoStat";
 ///
 /// \brief Klasa GMainWin - GUI aplikacji
@@ -158,113 +159,352 @@ private slots:
 
     ///
     /// \brief slot_open_win
+    /// \param s
     ///
-    void slot_open_win(QString);
-
+    void slot_open_win(QString s);
+    ///
+    /// \brief slot_okno_dane
+    ///
     void slot_okno_dane();
+    ///
+    /// \brief slot_okno_variogram
+    ///
     void slot_okno_variogram();
+    ///
+    /// \brief slot_okno_mapa
+    ///
     void slot_okno_mapa();
+    ///
+    /// \brief slot_okno_widok
+    ///
     void slot_okno_widok();
+    ///
+    /// \brief slot_okno_raport
+    ///
     void slot_okno_raport();
 
-    void slot_zmiana_punktu(wektor3d);
+    ///
+    /// \brief slot_zmiana_punktu
+    /// \param w
+    ///
+    void slot_zmiana_punktu(wektor3d w);
+    ///
+    /// \brief slot_reset_model
+    ///
     void slot_reset_model();
+    ///
+    /// \brief slot_progres
+    ///
     void slot_progres();
 
+    ///
+    /// \brief slot_calc_end
+    ///
     void slot_calc_end();
+    ///
+    /// \brief slot_repaint
+    ///
     void slot_repaint();
 
+    ///
+    /// \brief about
+    ///
     void about();
+    ///
+    /// \brief updateMenus
+    ///
     void updateMenus();
+    ///
+    /// \brief updateWindowMenu
+    ///
     void updateWindowMenu();
 
 private:
+    ///
+    /// \brief watcher
+    ///
     QFutureWatcher<void> watcher;
-
+    ///
+    /// \brief zapisz
+    ///
     void zapisz(ZAPIS);
+    ///
+    /// \brief zapisz_projekt
+    /// \return
+    ///
     bool zapisz_projekt();
-
-    void interpolacja(METODA);
-    void otworz(OKNO);
-    void dodaj_okno(QMdiSubWindow *);
-
+    ///
+    /// \brief interpolacja
+    /// \param metoda
+    ///
+    void interpolacja(METODA metoda);
+    ///
+    /// \brief otworz
+    /// \param okno
+    ///
+    void otworz(OKNO okno);
+    ///
+    /// \brief createActions
+    ///
     void createActions();
+    ///
+    /// \brief createMenus
+    ///
     void createMenus();
+    ///
+    /// \brief createToolBars
+    ///
     void createToolBars();
+    ///
+    /// \brief createStatusBar
+    ///
     void createStatusBar();
+    ///
+    /// \brief createDockWin
+    ///
     void createDockWin();
+    ///
+    /// \brief readSettings
+    ///
     void readSettings();
+    ///
+    /// \brief writeSettings
+    ///
     void writeSettings();
+    ///
+    /// \brief createEmptyModel
+    ///
     void createEmptyModel();
 
+    ///
+    /// \brief projFile
+    ///
     QString projFile;
-
+    ///
+    /// \brief activeMdiW
+    /// \return
+    ///
     QWidget  *activeMdiW();
+    ///
+    /// \brief findMdiW
+    /// \param wName
+    /// \return
+    ///
     QMdiSubWindow *findMdiW(const QString &wName);
+    ///
+    /// \brief is_win
+    /// \param akcess_name
+    /// \return
+    ///
     QMdiSubWindow * is_win(const QString akcess_name);
-
+    ///
+    /// \brief proTree
+    ///
     GProTree *proTree;
+    ///
+    /// \brief proSet
+    ///
     GProSet *proSet;
-
+    ///
+    /// \brief curModel
+    ///
     GeoModel *curModel;
-
+    ///
+    /// \brief mdiArea
+    ///
     QMdiArea *mdiArea;
-
+    ///
+    /// \brief dockTree
+    ///
     QDockWidget *dockTree;
+    ///
+    /// \brief dockSet
+    ///
     QDockWidget *dockSet;
-
+    ///
+    /// \brief progresBar
+    ///
     QProgressBar *progresBar;
+    ///
+    /// \brief progresTimer
+    ///
     QTimer *progresTimer;
+    ///
+    /// \brief zegar
+    ///
     QTime zegar;
 
+    ///
+    /// \brief menuProj
+    ///
     QMenu *menuProj;
+    ///
+    /// \brief menuData
+    ///
     QMenu *menuData;
+    ///
+    /// \brief subMenuOpen
+    ///
     QMenu *subMenuOpen;
+    ///
+    /// \brief subMenuSave
+    ///
     QMenu *subMenuSave;
+    ///
+    /// \brief menuInterp
+    ///
     QMenu *menuInterp;
+    ///
+    /// \brief menuZasoby
+    ///
     QMenu *menuZasoby;
+    ///
+    /// \brief menuTools
+    ///
     QMenu *menuTools;
+    ///
+    /// \brief menuWindow
+    ///
     QMenu *menuWindow;
+    ///
+    /// \brief menuHelp
+    ///
     QMenu *menuHelp;
 
+    ///
+    /// \brief toolBarProj
+    ///
     QToolBar *toolBarProj;
+    ///
+    /// \brief toolBarDane
+    ///
     QToolBar *toolBarDane;
+    ///
+    /// \brief toolBarInte
+    ///
     QToolBar *toolBarInte;
+    ///
+    /// \brief toolBarZaso
+    ///
     QToolBar *toolBarZaso;
+    ///
+    /// \brief toolBarTool
+    ///
     QToolBar *toolBarTool;
 
+    ///
+    /// \brief actionNew
+    ///
     QAction *actionNew;
+    ///
+    /// \brief actionOpen
+    ///
     QAction *actionOpen;
+    ///
+    /// \brief actionSave
+    ///
     QAction *actionSave;
+    ///
+    /// \brief actionSaveAs
+    ///
     QAction *actionSaveAs;
+    ///
+    /// \brief actionExit
+    ///
     QAction *actionExit;
 
+    ///
+    /// \brief actionOpenData
+    ///
     QAction *actionOpenData;
+    ///
+    /// \brief actionOpenModel
+    ///
     QAction *actionOpenModel;
+    ///
+    /// \brief actionOpenSurf
+    ///
     QAction *actionOpenSurf;
+    ///
+    /// \brief actionZapiszDane
+    ///
     QAction *actionZapiszDane;
+    ///
+    /// \brief actionZapiszModel
+    ///
     QAction *actionZapiszModel;
+    ///
+    /// \brief actionZapiszZasoby
+    ///
     QAction *actionZapiszZasoby;
+    ///
+    /// \brief actionZapiszRaport
+    ///
     QAction *actionZapiszRaport;
+    ///
+    /// \brief actionDaneStat
+    ///
     QAction *actionDaneStat;
 
+    ///
+    /// \brief action_invdist
+    ///
     QAction *action_invdist;
+    ///
+    /// \brief action_okriging
+    ///
     QAction *action_okriging;
 
+    ///
+    /// \brief actionZasoby
+    ///
     QAction *actionZasoby;
+    ///
+    /// \brief actionAnaliza
+    ///
     QAction *actionAnaliza;
 
+    ///
+    /// \brief actionToolSend
+    ///
     QAction *actionToolSend;
+    ///
+    /// \brief actionToolPdf
+    ///
     QAction *actionToolPdf;
 
+    ///
+    /// \brief actZamk
+    ///
     QAction *actZamk;
+    ///
+    /// \brief actZamkAll
+    ///
     QAction *actZamkAll;
+    ///
+    /// \brief actTile
+    ///
     QAction *actTile;
+    ///
+    /// \brief actCascade
+    ///
     QAction *actCascade;
+    ///
+    /// \brief actNext
+    ///
     QAction *actNext;
+    ///
+    /// \brief actPrev
+    ///
     QAction *actPrev;
 
+    ///
+    /// \brief actionAbout
+    ///
     QAction *actionAbout;
+    ///
+    /// \brief actionHelp
+    ///
     QAction *actionHelp;
 };
 

@@ -1,6 +1,6 @@
 #include "GProSet.h"
 //--------------------------------------------------------------------
-GProSet::GProSet(QWidget *parent) : QWidget(parent)
+GProSet::GProSet(QWidget *parent) :  QWidget(parent)
 {
     ustaw = new Mset();
     createLayout();
@@ -8,8 +8,8 @@ GProSet::GProSet(QWidget *parent) : QWidget(parent)
 }
 //--------------------------------------------------------------------
 GProSet::GProSet(Mset  *ustawienia, QWidget *parent):
-    ustaw(ustawienia),
-    QWidget(parent)
+    QWidget(parent),
+    ustaw(ustawienia)
 {
     createLayout();
     slotUpdateSet();
