@@ -81,6 +81,14 @@ protected slots:
     /// \brief slot_punkt
     ///
     void slot_punkt(wektor3d);
+    ///
+    /// \brief slot_zoom_in
+    ///
+    void slot_zoom_in();
+    ///
+    /// \brief slot_zoom_out
+    ///
+    void slot_zoom_out();
 
 private:
     ///

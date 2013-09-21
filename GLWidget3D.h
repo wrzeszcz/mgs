@@ -29,6 +29,7 @@ public:
     /// \param _zoom
     ///
     void set_zoom(float _zoom){zoom=_zoom;}
+    float get_zoom(){return zoom;}
 
 protected:
     ///

@@ -70,8 +70,8 @@ void GLWidget2D::mouseMoveEvent(QMouseEvent *event)
     int dey = event->y() - mouse_pos.y();
     if(event->buttons() & Qt::LeftButton)
     {
-        dx +=dex;
-        dy -=dey;
+        dx += dex;
+        dy -= dey;
     }
     else if (event->buttons() & Qt::RightButton)
     {
@@ -155,7 +155,7 @@ void GLWidget2D::paint_zakres()
 
         glVertex2f(-x,y);
         glVertex2f(-x,-y);
-        glEnd();
+    glEnd();
 }
 //------------------------------------------------------------------------------
 void GLWidget2D::RenderString(float x, float y, QColor rgb, QString text)

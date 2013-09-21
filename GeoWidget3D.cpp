@@ -22,7 +22,7 @@ GeoWidget3D::~GeoWidget3D()
 {
 
 }
-
+//------------------------------------------------------------------------------
 void GeoWidget3D::create_toolbar()
 {
     cbZakres = new QCheckBox("ZAKRES", this);
@@ -41,23 +41,30 @@ void GeoWidget3D::create_toolbar()
     cbWezel->setChecked(widok.wezel);
     toolBar->addWidget(cbWezel);
     connect (cbWezel,SIGNAL(stateChanged(int)),this,SLOT(slotWezel(int)));
+
     cbZasoby = new QCheckBox("ZASOBY", this);
     cbZasoby->setChecked(widok.zasoby);
-    toolBar->addWidget(cbZasoby);
     connect (cbZasoby,SIGNAL(stateChanged(int)),this,SLOT(slotZasoby(int)));
+    toolBar->addWidget(cbZasoby);
+
     //cbPerspektywa = new QCheckBox("PERSPEKTYWA");
     //cbPerspektywa->setChecked(widok.perspektywa);
     //connect(cbPerspektywa,SIGNAL(stateChanged(int)),this,SLOT(slotPerspektywa(int)));
+
     act_zoom_fit = new QAction(QIcon(":/zoomfit"), tr("Zoom to fit"),this);
     toolBar->addAction(act_zoom_fit);
     connect(act_zoom_fit,SIGNAL(triggered()),this,SLOT(slot_zoom_fit()));
+
     act_zoom_plus = new QAction(QIcon(":/zoomplus"), tr("Powiększ"),this);
+    connect(act_zoom_plus,SIGNAL(triggered()),this,SLOT(slot_zoom_in()));
     toolBar->addAction(act_zoom_plus);
+
     act_zoom_minus = new QAction(QIcon(":/zoomminus"), tr("Pommniejsz"),this);
+    connect(act_zoom_minus,SIGNAL(triggered()),this,SLOT(slot_zoom_out()));
     toolBar->addAction(act_zoom_minus);
+
     act_zoom_select = new QAction(QIcon(":/zoomselect"), tr("Powiększ do zaznaczenia"),this);
     toolBar->addAction(act_zoom_select);
-
 }
 
 void GeoWidget3D::slot_update_dane()
@@ -115,6 +122,18 @@ void GeoWidget3D::slot_zoom_fit()
 
 void GeoWidget3D::slot_punkt(wektor3d p)
 {
-    wiev3d->point(p);
+    wiev3d->point(p);  
+}
 
+void GeoWidget3D::slot_zoom_in()
+{
+    float zoom = wiev3d->get_zoom() * 0.9;
+    wiev3d->set_zoom(zoom);
+    wiev3d->repaint();
+}
+void GeoWidget3D::slot_zoom_out()
+{
+    float zoom = wiev3d->get_zoom() * 1.1;
+    wiev3d->set_zoom(zoom);
+    wiev3d->repaint();
 }

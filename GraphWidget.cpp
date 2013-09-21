@@ -6,7 +6,6 @@
 GraphWidget::GraphWidget(QWidget *parent) :
     QWidget(parent)
 {
-
     function_set = Set_interpolacja();
 }
 //------------------------------------------------------------------------------
@@ -23,11 +22,10 @@ void GraphWidget::draw_funkction(Set_interpolacja par)
     {
         double h = i / skalax();
         double v = funk.licz_vario(h);
-
         pkt_funkc.push_back(QPointF(h,v));
     }
 }
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GraphWidget::paintEvent(QPaintEvent *e)
 {
     QPainter p(this);
@@ -53,16 +51,16 @@ void GraphWidget::paintEvent(QPaintEvent *e)
 
     for(unsigned i=0;i<pkt_funkc.size();++i)
     {
-       pk= pkt_funkc[i];
-      QPointF pkt2(x_scale(pk.x()),y_scale(pk.y()));
-      p.drawLine(pkt1,pkt2);
-      pkt1=pkt2;
+       pk = pkt_funkc[i];
+       QPointF pkt2(x_scale(pk.x()),y_scale(pk.y()));
+       p.drawLine(pkt1,pkt2);
+       pkt1=pkt2;
     }
-
 
     pen.setWidth(2);
     pen.setColor(Qt::yellow);
     p.setPen(pen);
+
     for(unsigned i=0; i<pkt_vario.size();++i)
     {
         wektor3d w = pkt_vario[i];
@@ -74,11 +72,12 @@ void GraphWidget::paintEvent(QPaintEvent *e)
     draw_oy();
     p.end();
 }
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GraphWidget::mouseMoveEvent(QMouseEvent *e)
 {
     mouse_poz = e->pos();
 }
+//------------------------------------------------------------------------------
 void GraphWidget::draw_ox()
 {
     QPainter p(this);
@@ -91,7 +90,7 @@ void GraphWidget::draw_ox()
         p.drawText(pkt,QString::number(int(i/skalax())));
     }
 }
-
+//------------------------------------------------------------------------------
 void GraphWidget::draw_oy()
 {
     int wer = this->height()-40;
@@ -103,42 +102,40 @@ void GraphWidget::draw_oy()
         QPoint pkt(2,a);
         p.drawText(pkt,QString::number((i/skalay()),'f',3));
     }
-
 }
+//------------------------------------------------------------------------------
 double GraphWidget::skalax()
 {
     int hor = this->width()-60;
     double max;
     if(pkt_vario.size())
     {
-    max = (std::max_element(pkt_vario.begin(),pkt_vario.end(),por_x))->x;
+        max = (std::max_element(pkt_vario.begin(),pkt_vario.end(),por_x))->x;
     }
     else return 1;
-
     return hor/max;
 }
-
+//------------------------------------------------------------------------------
 double GraphWidget::skalay()
 {
     int wer = this->height()-40;
     double max;
     if(pkt_vario.size())
     {
-     max = (std::max_element(pkt_vario.begin(),pkt_vario.end(),por_y))->y;
+        max = (std::max_element(pkt_vario.begin(),pkt_vario.end(),por_y))->y;
     }
     else return 1;
     return wer/max;
 }
+//------------------------------------------------------------------------------
 float GraphWidget::x_scale(double X)
 {
-
    return float(X*skalax()+40);
-
 }
-
+//------------------------------------------------------------------------------
 float GraphWidget::y_scale(double Y)
 {
     int wer = this->height();
     return float( wer-Y*skalay()-20);
-
 }
+//------------------------------------------------------------------------------

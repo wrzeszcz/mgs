@@ -1,6 +1,6 @@
 #include "GeoWidgetVariogram.h"
 #include <QSpinBox>
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 GeoWidgetVariogram::GeoWidgetVariogram(GeoModel *ptrModel, QWidget *parent):
     GeoWidget(ptrModel, parent)
 {
@@ -9,22 +9,23 @@ GeoWidgetVariogram::GeoWidgetVariogram(GeoModel *ptrModel, QWidget *parent):
     create();
     slot_update_dane();
 
-    connect(parent,SIGNAL(signal_zmiana_danych()),this,SLOT(slot_update_dane()));
+    connect(parent,SIGNAL(signal_zmiana_danych()),
+            this,SLOT(slot_update_dane()));
 }
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 GeoWidgetVariogram::~GeoWidgetVariogram()
 {
 }
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoWidgetVariogram::paintEvent(QPaintEvent *e)
 {
 
 }
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoWidgetVariogram::mouseMoveEvent(QMouseEvent *e)
 {
 }
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoWidgetVariogram::slot_update_dane()
 {
    if(gModel->ptr_vario())
@@ -37,46 +38,47 @@ void GeoWidgetVariogram::slot_update_dane()
    update_edit();
    graph->repaint();
 }
-//-----------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoWidgetVariogram::slot_vario(int v)
 {
-    if(v==0)cur_set_vario.vario=EXPONENTIAL;
-    else if (v==1)cur_set_vario.vario=SPHERICAL;
-    else cur_set_vario.vario=GAUSSIAN;
+    if(v==0)cur_set_vario.vario = EXPONENTIAL;
+    else if (v==1)cur_set_vario.vario = SPHERICAL;
+    else cur_set_vario.vario = GAUSSIAN;
     graph->set_function(cur_set_vario);
     graph->repaint();
 }
-
+//------------------------------------------------------------------------------
 void GeoWidgetVariogram::slot_nugget(QString d)
 {
     cur_set_vario.nuget_c0 = d.toDouble();
     graph->set_function(cur_set_vario);
     graph->repaint();
 }
-
+//------------------------------------------------------------------------------
 void GeoWidgetVariogram::slot_sill(QString d)
 {
     cur_set_vario.sill_c1 = d.toDouble();
     graph->set_function(cur_set_vario);
     graph->repaint();
 }
+//------------------------------------------------------------------------------
 void GeoWidgetVariogram::slot_range(QString d)
 {
     cur_set_vario.range_a = d.toDouble();
     graph->set_function(cur_set_vario);
     graph->repaint();
 }
-
+//------------------------------------------------------------------------------
 void GeoWidgetVariogram::slot_klasa(QString d)
 {
     cur_set_vario.rozmiar_klasy = d.toDouble();
 }
-
+//------------------------------------------------------------------------------
 void GeoWidgetVariogram::slot_kopuj_do()
 {
     gModel->set_iset(cur_set_vario);
 }
-
+//------------------------------------------------------------------------------
 void GeoWidgetVariogram::slot_przelicz()
 {
     gModel->set_iset(cur_set_vario);
@@ -84,7 +86,6 @@ void GeoWidgetVariogram::slot_przelicz()
     slot_update_dane();
     graph->repaint();
 }
-
 //-----------------------------------------------------------------------------
 void GeoWidgetVariogram::create()
 {
@@ -103,7 +104,8 @@ void GeoWidgetVariogram::create()
     combo_vario->addItem("EXPONENTIAL",EXPONENTIAL);  
     combo_vario->addItem("SPHERICAL",SPHERICAL);
     combo_vario->addItem("GAUSSIAN",GAUSSIAN);
-    connect(combo_vario,SIGNAL(currentIndexChanged(int)),this,SLOT(slot_vario(int)));
+    connect(combo_vario,SIGNAL(currentIndexChanged(int)),
+            this,SLOT(slot_vario(int)));
     toolBar->addWidget(combo_vario);
 
     lab_nug = new QLabel(" c0:");
@@ -112,7 +114,8 @@ void GeoWidgetVariogram::create()
     le_nugget->setAlignment(Qt::AlignRight);
     le_nugget->setMaxLength(9);
     le_nugget->setValidator(dv);
-    connect(le_nugget,SIGNAL(textChanged(QString)),this,SLOT(slot_nugget(QString)));
+    connect(le_nugget,SIGNAL(textChanged(QString)),
+            this,SLOT(slot_nugget(QString)));
     toolBar->addWidget(lab_nug);
     toolBar->addWidget(le_nugget);
 
@@ -122,7 +125,8 @@ void GeoWidgetVariogram::create()
     le_sill->setAlignment(Qt::AlignRight);
     le_sill->setMaxLength(9);
     le_sill->setValidator(dv);
-    connect(le_sill,SIGNAL(textChanged(QString)),this,SLOT(slot_sill(QString)));
+    connect(le_sill,SIGNAL(textChanged(QString)),
+            this,SLOT(slot_sill(QString)));
     toolBar->addWidget(lab_sil);
     toolBar->addWidget(le_sill);
 
@@ -132,7 +136,8 @@ void GeoWidgetVariogram::create()
     le_range->setAlignment(Qt::AlignRight);
     le_range->setMaxLength(9);
     le_range->setValidator(dv);
-    connect(le_range,SIGNAL(textChanged(QString)),this,SLOT(slot_range(QString)));
+    connect(le_range,SIGNAL(textChanged(QString)),
+            this,SLOT(slot_range(QString)));
     toolBar->addWidget(lab_ran);
     toolBar->addWidget(le_range);
 
@@ -144,7 +149,8 @@ void GeoWidgetVariogram::create()
     le_klasa->setAlignment(Qt::AlignRight);
     le_klasa->setMaxLength(9);
     le_klasa->setValidator(dv);
-    connect(le_klasa,SIGNAL(textChanged(QString)),this,SLOT(slot_klasa(QString)));
+    connect(le_klasa,SIGNAL(textChanged(QString)),
+            this,SLOT(slot_klasa(QString)));
     toolBar->addWidget(lab_kla);
     toolBar->addWidget(le_klasa);
 
