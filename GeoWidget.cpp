@@ -1,9 +1,9 @@
 #include "GeoWidget.h"
 
 GeoWidget::GeoWidget(QWidget *parent) :
+    gModel(NULL),
     QWidget(parent)
 {
-    gModel = NULL;
     create_widget();
 }
 
