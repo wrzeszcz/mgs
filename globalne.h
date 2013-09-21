@@ -467,26 +467,26 @@ inline ostream& operator << (ostream& os, const Mset &d)
 ///
 inline istream& operator >> (istream& is, Mset& d)
 {
-    int jedn;
+    int jedn = 0;
 
     is >> d.grid
-              >> d.start
-              >> d.wym
-              >> d.name
-              >> d.sp
-              >> d.cutoff
-              >> d.flag
-              >> d.min_val
-              >> d.max_val
-              >> d.gestosc
-              >> jedn;
-   switch(jedn)
+       >> d.start
+       >> d.wym
+       >> d.name
+       >> d.sp
+       >> d.cutoff
+       >> d.flag
+       >> d.min_val
+       >> d.max_val
+       >> d.gestosc
+       >> jedn;
+   switch(jedn)     
    {
         case 0: d.jednostki == PPM; break;
         case 1: d.jednostki == PROCENTY; break;
         case 2: d.jednostki == GRAMY; break;
         case 3: d.jednostki == KILOGRAMY; break;
-        defoult: break;
+        default: break;
    }
 
     if(!is) return is;

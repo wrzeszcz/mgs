@@ -640,6 +640,7 @@ void GMainWin::slot_okno_dane()
         subWindow->setWidget(wDat);
         subWindow->setAttribute(Qt::WA_DeleteOnClose);
         subWindow->setWindowIcon(QIcon(":/table"));
+        subWindow->resize(700,300);
         mdiArea->addSubWindow(subWindow)->show();
     }
     else
@@ -682,7 +683,7 @@ void GMainWin::slot_okno_raport()
     subWindow->setWidget(new GeoWidgetRaport(curModel,this));
     subWindow->setAttribute(Qt::WA_DeleteOnClose);
     subWindow->setWindowIcon(QIcon(":/raport"));
-    subWindow->resize(400,300);
+    subWindow->resize(600,400);
     mdiArea->addSubWindow(subWindow)->show();
 }
 //------------------------------------------------------------------------------

@@ -132,7 +132,7 @@ void GeoZasoby::ustaw_klasy()
 wektor3d GeoZasoby::policzBlok(wektor3d parametry, double rozmiar)
 {
     double masa_bloku, masa_kop ;
-    double dzielnik;
+    double dzielnik = 1.0;
     if(modelSet->jednostki == PPM) dzielnik = 1000000.0;
     else if (modelSet->jednostki == PROCENTY) dzielnik = 100.0;
     masa_bloku = (rozmiar*rozmiar*rozmiar)*modelSet->gestosc;

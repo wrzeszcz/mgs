@@ -1,5 +1,5 @@
 #include "GeoCube.h"
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 GeoCube::GeoCube(wektor3d start, double blok, wektor3i dim):
     start3d(start),
     spacing(blok),
@@ -9,12 +9,12 @@ GeoCube::GeoCube(wektor3d start, double blok, wektor3i dim):
     inicjuj();
     reset_min_max();
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
  GeoCube::~GeoCube()
  {
      wyczysc();
  }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoCube::wyczysc()
 {
     if(cube)
@@ -36,7 +36,7 @@ void GeoCube::wyczysc()
     spacing = 0.0;
     start3d = wektor3d(0.0,0.0,0.0);
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoCube::inicjuj()
 {
     if(cube) wyczysc();
@@ -57,7 +57,7 @@ void GeoCube::inicjuj()
        wyczysc();
     }
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoCube::wypiszLok(ostream &os, bool tylkoXYZ, double limit)
 {
     if (tylkoXYZ)
@@ -77,7 +77,7 @@ void GeoCube::wypiszLok(ostream &os, bool tylkoXYZ, double limit)
                     os<<a<<" "<<b<<" "<<c<<" "<<cube[a][b][c].x<<endl;
     }
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoCube::wypiszGlo(ostream &os, bool tylkoXYZ, double limit)
 {
     os.setf(ios::fixed);
@@ -99,7 +99,7 @@ void GeoCube::wypiszGlo(ostream &os, bool tylkoXYZ, double limit)
             for(int a=0; a<dim3i.x;++a)
                 for(int b=0; b<dim3i.y;++b)
                     for(int c=0; c<dim3i.z;++c)
-                        if(cube [a][b][c].x)
+                        //if(cube [a][b][c].x)
                         {
                         os << (a*spacing+start3d.x) <<"\t"
                              << (b*spacing+start3d.y) <<"\t"
@@ -110,7 +110,7 @@ void GeoCube::wypiszGlo(ostream &os, bool tylkoXYZ, double limit)
                         }
     }
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoCube::wypiszGlo(vector<wektor3d> &vec, double limit, wektor3d ofs)
 {
     for(int a=0; a<dim3i.x;++a)
@@ -121,7 +121,7 @@ void GeoCube::wypiszGlo(vector<wektor3d> &vec, double limit, wektor3d ofs)
                     vec.push_back(wektor3d(a,b,c)*spacing+start3d-ofs);
                 }
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 wektor3d GeoCube::getRekLok(wektor3i poz)
 {
     if (poz.x<dim3i.x && poz.y<dim3i.y && poz.z<dim3i.z)
