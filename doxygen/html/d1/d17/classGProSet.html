@@ -1,0 +1,797 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>GeoStat: Dokumentacja klasy GProSet</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../ResEst.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">GeoStat
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projekt oprogramowania do modelowania zmienności złóż i szacowania zasobów z wykorzystaniem metod geostatystycznych</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="../../pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>Klasy</span></a></li>
+      <li><a href="../../files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="../../classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="../../inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="../../functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d1/d17/classGProSet.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Sloty publiczne</a> &#124;
+<a href="#signals">Sygnały</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="../../d5/dac/classGProSet-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy GProSet</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="../../d1/d17/classGProSet.html" title="The GProSet class.">GProSet</a> class.  
+ <a href="../../d1/d17/classGProSet.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../">GProSet.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla GProSet</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d72/classGProSet__inherit__graph.png" border="0" usemap="#GProSet_inherit__map" alt="Inheritance graph"/></div>
+<map name="GProSet_inherit__map" id="GProSet_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla GProSet:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d18/classGProSet__coll__graph.png" border="0" usemap="#GProSet_coll__map" alt="Collaboration graph"/></div>
+<map name="GProSet_coll__map" id="GProSet_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Sloty publiczne</h2></td></tr>
+<tr class="memitem:a2f45f6e05c35adf642ea05a20dcfc459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#a2f45f6e05c35adf642ea05a20dcfc459">slotUpdateSet</a> ()</td></tr>
+<tr class="memdesc:a2f45f6e05c35adf642ea05a20dcfc459"><td class="mdescLeft">&#160;</td><td class="mdescRight">slotUpdateSet  <a href="#a2f45f6e05c35adf642ea05a20dcfc459">Więcej...</a><br/></td></tr>
+<tr class="separator:a2f45f6e05c35adf642ea05a20dcfc459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8147fd290db30784d06e9d2ffa447cf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#a8147fd290db30784d06e9d2ffa447cf9">slotModel</a> ()</td></tr>
+<tr class="memdesc:a8147fd290db30784d06e9d2ffa447cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">slotModel  <a href="#a8147fd290db30784d06e9d2ffa447cf9">Więcej...</a><br/></td></tr>
+<tr class="separator:a8147fd290db30784d06e9d2ffa447cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927acc4dc926bfa1495e2d1b187dcaa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#a927acc4dc926bfa1495e2d1b187dcaa5">slotCutOff</a> (double d)</td></tr>
+<tr class="memdesc:a927acc4dc926bfa1495e2d1b187dcaa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">slotCutOff  <a href="#a927acc4dc926bfa1495e2d1b187dcaa5">Więcej...</a><br/></td></tr>
+<tr class="separator:a927acc4dc926bfa1495e2d1b187dcaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c3863f6cae653398838afa6b6d09cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#a20c3863f6cae653398838afa6b6d09cc">slotDimX</a> (int i)</td></tr>
+<tr class="memdesc:a20c3863f6cae653398838afa6b6d09cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">slotDimX  <a href="#a20c3863f6cae653398838afa6b6d09cc">Więcej...</a><br/></td></tr>
+<tr class="separator:a20c3863f6cae653398838afa6b6d09cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6277d162b315e255aabfe11719fbd28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#ac6277d162b315e255aabfe11719fbd28">slotDimY</a> (int i)</td></tr>
+<tr class="memdesc:ac6277d162b315e255aabfe11719fbd28"><td class="mdescLeft">&#160;</td><td class="mdescRight">slotDimY  <a href="#ac6277d162b315e255aabfe11719fbd28">Więcej...</a><br/></td></tr>
+<tr class="separator:ac6277d162b315e255aabfe11719fbd28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb0dd1ed97a5f7ed3e00a6b971cf11c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#abb0dd1ed97a5f7ed3e00a6b971cf11c3">slotDimZ</a> (int i)</td></tr>
+<tr class="memdesc:abb0dd1ed97a5f7ed3e00a6b971cf11c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">slotDimZ  <a href="#abb0dd1ed97a5f7ed3e00a6b971cf11c3">Więcej...</a><br/></td></tr>
+<tr class="separator:abb0dd1ed97a5f7ed3e00a6b971cf11c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d881169df3ee85c434132fcfb5d9d8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#a0d881169df3ee85c434132fcfb5d9d8c">slotDimS</a> (double d)</td></tr>
+<tr class="memdesc:a0d881169df3ee85c434132fcfb5d9d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">slotDimS  <a href="#a0d881169df3ee85c434132fcfb5d9d8c">Więcej...</a><br/></td></tr>
+<tr class="separator:a0d881169df3ee85c434132fcfb5d9d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ae49964b6b8356cbbd5dba6b9b7058"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#af9ae49964b6b8356cbbd5dba6b9b7058">slotPoczX</a> (double d)</td></tr>
+<tr class="memdesc:af9ae49964b6b8356cbbd5dba6b9b7058"><td class="mdescLeft">&#160;</td><td class="mdescRight">slotPoczX  <a href="#af9ae49964b6b8356cbbd5dba6b9b7058">Więcej...</a><br/></td></tr>
+<tr class="separator:af9ae49964b6b8356cbbd5dba6b9b7058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbdd352e0a5992fabe6df6b486cdff8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#acbdd352e0a5992fabe6df6b486cdff8c">slotPoczY</a> (double d)</td></tr>
+<tr class="memdesc:acbdd352e0a5992fabe6df6b486cdff8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">slotPoczY  <a href="#acbdd352e0a5992fabe6df6b486cdff8c">Więcej...</a><br/></td></tr>
+<tr class="separator:acbdd352e0a5992fabe6df6b486cdff8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae339939e6e474975b84f1f341430730c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#ae339939e6e474975b84f1f341430730c">slotPoczZ</a> (double d)</td></tr>
+<tr class="memdesc:ae339939e6e474975b84f1f341430730c"><td class="mdescLeft">&#160;</td><td class="mdescRight">slotPoczZ  <a href="#ae339939e6e474975b84f1f341430730c">Więcej...</a><br/></td></tr>
+<tr class="separator:ae339939e6e474975b84f1f341430730c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac077b215ff902b9fcf83e996d984a6e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#ac077b215ff902b9fcf83e996d984a6e9">slotGestosc</a> (double d)</td></tr>
+<tr class="memdesc:ac077b215ff902b9fcf83e996d984a6e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">slotGestosc  <a href="#ac077b215ff902b9fcf83e996d984a6e9">Więcej...</a><br/></td></tr>
+<tr class="separator:ac077b215ff902b9fcf83e996d984a6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Sygnały</h2></td></tr>
+<tr class="memitem:af81b8dc0c0ad19e4cfba75f2e55759b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#af81b8dc0c0ad19e4cfba75f2e55759b4">signalZasoby</a> ()</td></tr>
+<tr class="memdesc:af81b8dc0c0ad19e4cfba75f2e55759b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">signalZasoby  <a href="#af81b8dc0c0ad19e4cfba75f2e55759b4">Więcej...</a><br/></td></tr>
+<tr class="separator:af81b8dc0c0ad19e4cfba75f2e55759b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d0bf5aad92ed5d5234bffc86b86b58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#a19d0bf5aad92ed5d5234bffc86b86b58">signalInterpol</a> ()</td></tr>
+<tr class="memdesc:a19d0bf5aad92ed5d5234bffc86b86b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">signalInterpol  <a href="#a19d0bf5aad92ed5d5234bffc86b86b58">Więcej...</a><br/></td></tr>
+<tr class="separator:a19d0bf5aad92ed5d5234bffc86b86b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9277c75a806707971fe0cbcb540cc5b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#a9277c75a806707971fe0cbcb540cc5b6">signalUpdateModel</a> ()</td></tr>
+<tr class="memdesc:a9277c75a806707971fe0cbcb540cc5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">signalUpdateModel  <a href="#a9277c75a806707971fe0cbcb540cc5b6">Więcej...</a><br/></td></tr>
+<tr class="separator:a9277c75a806707971fe0cbcb540cc5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:aab243a59638a24bcefa0cd95e8bbc3eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#aab243a59638a24bcefa0cd95e8bbc3eb">GProSet</a> (QWidget *parent=0)</td></tr>
+<tr class="memdesc:aab243a59638a24bcefa0cd95e8bbc3eb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d1/d17/classGProSet.html" title="The GProSet class.">GProSet</a>.  <a href="#aab243a59638a24bcefa0cd95e8bbc3eb">Więcej...</a><br/></td></tr>
+<tr class="separator:aab243a59638a24bcefa0cd95e8bbc3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79d200ac0242fbd2bfae15e4f14f6299"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#a79d200ac0242fbd2bfae15e4f14f6299">GProSet</a> (<a class="el" href="../../de/def/structMset.html">Mset</a> *ustawienia, QWidget *parent=0)</td></tr>
+<tr class="memdesc:a79d200ac0242fbd2bfae15e4f14f6299"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d1/d17/classGProSet.html" title="The GProSet class.">GProSet</a>.  <a href="#a79d200ac0242fbd2bfae15e4f14f6299">Więcej...</a><br/></td></tr>
+<tr class="separator:a79d200ac0242fbd2bfae15e4f14f6299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef05a4199542b1c409bd1ffb31924dbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#aef05a4199542b1c409bd1ffb31924dbb">setUstaw</a> (<a class="el" href="../../de/def/structMset.html">Mset</a> *s)</td></tr>
+<tr class="memdesc:aef05a4199542b1c409bd1ffb31924dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">setUstaw  <a href="#aef05a4199542b1c409bd1ffb31924dbb">Więcej...</a><br/></td></tr>
+<tr class="separator:aef05a4199542b1c409bd1ffb31924dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0bdcb8854eaaee638575a49ae2ac95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d17/classGProSet.html#afd0bdcb8854eaaee638575a49ae2ac95">setZasoby</a> (<a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> z)</td></tr>
+<tr class="memdesc:afd0bdcb8854eaaee638575a49ae2ac95"><td class="mdescLeft">&#160;</td><td class="mdescRight">setZasoby  <a href="#afd0bdcb8854eaaee638575a49ae2ac95">Więcej...</a><br/></td></tr>
+<tr class="separator:afd0bdcb8854eaaee638575a49ae2ac95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>The <a class="el" href="../../d1/d17/classGProSet.html" title="The GProSet class.">GProSet</a> class. </p>
+
+<p>Definicja w linii <a class="el" href="../../#L17">17</a> pliku <a class="el" href="../../">GProSet.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="aab243a59638a24bcefa0cd95e8bbc3eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GProSet::GProSet </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d1/d17/classGProSet.html" title="The GProSet class.">GProSet</a>. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L3">3</a> pliku <a class="el" href="../../">GProSet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a79d200ac0242fbd2bfae15e4f14f6299"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GProSet::GProSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/def/structMset.html">Mset</a> *&#160;</td>
+          <td class="paramname"><em>ustawienia</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d1/d17/classGProSet.html" title="The GProSet class.">GProSet</a>. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ustawienia</td><td></td></tr>
+    <tr><td class="paramname">parent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L10">10</a> pliku <a class="el" href="../../">GProSet.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="aef05a4199542b1c409bd1ffb31924dbb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::setUstaw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/def/structMset.html">Mset</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setUstaw </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L36">36</a> pliku <a class="el" href="../../">GProSet.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd0bdcb8854eaaee638575a49ae2ac95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::setZasoby </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td>
+          <td class="paramname"><em>z</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setZasoby </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">z</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L234">234</a> pliku <a class="el" href="../../">GProSet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19d0bf5aad92ed5d5234bffc86b86b58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::signalInterpol </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>signalInterpol </p>
+
+</div>
+</div>
+<a class="anchor" id="a9277c75a806707971fe0cbcb540cc5b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::signalUpdateModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>signalUpdateModel </p>
+
+</div>
+</div>
+<a class="anchor" id="af81b8dc0c0ad19e4cfba75f2e55759b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::signalZasoby </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>signalZasoby </p>
+
+</div>
+</div>
+<a class="anchor" id="a927acc4dc926bfa1495e2d1b187dcaa5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::slotCutOff </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slotCutOff </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L154">154</a> pliku <a class="el" href="../../">GProSet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d881169df3ee85c434132fcfb5d9d8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::slotDimS </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slotDimS </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L183">183</a> pliku <a class="el" href="../../">GProSet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a20c3863f6cae653398838afa6b6d09cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::slotDimX </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slotDimX </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L165">165</a> pliku <a class="el" href="../../">GProSet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6277d162b315e255aabfe11719fbd28"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::slotDimY </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slotDimY </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L171">171</a> pliku <a class="el" href="../../">GProSet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abb0dd1ed97a5f7ed3e00a6b971cf11c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::slotDimZ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slotDimZ </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L177">177</a> pliku <a class="el" href="../../">GProSet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac077b215ff902b9fcf83e996d984a6e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::slotGestosc </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slotGestosc </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L207">207</a> pliku <a class="el" href="../../">GProSet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8147fd290db30784d06e9d2ffa447cf9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::slotModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slotModel </p>
+
+<p>Definicja w linii <a class="el" href="../../#L160">160</a> pliku <a class="el" href="../../">GProSet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af9ae49964b6b8356cbbd5dba6b9b7058"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::slotPoczX </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slotPoczX </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L189">189</a> pliku <a class="el" href="../../">GProSet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acbdd352e0a5992fabe6df6b486cdff8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::slotPoczY </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slotPoczY </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L195">195</a> pliku <a class="el" href="../../">GProSet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae339939e6e474975b84f1f341430730c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::slotPoczZ </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slotPoczZ </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L201">201</a> pliku <a class="el" href="../../">GProSet.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f45f6e05c35adf642ea05a20dcfc459"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProSet::slotUpdateSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slotUpdateSet </p>
+
+<p>Definicja w linii <a class="el" href="../../#L214">214</a> pliku <a class="el" href="../../">GProSet.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>/home/marek/2013.pro/mgeostat/<a class="el" href="../../">GProSet.h</a></li>
+<li>/home/marek/2013.pro/mgeostat/<a class="el" href="../../">GProSet.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d1/d17/classGProSet.html">GProSet</a></li>
+    <li class="footer">Wygenerowano So, 21 wrz 2013 16:39:22 dla GeoStat programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+  </ul>
+</div>
+</body>
+</html>

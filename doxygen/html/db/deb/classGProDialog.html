@@ -1,0 +1,559 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>GeoStat: Dokumentacja klasy GProDialog</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../ResEst.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">GeoStat
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projekt oprogramowania do modelowania zmienności złóż i szacowania zasobów z wykorzystaniem metod geostatystycznych</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="../../pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>Klasy</span></a></li>
+      <li><a href="../../files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="../../classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="../../inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="../../functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('db/deb/classGProDialog.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Sloty publiczne</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="../../da/dcf/classGProDialog-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy GProDialog</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="../../db/deb/classGProDialog.html" title="The GProDialog class.">GProDialog</a> class.  
+ <a href="../../db/deb/classGProDialog.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../">GProDialog.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla GProDialog</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d34/classGProDialog__inherit__graph.png" border="0" usemap="#GProDialog_inherit__map" alt="Inheritance graph"/></div>
+<map name="GProDialog_inherit__map" id="GProDialog_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla GProDialog:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d41/classGProDialog__coll__graph.png" border="0" usemap="#GProDialog_coll__map" alt="Collaboration graph"/></div>
+<map name="GProDialog_coll__map" id="GProDialog_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Sloty publiczne</h2></td></tr>
+<tr class="memitem:a37277e5cfe73fa3053201b5150ac8d95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classGProDialog.html#a37277e5cfe73fa3053201b5150ac8d95">slot_promien</a> (double d)</td></tr>
+<tr class="memdesc:a37277e5cfe73fa3053201b5150ac8d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot_promien  <a href="#a37277e5cfe73fa3053201b5150ac8d95">Więcej...</a><br/></td></tr>
+<tr class="separator:a37277e5cfe73fa3053201b5150ac8d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f12c8ee47750590ee9446cc869dc1df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classGProDialog.html#a1f12c8ee47750590ee9446cc869dc1df">slot_vario</a> (int v)</td></tr>
+<tr class="memdesc:a1f12c8ee47750590ee9446cc869dc1df"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot_vario  <a href="#a1f12c8ee47750590ee9446cc869dc1df">Więcej...</a><br/></td></tr>
+<tr class="separator:a1f12c8ee47750590ee9446cc869dc1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc15def6d7a08fa455367b900de1543c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classGProDialog.html#afc15def6d7a08fa455367b900de1543c">slot_nugget</a> (double d)</td></tr>
+<tr class="memdesc:afc15def6d7a08fa455367b900de1543c"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot_nugget  <a href="#afc15def6d7a08fa455367b900de1543c">Więcej...</a><br/></td></tr>
+<tr class="separator:afc15def6d7a08fa455367b900de1543c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a3660098c6f17fef43b1bd2b09ee2cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classGProDialog.html#a1a3660098c6f17fef43b1bd2b09ee2cc">slot_sill</a> (double d)</td></tr>
+<tr class="memdesc:a1a3660098c6f17fef43b1bd2b09ee2cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot_sill  <a href="#a1a3660098c6f17fef43b1bd2b09ee2cc">Więcej...</a><br/></td></tr>
+<tr class="separator:a1a3660098c6f17fef43b1bd2b09ee2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f15e2b80453142b1a07a672fda7556"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classGProDialog.html#a30f15e2b80453142b1a07a672fda7556">slot_range</a> (double d)</td></tr>
+<tr class="memdesc:a30f15e2b80453142b1a07a672fda7556"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot_range  <a href="#a30f15e2b80453142b1a07a672fda7556">Więcej...</a><br/></td></tr>
+<tr class="separator:a30f15e2b80453142b1a07a672fda7556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf94aadd9c259c42e316b7ada4929e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classGProDialog.html#a9bf94aadd9c259c42e316b7ada4929e6">slot_potega</a> (double d)</td></tr>
+<tr class="memdesc:a9bf94aadd9c259c42e316b7ada4929e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot_potega  <a href="#a9bf94aadd9c259c42e316b7ada4929e6">Więcej...</a><br/></td></tr>
+<tr class="separator:a9bf94aadd9c259c42e316b7ada4929e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acb69a24145f228fad5126daeac97eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classGProDialog.html#a1acb69a24145f228fad5126daeac97eb">slot_min_otocz</a> (int i)</td></tr>
+<tr class="memdesc:a1acb69a24145f228fad5126daeac97eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot_min_otocz  <a href="#a1acb69a24145f228fad5126daeac97eb">Więcej...</a><br/></td></tr>
+<tr class="separator:a1acb69a24145f228fad5126daeac97eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae68b323e0a8062e8d068e1e477025124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classGProDialog.html#ae68b323e0a8062e8d068e1e477025124">slot_max_otocz</a> (int i)</td></tr>
+<tr class="memdesc:ae68b323e0a8062e8d068e1e477025124"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot_max_otocz  <a href="#ae68b323e0a8062e8d068e1e477025124">Więcej...</a><br/></td></tr>
+<tr class="separator:ae68b323e0a8062e8d068e1e477025124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a9cfa5f7ce4f8d408284c611ffc6d99b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classGProDialog.html#a9cfa5f7ce4f8d408284c611ffc6d99b6">GProDialog</a> (<a class="el" href="../../de/d72/structSet__interpolacja.html">Set_interpolacja</a>, <a class="el" href="../../df/dcf/globalne_8h.html#a85b567359c0baad94d28bbf9e1be0dee">METODA</a>, QWidget *parent=0)</td></tr>
+<tr class="memdesc:a9cfa5f7ce4f8d408284c611ffc6d99b6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/deb/classGProDialog.html" title="The GProDialog class.">GProDialog</a>.  <a href="#a9cfa5f7ce4f8d408284c611ffc6d99b6">Więcej...</a><br/></td></tr>
+<tr class="separator:a9cfa5f7ce4f8d408284c611ffc6d99b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc534339735c9b4654f33f815ec046c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classGProDialog.html#a8fc534339735c9b4654f33f815ec046c">~GProDialog</a> ()</td></tr>
+<tr class="memdesc:a8fc534339735c9b4654f33f815ec046c"><td class="mdescLeft">&#160;</td><td class="mdescRight">~GProDialog  <a href="#a8fc534339735c9b4654f33f815ec046c">Więcej...</a><br/></td></tr>
+<tr class="separator:a8fc534339735c9b4654f33f815ec046c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b06c349d51ea09e755f07ee57041ba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d72/structSet__interpolacja.html">Set_interpolacja</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classGProDialog.html#a3b06c349d51ea09e755f07ee57041ba9">get_set_interp</a> ()</td></tr>
+<tr class="memdesc:a3b06c349d51ea09e755f07ee57041ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_set_interp  <a href="#a3b06c349d51ea09e755f07ee57041ba9">Więcej...</a><br/></td></tr>
+<tr class="separator:a3b06c349d51ea09e755f07ee57041ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>The <a class="el" href="../../db/deb/classGProDialog.html" title="The GProDialog class.">GProDialog</a> class. </p>
+
+<p>Definicja w linii <a class="el" href="../../#L41">41</a> pliku <a class="el" href="../../">GProDialog.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="a9cfa5f7ce4f8d408284c611ffc6d99b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GProDialog::GProDialog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d72/structSet__interpolacja.html">Set_interpolacja</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/dcf/globalne_8h.html#a85b567359c0baad94d28bbf9e1be0dee">METODA</a>&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../db/deb/classGProDialog.html" title="The GProDialog class.">GProDialog</a>. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L3">3</a> pliku <a class="el" href="../../">GProDialog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8fc534339735c9b4654f33f815ec046c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GProDialog::~GProDialog </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>~GProDialog </p>
+
+<p>Definicja w linii <a class="el" href="../../#L125">125</a> pliku <a class="el" href="../../">GProDialog.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a3b06c349d51ea09e755f07ee57041ba9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d72/structSet__interpolacja.html">Set_interpolacja</a> GProDialog::get_set_interp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get_set_interp </p>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L120">120</a> pliku <a class="el" href="../../">GProDialog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae68b323e0a8062e8d068e1e477025124"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProDialog::slot_max_otocz </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slot_max_otocz </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L165">165</a> pliku <a class="el" href="../../">GProDialog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1acb69a24145f228fad5126daeac97eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProDialog::slot_min_otocz </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slot_min_otocz </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L155">155</a> pliku <a class="el" href="../../">GProDialog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc15def6d7a08fa455367b900de1543c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProDialog::slot_nugget </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slot_nugget </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L135">135</a> pliku <a class="el" href="../../">GProDialog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9bf94aadd9c259c42e316b7ada4929e6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProDialog::slot_potega </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slot_potega </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L150">150</a> pliku <a class="el" href="../../">GProDialog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a37277e5cfe73fa3053201b5150ac8d95"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProDialog::slot_promien </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slot_promien </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L130">130</a> pliku <a class="el" href="../../">GProDialog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a30f15e2b80453142b1a07a672fda7556"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProDialog::slot_range </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slot_range </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L145">145</a> pliku <a class="el" href="../../">GProDialog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1a3660098c6f17fef43b1bd2b09ee2cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProDialog::slot_sill </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slot_sill </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">d</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L140">140</a> pliku <a class="el" href="../../">GProDialog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f12c8ee47750590ee9446cc869dc1df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GProDialog::slot_vario </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slot_vario </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L175">175</a> pliku <a class="el" href="../../">GProDialog.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>/home/marek/2013.pro/mgeostat/<a class="el" href="../../">GProDialog.h</a></li>
+<li>/home/marek/2013.pro/mgeostat/<a class="el" href="../../">GProDialog.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../db/deb/classGProDialog.html">GProDialog</a></li>
+    <li class="footer">Wygenerowano So, 21 wrz 2013 16:39:22 dla GeoStat programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+  </ul>
+</div>
+</body>
+</html>

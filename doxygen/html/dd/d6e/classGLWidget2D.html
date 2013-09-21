@@ -1,0 +1,577 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>GeoStat: Dokumentacja klasy GLWidget2D</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../ResEst.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">GeoStat
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projekt oprogramowania do modelowania zmienności złóż i szacowania zasobów z wykorzystaniem metod geostatystycznych</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="../../pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>Klasy</span></a></li>
+      <li><a href="../../files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="../../classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="../../inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="../../functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dd/d6e/classGLWidget2D.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Sloty publiczne</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pro-methods">Metody chronione</a> &#124;
+<a href="../../d0/d95/classGLWidget2D-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy GLWidget2D</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="../../dd/d6e/classGLWidget2D.html" title="The GLWidget2D class.">GLWidget2D</a> class.  
+ <a href="../../dd/d6e/classGLWidget2D.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../">GLWidget2D.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla GLWidget2D</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d91/classGLWidget2D__inherit__graph.png" border="0" usemap="#GLWidget2D_inherit__map" alt="Inheritance graph"/></div>
+<map name="GLWidget2D_inherit__map" id="GLWidget2D_inherit__map">
+<area shape="rect" id="node2" href="../../d4/dc5/classGLWidget.html" title="The GLWidget class." alt="" coords="13,83,93,112"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla GLWidget2D:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d65/classGLWidget2D__coll__graph.png" border="0" usemap="#GLWidget2D_coll__map" alt="Collaboration graph"/></div>
+<map name="GLWidget2D_coll__map" id="GLWidget2D_coll__map">
+<area shape="rect" id="node2" href="../../d4/dc5/classGLWidget.html" title="The GLWidget class." alt="" coords="336,267,416,296"/><area shape="rect" id="node6" href="../../dc/d07/classwektor3d.html" title="The wektor3d class." alt="" coords="124,5,199,35"/><area shape="rect" id="node8" href="../../de/def/structMset.html" title="The Mset struct." alt="" coords="221,171,272,200"/><area shape="rect" id="node11" href="../../d1/de1/structwektor3i.html" title="The wektor3i struct." alt="" coords="239,5,308,35"/><area shape="rect" id="node13" href="../../d3/dc6/classGradient.html" title="The Gradient class." alt="" coords="296,171,365,200"/><area shape="rect" id="node15" href="../../d3/dac/classGeoDat.html" title="The GeoDat class." alt="" coords="389,171,456,200"/><area shape="rect" id="node17" href="../../da/d07/structVset.html" title="The Vset struct." alt="" coords="480,171,528,200"/><area shape="rect" id="node19" href="../../d6/d62/classGeoModel.html" title="The GeoModel class." alt="" coords="552,171,632,200"/><area shape="rect" id="node21" href="../../d0/df3/classGeoCube.html" title="Klasa GeoCube." alt="" coords="656,171,733,200"/></map>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Sloty publiczne</h2></td></tr>
+<tr class="memitem:ae25029d217d3355ba4045fd0ca64c385"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6e/classGLWidget2D.html#ae25029d217d3355ba4045fd0ca64c385">slot_point</a> (<a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> p)</td></tr>
+<tr class="memdesc:ae25029d217d3355ba4045fd0ca64c385"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot_point  <a href="#ae25029d217d3355ba4045fd0ca64c385">Więcej...</a><br/></td></tr>
+<tr class="separator:ae25029d217d3355ba4045fd0ca64c385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add8e8acc90074c673fc0438ed6742fac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6e/classGLWidget2D.html#add8e8acc90074c673fc0438ed6742fac">wczytajObiekty</a> ()</td></tr>
+<tr class="memdesc:add8e8acc90074c673fc0438ed6742fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">wczytajObiekty  <a href="#add8e8acc90074c673fc0438ed6742fac">Więcej...</a><br/></td></tr>
+<tr class="separator:add8e8acc90074c673fc0438ed6742fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_slots_classGLWidget"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_classGLWidget')"><img src="../../closed.png" alt="-"/>&#160;Sloty publiczne dziedziczone z <a class="el" href="../../d4/dc5/classGLWidget.html">GLWidget</a></td></tr>
+<tr class="memitem:af743d72482508ed710c2e1b266340181 inherit pub_slots_classGLWidget"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#af743d72482508ed710c2e1b266340181">slot_set_widok</a> (<a class="el" href="../../da/d07/structVset.html">Vset</a>)</td></tr>
+<tr class="memdesc:af743d72482508ed710c2e1b266340181 inherit pub_slots_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot_set_widok  <a href="#af743d72482508ed710c2e1b266340181">Więcej...</a><br/></td></tr>
+<tr class="separator:af743d72482508ed710c2e1b266340181 inherit pub_slots_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade15f01c257c904e00510bb9873baac1 inherit pub_slots_classGLWidget"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#ade15f01c257c904e00510bb9873baac1">slot_point</a> (<a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> p)</td></tr>
+<tr class="memdesc:ade15f01c257c904e00510bb9873baac1 inherit pub_slots_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot_point  <a href="#ade15f01c257c904e00510bb9873baac1">Więcej...</a><br/></td></tr>
+<tr class="separator:ade15f01c257c904e00510bb9873baac1 inherit pub_slots_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7fcc88713333a7267a189b576b661d6 inherit pub_slots_classGLWidget"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#ac7fcc88713333a7267a189b576b661d6">wczytajObiekty</a> ()</td></tr>
+<tr class="memdesc:ac7fcc88713333a7267a189b576b661d6 inherit pub_slots_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">wczytajObiekty  <a href="#ac7fcc88713333a7267a189b576b661d6">Więcej...</a><br/></td></tr>
+<tr class="separator:ac7fcc88713333a7267a189b576b661d6 inherit pub_slots_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a04c822cbf0525500af5c32e339efdfde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6e/classGLWidget2D.html#a04c822cbf0525500af5c32e339efdfde">GLWidget2D</a> (<a class="el" href="../../d6/d62/classGeoModel.html">GeoModel</a> *_model, <a class="el" href="../../da/d07/structVset.html">Vset</a> _widok, QWidget *parent=0)</td></tr>
+<tr class="memdesc:a04c822cbf0525500af5c32e339efdfde"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../dd/d6e/classGLWidget2D.html" title="The GLWidget2D class.">GLWidget2D</a>.  <a href="#a04c822cbf0525500af5c32e339efdfde">Więcej...</a><br/></td></tr>
+<tr class="separator:a04c822cbf0525500af5c32e339efdfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c25e547c1eab0a57f9b6050e86b1876"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6e/classGLWidget2D.html#a6c25e547c1eab0a57f9b6050e86b1876">~GLWidget2D</a> ()</td></tr>
+<tr class="memdesc:a6c25e547c1eab0a57f9b6050e86b1876"><td class="mdescLeft">&#160;</td><td class="mdescRight">~GLWidget2D  <a href="#a6c25e547c1eab0a57f9b6050e86b1876">Więcej...</a><br/></td></tr>
+<tr class="separator:a6c25e547c1eab0a57f9b6050e86b1876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8966fa3140153a667e8d3133e650f7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6e/classGLWidget2D.html#ae8966fa3140153a667e8d3133e650f7f">setZ</a> (int i)</td></tr>
+<tr class="memdesc:ae8966fa3140153a667e8d3133e650f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">setZ  <a href="#ae8966fa3140153a667e8d3133e650f7f">Więcej...</a><br/></td></tr>
+<tr class="separator:ae8966fa3140153a667e8d3133e650f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classGLWidget"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGLWidget')"><img src="../../closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="../../d4/dc5/classGLWidget.html">GLWidget</a></td></tr>
+<tr class="memitem:ab79c391c86de1ffb76f6950b49d82c0c inherit pub_methods_classGLWidget"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#ab79c391c86de1ffb76f6950b49d82c0c">GLWidget</a> (QWidget *parent=0)</td></tr>
+<tr class="memdesc:ab79c391c86de1ffb76f6950b49d82c0c inherit pub_methods_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d4/dc5/classGLWidget.html" title="The GLWidget class.">GLWidget</a>.  <a href="#ab79c391c86de1ffb76f6950b49d82c0c">Więcej...</a><br/></td></tr>
+<tr class="separator:ab79c391c86de1ffb76f6950b49d82c0c inherit pub_methods_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07d2c9ee03c33431223fb9c74448643 inherit pub_methods_classGLWidget"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#aa07d2c9ee03c33431223fb9c74448643">GLWidget</a> (<a class="el" href="../../d6/d62/classGeoModel.html">GeoModel</a> *_model, <a class="el" href="../../da/d07/structVset.html">Vset</a> _widok, QWidget *parent=0)</td></tr>
+<tr class="memdesc:aa07d2c9ee03c33431223fb9c74448643 inherit pub_methods_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d4/dc5/classGLWidget.html" title="The GLWidget class.">GLWidget</a>.  <a href="#aa07d2c9ee03c33431223fb9c74448643">Więcej...</a><br/></td></tr>
+<tr class="separator:aa07d2c9ee03c33431223fb9c74448643 inherit pub_methods_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c4b473053effbf4d0274b27b2d3d7d inherit pub_methods_classGLWidget"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a38c4b473053effbf4d0274b27b2d3d7d">~GLWidget</a> ()</td></tr>
+<tr class="memdesc:a38c4b473053effbf4d0274b27b2d3d7d inherit pub_methods_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">~GLWidget  <a href="#a38c4b473053effbf4d0274b27b2d3d7d">Więcej...</a><br/></td></tr>
+<tr class="separator:a38c4b473053effbf4d0274b27b2d3d7d inherit pub_methods_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4651f5c9072f485b87c898c81490585 inherit pub_methods_classGLWidget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#ab4651f5c9072f485b87c898c81490585">set_scale</a> (float f)</td></tr>
+<tr class="memdesc:ab4651f5c9072f485b87c898c81490585 inherit pub_methods_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_scale  <a href="#ab4651f5c9072f485b87c898c81490585">Więcej...</a><br/></td></tr>
+<tr class="separator:ab4651f5c9072f485b87c898c81490585 inherit pub_methods_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a1e1dee5e6cfdb74746719a373c8f53 inherit pub_methods_classGLWidget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a7a1e1dee5e6cfdb74746719a373c8f53">set_dx</a> (float f)</td></tr>
+<tr class="memdesc:a7a1e1dee5e6cfdb74746719a373c8f53 inherit pub_methods_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_dx  <a href="#a7a1e1dee5e6cfdb74746719a373c8f53">Więcej...</a><br/></td></tr>
+<tr class="separator:a7a1e1dee5e6cfdb74746719a373c8f53 inherit pub_methods_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58a19efc9f0930e5a3029276ead8624 inherit pub_methods_classGLWidget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#ae58a19efc9f0930e5a3029276ead8624">set_dy</a> (float f)</td></tr>
+<tr class="memdesc:ae58a19efc9f0930e5a3029276ead8624 inherit pub_methods_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_dy  <a href="#ae58a19efc9f0930e5a3029276ead8624">Więcej...</a><br/></td></tr>
+<tr class="separator:ae58a19efc9f0930e5a3029276ead8624 inherit pub_methods_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfbb33fbc354d5d9715c512c14cd0c23 inherit pub_methods_classGLWidget"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#abfbb33fbc354d5d9715c512c14cd0c23">get_scale</a> ()</td></tr>
+<tr class="memdesc:abfbb33fbc354d5d9715c512c14cd0c23 inherit pub_methods_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_scale  <a href="#abfbb33fbc354d5d9715c512c14cd0c23">Więcej...</a><br/></td></tr>
+<tr class="separator:abfbb33fbc354d5d9715c512c14cd0c23 inherit pub_methods_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6e195fb7226ec4fa37468236d853f4 inherit pub_methods_classGLWidget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a7b6e195fb7226ec4fa37468236d853f4">update_model</a> ()</td></tr>
+<tr class="memdesc:a7b6e195fb7226ec4fa37468236d853f4 inherit pub_methods_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">update_model  <a href="#a7b6e195fb7226ec4fa37468236d853f4">Więcej...</a><br/></td></tr>
+<tr class="separator:a7b6e195fb7226ec4fa37468236d853f4 inherit pub_methods_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Metody chronione</h2></td></tr>
+<tr class="memitem:a3f9e63306a255233d19aec2252cb5553"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6e/classGLWidget2D.html#a3f9e63306a255233d19aec2252cb5553">paintGL</a> ()</td></tr>
+<tr class="memdesc:a3f9e63306a255233d19aec2252cb5553"><td class="mdescLeft">&#160;</td><td class="mdescRight">paintGL  <a href="#a3f9e63306a255233d19aec2252cb5553">Więcej...</a><br/></td></tr>
+<tr class="separator:a3f9e63306a255233d19aec2252cb5553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a076e8a798a34e500326adb3878403"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6e/classGLWidget2D.html#ab3a076e8a798a34e500326adb3878403">mouseMoveEvent</a> (QMouseEvent *event)</td></tr>
+<tr class="memdesc:ab3a076e8a798a34e500326adb3878403"><td class="mdescLeft">&#160;</td><td class="mdescRight">mouseMoveEvent  <a href="#ab3a076e8a798a34e500326adb3878403">Więcej...</a><br/></td></tr>
+<tr class="separator:ab3a076e8a798a34e500326adb3878403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f64d70d7edd2fff28e59a6a7844d80"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6e/classGLWidget2D.html#a77f64d70d7edd2fff28e59a6a7844d80">wheelEvent</a> (QWheelEvent *event)</td></tr>
+<tr class="memdesc:a77f64d70d7edd2fff28e59a6a7844d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">wheelEvent  <a href="#a77f64d70d7edd2fff28e59a6a7844d80">Więcej...</a><br/></td></tr>
+<tr class="separator:a77f64d70d7edd2fff28e59a6a7844d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classGLWidget"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGLWidget')"><img src="../../closed.png" alt="-"/>&#160;Metody chronione dziedziczone z <a class="el" href="../../d4/dc5/classGLWidget.html">GLWidget</a></td></tr>
+<tr class="memitem:a7fab13e8cc9fc0730ca54c08b2c923a7 inherit pro_methods_classGLWidget"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a7fab13e8cc9fc0730ca54c08b2c923a7">initializeGL</a> ()</td></tr>
+<tr class="memdesc:a7fab13e8cc9fc0730ca54c08b2c923a7 inherit pro_methods_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializeGL  <a href="#a7fab13e8cc9fc0730ca54c08b2c923a7">Więcej...</a><br/></td></tr>
+<tr class="separator:a7fab13e8cc9fc0730ca54c08b2c923a7 inherit pro_methods_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d2a8ecf60907a81c0d73475d851025 inherit pro_methods_classGLWidget"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#ac0d2a8ecf60907a81c0d73475d851025">resizeGL</a> (int width, int height)</td></tr>
+<tr class="memdesc:ac0d2a8ecf60907a81c0d73475d851025 inherit pro_methods_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">resizeGL  <a href="#ac0d2a8ecf60907a81c0d73475d851025">Więcej...</a><br/></td></tr>
+<tr class="separator:ac0d2a8ecf60907a81c0d73475d851025 inherit pro_methods_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab144cc8064c1bbf6d0ef0646ca0bd06c inherit pro_methods_classGLWidget"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#ab144cc8064c1bbf6d0ef0646ca0bd06c">mousePressEvent</a> (QMouseEvent *event)</td></tr>
+<tr class="memdesc:ab144cc8064c1bbf6d0ef0646ca0bd06c inherit pro_methods_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">mousePressEvent  <a href="#ab144cc8064c1bbf6d0ef0646ca0bd06c">Więcej...</a><br/></td></tr>
+<tr class="separator:ab144cc8064c1bbf6d0ef0646ca0bd06c inherit pro_methods_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1665a2bbb8e8036b1d1751d95ffc1942 inherit pro_methods_classGLWidget"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a1665a2bbb8e8036b1d1751d95ffc1942">paint_model_siatka</a> ()</td></tr>
+<tr class="memdesc:a1665a2bbb8e8036b1d1751d95ffc1942 inherit pro_methods_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">paint_model_siatka  <a href="#a1665a2bbb8e8036b1d1751d95ffc1942">Więcej...</a><br/></td></tr>
+<tr class="separator:a1665a2bbb8e8036b1d1751d95ffc1942 inherit pro_methods_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12f23ba7f15bff12e813117c89aabbd inherit pro_methods_classGLWidget"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#ad12f23ba7f15bff12e813117c89aabbd">paint_model_wezly</a> ()</td></tr>
+<tr class="memdesc:ad12f23ba7f15bff12e813117c89aabbd inherit pro_methods_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">paint_model_wezly  <a href="#ad12f23ba7f15bff12e813117c89aabbd">Więcej...</a><br/></td></tr>
+<tr class="separator:ad12f23ba7f15bff12e813117c89aabbd inherit pro_methods_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26aa71617a24d05ecd1c89a8f8bc06fe inherit pro_methods_classGLWidget"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a26aa71617a24d05ecd1c89a8f8bc06fe">paint_model_zasoby</a> ()</td></tr>
+<tr class="memdesc:a26aa71617a24d05ecd1c89a8f8bc06fe inherit pro_methods_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">paint_model_zasoby  <a href="#a26aa71617a24d05ecd1c89a8f8bc06fe">Więcej...</a><br/></td></tr>
+<tr class="separator:a26aa71617a24d05ecd1c89a8f8bc06fe inherit pro_methods_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Dodatkowe Dziedziczone Składowe</h2></td></tr>
+<tr class="inherit_header pro_attribs_classGLWidget"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classGLWidget')"><img src="../../closed.png" alt="-"/>&#160;Atrybuty chronione dziedziczone z <a class="el" href="../../d4/dc5/classGLWidget.html">GLWidget</a></td></tr>
+<tr class="memitem:a8d29fcf9947091a087f1e550e0571fe8 inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d62/classGeoModel.html">GeoModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a8d29fcf9947091a087f1e550e0571fe8">model</a></td></tr>
+<tr class="memdesc:a8d29fcf9947091a087f1e550e0571fe8 inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">model  <a href="#a8d29fcf9947091a087f1e550e0571fe8">Więcej...</a><br/></td></tr>
+<tr class="separator:a8d29fcf9947091a087f1e550e0571fe8 inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3616f27b345ad55b123900cefbc85218 inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d07/structVset.html">Vset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a3616f27b345ad55b123900cefbc85218">widok</a></td></tr>
+<tr class="memdesc:a3616f27b345ad55b123900cefbc85218 inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">widok  <a href="#a3616f27b345ad55b123900cefbc85218">Więcej...</a><br/></td></tr>
+<tr class="separator:a3616f27b345ad55b123900cefbc85218 inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b95bfde2453acfb9880a30fad9cc018 inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/df3/classGeoCube.html">GeoCube</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a9b95bfde2453acfb9880a30fad9cc018">cube</a></td></tr>
+<tr class="memdesc:a9b95bfde2453acfb9880a30fad9cc018 inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">cube  <a href="#a9b95bfde2453acfb9880a30fad9cc018">Więcej...</a><br/></td></tr>
+<tr class="separator:a9b95bfde2453acfb9880a30fad9cc018 inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb7bd3bbbbfb81269d0b1b8ef93ab09 inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/dac/classGeoDat.html">GeoDat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#accb7bd3bbbbfb81269d0b1b8ef93ab09">dane</a></td></tr>
+<tr class="memdesc:accb7bd3bbbbfb81269d0b1b8ef93ab09 inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">dane  <a href="#accb7bd3bbbbfb81269d0b1b8ef93ab09">Więcej...</a><br/></td></tr>
+<tr class="separator:accb7bd3bbbbfb81269d0b1b8ef93ab09 inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca2943f3028ce93457464cc6f3bd9d8 inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/def/structMset.html">Mset</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a2ca2943f3028ce93457464cc6f3bd9d8">sett</a></td></tr>
+<tr class="memdesc:a2ca2943f3028ce93457464cc6f3bd9d8 inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">sett  <a href="#a2ca2943f3028ce93457464cc6f3bd9d8">Więcej...</a><br/></td></tr>
+<tr class="separator:a2ca2943f3028ce93457464cc6f3bd9d8 inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580ee486835cdf6edd5bead30d3a13dd inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/dc6/classGradient.html">Gradient</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a580ee486835cdf6edd5bead30d3a13dd">kolor</a></td></tr>
+<tr class="memdesc:a580ee486835cdf6edd5bead30d3a13dd inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">kolor  <a href="#a580ee486835cdf6edd5bead30d3a13dd">Więcej...</a><br/></td></tr>
+<tr class="separator:a580ee486835cdf6edd5bead30d3a13dd inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acedac1a5f3041d169100127f499f8bf1 inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#acedac1a5f3041d169100127f499f8bf1">curPoint</a></td></tr>
+<tr class="memdesc:acedac1a5f3041d169100127f499f8bf1 inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">curPoint  <a href="#acedac1a5f3041d169100127f499f8bf1">Więcej...</a><br/></td></tr>
+<tr class="separator:acedac1a5f3041d169100127f499f8bf1 inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac0c2e6707889578b91a2bcc73d1442 inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top">GLfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#abac0c2e6707889578b91a2bcc73d1442">scale</a></td></tr>
+<tr class="memdesc:abac0c2e6707889578b91a2bcc73d1442 inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">scale  <a href="#abac0c2e6707889578b91a2bcc73d1442">Więcej...</a><br/></td></tr>
+<tr class="separator:abac0c2e6707889578b91a2bcc73d1442 inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b0f967edb933c5a22f2dd3d02b5de01 inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top">GLfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a0b0f967edb933c5a22f2dd3d02b5de01">dx</a></td></tr>
+<tr class="memdesc:a0b0f967edb933c5a22f2dd3d02b5de01 inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">dx  <a href="#a0b0f967edb933c5a22f2dd3d02b5de01">Więcej...</a><br/></td></tr>
+<tr class="separator:a0b0f967edb933c5a22f2dd3d02b5de01 inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a1304253384b7bfded0cead210e436 inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top">GLfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a84a1304253384b7bfded0cead210e436">dy</a></td></tr>
+<tr class="memdesc:a84a1304253384b7bfded0cead210e436 inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">dy  <a href="#a84a1304253384b7bfded0cead210e436">Więcej...</a><br/></td></tr>
+<tr class="separator:a84a1304253384b7bfded0cead210e436 inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3450778adac003084787844f81ac4470 inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top">GLfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a3450778adac003084787844f81ac4470">dz</a></td></tr>
+<tr class="memdesc:a3450778adac003084787844f81ac4470 inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">dz  <a href="#a3450778adac003084787844f81ac4470">Więcej...</a><br/></td></tr>
+<tr class="separator:a3450778adac003084787844f81ac4470 inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6dc49cb4ad0e862c2d76f4df66548cc inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top">GLfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#af6dc49cb4ad0e862c2d76f4df66548cc">rotX</a></td></tr>
+<tr class="memdesc:af6dc49cb4ad0e862c2d76f4df66548cc inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotX  <a href="#af6dc49cb4ad0e862c2d76f4df66548cc">Więcej...</a><br/></td></tr>
+<tr class="separator:af6dc49cb4ad0e862c2d76f4df66548cc inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fcaf7d94fb3d1ff4e30da68557ab6b6 inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top">GLfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a4fcaf7d94fb3d1ff4e30da68557ab6b6">rotY</a></td></tr>
+<tr class="memdesc:a4fcaf7d94fb3d1ff4e30da68557ab6b6 inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotY  <a href="#a4fcaf7d94fb3d1ff4e30da68557ab6b6">Więcej...</a><br/></td></tr>
+<tr class="separator:a4fcaf7d94fb3d1ff4e30da68557ab6b6 inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0842856ffa0c60dbd795076573ea072 inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top">GLfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#af0842856ffa0c60dbd795076573ea072">rotZ</a></td></tr>
+<tr class="memdesc:af0842856ffa0c60dbd795076573ea072 inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotZ  <a href="#af0842856ffa0c60dbd795076573ea072">Więcej...</a><br/></td></tr>
+<tr class="separator:af0842856ffa0c60dbd795076573ea072 inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6690cd97b4dec38d7c7ea86eff3cc3d inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top">QPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#aa6690cd97b4dec38d7c7ea86eff3cc3d">mouse_pos</a></td></tr>
+<tr class="memdesc:aa6690cd97b4dec38d7c7ea86eff3cc3d inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">mouse_pos  <a href="#aa6690cd97b4dec38d7c7ea86eff3cc3d">Więcej...</a><br/></td></tr>
+<tr class="separator:aa6690cd97b4dec38d7c7ea86eff3cc3d inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d9c0a16edd75c78a66e74dafff5aef inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a26d9c0a16edd75c78a66e74dafff5aef">win_size</a></td></tr>
+<tr class="memdesc:a26d9c0a16edd75c78a66e74dafff5aef inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">win_size  <a href="#a26d9c0a16edd75c78a66e74dafff5aef">Więcej...</a><br/></td></tr>
+<tr class="separator:a26d9c0a16edd75c78a66e74dafff5aef inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e0fcd4f92e3a0137985ca21f7281a2 inherit pro_attribs_classGLWidget"><td class="memItemLeft" align="right" valign="top">QSizeF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a94e0fcd4f92e3a0137985ca21f7281a2">model_size</a></td></tr>
+<tr class="memdesc:a94e0fcd4f92e3a0137985ca21f7281a2 inherit pro_attribs_classGLWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">model_size  <a href="#a94e0fcd4f92e3a0137985ca21f7281a2">Więcej...</a><br/></td></tr>
+<tr class="separator:a94e0fcd4f92e3a0137985ca21f7281a2 inherit pro_attribs_classGLWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>The <a class="el" href="../../dd/d6e/classGLWidget2D.html" title="The GLWidget2D class.">GLWidget2D</a> class. </p>
+
+<p>Definicja w linii <a class="el" href="../../#L9">9</a> pliku <a class="el" href="../../">GLWidget2D.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="a04c822cbf0525500af5c32e339efdfde"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLWidget2D::GLWidget2D </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d62/classGeoModel.html">GeoModel</a> *&#160;</td>
+          <td class="paramname"><em>_model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d07/structVset.html">Vset</a>&#160;</td>
+          <td class="paramname"><em>_widok</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../dd/d6e/classGLWidget2D.html" title="The GLWidget2D class.">GLWidget2D</a>. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_model</td><td></td></tr>
+    <tr><td class="paramname">_widok</td><td></td></tr>
+    <tr><td class="paramname">parent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L5">5</a> pliku <a class="el" href="../../">GLWidget2D.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c25e547c1eab0a57f9b6050e86b1876"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLWidget2D::~GLWidget2D </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>~GLWidget2D </p>
+
+<p>Definicja w linii <a class="el" href="../../#L16">16</a> pliku <a class="el" href="../../">GLWidget2D.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="ab3a076e8a798a34e500326adb3878403"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLWidget2D::mouseMoveEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>mouseMoveEvent </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplementowana z <a class="el" href="../../d4/dc5/classGLWidget.html#a9043bac13d6f0a5307ea5c7f9b3caa50">GLWidget</a>.</p>
+
+<p>Definicja w linii <a class="el" href="../../#L67">67</a> pliku <a class="el" href="../../">GLWidget2D.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3f9e63306a255233d19aec2252cb5553"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLWidget2D::paintGL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>paintGL </p>
+
+<p>Reimplementowana z <a class="el" href="../../d4/dc5/classGLWidget.html#a640b5570cb2b37724fd5b58a77339c5e">GLWidget</a>.</p>
+
+<p>Definicja w linii <a class="el" href="../../#L21">21</a> pliku <a class="el" href="../../">GLWidget2D.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8966fa3140153a667e8d3133e650f7f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLWidget2D::setZ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setZ </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L27">27</a> pliku <a class="el" href="../../">GLWidget2D.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae25029d217d3355ba4045fd0ca64c385"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLWidget2D::slot_point </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>slot_point </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L91">91</a> pliku <a class="el" href="../../">GLWidget2D.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="add8e8acc90074c673fc0438ed6742fac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLWidget2D::wczytajObiekty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>wczytajObiekty </p>
+
+<p>Definicja w linii <a class="el" href="../../#L97">97</a> pliku <a class="el" href="../../">GLWidget2D.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a77f64d70d7edd2fff28e59a6a7844d80"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLWidget2D::wheelEvent </td>
+          <td>(</td>
+          <td class="paramtype">QWheelEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>wheelEvent </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplementowana z <a class="el" href="../../d4/dc5/classGLWidget.html#a5702a23f7cf42d05fe55a417d810a4b6">GLWidget</a>.</p>
+
+<p>Definicja w linii <a class="el" href="../../#L84">84</a> pliku <a class="el" href="../../">GLWidget2D.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>/home/marek/2013.pro/mgeostat/<a class="el" href="../../">GLWidget2D.h</a></li>
+<li>/home/marek/2013.pro/mgeostat/<a class="el" href="../../">GLWidget2D.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dd/d6e/classGLWidget2D.html">GLWidget2D</a></li>
+    <li class="footer">Wygenerowano So, 21 wrz 2013 16:39:22 dla GeoStat programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+  </ul>
+</div>
+</body>
+</html>

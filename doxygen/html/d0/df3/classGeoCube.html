@@ -1,0 +1,957 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>GeoStat: Dokumentacja klasy GeoCube</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../ResEst.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">GeoStat
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projekt oprogramowania do modelowania zmienności złóż i szacowania zasobów z wykorzystaniem metod geostatystycznych</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="../../pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>Klasy</span></a></li>
+      <li><a href="../../files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="../../classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="../../inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="../../functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d0/df3/classGeoCube.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="../../de/dbe/classGeoCube-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy GeoCube</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="../../d0/df3/classGeoCube.html" title="Klasa GeoCube.">GeoCube</a>.  
+ <a href="../../d0/df3/classGeoCube.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../">GeoCube.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a96a29ebc1e91659e7e986028531cd2c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a96a29ebc1e91659e7e986028531cd2c4">GeoCube</a> (<a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> start, double blok, <a class="el" href="../../d1/de1/structwektor3i.html">wektor3i</a> dim)</td></tr>
+<tr class="memdesc:a96a29ebc1e91659e7e986028531cd2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d0/df3/classGeoCube.html" title="Klasa GeoCube.">GeoCube</a>.  <a href="#a96a29ebc1e91659e7e986028531cd2c4">Więcej...</a><br/></td></tr>
+<tr class="separator:a96a29ebc1e91659e7e986028531cd2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ea9c0d71821cba59bd024376cc061ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a0ea9c0d71821cba59bd024376cc061ea">~GeoCube</a> ()</td></tr>
+<tr class="separator:a0ea9c0d71821cba59bd024376cc061ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0181f9866cf74d00f869cf2920f40d63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a0181f9866cf74d00f869cf2920f40d63">wyczysc</a> ()</td></tr>
+<tr class="memdesc:a0181f9866cf74d00f869cf2920f40d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">wyczysc  <a href="#a0181f9866cf74d00f869cf2920f40d63">Więcej...</a><br/></td></tr>
+<tr class="separator:a0181f9866cf74d00f869cf2920f40d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a385007d1dd595a2d1ed83d4c0cebcb76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a385007d1dd595a2d1ed83d4c0cebcb76">getRekLok</a> (<a class="el" href="../../d1/de1/structwektor3i.html">wektor3i</a> poz)</td></tr>
+<tr class="memdesc:a385007d1dd595a2d1ed83d4c0cebcb76"><td class="mdescLeft">&#160;</td><td class="mdescRight">getRekLok  <a href="#a385007d1dd595a2d1ed83d4c0cebcb76">Więcej...</a><br/></td></tr>
+<tr class="separator:a385007d1dd595a2d1ed83d4c0cebcb76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0560f60875f6c7a28d01f91fd25b6cb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a0560f60875f6c7a28d01f91fd25b6cb7">getRekGlo</a> (<a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> poz)</td></tr>
+<tr class="memdesc:a0560f60875f6c7a28d01f91fd25b6cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">getRekGlo  <a href="#a0560f60875f6c7a28d01f91fd25b6cb7">Więcej...</a><br/></td></tr>
+<tr class="separator:a0560f60875f6c7a28d01f91fd25b6cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e99a52d702e8c7994841d5e6b63e69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a34e99a52d702e8c7994841d5e6b63e69">getRek</a> (<a class="el" href="../../d1/de1/structwektor3i.html">wektor3i</a> poz)</td></tr>
+<tr class="memdesc:a34e99a52d702e8c7994841d5e6b63e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">getRek  <a href="#a34e99a52d702e8c7994841d5e6b63e69">Więcej...</a><br/></td></tr>
+<tr class="separator:a34e99a52d702e8c7994841d5e6b63e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8f12d1141ffc52e70493f3c5232c02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a2c8f12d1141ffc52e70493f3c5232c02">getRek</a> (int a, int b, int c)</td></tr>
+<tr class="memdesc:a2c8f12d1141ffc52e70493f3c5232c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">getRek  <a href="#a2c8f12d1141ffc52e70493f3c5232c02">Więcej...</a><br/></td></tr>
+<tr class="separator:a2c8f12d1141ffc52e70493f3c5232c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af90e13559f037042f6262130dd4ef67f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#af90e13559f037042f6262130dd4ef67f">setRekLok</a> (<a class="el" href="../../d1/de1/structwektor3i.html">wektor3i</a> poz, <a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> dane)</td></tr>
+<tr class="memdesc:af90e13559f037042f6262130dd4ef67f"><td class="mdescLeft">&#160;</td><td class="mdescRight">setRekLok  <a href="#af90e13559f037042f6262130dd4ef67f">Więcej...</a><br/></td></tr>
+<tr class="separator:af90e13559f037042f6262130dd4ef67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652d5a7ce7e178f5539374055bc30d98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a652d5a7ce7e178f5539374055bc30d98">setRekGlo</a> (<a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> poz, <a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> dane)</td></tr>
+<tr class="memdesc:a652d5a7ce7e178f5539374055bc30d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">setRekGlo  <a href="#a652d5a7ce7e178f5539374055bc30d98">Więcej...</a><br/></td></tr>
+<tr class="separator:a652d5a7ce7e178f5539374055bc30d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1719fe756483e3eeee78eb589f073cb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a1719fe756483e3eeee78eb589f073cb1">wypiszLok</a> (ostream &amp;os, bool tylkoXYZ, double limit)</td></tr>
+<tr class="memdesc:a1719fe756483e3eeee78eb589f073cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">wypiszLok  <a href="#a1719fe756483e3eeee78eb589f073cb1">Więcej...</a><br/></td></tr>
+<tr class="separator:a1719fe756483e3eeee78eb589f073cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc74b9231aff8d41b310a5c6eb4c7c19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#adc74b9231aff8d41b310a5c6eb4c7c19">wypiszGlo</a> (ostream &amp;os, bool tylkoXYZ, double limit)</td></tr>
+<tr class="memdesc:adc74b9231aff8d41b310a5c6eb4c7c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">wypiszGlo  <a href="#adc74b9231aff8d41b310a5c6eb4c7c19">Więcej...</a><br/></td></tr>
+<tr class="separator:adc74b9231aff8d41b310a5c6eb4c7c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e9e3526be46f92b56e5e4e7da821100"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a2e9e3526be46f92b56e5e4e7da821100">wypiszGlo</a> (vector&lt; <a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> &gt; &amp;vec, double limit, <a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> ofset)</td></tr>
+<tr class="memdesc:a2e9e3526be46f92b56e5e4e7da821100"><td class="mdescLeft">&#160;</td><td class="mdescRight">wypiszGlo  <a href="#a2e9e3526be46f92b56e5e4e7da821100">Więcej...</a><br/></td></tr>
+<tr class="separator:a2e9e3526be46f92b56e5e4e7da821100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1197c97e9f641fee90a971b6fb53a919"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a1197c97e9f641fee90a971b6fb53a919">getStart</a> ()</td></tr>
+<tr class="memdesc:a1197c97e9f641fee90a971b6fb53a919"><td class="mdescLeft">&#160;</td><td class="mdescRight">getStart  <a href="#a1197c97e9f641fee90a971b6fb53a919">Więcej...</a><br/></td></tr>
+<tr class="separator:a1197c97e9f641fee90a971b6fb53a919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d7bc3d0dbc6f42dd58bd4fcd5679a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/de1/structwektor3i.html">wektor3i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a81d7bc3d0dbc6f42dd58bd4fcd5679a5">getSize</a> ()</td></tr>
+<tr class="memdesc:a81d7bc3d0dbc6f42dd58bd4fcd5679a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">getSize  <a href="#a81d7bc3d0dbc6f42dd58bd4fcd5679a5">Więcej...</a><br/></td></tr>
+<tr class="separator:a81d7bc3d0dbc6f42dd58bd4fcd5679a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad01d6c4aef5f0e578c1b855358b76af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#aad01d6c4aef5f0e578c1b855358b76af">size_x</a> ()</td></tr>
+<tr class="memdesc:aad01d6c4aef5f0e578c1b855358b76af"><td class="mdescLeft">&#160;</td><td class="mdescRight">size_x  <a href="#aad01d6c4aef5f0e578c1b855358b76af">Więcej...</a><br/></td></tr>
+<tr class="separator:aad01d6c4aef5f0e578c1b855358b76af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab066d0efc769fbe8e3620d14f4f6ef19"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#ab066d0efc769fbe8e3620d14f4f6ef19">size_y</a> ()</td></tr>
+<tr class="memdesc:ab066d0efc769fbe8e3620d14f4f6ef19"><td class="mdescLeft">&#160;</td><td class="mdescRight">size_y  <a href="#ab066d0efc769fbe8e3620d14f4f6ef19">Więcej...</a><br/></td></tr>
+<tr class="separator:ab066d0efc769fbe8e3620d14f4f6ef19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0712b20bc40c6f9e9ee4e6e9052c701"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#ad0712b20bc40c6f9e9ee4e6e9052c701">size_z</a> ()</td></tr>
+<tr class="memdesc:ad0712b20bc40c6f9e9ee4e6e9052c701"><td class="mdescLeft">&#160;</td><td class="mdescRight">size_z  <a href="#ad0712b20bc40c6f9e9ee4e6e9052c701">Więcej...</a><br/></td></tr>
+<tr class="separator:ad0712b20bc40c6f9e9ee4e6e9052c701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1ef38a324a42b8240d02595465136c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a8b1ef38a324a42b8240d02595465136c">size</a> ()</td></tr>
+<tr class="memdesc:a8b1ef38a324a42b8240d02595465136c"><td class="mdescLeft">&#160;</td><td class="mdescRight">size  <a href="#a8b1ef38a324a42b8240d02595465136c">Więcej...</a><br/></td></tr>
+<tr class="separator:a8b1ef38a324a42b8240d02595465136c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab05e0231814c5cbf1ad5aea006266087"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#ab05e0231814c5cbf1ad5aea006266087">getSpac</a> ()</td></tr>
+<tr class="memdesc:ab05e0231814c5cbf1ad5aea006266087"><td class="mdescLeft">&#160;</td><td class="mdescRight">getSpac  <a href="#ab05e0231814c5cbf1ad5aea006266087">Więcej...</a><br/></td></tr>
+<tr class="separator:ab05e0231814c5cbf1ad5aea006266087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa559d5470c5f48250f1e2e4e34d8fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a0aa559d5470c5f48250f1e2e4e34d8fa">get_max</a> ()</td></tr>
+<tr class="memdesc:a0aa559d5470c5f48250f1e2e4e34d8fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_max  <a href="#a0aa559d5470c5f48250f1e2e4e34d8fa">Więcej...</a><br/></td></tr>
+<tr class="separator:a0aa559d5470c5f48250f1e2e4e34d8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846b120bd6aa1ce1fd00b703483a9343"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a846b120bd6aa1ce1fd00b703483a9343">get_min</a> ()</td></tr>
+<tr class="memdesc:a846b120bd6aa1ce1fd00b703483a9343"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_min  <a href="#a846b120bd6aa1ce1fd00b703483a9343">Więcej...</a><br/></td></tr>
+<tr class="separator:a846b120bd6aa1ce1fd00b703483a9343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6f7db7e3c3d27c4379cc3892cad692e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#af6f7db7e3c3d27c4379cc3892cad692e">min_max</a> (<a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> &amp;min, <a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> &amp;max)</td></tr>
+<tr class="memdesc:af6f7db7e3c3d27c4379cc3892cad692e"><td class="mdescLeft">&#160;</td><td class="mdescRight">min_max  <a href="#af6f7db7e3c3d27c4379cc3892cad692e">Więcej...</a><br/></td></tr>
+<tr class="separator:af6f7db7e3c3d27c4379cc3892cad692e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a867503e374850f5de0a5238765ec65d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a867503e374850f5de0a5238765ec65d6">min_max</a> ()</td></tr>
+<tr class="memdesc:a867503e374850f5de0a5238765ec65d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">min_max  <a href="#a867503e374850f5de0a5238765ec65d6">Więcej...</a><br/></td></tr>
+<tr class="separator:a867503e374850f5de0a5238765ec65d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3e33368d05fd54b709fc150faf7408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/df3/classGeoCube.html#a5c3e33368d05fd54b709fc150faf7408">reset_min_max</a> ()</td></tr>
+<tr class="memdesc:a5c3e33368d05fd54b709fc150faf7408"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset_min_max  <a href="#a5c3e33368d05fd54b709fc150faf7408">Więcej...</a><br/></td></tr>
+<tr class="separator:a5c3e33368d05fd54b709fc150faf7408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa <a class="el" href="../../d0/df3/classGeoCube.html" title="Klasa GeoCube.">GeoCube</a>. </p>
+
+<p>Definicja w linii <a class="el" href="../../#L14">14</a> pliku <a class="el" href="../../">GeoCube.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="a96a29ebc1e91659e7e986028531cd2c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GeoCube::GeoCube </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>blok</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/de1/structwektor3i.html">wektor3i</a>&#160;</td>
+          <td class="paramname"><em>dim</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d0/df3/classGeoCube.html" title="Klasa GeoCube.">GeoCube</a>. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td></td></tr>
+    <tr><td class="paramname">blok</td><td></td></tr>
+    <tr><td class="paramname">dim</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L3">3</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ea9c0d71821cba59bd024376cc061ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GeoCube::~GeoCube </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="../../#L13">13</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a0aa559d5470c5f48250f1e2e4e34d8fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> GeoCube::get_max </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get_max </p>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L127">127</a> pliku <a class="el" href="../../">GeoCube.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a846b120bd6aa1ce1fd00b703483a9343"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> GeoCube::get_min </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get_min </p>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L132">132</a> pliku <a class="el" href="../../">GeoCube.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a34e99a52d702e8c7994841d5e6b63e69"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> GeoCube::getRek </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/de1/structwektor3i.html">wektor3i</a>&#160;</td>
+          <td class="paramname"><em>poz</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getRek </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">poz</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L141">141</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c8f12d1141ffc52e70493f3c5232c02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> GeoCube::getRek </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getRek </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td></td></tr>
+    <tr><td class="paramname">b</td><td></td></tr>
+    <tr><td class="paramname">c</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L174">174</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0560f60875f6c7a28d01f91fd25b6cb7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> GeoCube::getRekGlo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td>
+          <td class="paramname"><em>poz</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getRekGlo </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">poz</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L132">132</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a385007d1dd595a2d1ed83d4c0cebcb76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> GeoCube::getRekLok </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/de1/structwektor3i.html">wektor3i</a>&#160;</td>
+          <td class="paramname"><em>poz</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getRekLok </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">poz</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L125">125</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a81d7bc3d0dbc6f42dd58bd4fcd5679a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/de1/structwektor3i.html">wektor3i</a> GeoCube::getSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getSize </p>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L97">97</a> pliku <a class="el" href="../../">GeoCube.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab05e0231814c5cbf1ad5aea006266087"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GeoCube::getSpac </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getSpac </p>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L122">122</a> pliku <a class="el" href="../../">GeoCube.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1197c97e9f641fee90a971b6fb53a919"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> GeoCube::getStart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getStart </p>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L92">92</a> pliku <a class="el" href="../../">GeoCube.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af6f7db7e3c3d27c4379cc3892cad692e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoCube::min_max </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>min_max </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td></td></tr>
+    <tr><td class="paramname">max</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L179">179</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a867503e374850f5de0a5238765ec65d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoCube::min_max </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>min_max </p>
+
+<p>Definicja w linii <a class="el" href="../../#L186">186</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c3e33368d05fd54b709fc150faf7408"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoCube::reset_min_max </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>reset_min_max </p>
+
+<p>Definicja w linii <a class="el" href="../../#L212">212</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a652d5a7ce7e178f5539374055bc30d98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoCube::setRekGlo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td>
+          <td class="paramname"><em>poz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td>
+          <td class="paramname"><em>dane</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setRekGlo </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">poz</td><td></td></tr>
+    <tr><td class="paramname">dane</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L165">165</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af90e13559f037042f6262130dd4ef67f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoCube::setRekLok </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/de1/structwektor3i.html">wektor3i</a>&#160;</td>
+          <td class="paramname"><em>poz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td>
+          <td class="paramname"><em>dane</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setRekLok </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">poz</td><td></td></tr>
+    <tr><td class="paramname">dane</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L146">146</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8b1ef38a324a42b8240d02595465136c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GeoCube::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>size </p>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L117">117</a> pliku <a class="el" href="../../">GeoCube.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad01d6c4aef5f0e578c1b855358b76af"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GeoCube::size_x </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>size_x </p>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L102">102</a> pliku <a class="el" href="../../">GeoCube.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab066d0efc769fbe8e3620d14f4f6ef19"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GeoCube::size_y </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>size_y </p>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L107">107</a> pliku <a class="el" href="../../">GeoCube.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad0712b20bc40c6f9e9ee4e6e9052c701"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GeoCube::size_z </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>size_z </p>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L112">112</a> pliku <a class="el" href="../../">GeoCube.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0181f9866cf74d00f869cf2920f40d63"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoCube::wyczysc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>wyczysc </p>
+
+<p>Definicja w linii <a class="el" href="../../#L18">18</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc74b9231aff8d41b310a5c6eb4c7c19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoCube::wypiszGlo </td>
+          <td>(</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>tylkoXYZ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>limit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>wypiszGlo </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td></td></tr>
+    <tr><td class="paramname">tylkoXYZ</td><td></td></tr>
+    <tr><td class="paramname">limit</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L81">81</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e9e3526be46f92b56e5e4e7da821100"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoCube::wypiszGlo </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&#160;</td>
+          <td class="paramname"><em>ofset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>wypiszGlo </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td></td></tr>
+    <tr><td class="paramname">limit</td><td></td></tr>
+    <tr><td class="paramname">ofset</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L114">114</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1719fe756483e3eeee78eb589f073cb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoCube::wypiszLok </td>
+          <td>(</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>tylkoXYZ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>limit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>wypiszLok </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td></td></tr>
+    <tr><td class="paramname">tylkoXYZ</td><td></td></tr>
+    <tr><td class="paramname">limit</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L61">61</a> pliku <a class="el" href="../../">GeoCube.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>/home/marek/2013.pro/mgeostat/<a class="el" href="../../">GeoCube.h</a></li>
+<li>/home/marek/2013.pro/mgeostat/<a class="el" href="../../">GeoCube.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d0/df3/classGeoCube.html">GeoCube</a></li>
+    <li class="footer">Wygenerowano So, 21 wrz 2013 16:39:22 dla GeoStat programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+  </ul>
+</div>
+</body>
+</html>

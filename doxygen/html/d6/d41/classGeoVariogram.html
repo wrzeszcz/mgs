@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>GeoStat: Dokumentacja klasy GeoVariogram</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../ResEst.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">GeoStat
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projekt oprogramowania do modelowania zmienności złóż i szacowania zasobów z wykorzystaniem metod geostatystycznych</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="../../pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>Klasy</span></a></li>
+      <li><a href="../../files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="../../classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="../../inherits.html"><span>Hierarchia&#160;klas</span></a></li>
+      <li><a href="../../functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d6/d41/classGeoVariogram.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definicje typów</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="../../d4/d3a/classGeoVariogram-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy GeoVariogram</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="../../d6/d41/classGeoVariogram.html" title="The GeoVariogram class.">GeoVariogram</a> class.  
+ <a href="../../d6/d41/classGeoVariogram.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../">GeoVariogram.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:ae28c788f38669934355023a871292d5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d41/classGeoVariogram.html#ae28c788f38669934355023a871292d5a">GeoVariogram</a> (<a class="el" href="../../d3/dac/classGeoDat.html">GeoDat</a> *dane, double rozmiar_klasy)</td></tr>
+<tr class="memdesc:ae28c788f38669934355023a871292d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d6/d41/classGeoVariogram.html" title="The GeoVariogram class.">GeoVariogram</a>.  <a href="#ae28c788f38669934355023a871292d5a">Więcej...</a><br/></td></tr>
+<tr class="separator:ae28c788f38669934355023a871292d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab76133ba70bd64682a53b64b4a296e01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d41/classGeoVariogram.html#ab76133ba70bd64682a53b64b4a296e01">GeoVariogram</a> (<a class="el" href="../../d3/dac/classGeoDat.html">GeoDat</a> *dane)</td></tr>
+<tr class="memdesc:ab76133ba70bd64682a53b64b4a296e01"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d6/d41/classGeoVariogram.html" title="The GeoVariogram class.">GeoVariogram</a>.  <a href="#ab76133ba70bd64682a53b64b4a296e01">Więcej...</a><br/></td></tr>
+<tr class="separator:ab76133ba70bd64682a53b64b4a296e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa141dd4e804a670310901f53cdfaaa8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d41/classGeoVariogram.html#aa141dd4e804a670310901f53cdfaaa8c">recalc</a> (double rozmiar_klasy)</td></tr>
+<tr class="memdesc:aa141dd4e804a670310901f53cdfaaa8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">recalc  <a href="#aa141dd4e804a670310901f53cdfaaa8c">Więcej...</a><br/></td></tr>
+<tr class="separator:aa141dd4e804a670310901f53cdfaaa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8843838f32e0e55884417a923cee19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d41/classGeoVariogram.html#aee8843838f32e0e55884417a923cee19">recalc</a> ()</td></tr>
+<tr class="memdesc:aee8843838f32e0e55884417a923cee19"><td class="mdescLeft">&#160;</td><td class="mdescRight">recalc  <a href="#aee8843838f32e0e55884417a923cee19">Więcej...</a><br/></td></tr>
+<tr class="separator:aee8843838f32e0e55884417a923cee19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84dbb31323406f0df0d7ee98bd8c5930"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d41/classGeoVariogram.html#a84dbb31323406f0df0d7ee98bd8c5930">set_dane</a> (<a class="el" href="../../d3/dac/classGeoDat.html">GeoDat</a> *dane, double rozmiar_klasy)</td></tr>
+<tr class="memdesc:a84dbb31323406f0df0d7ee98bd8c5930"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_dane  <a href="#a84dbb31323406f0df0d7ee98bd8c5930">Więcej...</a><br/></td></tr>
+<tr class="separator:a84dbb31323406f0df0d7ee98bd8c5930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36bb51dee9a79534a6722defaf1f6ed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d41/classGeoVariogram.html#a36bb51dee9a79534a6722defaf1f6ed4">set_dane</a> (<a class="el" href="../../d3/dac/classGeoDat.html">GeoDat</a> *dane)</td></tr>
+<tr class="memdesc:a36bb51dee9a79534a6722defaf1f6ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_dane  <a href="#a36bb51dee9a79534a6722defaf1f6ed4">Więcej...</a><br/></td></tr>
+<tr class="separator:a36bb51dee9a79534a6722defaf1f6ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a884ce472606dc034a7ee6879ee89529b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d41/classGeoVariogram.html#a884ce472606dc034a7ee6879ee89529b">get_raport</a> ()</td></tr>
+<tr class="memdesc:a884ce472606dc034a7ee6879ee89529b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_raport  <a href="#a884ce472606dc034a7ee6879ee89529b">Więcej...</a><br/></td></tr>
+<tr class="separator:a884ce472606dc034a7ee6879ee89529b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab75ab60103d386a391620d2d9ca4e3f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d41/classGeoVariogram.html#ab75ab60103d386a391620d2d9ca4e3f2">wypisz_dist_delta</a> (string filename)</td></tr>
+<tr class="memdesc:ab75ab60103d386a391620d2d9ca4e3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">wypisz_dist_delta  <a href="#ab75ab60103d386a391620d2d9ca4e3f2">Więcej...</a><br/></td></tr>
+<tr class="separator:ab75ab60103d386a391620d2d9ca4e3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3110d322c80fbb9cdaf2f80cec9a3de4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d41/classGeoVariogram.html#a3110d322c80fbb9cdaf2f80cec9a3de4">get_klasy</a> ()</td></tr>
+<tr class="memdesc:a3110d322c80fbb9cdaf2f80cec9a3de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_klasy  <a href="#a3110d322c80fbb9cdaf2f80cec9a3de4">Więcej...</a><br/></td></tr>
+<tr class="separator:a3110d322c80fbb9cdaf2f80cec9a3de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>The <a class="el" href="../../d6/d41/classGeoVariogram.html" title="The GeoVariogram class.">GeoVariogram</a> class. </p>
+
+<p>Definicja w linii <a class="el" href="../../#L14">14</a> pliku <a class="el" href="../../">GeoVariogram.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="ae28c788f38669934355023a871292d5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GeoVariogram::GeoVariogram </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/dac/classGeoDat.html">GeoDat</a> *&#160;</td>
+          <td class="paramname"><em>dane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rozmiar_klasy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d6/d41/classGeoVariogram.html" title="The GeoVariogram class.">GeoVariogram</a>. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dane</td><td></td></tr>
+    <tr><td class="paramname">rozmiar_klasy</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L3">3</a> pliku <a class="el" href="../../">GeoVariogram.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab76133ba70bd64682a53b64b4a296e01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GeoVariogram::GeoVariogram </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/dac/classGeoDat.html">GeoDat</a> *&#160;</td>
+          <td class="paramname"><em>dane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d6/d41/classGeoVariogram.html" title="The GeoVariogram class.">GeoVariogram</a>. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dane</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L10">10</a> pliku <a class="el" href="../../">GeoVariogram.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a3110d322c80fbb9cdaf2f80cec9a3de4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a>&gt;&amp; GeoVariogram::get_klasy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get_klasy </p>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L62">62</a> pliku <a class="el" href="../../">GeoVariogram.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a884ce472606dc034a7ee6879ee89529b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string GeoVariogram::get_raport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get_raport </p>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L82">82</a> pliku <a class="el" href="../../">GeoVariogram.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa141dd4e804a670310901f53cdfaaa8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoVariogram::recalc </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rozmiar_klasy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>recalc </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rozmiar_klasy</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L17">17</a> pliku <a class="el" href="../../">GeoVariogram.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aee8843838f32e0e55884417a923cee19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoVariogram::recalc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>recalc </p>
+
+<p>Definicja w linii <a class="el" href="../../#L23">23</a> pliku <a class="el" href="../../">GeoVariogram.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a84dbb31323406f0df0d7ee98bd8c5930"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoVariogram::set_dane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/dac/classGeoDat.html">GeoDat</a> *&#160;</td>
+          <td class="paramname"><em>dane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rozmiar_klasy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set_dane </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dane</td><td></td></tr>
+    <tr><td class="paramname">rozmiar_klasy</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L70">70</a> pliku <a class="el" href="../../">GeoVariogram.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36bb51dee9a79534a6722defaf1f6ed4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoVariogram::set_dane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/dac/classGeoDat.html">GeoDat</a> *&#160;</td>
+          <td class="paramname"><em>dane</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set_dane </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dane</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L76">76</a> pliku <a class="el" href="../../">GeoVariogram.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab75ab60103d386a391620d2d9ca4e3f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoVariogram::wypisz_dist_delta </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>wypisz_dist_delta </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L94">94</a> pliku <a class="el" href="../../">GeoVariogram.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>/home/marek/2013.pro/mgeostat/<a class="el" href="../../">GeoVariogram.h</a></li>
+<li>/home/marek/2013.pro/mgeostat/<a class="el" href="../../">GeoVariogram.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d6/d41/classGeoVariogram.html">GeoVariogram</a></li>
+    <li class="footer">Wygenerowano So, 21 wrz 2013 16:39:22 dla GeoStat programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
+  </ul>
+</div>
+</body>
+</html>

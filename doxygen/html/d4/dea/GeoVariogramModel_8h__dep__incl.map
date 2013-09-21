@@ -1,0 +1,31 @@
+<map id="/home/marek/2013.pro/mgeostat/GeoVariogramModel.h" name="/home/marek/2013.pro/mgeostat/GeoVariogramModel.h">
+<area shape="rect" id="node3" href="$d1/d09/GeoKriging_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoKriging.h" alt="" coords="1265,102,1423,149"/>
+<area shape="rect" id="node41" href="$dc/d78/GeoWidgetVariogram_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidgetVariogram.h" alt="" coords="1504,486,1723,533"/>
+<area shape="rect" id="node65" href="$de/dc1/GeoVariogramModel_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoVariogramModel.cpp" alt="" coords="1585,102,1812,149"/>
+<area shape="rect" id="node68" href="$d1/dbd/GraphWidget_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GraphWidget.cpp" alt="" coords="1836,102,2020,149"/>
+<area shape="rect" id="node5" href="$d6/d26/GeoKriging_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoKriging.cpp" alt="" coords="1257,198,1431,245"/>
+<area shape="rect" id="node7" href="$d6/dde/GeoModel_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoModel.h" alt="" coords="917,198,1072,245"/>
+<area shape="rect" id="node9" href="$d0/d98/GeoModel_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoModel.cpp" alt="" coords="543,294,711,341"/>
+<area shape="rect" id="node11" href="$d5/d59/GeoZasoby_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoZasoby.h" alt="" coords="913,294,1076,341"/>
+<area shape="rect" id="node16" href="$d1/dd7/GeoWidget_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget.h" alt="" coords="1088,390,1248,437"/>
+<area shape="rect" id="node46" href="$d5/d9e/GLWidget_8h.html" title="/home/marek/2013.pro\l/mgeostat/GLWidget.h" alt="" coords="308,294,460,341"/>
+<area shape="rect" id="node60" href="$d7/d45/GMainWin_8h.html" title="/home/marek/2013.pro\l/mgeostat/GMainWin.h" alt="" coords="735,294,889,341"/>
+<area shape="rect" id="node14" href="$d3/d69/GeoZasoby_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoZasoby.cpp" alt="" coords="888,390,1064,437"/>
+<area shape="rect" id="node18" href="$d1/d04/GeoWidget_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget.cpp" alt="" coords="1307,486,1480,533"/>
+<area shape="rect" id="node20" href="$d3/d0a/GeoWidget2D_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget2D.h" alt="" coords="421,486,597,533"/>
+<area shape="rect" id="node26" href="$d4/d5c/GeoWidget3D_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget3D.h" alt="" coords="621,486,797,533"/>
+<area shape="rect" id="node31" href="$d2/d89/GeoWidgetDane_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidgetDane.h" alt="" coords="872,486,1061,533"/>
+<area shape="rect" id="node36" href="$db/dcb/GeoWidgetRaport_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidgetRaport.h" alt="" coords="1085,486,1283,533"/>
+<area shape="rect" id="node22" href="$d3/d69/GeoWidget2D_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget2D.cpp" alt="" coords="361,582,551,629"/>
+<area shape="rect" id="node24" href="$d0/dc8/GMainWin_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GMainWin.cpp" alt="" coords="788,582,959,629"/>
+<area shape="rect" id="node28" href="$d7/d87/GeoWidget3D_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget3D.cpp" alt="" coords="575,582,764,629"/>
+<area shape="rect" id="node33" href="$df/d26/GeoWidgetDane_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidgetDane.cpp" alt="" coords="983,582,1188,629"/>
+<area shape="rect" id="node38" href="$da/d17/GeoWidgetRaport_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidgetRaport.cpp" alt="" coords="1212,582,1425,629"/>
+<area shape="rect" id="node43" href="$da/dac/GeoWidgetVariogram_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidgetVariogram.cpp" alt="" coords="1497,582,1729,629"/>
+<area shape="rect" id="node48" href="$dc/dc1/GLWidget2D_8h.html" title="/home/marek/2013.pro\l/mgeostat/GLWidget2D.h" alt="" coords="256,390,427,437"/>
+<area shape="rect" id="node53" href="$d8/dde/GLWidget3D_8h.html" title="/home/marek/2013.pro\l/mgeostat/GLWidget3D.h" alt="" coords="451,390,621,437"/>
+<area shape="rect" id="node58" href="$dd/d52/GLWidget_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GLWidget.cpp" alt="" coords="67,390,232,437"/>
+<area shape="rect" id="node51" href="$d8/d3a/GLWidget2D_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GLWidget2D.cpp" alt="" coords="5,486,189,533"/>
+<area shape="rect" id="node56" href="$d7/d3c/GLWidget3D_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GLWidget3D.cpp" alt="" coords="213,486,397,533"/>
+<area shape="rect" id="node63" href="$df/d0a/main_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/main.cpp" alt="" coords="645,390,797,437"/>
+</map>
