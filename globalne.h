@@ -169,6 +169,8 @@ public:
 ///
 inline ostream& operator << (ostream& os, const wektor3d &d)
 {
+    os.setf(ios::fixed);
+    os.precision(6);
     return os << d.x << " " << d.y << " " << d.z;
 }
 ///
@@ -446,6 +448,15 @@ struct Mset
     {
 
     }
+
+    int get_bloki(){return grid.x*grid.y*grid.z;}
+
+    double get_objetosc(){return get_bloki() * sp * sp * sp;}
+
+    double get_masa(){return get_objetosc() * gestosc;}
+
+    wektor3d get_wymiary(){return wektor3d(grid.x * sp, grid.y*sp,grid.z *sp);}
+
     wektor3i grid;
     wektor3d start;
     wektor3d start_grid;

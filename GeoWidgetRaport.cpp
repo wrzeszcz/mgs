@@ -20,6 +20,7 @@
 
 #include "GeoWidgetRaport.h"
 #include <QScrollBar>
+#include <QDateTime>
 //------------------------------------------------------------------------------
 GeoWidgetRaport::GeoWidgetRaport(GeoModel *ptrModel, QWidget *parent):
     GeoWidget(ptrModel, parent)
@@ -56,7 +57,32 @@ void GeoWidgetRaport::slot_update_model()
 //------------------------------------------------------------------------------
 void GeoWidgetRaport::slot_create_report()
 {
-    gModel->raport_add("nowy raport \n");
+    gModel->raport_clear();
+    Mset *ms = gModel->ptr_mset();
+    gModel->raport_add
+        (
+            "MGEOSTAT 0.1 2013 marek.wrzeszcz@hotmail.com\n"
+            "RAPORT =========================================================\n"
+            + QDateTime::currentDateTime().toString().toStdString() + "\n\n"
+            "DANE WEJŚCIOWE =================================================\n"
+            "dane: "+ ms->name + "\n"
+            "wiersze: " + cos2str(gModel->ptr_dane()->get_size()) + "\n"
+            "początek xyz:\t"+ cos2str(ms->start) + "\n"
+            "końcowe xyz:\t"+ cos2str(gModel->ptr_dane()->get_max_zakres())+"\n"
+            "min wartość:\t"+ cos2str(gModel->ptr_dane()->get_min_value())+"\n"
+            "max wartość:\t"+ cos2str(gModel->ptr_dane()->get_max_value())+"\n\n"
+            "MODEL ==========================================================\n"
+            "wymiary modelu: \t"+ cos2str(ms->grid) + "\n"
+            "początek xyz:\t"+ cos2str(ms->start) + "\n"
+            "wymiary xyz:\t"+ cos2str(ms->get_wymiary()) + "\n"
+            "ilość bloków: \t"+ cos2str(ms->get_bloki()) + "\n"
+            "objętość modelu: \t"+ cos2str(ms->get_objetosc()) + "\n"
+            "gęśtość przestrzenna: \t"+ cos2str(ms->gestosc) + "\n"
+            "masa modelu: \t"+ cos2str(ms->get_masa()) + "\n"
+
+                "min wartość: "+cos2str(ms->min_val)+"\n"
+                "max wartość: "+cos2str(ms->max_val)+"\n"
+        );
     reload_report();
 }
 //------------------------------------------------------------------------------
