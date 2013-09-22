@@ -98,7 +98,7 @@ void GeoCube::wypiszLok(ostream &os, bool tylkoXYZ, double limit)
     }
 }
 //------------------------------------------------------------------------------
-void GeoCube::wypiszGlo(ostream &os, bool tylkoXYZ, double limit)
+void GeoCube::wypiszGlo(ostream &os, bool tylkoXYZ, double limit, string sep)
 {
     os.setf(ios::fixed);
     os.precision(6);
@@ -109,9 +109,9 @@ void GeoCube::wypiszGlo(ostream &os, bool tylkoXYZ, double limit)
             for(int c=0; c<dim3i.z;++c)
                 if(cube [a][b][c].x>limit)
                 {
-                os << (a*spacing+start3d.x) << "\t "
-                     << (b*spacing+start3d.y) << "\t "
-                     << (c*spacing+start3d.z)  <<"t";
+                os << (a*spacing+start3d.x) << sep
+                     << (b*spacing+start3d.y) << sep
+                     << (c*spacing+start3d.z)  << sep;
                 }
      }
      else
@@ -119,16 +119,33 @@ void GeoCube::wypiszGlo(ostream &os, bool tylkoXYZ, double limit)
             for(int a=0; a<dim3i.x;++a)
                 for(int b=0; b<dim3i.y;++b)
                     for(int c=0; c<dim3i.z;++c)
-                        //if(cube [a][b][c].x)
+                        if(cube [a][b][c].x > limit)
                         {
-                        os << (a*spacing+start3d.x) <<"\t"
-                           << (b*spacing+start3d.y) <<"\t"
-                           << (c*spacing+start3d.z) << "\t"
-                           <<  cube [a][b][c].x << "\t"
-                           <<  cube [a][b][c].y << "\t"
+                        os << (a*spacing+start3d.x) << sep
+                           << (b*spacing+start3d.y) << sep
+                           << (c*spacing+start3d.z) << sep
+                           <<  cube [a][b][c].x << sep
+                           <<  cube [a][b][c].y << sep
                            <<  cube [a][b][c].z << endl;
                         }
     }
+}
+//------------------------------------------------------------------------------
+void GeoCube::wypiszGlo(ostream &os, string sep)
+{
+    os.setf(ios::fixed);
+    os.precision(6);
+    for(int a=0; a<dim3i.x;++a)
+        for(int b=0; b<dim3i.y;++b)
+            for(int c=0; c<dim3i.z;++c)
+                {
+                os << (a*spacing+start3d.x) << sep
+                   << (b*spacing+start3d.y) << sep
+                   << (c*spacing+start3d.z) << sep
+                   <<  cube [a][b][c].x << sep
+                   <<  cube [a][b][c].y << sep
+                   <<  cube [a][b][c].z << endl;
+                }
 }
 //------------------------------------------------------------------------------
 void GeoCube::wypiszGlo(vector<wektor3d> &vec, double limit, wektor3d ofs)

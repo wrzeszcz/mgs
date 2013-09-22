@@ -39,11 +39,12 @@ GeoWidgetVariogram::~GeoWidgetVariogram()
 //------------------------------------------------------------------------------
 void GeoWidgetVariogram::paintEvent(QPaintEvent *e)
 {
-
+    Q_UNUSED(e);
 }
 //------------------------------------------------------------------------------
 void GeoWidgetVariogram::mouseMoveEvent(QMouseEvent *e)
 {
+    Q_UNUSED(e);
 }
 //------------------------------------------------------------------------------
 void GeoWidgetVariogram::slot_update_dane()
@@ -176,8 +177,10 @@ void GeoWidgetVariogram::create()
 
     actCopyToSet=new QAction(QIcon(":/copy"), tr("Kopiuj do ustwień"),this);
     connect(actCopyToSet,SIGNAL(triggered()),this,SLOT(slot_kopuj_do()));
+
     act_przelicz=new QAction(QIcon(":/calc"), tr("Przelicz"),this);
     connect(act_przelicz,SIGNAL(triggered()),this,SLOT(slot_przelicz()));
+
     toolBar->addAction(act_przelicz);
     toolBar->addAction(actCopyToSet);
     toolBar->addAction(actZapiszVariogram);

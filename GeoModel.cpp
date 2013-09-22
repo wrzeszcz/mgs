@@ -221,7 +221,7 @@ void GeoModel::wypisz_model(string fileName, string sep)
     ofstream of(fileName.c_str());
     if(of.is_open())
     {
-        cube->wypiszGlo(of,false,-1);
+        cube->wypiszGlo(of, sep);
         of.close();
     }
     ofstream ofs((fileName+".set").c_str());
@@ -240,7 +240,7 @@ void GeoModel::wypisz_zasoby(string fileName, string sep)
     ofstream of(fileName.c_str());
     if(of.is_open())
     {
-        cube->wypiszGlo(of,false,modset->cutoff);
+        cube->wypiszGlo(of, false, modset->cutoff, sep);
         of.close();
     }
 }
@@ -295,7 +295,7 @@ wektor3d GeoModel::inv_dist(const wektor3d& pkt, double promien, float potega)
  {
      if(curVariogram) delete curVariogram;
      curVariogram = new GeoVariogram(dane,rozmiar_klasy);
-     raport_add(curVariogram->get_raport());
+     //raport_add(curVariogram->get_raport());
  }
 //------------------------------------------------------------------------------
  void GeoModel::calc_variogram(double rozmiar_klasy)

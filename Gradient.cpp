@@ -39,51 +39,53 @@ QColor Gradient::get_kolor(double position)
 
     switch(n)
     {
-       case 0:
+        case 0:
         {
-          R = 255;
-          G = t;
-          B = 0;
-          break;
+            R = 255;
+            G = t;
+            B = 0;
+            break;
         };
        case 1:
         {
-          R = 255 - t;
-          G = 255;
-          B = 0;
-           break;
+            R = 255 - t;
+            G = 255;
+            B = 0;
+            break;
         };
-
         case 2:
         {
-          R = 0;
-          G = 255;
-          B = t;
-           break;
+            R = 0;
+            G = 255;
+            B = t;
+            break;
         };
        case 3:
         {
-          R = 0;
-          G = 255 - t;
-          B = 255;
-           break;
+            R = 0;
+            G = 255 - t;
+            B = 255;
+            break;
         };
-
         case 4:
         {
-          R = t;
-          G = 0;
-          B = 255;
-           break;
+            R = t;
+            G = 0;
+            B = 255;
+            break;
         };
-       case 5: {
-          R = 255;
-          G = 0;
-          B = 255 - t;
-           break;
+       case 5:
+        {
+            R = 255;
+            G = 0;
+            B = 255 - t;
+            break;
         };
+        default:
+            break;
 
     }; // case
 
     return QColor(R,G,B);
 }
+//------------------------------------------------------------------------------

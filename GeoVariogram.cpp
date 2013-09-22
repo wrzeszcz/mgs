@@ -19,36 +19,32 @@
 *******************************************************************************/
 
 #include "GeoVariogram.h"
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 GeoVariogram::GeoVariogram(GeoDat *_dane, double rozmiar_klasy):
     dane(_dane),
     rozmiar(rozmiar_klasy)
 {
     recalc();
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 GeoVariogram::GeoVariogram(GeoDat *_dane):
     dane(_dane)
 {
     rozmiar = auto_rozmiar(dist_delta,100);
     recalc();
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoVariogram::recalc(double rozmiar_klasy)
 {
     rozmiar = rozmiar_klasy;
     recalc();
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoVariogram::recalc()
 {
     GeoMapa::iterator it = dane->get_begin();
     GeoMapa::iterator end = dane->get_end();
     GeoMapa::iterator jt;
-
-    wektor3d pocz = dane->get_min_zakres();
-    wektor3d koni = dane->get_max_zakres();
-    double max_dist = dist(pocz,koni);
 
     dist_delta.clear();
     dist_delta_klas.clear();
@@ -57,8 +53,8 @@ void GeoVariogram::recalc()
         for(jt = it ; jt != end; ++jt)
         {
             wektor3d tmp;
-            tmp.x = dist( it->first , jt->first );
-            tmp.y = (it->second.x - jt->second.x) * (it->second.x - jt->second.x);
+            tmp.x = dist( it->first, jt->first );
+            tmp.y = (it->second.x - jt->second.x)*(it->second.x - jt->second.x);
             if(tmp.y) dist_delta.push_back(tmp);
         }
 
@@ -70,7 +66,6 @@ void GeoVariogram::recalc()
     if(!limit)return;
     for(unsigned i=0;i <dist_delta.size();++i)
     {
-
         if(dist_delta[i].x < limit)
         {
             suma += dist_delta[i].y;
@@ -86,19 +81,19 @@ void GeoVariogram::recalc()
         }
     }
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoVariogram::set_dane(GeoDat *_dane, double rozmiar_klasy)
 {
     dane = _dane;
     rozmiar = rozmiar_klasy;
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoVariogram::set_dane(GeoDat *_dane)
 {
     dane = _dane;
     rozmiar = auto_rozmiar(dist_delta,100);
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 string GeoVariogram::get_raport()
 {
     stringstream ss;
@@ -110,7 +105,7 @@ string GeoVariogram::get_raport()
     }
     return ss.str();
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 void GeoVariogram::wypisz_dist_delta(string filename)
 {
     ofstream wy(filename.c_str());
@@ -126,10 +121,10 @@ void GeoVariogram::wypisz_dist_delta(string filename)
         wy.close();
     }
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 double GeoVariogram::auto_rozmiar(const std::vector<wektor3d> &delty, int ile)
 {
     return ( delty[delty.size()-1].x / ile );
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 

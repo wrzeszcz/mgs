@@ -92,12 +92,19 @@ public:
     ///
     void wypiszLok(ostream& os, bool tylkoXYZ, double limit);
     ///
+    /// \brief wypiszGlo - wypisuje dane (wsp. globalne) do strumienia
+    /// \param os - refrencja do strumienia
+    /// \param tylkoXYZ - bool - czy wypisac tylko wsp. XYZ
+    /// \param limit -
+    /// \param sep
+    ///
+    void wypiszGlo(ostream& os, bool tylkoXYZ, double limit, string sep = "\t");
+    ///
     /// \brief wypiszGlo
     /// \param os
-    /// \param tylkoXYZ
-    /// \param limit
+    /// \param sep
     ///
-    void wypiszGlo(ostream& os, bool tylkoXYZ, double limit);
+    void wypiszGlo(ostream& os, std::string sep = "\t");
     ///
     /// \brief wypiszGlo
     /// \param vec

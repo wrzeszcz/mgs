@@ -48,6 +48,7 @@ void GraphWidget::draw_funkction(Set_interpolacja par)
 //------------------------------------------------------------------------------
 void GraphWidget::paintEvent(QPaintEvent *e)
 {
+    Q_UNUSED(e);
     QPainter p(this);
     p.setRenderHint(QPainter::Antialiasing,true);
     QPen pen;
@@ -150,7 +151,7 @@ double GraphWidget::skalay()
 //------------------------------------------------------------------------------
 float GraphWidget::x_scale(double X)
 {
-   return float(X*skalax()+40);
+    return float(X*skalax()+40);
 }
 //------------------------------------------------------------------------------
 float GraphWidget::y_scale(double Y)

@@ -85,7 +85,7 @@ wektor3d GeoZasoby::przelicz_zasoby(double _minp, double _maxp)
 std::vector<geo3d> GeoZasoby::analiza_zasoby()
 {
     wynikAnalizy.clear();
-    for(int i =0; i<klasyZas.size(); ++i)
+    for(unsigned int i =0; i<klasyZas.size(); ++i)
     {
         geo3d wyn;
         wyn.xyz.x = i+1;
@@ -101,7 +101,7 @@ std::vector<geo3d> GeoZasoby::analiza_zasoby()
             {
                 blok = geoCube->getRekLok(wektor3i(a,b,c));
                 double v = blok.x;
-                for(int i =0; i<wynikAnalizy.size(); ++i)
+                for(unsigned int i =0; i<wynikAnalizy.size(); ++i)
                 {                     
                     if(v >= wynikAnalizy[i].xyz.y && v < wynikAnalizy[i].xyz.z)
                     {

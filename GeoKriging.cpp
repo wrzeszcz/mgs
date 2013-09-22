@@ -60,16 +60,20 @@ wektor3d GeoKriging::o_kriging(wektor3d pkt, std::vector<geo3d> &otoczenie)
 // vD wektor wartości variogramu dla odległości pkt i kolejnych elementów otoczenia
 // W szukany wektor wag
 
-    unsigned vOsize = otoczenie.size();
+    unsigned int vOsize = otoczenie.size();
+    unsigned int i = 0;
+    unsigned int j = 0;
 
-    if(!vOsize || vOsize < minOt)return wektor3d(NULLDAT,NULLDAT,NULLDAT);
-    if(otoczenie.size()>maxOt)
+    if(!vOsize || vOsize < (unsigned int)minOt)
+        return wektor3d(NULLDAT,NULLDAT,NULLDAT);
+
+    if(otoczenie.size() > (unsigned int)maxOt)
     {
         spr_otoczenie(pkt,otoczenie,maxOt);
         vOsize = otoczenie.size();
     }
 
-    unsigned mDsize = vOsize+1;
+    unsigned int mDsize = vOsize+1;
 
     TNT::Array2D<double> mC (mDsize,mDsize,1.0);
     TNT::Array1D<double> vD (mDsize,1.0);
@@ -78,14 +82,14 @@ wektor3d GeoKriging::o_kriging(wektor3d pkt, std::vector<geo3d> &otoczenie)
 
     //wypełniam macierz mC wartościami variogramu
     //macierz symetryczna
-    for (unsigned i = 0; i < vOsize; ++ i)
-            for (unsigned j = i; j < vOsize; ++ j)
+    for (i = 0; i < vOsize; ++ i)
+            for (j = i; j < vOsize; ++ j)
                 mC [i][j] = mC [j][i] = variogram_model.licz_vario(dist(otoczenie[i].xyz,otoczenie[j].xyz));
 
     mC[vOsize][vOsize] = 0.0;
 
     //wypełniam vektor vD wartościami variogramu dla odległości pkt interpolowanego
-    for (unsigned i = 0; i < vOsize; ++ i)
+    for (i = 0; i < vOsize; ++ i)
         vD [i] = variogram_model.licz_vario(dist(pkt,otoczenie[i].xyz));
     vD[vOsize]=1.0;
 
@@ -95,7 +99,7 @@ wektor3d GeoKriging::o_kriging(wektor3d pkt, std::vector<geo3d> &otoczenie)
     if (!Wagi.dim()) return wektor3d(NULLDAT,NULLDAT,NULLDAT);
     //--------------------------------------------------------------------------
 
-    for (unsigned i = 0; i < vOsize; ++ i)
+    for (i = 0; i < vOsize; ++ i)
     {
         wynik.x += Wagi[i] * otoczenie[i].dat.x; //liczę wynik
         wynik.y += Wagi[i] * vD[i];              //liczę błąd
