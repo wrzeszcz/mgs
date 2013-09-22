@@ -73,11 +73,12 @@ void GeoWidgetRaport::slot_create_report()
             "max wartość:\t"+ cos2str(gModel->ptr_dane()->get_max_value())+"\n\n"
             "MODEL ==========================================================\n"
             "wymiary modelu: \t"+ cos2str(ms->grid) + "\n"
+            "rozmiar bloku : \t"+ cos2str(ms->sp) + "\n"
             "początek xyz:\t"+ cos2str(ms->start) + "\n"
             "wymiary xyz:\t"+ cos2str(ms->get_wymiary()) + "\n"
             "ilość bloków: \t"+ cos2str(ms->get_bloki()) + "\n"
             "objętość modelu: \t"+ cos2str(ms->get_objetosc()) + "\n"
-            "gęśtość przestrzenna: \t"+ cos2str(ms->gestosc) + "\n"
+            "gęstość przestrzenna: \t"+ cos2str(ms->gestosc) + "\n"
             "masa modelu: \t"+ cos2str(ms->get_masa()) + "\n"
 
                 "min wartość: "+cos2str(ms->min_val)+"\n"
