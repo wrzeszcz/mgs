@@ -1,6 +1,9 @@
 var NAVTREEINDEX0 =
 {
 ".html":[2,0,0],
+".html":[2,0,5],
+".html":[2,0,6],
+".html":[2,0,7],
 ".html":[2,0,8],
 ".html":[2,0,9],
 ".html":[2,0,10],
@@ -43,9 +46,6 @@ var NAVTREEINDEX0 =
 ".html":[2,0,2],
 ".html":[2,0,3],
 ".html":[2,0,4],
-".html":[2,0,5],
-".html":[2,0,6],
-".html":[2,0,7],
 "annotated.html":[1,0],
 "classes.html":[1,1],
 "d0/d1b/GProDialog_8h.html":[2,0,36],
@@ -63,12 +63,13 @@ var NAVTREEINDEX0 =
 "d0/df3/classGeoCube.html#a0aa559d5470c5f48250f1e2e4e34d8fa":[1,0,6,2],
 "d0/df3/classGeoCube.html#a0ea9c0d71821cba59bd024376cc061ea":[1,0,6,1],
 "d0/df3/classGeoCube.html#a1197c97e9f641fee90a971b6fb53a919":[1,0,6,10],
-"d0/df3/classGeoCube.html#a1719fe756483e3eeee78eb589f073cb1":[1,0,6,23],
+"d0/df3/classGeoCube.html#a1719fe756483e3eeee78eb589f073cb1":[1,0,6,24],
 "d0/df3/classGeoCube.html#a2c8f12d1141ffc52e70493f3c5232c02":[1,0,6,5],
-"d0/df3/classGeoCube.html#a2e9e3526be46f92b56e5e4e7da821100":[1,0,6,22],
+"d0/df3/classGeoCube.html#a2e9e3526be46f92b56e5e4e7da821100":[1,0,6,23],
 "d0/df3/classGeoCube.html#a34e99a52d702e8c7994841d5e6b63e69":[1,0,6,4],
 "d0/df3/classGeoCube.html#a385007d1dd595a2d1ed83d4c0cebcb76":[1,0,6,7],
 "d0/df3/classGeoCube.html#a5c3e33368d05fd54b709fc150faf7408":[1,0,6,13],
+"d0/df3/classGeoCube.html#a6369fefed167152a1ef7f8a5cd0d0f40":[1,0,6,21],
 "d0/df3/classGeoCube.html#a652d5a7ce7e178f5539374055bc30d98":[1,0,6,14],
 "d0/df3/classGeoCube.html#a81d7bc3d0dbc6f42dd58bd4fcd5679a5":[1,0,6,8],
 "d0/df3/classGeoCube.html#a846b120bd6aa1ce1fd00b703483a9343":[1,0,6,3],
@@ -79,7 +80,7 @@ var NAVTREEINDEX0 =
 "d0/df3/classGeoCube.html#ab05e0231814c5cbf1ad5aea006266087":[1,0,6,9],
 "d0/df3/classGeoCube.html#ab066d0efc769fbe8e3620d14f4f6ef19":[1,0,6,18],
 "d0/df3/classGeoCube.html#ad0712b20bc40c6f9e9ee4e6e9052c701":[1,0,6,19],
-"d0/df3/classGeoCube.html#adc74b9231aff8d41b310a5c6eb4c7c19":[1,0,6,21],
+"d0/df3/classGeoCube.html#ae3c4b6a1f2ee8e0cc39a02650f18e97c":[1,0,6,22],
 "d0/df3/classGeoCube.html#af6f7db7e3c3d27c4379cc3892cad692e":[1,0,6,11],
 "d0/df3/classGeoCube.html#af90e13559f037042f6262130dd4ef67f":[1,0,6,15],
 "d0/df9/GeoDat_8cpp.html":[2,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "d5/d9e/GLWidget_8h.html":[2,0,28],
 "d6/d0e/structW3d__comp__y.html":[1,0,38],
 "d6/d0e/structW3d__comp__y.html#a541df2764f7d709173e5a4edf37ccad1":[1,0,38,0],
-"d6/d26/GeoKriging_8cpp.html":[2,0,4],
-"d6/d34/GeoDat_8h.html":[2,0,3]
+"d6/d26/GeoKriging_8cpp.html":[2,0,4]
 };

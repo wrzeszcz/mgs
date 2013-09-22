@@ -4,6 +4,7 @@ var searchData=
   ['rap',['RAP',['../dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3ae348ce52005ca0117f40574d1573accd',1,'GMainWin']]],
   ['raport',['RAPORT',['../dd/d90/classGMainWin.html#a2ff605add3bed95d9b65eabedc8b98f7ab163d58d4346106890c11ecf636d8ad3',1,'GMainWin']]],
   ['raport_5fadd',['raport_add',['../d6/d62/classGeoModel.html#a403b0502cd9eb67cab5222712d98f42e',1,'GeoModel']]],
+  ['raport_5fclear',['raport_clear',['../d6/d62/classGeoModel.html#ac34a21d70ee82c114627d94ac46b2149',1,'GeoModel']]],
   ['raport_5fget',['raport_get',['../d6/d62/classGeoModel.html#a33f0f33b7784a645dd984617cab163a5',1,'GeoModel']]],
   ['readme_2emd',['README.md',['../da/ddd/README_8md.html',1,'']]],
   ['recalc',['recalc',['../d6/d41/classGeoVariogram.html#aa141dd4e804a670310901f53cdfaaa8c',1,'GeoVariogram::recalc(double rozmiar_klasy)'],['../d6/d41/classGeoVariogram.html#aee8843838f32e0e55884417a923cee19',1,'GeoVariogram::recalc()']]],

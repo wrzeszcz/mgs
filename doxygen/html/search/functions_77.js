@@ -19,7 +19,7 @@ var searchData=
   ['wypisz_5fvario',['wypisz_vario',['../d6/d62/classGeoModel.html#a6807224d8f94c17d6e3d7aa8d5a69d67',1,'GeoModel']]],
   ['wypisz_5fxyz',['wypisz_xyz',['../d3/dac/classGeoDat.html#a2e2d5fb78740ce5bc93e3e0b70415d18',1,'GeoDat::wypisz_xyz(ostream &amp;os, string sep=&quot;\t&quot;)'],['../d3/dac/classGeoDat.html#a0b1f828a65354d4607580b5c79cd3bc1',1,'GeoDat::wypisz_xyz(vector&lt; wektor3d &gt; &amp;vec, wektor3d ofs)']]],
   ['wypisz_5fzasoby',['wypisz_zasoby',['../d6/d62/classGeoModel.html#a5d8c6807c968cb405de70036a109d10f',1,'GeoModel']]],
-  ['wypiszglo',['wypiszGlo',['../d0/df3/classGeoCube.html#adc74b9231aff8d41b310a5c6eb4c7c19',1,'GeoCube::wypiszGlo(ostream &amp;os, bool tylkoXYZ, double limit)'],['../d0/df3/classGeoCube.html#a2e9e3526be46f92b56e5e4e7da821100',1,'GeoCube::wypiszGlo(vector&lt; wektor3d &gt; &amp;vec, double limit, wektor3d ofset)']]],
+  ['wypiszglo',['wypiszGlo',['../d0/df3/classGeoCube.html#a6369fefed167152a1ef7f8a5cd0d0f40',1,'GeoCube::wypiszGlo(ostream &amp;os, bool tylkoXYZ, double limit, string sep=&quot;\t&quot;)'],['../d0/df3/classGeoCube.html#ae3c4b6a1f2ee8e0cc39a02650f18e97c',1,'GeoCube::wypiszGlo(ostream &amp;os, std::string sep=&quot;\t&quot;)'],['../d0/df3/classGeoCube.html#a2e9e3526be46f92b56e5e4e7da821100',1,'GeoCube::wypiszGlo(vector&lt; wektor3d &gt; &amp;vec, double limit, wektor3d ofset)']]],
   ['wypiszlok',['wypiszLok',['../d0/df3/classGeoCube.html#a1719fe756483e3eeee78eb589f073cb1',1,'GeoCube']]],
   ['wypiszxyzdane',['wypiszXYZdane',['../d6/d62/classGeoModel.html#a7baae0df60cbe81f122515bd5b1ed53b',1,'GeoModel']]],
   ['wypiszxyzmodel',['wypiszXYZmodel',['../d6/d62/classGeoModel.html#ab472bdbbe85d01814a85d523c6332869',1,'GeoModel']]]

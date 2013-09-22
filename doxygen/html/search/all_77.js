@@ -13,7 +13,7 @@ var searchData=
   ['wektor3i',['wektor3i',['../d1/de1/structwektor3i.html',1,'wektor3i'],['../d1/de1/structwektor3i.html#a676b8fc899bf818d257da94b25ab7b1b',1,'wektor3i::wektor3i()'],['../d1/de1/structwektor3i.html#aec14a26db4b3594ed5c97010ade9d732',1,'wektor3i::wektor3i(int xx, int yy, int zz)']]],
   ['wezel',['wezel',['../da/d07/structVset.html#aa81f900955ff606b8a3010e743a6ada9',1,'Vset']]],
   ['wheelevent',['wheelEvent',['../d4/dc5/classGLWidget.html#a5702a23f7cf42d05fe55a417d810a4b6',1,'GLWidget::wheelEvent()'],['../dd/d6e/classGLWidget2D.html#a77f64d70d7edd2fff28e59a6a7844d80',1,'GLWidget2D::wheelEvent()'],['../d1/d2f/classGLWidget3D.html#a7872b81d6ffd2f73a32f1ed1eb2a8d0f',1,'GLWidget3D::wheelEvent()']]],
-  ['widok',['widok',['../d4/dc5/classGLWidget.html#a3616f27b345ad55b123900cefbc85218',1,'GLWidget::widok()'],['../dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3a16865ae4cbad24dcfe745a6ab2a37b78',1,'GMainWin::WIDOK()']]],
+  ['widok',['WIDOK',['../dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3a16865ae4cbad24dcfe745a6ab2a37b78',1,'GMainWin::WIDOK()'],['../d4/dc5/classGLWidget.html#a3616f27b345ad55b123900cefbc85218',1,'GLWidget::widok()']]],
   ['win2cube',['Win2cube',['../d7/d7a/structWin2cube.html',1,'']]],
   ['win_5fsize',['win_size',['../d4/dc5/classGLWidget.html#a26d9c0a16edd75c78a66e74dafff5aef',1,'GLWidget']]],
   ['wyczysc',['wyczysc',['../d0/df3/classGeoCube.html#a0181f9866cf74d00f869cf2920f40d63',1,'GeoCube']]],
@@ -28,7 +28,7 @@ var searchData=
   ['wypisz_5fvario',['wypisz_vario',['../d6/d62/classGeoModel.html#a6807224d8f94c17d6e3d7aa8d5a69d67',1,'GeoModel']]],
   ['wypisz_5fxyz',['wypisz_xyz',['../d3/dac/classGeoDat.html#a2e2d5fb78740ce5bc93e3e0b70415d18',1,'GeoDat::wypisz_xyz(ostream &amp;os, string sep=&quot;\t&quot;)'],['../d3/dac/classGeoDat.html#a0b1f828a65354d4607580b5c79cd3bc1',1,'GeoDat::wypisz_xyz(vector&lt; wektor3d &gt; &amp;vec, wektor3d ofs)']]],
   ['wypisz_5fzasoby',['wypisz_zasoby',['../d6/d62/classGeoModel.html#a5d8c6807c968cb405de70036a109d10f',1,'GeoModel']]],
-  ['wypiszglo',['wypiszGlo',['../d0/df3/classGeoCube.html#adc74b9231aff8d41b310a5c6eb4c7c19',1,'GeoCube::wypiszGlo(ostream &amp;os, bool tylkoXYZ, double limit)'],['../d0/df3/classGeoCube.html#a2e9e3526be46f92b56e5e4e7da821100',1,'GeoCube::wypiszGlo(vector&lt; wektor3d &gt; &amp;vec, double limit, wektor3d ofset)']]],
+  ['wypiszglo',['wypiszGlo',['../d0/df3/classGeoCube.html#a6369fefed167152a1ef7f8a5cd0d0f40',1,'GeoCube::wypiszGlo(ostream &amp;os, bool tylkoXYZ, double limit, string sep=&quot;\t&quot;)'],['../d0/df3/classGeoCube.html#ae3c4b6a1f2ee8e0cc39a02650f18e97c',1,'GeoCube::wypiszGlo(ostream &amp;os, std::string sep=&quot;\t&quot;)'],['../d0/df3/classGeoCube.html#a2e9e3526be46f92b56e5e4e7da821100',1,'GeoCube::wypiszGlo(vector&lt; wektor3d &gt; &amp;vec, double limit, wektor3d ofset)']]],
   ['wypiszlok',['wypiszLok',['../d0/df3/classGeoCube.html#a1719fe756483e3eeee78eb589f073cb1',1,'GeoCube']]],
   ['wypiszxyzdane',['wypiszXYZdane',['../d6/d62/classGeoModel.html#a7baae0df60cbe81f122515bd5b1ed53b',1,'GeoModel']]],
   ['wypiszxyzmodel',['wypiszXYZmodel',['../d6/d62/classGeoModel.html#ab472bdbbe85d01814a85d523c6332869',1,'GeoModel']]]

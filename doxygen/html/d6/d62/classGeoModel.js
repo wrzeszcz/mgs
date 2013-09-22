@@ -21,6 +21,7 @@ var classGeoModel =
     [ "ptr_mset", "d6/d62/classGeoModel.html#a719ed3eb80ff41b1f21106cb17aa78bf", null ],
     [ "ptr_vario", "d6/d62/classGeoModel.html#ac0546a9a1a7322e361a429952c7594f1", null ],
     [ "raport_add", "d6/d62/classGeoModel.html#a403b0502cd9eb67cab5222712d98f42e", null ],
+    [ "raport_clear", "d6/d62/classGeoModel.html#ac34a21d70ee82c114627d94ac46b2149", null ],
     [ "raport_get", "d6/d62/classGeoModel.html#a33f0f33b7784a645dd984617cab163a5", null ],
     [ "resetModel", "d6/d62/classGeoModel.html#aa3c3a312b2066beffd1e1a17ec03ce03", null ],
     [ "set_iset", "d6/d62/classGeoModel.html#a8d95160bd59e62cdd144247c84fb8fab", null ],

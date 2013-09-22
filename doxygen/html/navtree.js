@@ -31,8 +31,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"d6/d34/GeoDat_8h.html#a72c7b2c70ad3b51dcf5e14bfbbc17be7",
-"de/d72/structSet__interpolacja.html#a8a6b9fdee0807d5433dfcdadc8535757"
+"d6/d34/GeoDat_8h.html",
+"de/d72/structSet__interpolacja.html#a72f85659d6652b51b3fb05970a9f5d1a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
