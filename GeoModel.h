@@ -197,6 +197,10 @@ public:
     ///
     void raport_add(string str){strRaport.insert(0,str);}
     ///
+    /// \brief raport_clear
+    ///
+    void raport_clear(){strRaport.clear();}
+    ///
     /// \brief raport_get
     /// \return
     ///

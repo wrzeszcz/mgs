@@ -67,6 +67,10 @@ private:
     ///
     void create_text_edit();
     ///
+    /// \brief reload_report
+    ///
+    void reload_report();
+    ///
     /// \brief textEdit
     ///
     QTextEdit *textEdit;

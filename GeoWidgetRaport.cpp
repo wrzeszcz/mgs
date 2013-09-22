@@ -46,31 +46,18 @@ GeoWidgetRaport::~GeoWidgetRaport()
 //------------------------------------------------------------------------------
 void GeoWidgetRaport::slot_update_dane()
 {
-    textEdit->clear();
-    textEdit->append(QString::fromStdString(gModel->raport_get()));
-    textEdit -> moveCursor (QTextCursor::Start) ;
-    textEdit -> ensureCursorVisible() ;
-
-
+    reload_report();
 }
 //------------------------------------------------------------------------------
 void GeoWidgetRaport::slot_update_model()
 {
-    textEdit->clear();
-    textEdit->append(QString::fromStdString(gModel->raport_get()));
-    textEdit -> moveCursor (QTextCursor::Start) ;
-    textEdit -> ensureCursorVisible() ;
+    reload_report();
 }
 //------------------------------------------------------------------------------
 void GeoWidgetRaport::slot_create_report()
 {
-    textEdit->clear();
     gModel->raport_add("nowy raport \n");
-    textEdit->append(QString::fromStdString(gModel->raport_get()));
-    textEdit -> moveCursor (QTextCursor::Start) ;
-    textEdit -> ensureCursorVisible() ;
-    //textEdit->scroll();
-    //to do
+    reload_report();
 }
 //------------------------------------------------------------------------------
 void GeoWidgetRaport::create_text_edit()
@@ -81,5 +68,13 @@ void GeoWidgetRaport::create_text_edit()
     actCreateRaport= new QAction(QIcon(":/raport"),tr("Przygotuj raport"),this);
     toolBar->addAction(actZapiszRaport);
     toolBar->addAction(actCreateRaport);
+}
+//------------------------------------------------------------------------------
+void GeoWidgetRaport::reload_report()
+{
+    textEdit -> clear();
+    textEdit -> append(QString::fromStdString(gModel->raport_get()));
+    textEdit -> moveCursor (QTextCursor::Start) ;
+    textEdit -> ensureCursorVisible() ;
 }
 //------------------------------------------------------------------------------

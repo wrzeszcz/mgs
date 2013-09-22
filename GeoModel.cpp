@@ -63,7 +63,7 @@ void GeoModel::wczytaj_dane(string fileName, string sep, bool nowe, bool sred)
     modset->cutoff = dane->get_min_value().x+
             0.5 * (dane->get_max_value().x-dane->get_min_value().x);
 
-    this->raport_add("wczytany plik "+fileName);
+    this->raport_add("wczytany plik "+ fileName + "\n");
 }
 //------------------------------------------------------------------------------
 void GeoModel::wczytaj_proj(Mset _modset, Set_interpolacja _interp)
