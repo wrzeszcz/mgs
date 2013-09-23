@@ -180,6 +180,32 @@ std::vector<geo3d> GeoModel::analizaZasoby(int _ileKlas)
     return analiza;
 }
 //------------------------------------------------------------------------------
+string GeoModel::analizaZasobyReport(int _ileKlas)
+{
+    GeoZasoby gZasoby(modset,cube);
+    vector<geo3d> analiza = gZasoby.analiza_zasoby(_ileKlas);
+    wektor3d suma;
+    string aa;
+    for(vector<geo3d>::iterator it = analiza.begin(); it!=analiza.end();++it)
+        {
+           aa += cos2str(it->xyz.x) + " ";
+           aa += cos2str(it->xyz.y) + " - ";
+           aa += cos2str(it->xyz.z) + "\t";
+           aa += cos2str(it->dat.x) + "\t";
+           aa += cos2str(it->dat.y) + "\t";
+           aa += cos2str(it->dat.z) + "\t";
+           aa += "\n";
+           suma.x += it->dat.x;
+           suma.y += it->dat.y;
+           suma.z += it->dat.z;
+
+        }
+    aa += cos2str(suma.x) + "\t";
+    aa += cos2str(suma.y) + "\t";
+    aa += cos2str(suma.z) + "\t";
+    return aa;
+}
+//------------------------------------------------------------------------------
 void GeoModel::wypiszXYZdane(ostream &os)
 {
     dane->wypisz_xyz(os);
@@ -286,9 +312,9 @@ wektor3d GeoModel::inv_dist(const wektor3d& pkt, double promien, float potega)
         }
     }
     if (suma2)
-    return wektor3d( suma1/suma2, 2.5, waga);
+    return wektor3d( suma1/suma2, 0.0, waga);
     else
-    return wektor3d( 0.0, 2.5, 0.0);
+    return wektor3d( NULLDAT, NULLDAT, NULLDAT);
 }
 //------------------------------------------------------------------------------
  void GeoModel::nowy_variogram(double rozmiar_klasy)

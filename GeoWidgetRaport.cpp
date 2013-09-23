@@ -80,9 +80,15 @@ void GeoWidgetRaport::slot_create_report()
             "objętość modelu: \t"+ cos2str(ms->get_objetosc()) + "\n"
             "gęstość przestrzenna: \t"+ cos2str(ms->gestosc) + "\n"
             "masa modelu: \t"+ cos2str(ms->get_masa()) + "\n"
+            "min wartość: \t"+cos2str(ms->min_val)+"\n"
+            "max wartość: \t"+cos2str(ms->max_val)+"\n\n"
+            "ZASOBY =========================================================\n"
+            "cut-off: \t"+ cos2str(ms->cutoff) + "\n"
+            "zasoby: \t"+ cos2str(gModel->policzZasoby()) + "\n"
 
-                "min wartość: "+cos2str(ms->min_val)+"\n"
-                "max wartość: "+cos2str(ms->max_val)+"\n"
+                + gModel->analizaZasobyReport(10) +"\n"
+            "min wartość: "+cos2str(ms->min_val)+"\n"
+            "max wartość: "+cos2str(ms->max_val)+"\n"
         );
     reload_report();
 }

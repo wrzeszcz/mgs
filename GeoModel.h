@@ -187,6 +187,12 @@ public:
     ///
     std::vector<geo3d> analizaZasoby(int _ileKlas);
     ///
+    /// \brief analizaZasobyReport
+    /// \param _ileKlas
+    /// \return
+    ///
+    std::string analizaZasobyReport(int _ileKlas);
+    ///
     /// \brief setGeoSet
     /// \param gset
     ///

@@ -486,27 +486,8 @@ void GMainWin::slot_zasoby()
 //------------------------------------------------------------------------------
 void GMainWin::slot_analiza()
 {
-    vector<geo3d> analiza = curModel->analizaZasoby(10);
-    wektor3d suma;
-    QString aa;
-    for(vector<geo3d>::iterator it = analiza.begin(); it!=analiza.end();++it)
-        {
-           aa += QString::number(it->xyz.x) + " ";
-           aa += QString::number(it->xyz.y,'f',4) + " - ";
-           aa += QString::number(it->xyz.z, 'f', 4) + "\t";
-           aa += QString::number(it->dat.x) + "\t";
-           aa += QString::number(it->dat.y) + "\t";
-           aa += QString::number(it->dat.z) + "\t";
-           aa += "\n";
-           suma.x += it->dat.x;
-           suma.y += it->dat.y;
-           suma.z += it->dat.z;
-
-        }
-    aa += QString::number(suma.x) + "\t";
-    aa += QString::number(suma.y) + "\t";
-    aa += QString::number(suma.z) + "\t";
-    QMessageBox::information(this,"ANALIZA",aa);
+    QString a = QString::fromStdString(curModel->analizaZasobyReport(10));
+    QMessageBox::information(this,"ANALIZA",a);
 }
 //------------------------------------------------------------------------------
 void GMainWin::slot_tool_send()
