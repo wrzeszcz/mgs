@@ -81,7 +81,7 @@ RESOURCES += \
     geostat.qrc
 
 LIBS += -L/usr/local/lib -lGLU
-LIBS += -lglut
+#LIBS += -lglut
 
 
 
