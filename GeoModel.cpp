@@ -49,7 +49,7 @@ void GeoModel::wczytaj_dane(string fileName, string sep, bool nowe, bool sred)
 
     double d = std::max(w.x, w.y);
     d =std::max(d, w.z);
-    double s= std::ceil(d/50);
+    double s= ceil(d/50);
 
     modset->wym =w;
     modset->name = fileName;

@@ -21,8 +21,7 @@
 #ifndef GEOKRIGING_H
 #define GEOKRIGING_H
 
-#include "TNT/tnt.h"
-#include "TNT/jama_lu.h"
+
 #include "globalne.h"
 #include "GeoVariogramModel.h"
 #include <vector>

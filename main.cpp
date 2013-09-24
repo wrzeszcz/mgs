@@ -21,6 +21,7 @@
 #include <QTextCodec>
 #include <QMessageBox>
 #include "GMainWin.h"
+#include <iostream>
 //------------------------------------------------------------------------------
 ///
 /// \brief The geoApplication class

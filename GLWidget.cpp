@@ -21,16 +21,16 @@
 #include "GLWidget.h"
 
 GLWidget::GLWidget(QWidget *parent) :
-    model(NULL),
-    QGLWidget(parent)
+    QGLWidget(parent),
+    model(NULL)
 {
 
 }
 
 GLWidget::GLWidget(GeoModel *_model, Vset _widok, QWidget *parent):
+    QGLWidget(parent),
     model(_model),
-    widok(_widok),
-    QGLWidget(parent)
+    widok(_widok)
 {
     update_model();
 }
@@ -78,12 +78,12 @@ void GLWidget::mousePressEvent(QMouseEvent *event)
 
 void GLWidget::mouseMoveEvent(QMouseEvent *event)
 {
-
+    Q_UNUSED(event);
 }
 
 void GLWidget::wheelEvent(QWheelEvent *event)
 {
-
+    Q_UNUSED(event);
 }
 
 void GLWidget::slot_set_widok(Vset w)

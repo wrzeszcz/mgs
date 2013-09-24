@@ -21,18 +21,19 @@
 #include "GeoWidget.h"
 
 GeoWidget::GeoWidget(QWidget *parent) :
-    gModel(NULL),
-    QWidget(parent)
+    QWidget(parent),
+    gModel(NULL)
 {
     create_widget();
 }
 
 GeoWidget::GeoWidget(GeoModel *ptrModel, QWidget *parent):
-    gModel(ptrModel),
-    QWidget(parent)
+    QWidget(parent),
+    gModel(ptrModel)
 {
     create_widget();
 }
+
 GeoWidget::~GeoWidget()
 {
 

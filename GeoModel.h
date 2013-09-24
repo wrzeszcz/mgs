@@ -26,6 +26,7 @@
 #include "GeoVariogram.h"
 #include "GeoDat.h"
 #include "GeoZasoby.h"
+#include <math.h>
 
 using namespace std;
 
