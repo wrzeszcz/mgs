@@ -521,6 +521,7 @@ inline istream& operator >> (istream& is, Mset& d)
         case 3: d.jednostki = KILOGRAMY; break;
         default: break;
     }
+
     return is;
 }
 //------------------------------------------------------------------------------

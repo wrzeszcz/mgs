@@ -83,8 +83,9 @@ void GeoWidgetRaport::slot_create_report()
             "min wartość: \t"+cos2str(ms->min_val)+"\n"
             "max wartość: \t"+cos2str(ms->max_val)+"\n\n"
             "ZASOBY =========================================================\n"
-            "cut-off: \t"+ cos2str(ms->cutoff) + "\n"
-            "zasoby: \t"+ cos2str(gModel->policzZasoby()) + "\n"
+            "dla cut-off: \t"+ cos2str(ms->cutoff) + "\n"
+            "zasoby wynosza: \t"+ cos2str(gModel->policzZasoby()) + "\n"
+            "dla "
 
                 + gModel->analizaZasobyReport(10) +"\n"
             "min wartość: "+cos2str(ms->min_val)+"\n"

@@ -66,23 +66,30 @@ void GeoModel::wczytaj_dane(string fileName, string sep, bool nowe, bool sred)
     this->raport_add("wczytany plik "+ fileName + "\n");
 }
 //------------------------------------------------------------------------------
-void GeoModel::wczytaj_proj(Mset _modset, Set_interpolacja _interp)
+bool GeoModel::wczytaj_proj(Mset* _modset, Set_interpolacja _interp)
 {
+
+    dane->usun();
+    if(dane->wczytaj_plik(modset->name))
+        nowy_variogram(last_set.rozmiar_klasy);
+    else return false;
+
     delete modset;
-    delete dane;
     delete cube;
     if (curVariogram)
     {
         delete curVariogram;
         curVariogram = NULL;
     }
-    modset = new Mset();
-    *modset=_modset;
+
+    modset =_modset;
     dane = new GeoDat; 
-    cube = new GeoCube(modset->start,modset->sp,modset->grid);
-    dane->wczytaj_plik(modset->name);
     last_set = _interp;
-    nowy_variogram(last_set.rozmiar_klasy);
+    cube = new GeoCube(modset->start,modset->sp,modset->grid);
+
+        return true;
+
+
 }
 //------------------------------------------------------------------------------
 void GeoModel::updateModel()

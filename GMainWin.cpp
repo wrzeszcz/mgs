@@ -353,18 +353,26 @@ void GMainWin::slot_open_proj()
         ifstream we(fileName.toStdString().c_str());
         if(we.is_open())
         {
-            Mset m;
+            Mset *m = new Mset;
             Set_interpolacja s;
-            if(we >> m)
+            if(we >> *m)
             {
-                curModel->wczytaj_proj(m, s);
-                we.close();
-                proSet->slotUpdateSet();
-                projFile = fileName;
-                setWindowTitle(APPNAME + " - " + projFile);
-                emit signal_zmiana_danych();
+                if(curModel->wczytaj_proj(m, s))
+                {
+                    proSet->slotUpdateSet();
+                    projFile = fileName;
+                    setWindowTitle(APPNAME + " - " + projFile);
+                    emit signal_zmiana_danych();
+                }
+                else
+                {
+
+                    QMessageBox::information(this,"Brak pliku",QString::fromStdString(m->name));
+                }
             }
             else  QMessageBox::information(this,"Błąd w pliku",fileName);
+
+            we.close();
         }
     }
 }
