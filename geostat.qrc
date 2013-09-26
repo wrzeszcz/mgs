@@ -29,5 +29,7 @@
         <file alias="email">img/email.png</file>
         <file alias="pdf">img/pdf.png</file>
         <file alias="analiza">img/analiza.png</file>
+        <file>img/ano1.ico</file>
+        <file alias="ano">img/ano2.ico</file>
     </qresource>
 </RCC>
