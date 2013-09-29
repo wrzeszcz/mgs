@@ -160,7 +160,7 @@ void GMainWin::createActions()
     actionZapiszZasoby = new QAction(QIcon(":/save"), tr("Zapisz zasoby"),this);
     connect(actionZapiszZasoby,SIGNAL(triggered()), this, SLOT(slot_zapis_zasoby()));
 
-    actionZapiszRaport = new QAction(QIcon(":/sawe"), tr("Zapisz raport"),this);
+    actionZapiszRaport = new QAction(QIcon(":/save"), tr("Zapisz raport"),this);
     connect(actionZapiszRaport,SIGNAL(triggered()), this, SLOT(slot_zapis_raport()));
 
     //--------------------------------------------------------------------------
