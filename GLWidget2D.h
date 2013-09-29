@@ -95,6 +95,16 @@ private:
     ///
     void RenderString(float x, float y, QColor rgb, QString text);
     ///
+    /// \brief RenderString
+    /// \param x
+    /// \param y
+    /// \param w
+    /// \param h
+    /// \param rgb
+    /// \param text
+    ///
+    void RenderString(int x, int y,int w, int h, QColor rgb, QString text);
+    ///
     /// \brief paintPkt
     /// \param pkt
     /// \param size

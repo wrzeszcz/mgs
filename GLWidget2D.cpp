@@ -67,7 +67,7 @@ void GLWidget2D::paintGL()
         glColor3f(0.0,1.0,0.0);
         paintPkt(curPoint-sett->wym/2,5);
 
-        RenderString(0.0f,0.0f,Qt::red, QString::number(Z));
+
 
         glLineWidth(2);
         if(widok.zakres)
@@ -79,6 +79,8 @@ void GLWidget2D::paintGL()
         {
             paint_model();
         }
+
+         RenderString(0,0,Qt::red, QString::number(Z));
 
     glPopMatrix();
     glLoadIdentity();
@@ -181,7 +183,24 @@ void GLWidget2D::paint_zakres()
 void GLWidget2D::RenderString(float x, float y, QColor rgb, QString text)
 {
     glColor3f(rgb.redF(), rgb.greenF(), rgb.blueF());
-    renderText(x,y,0, text, QFont("Helvetica [Cronyx]", 20, QFont::Bold));
+    renderText(x,y,0, text, QFont("Helvetica [Cronyx]", 16, QFont::Bold));
+}
+//------------------------------------------------------------------------------
+void GLWidget2D::RenderString(int x,int y,int w,int h,QColor rgb,QString text)
+{
+    glPushMatrix();
+
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glViewport(x,y,w,h);
+
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+
+    glColor3f(rgb.redF(), rgb.greenF(), rgb.blueF());
+    renderText(0,0,0, text, QFont("Helvetica [Cronyx]", 20, QFont::Bold));
+
+    glPopMatrix();
 }
 //------------------------------------------------------------------------------
 void GLWidget2D::paintPkt(wektor3d pkt, float roz)

@@ -56,7 +56,7 @@ public:
     /// \param _modset
     /// \param _intep
     ///
-    bool wczytaj_proj(Mset* _modset, Set_interpolacja _intep);
+    bool wczytaj_proj(Mset _modset, Set_interpolacja _intep);
     ///
     /// \brief wypiszXYZdane
     /// \param os

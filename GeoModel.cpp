@@ -19,6 +19,7 @@
 *******************************************************************************/
 
 #include "GeoModel.h"
+#include <iostream>
 //------------------------------------------------------------------------------
 GeoModel::GeoModel()
 {
@@ -66,30 +67,22 @@ void GeoModel::wczytaj_dane(string fileName, string sep, bool nowe, bool sred)
     this->raport_add("wczytany plik "+ fileName + "\n");
 }
 //------------------------------------------------------------------------------
-bool GeoModel::wczytaj_proj(Mset* _modset, Set_interpolacja _interp)
+bool GeoModel::wczytaj_proj(Mset _modset, Set_interpolacja _interp)
 {
+    if(!dane) dane = new GeoDat();
+    else dane->usun();
 
-    dane->usun();
-    if(dane->wczytaj_plik(modset->name))
-        nowy_variogram(last_set.rozmiar_klasy);
-    else return false;
+    if(!dane->wczytaj_plik(_modset.name)) return false;
 
-    delete modset;
-    delete cube;
-    if (curVariogram)
-    {
-        delete curVariogram;
-        curVariogram = NULL;
-    }
+    *modset = _modset;
 
-    modset =_modset;
-    dane = new GeoDat; 
     last_set = _interp;
-    cube = new GeoCube(modset->start,modset->sp,modset->grid);
 
-        return true;
+    updateModel();
 
+    nowy_variogram(last_set.rozmiar_klasy);
 
+    return true;
 }
 //------------------------------------------------------------------------------
 void GeoModel::updateModel()
@@ -100,9 +93,9 @@ void GeoModel::updateModel()
 //------------------------------------------------------------------------------
 void GeoModel::resetModel()
 {
-    delete modset;
-    delete dane;
-    delete cube;
+    if (modset) delete modset;
+    if (dane) delete dane;
+    if (cube) delete cube;
     if (curVariogram) delete curVariogram;
     modset = new Mset();
     dane = new GeoDat;
@@ -328,7 +321,6 @@ wektor3d GeoModel::inv_dist(const wektor3d& pkt, double promien, float potega)
  {
      if(curVariogram) delete curVariogram;
      curVariogram = new GeoVariogram(dane,rozmiar_klasy);
-     //raport_add(curVariogram->get_raport());
  }
 //------------------------------------------------------------------------------
  void GeoModel::calc_variogram(double rozmiar_klasy)

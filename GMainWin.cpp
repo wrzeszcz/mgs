@@ -73,7 +73,7 @@ GMainWin::GMainWin(QWidget *parent) :
 //------------------------------------------------------------------------------
 GMainWin::~GMainWin()
 {
-    
+    if(curModel) delete curModel;
 }
 //------------------------------------------------------------------------------
 void GMainWin::closeEvent(QCloseEvent *event)
@@ -353,9 +353,9 @@ void GMainWin::slot_open_proj()
         ifstream we(fileName.toStdString().c_str());
         if(we.is_open())
         {
-            Mset *m = new Mset;
+            Mset m;
             Set_interpolacja s;
-            if(we >> *m)
+            if(we >> m)
             {
                 if(curModel->wczytaj_proj(m, s))
                 {
@@ -367,7 +367,7 @@ void GMainWin::slot_open_proj()
                 else
                 {
 
-                    QMessageBox::information(this,"Brak pliku",QString::fromStdString(m->name));
+                    QMessageBox::information(this,"Brak pliku",QString::fromStdString(m.name));
                 }
             }
             else  QMessageBox::information(this,"Błąd w pliku",fileName);
