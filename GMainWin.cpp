@@ -205,8 +205,8 @@ void GMainWin::createActions()
     actTile->setStatusTip(tr("Tile"));
     connect(actZamkAll,SIGNAL(triggered()),mdiArea,SLOT(tileSubWindows()));
 
-    actCascade = new QAction(tr("Cascade"), this);
-    actCascade->setStatusTip(tr("Cascade"));
+    actCascade = new QAction(tr("Kaskada"), this);
+    actCascade->setStatusTip(tr("Kaskada"));
     connect(actCascade,SIGNAL(triggered()),mdiArea,SLOT(cascadeSubWindows()));
 
     actNext = new QAction(tr("Kolejne okno"), this);
