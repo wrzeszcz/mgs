@@ -1,11 +1,12 @@
 var structMset =
 [
     [ "Mset", "de/def/structMset.html#a431c8dd5357b5c9901802b3bf8b448b2", null ],
-    [ "Mset", "de/def/structMset.html#a54c031b0ca320b5e6221cc0692d57a0f", null ],
+    [ "Mset", "de/def/structMset.html#abbb359c62f3f0051a725b51d41bcafee", null ],
     [ "get_bloki", "de/def/structMset.html#ac64a1903287f9ecce8f753eda05945c4", null ],
     [ "get_masa", "de/def/structMset.html#a6049b73add36f7a2709dcf2e527778c5", null ],
     [ "get_objetosc", "de/def/structMset.html#a88cb7fc98d0162678c8f5c6d9e9e59db", null ],
     [ "get_wymiary", "de/def/structMset.html#a33348721278b37ef774d992b340b387c", null ],
+    [ "algorytm", "de/def/structMset.html#a9409faf46e6069af425d165e0be3cb97", null ],
     [ "cutoff", "de/def/structMset.html#a21847743ce4061927c1e6e51af82293b", null ],
     [ "flag", "de/def/structMset.html#a6f6928494c0e94c939def04cc1b13db1", null ],
     [ "gestosc", "de/def/structMset.html#aaf265d04da58a881799fbdebbfc89e14", null ],
