@@ -106,24 +106,18 @@ void GeoModel::resetModel()
 //------------------------------------------------------------------------------
 bool GeoModel::interpolacja(Set_interpolacja ust, METODA metod)
 {
-    if(metod == INVDIST)
-    {
-        calc_invdist(ust);
-        return true;
-    }
-    else if (metod == OKRIGING)
-    {
-        calc_okriging(ust);
-        return true;
-    }
+    if (metod == INVDIST) calc_invdist(ust);
+    else if (metod == OKRIGING) calc_okriging(ust);
     else return false;
+    return true;
 }
 //------------------------------------------------------------------------------
 void GeoModel::calc_invdist(Set_interpolacja ustaw)
-{
+{  
     cube->reset_min_max();
     progres.pmax = cube->size();
     progres.pmin = progres.pcur = 0;
+
     for(int a=0; a<cube->size_x();++a)
         for(int b=0; b<cube->size_y();++b)
             for(int c=0; c<cube->size_z();++c)
@@ -134,20 +128,20 @@ void GeoModel::calc_invdist(Set_interpolacja ustaw)
                 progres.pcur=progres.pcur+1;
             }
     last_set=ustaw;
-    this->raport_add("\nodwrotne odległości ");
     modset->min_val=cube->get_min();
     modset->max_val=cube->get_max();
-    this->raport_add(cos2str(cube->get_min())+"\n");
-    this->raport_add(cos2str(cube->get_max())+"\n");
+    modset->algorytm = INVDIST;
 }
 //------------------------------------------------------------------------------
 void GeoModel::calc_okriging(Set_interpolacja ustaw)
-{
+{   
     cube->reset_min_max();
-    GeoKriging gek(ustaw);
-    std::vector<geo3d> otocz;
     progres.pmax = cube->size();
     progres.pmin = progres.pcur = 0;
+
+    GeoKriging gek(ustaw);
+    std::vector<geo3d> otocz;
+
     for(int a=0; a<cube->size_x();++a)
         for(int b=0; b<cube->size_y();++b)
             for(int c=0; c<cube->size_z();++c)
@@ -157,14 +151,10 @@ void GeoModel::calc_okriging(Set_interpolacja ustaw)
                cube->setRekLok(wektor3i(a,b,c),tmp);
                progres.pcur = progres.pcur+1;
             }
-    last_set = ustaw;
-    this->raport_add("\nkriging ");
-    this->raport_add(last_set.toString());
-
+    last_set=ustaw;
     modset->min_val=cube->get_min();
     modset->max_val=cube->get_max();
-    this->raport_add(cos2str(cube->get_min())+"\n");
-    this->raport_add(cos2str(cube->get_max())+"\n");
+    modset->algorytm = OKRIGING;
 }
 //------------------------------------------------------------------------------
 wektor3d GeoModel::policzZasoby()
@@ -188,7 +178,7 @@ string GeoModel::analizaZasobyReport(int _ileKlas)
     string aa;
     for(vector<geo3d>::iterator it = analiza.begin(); it!=analiza.end();++it)
         {
-           aa += cos2str(it->xyz.x) + " ";
+           aa += cos2str(it->xyz.x) + "\t";
            aa += cos2str(it->xyz.y) + " - ";
            aa += cos2str(it->xyz.z) + "\t";
            aa += cos2str(it->dat.x) + "\t";
@@ -200,7 +190,7 @@ string GeoModel::analizaZasobyReport(int _ileKlas)
            suma.z += it->dat.z;
 
         }
-    aa += cos2str(suma.x) + "\t";
+    aa += "\t\t\t"+cos2str(suma.x) + "\t";
     aa += cos2str(suma.y) + "\t";
     aa += cos2str(suma.z) + "\t";
     return aa;

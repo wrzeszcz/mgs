@@ -42,8 +42,8 @@ enum variogram
 ///
 enum METODA
 {
-    INVDIST,
-    OKRIGING
+    INVDIST = 0,
+    OKRIGING = 1
 };
 ///
 /// \brief The JEDNOSTKI enum
@@ -412,7 +412,8 @@ struct Mset
         min_val(0.0,0.0,0.0),
         max_val(0.0,0.0,0.0),
         gestosc(2.5),
-        jednostki(PPM)
+        jednostki(PPM),
+        algorytm(OKRIGING)
     {
 
     }
@@ -432,7 +433,7 @@ struct Mset
     ///
     Mset (wektor3i cub, wektor3d pocz, wektor3d wymiary, string nazwa,
           double spa,double ct, bool fl, wektor3d min_dat, wektor3d max_dat,
-          double gest, JEDNOSTKI jedn):
+          double gest, JEDNOSTKI jed, METODA alg):
         grid(cub),
         start(pocz),
         start_grid(pocz),
@@ -444,7 +445,8 @@ struct Mset
         min_val(min_dat),
         max_val(max_dat),
         gestosc(gest),
-        jednostki(jedn)
+        jednostki(jed),
+        algorytm(alg)
     {
 
     }
@@ -469,6 +471,7 @@ struct Mset
     wektor3d max_val;
     double gestosc;
     JEDNOSTKI jednostki;
+    METODA algorytm;
 };
 ///
 /// \brief operator <<
@@ -488,7 +491,8 @@ inline ostream& operator << (ostream& os, const Mset &d)
               << d.min_val << endl
               << d.max_val << endl
               << d.gestosc << endl
-              << d.jednostki << endl;
+              << d.jednostki << endl
+              << d.algorytm << endl;
 }
 ///
 /// \brief operator >>
@@ -500,6 +504,7 @@ inline istream& operator >> (istream& is, Mset& d)
 {
     if(!is) return is;
     int jedn = 0;
+    int algo = 0;
 
     is >> d.grid
        >> d.start
@@ -511,7 +516,8 @@ inline istream& operator >> (istream& is, Mset& d)
        >> d.min_val
        >> d.max_val
        >> d.gestosc
-       >> jedn;
+       >> jedn
+       >> algo;
 
     switch(jedn)
     {
@@ -519,6 +525,13 @@ inline istream& operator >> (istream& is, Mset& d)
         case 1: d.jednostki = PROCENTY; break;
         case 2: d.jednostki = GRAMY; break;
         case 3: d.jednostki = KILOGRAMY; break;
+        default: break;
+    }
+
+    switch(algo)
+    {
+        case 0: d.algorytm = INVDIST; break;
+        case 1: d.algorytm = OKRIGING; break;
         default: break;
     }
 
