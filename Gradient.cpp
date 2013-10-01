@@ -26,66 +26,55 @@ Gradient::Gradient():
 
 }
 //------------------------------------------------------------------------------
-QColor Gradient::get_kolor(double position)
+QColor Gradient::get_kolor(double poz)
 {
-    if (position > 1) position = position - int(position);
-    float R(0.0), G(0.0), B(0.0);
-    int nmax = 6;
+    if (poz>1)poz=poz-int(poz);
 
-    double m = nmax * position;
-    int    n = int(m);
-    double f = m-n;
-    float  t = float(f*255.0);
+    int pixelDistance=(int)( (poz * 1792.0) / 1.0 );
+    int red, green, blue;
 
-    switch(n)
-    {
-        case 0:
-        {
-            R = 255;
-            G = t;
-            B = 0;
-            break;
-        };
-       case 1:
-        {
-            R = 255 - t;
-            G = 255;
-            B = 0;
-            break;
-        };
-        case 2:
-        {
-            R = 0;
-            G = 255;
-            B = t;
-            break;
-        };
-       case 3:
-        {
-            R = 0;
-            G = 255 - t;
-            B = 255;
-            break;
-        };
-        case 4:
-        {
-            R = t;
-            G = 0;
-            B = 255;
-            break;
-        };
-       case 5:
-        {
-            R = 255;
-            G = 0;
-            B = 255 - t;
-            break;
-        };
-        default:
-            break;
-
-    }; // case
-
-    return QColor(R,G,B);
+    if (pixelDistance < 256)
+    {   // BLACK to BLUE
+        red = 0;
+        green = 0;
+        blue = pixelDistance;
+    }
+    else if (pixelDistance < 512)
+    {   // BLUE to CYAN
+        red = 0;
+        green = pixelDistance - 256;
+        blue = 255;
+    }
+    else if (pixelDistance < 768)
+    {   // CYAN to GREEN
+        red = 0;
+        green = 255;
+        blue = 255 - (pixelDistance - 512);
+    }
+    else if (pixelDistance < 1024)
+    {   //GREEN to YELLOW
+        red = (pixelDistance - 768);
+        green = 255;
+        blue = 0;
+    }
+    else if (pixelDistance < 1280)
+    {   // YELLOW to RED
+        red = 255;
+        green= 255-(pixelDistance - 1024);
+        blue = 0;
+    }
+    else if (pixelDistance < 1536)
+    {   //  RED to MAGENTA
+        red = 255;
+        green= 0;
+        blue = pixelDistance - 1280;
+    }
+    else
+    {   // MAGENTA to WHITE
+        red = 255;
+        green = pixelDistance - 1537;
+        blue = 255;
+    }
+    return QColor(red, green, blue);
 }
 //------------------------------------------------------------------------------

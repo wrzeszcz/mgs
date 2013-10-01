@@ -93,16 +93,16 @@ public:
     void wypiszLok(ostream& os, bool tylkoXYZ, double limit);
     ///
     /// \brief wypiszGlo - wypisuje dane (wsp. globalne) do strumienia
-    /// \param os - refrencja do strumienia
+    /// \param os - referencja do strumienia
     /// \param tylkoXYZ - bool - czy wypisac tylko wsp. XYZ
-    /// \param limit -
-    /// \param sep
+    /// \param limit - referencja do strumienia
+    /// \param sep - separator (domyślnie tabulacja)
     ///
     void wypiszGlo(ostream& os, bool tylkoXYZ, double limit, string sep = "\t");
     ///
-    /// \brief wypiszGlo
-    /// \param os
-    /// \param sep
+    /// \brief wypiszGlo - wypisuje dane (wsp. globalne) do strumienia
+    /// \param os - referencja do strumienia
+    /// \param sep - separator (domyślnie tabulacja)
     ///
     void wypiszGlo(ostream& os, std::string sep = "\t");
     ///
@@ -184,11 +184,11 @@ private:
     ///
     /// \brief dim3i
     ///
-    wektor3i   dim3i;
+    wektor3i dim3i;
     ///
     /// \brief spacing
     ///
-    double   spacing;
+    double spacing;
     ///
     /// \brief inicjuj
     ///

@@ -128,6 +128,7 @@ void GeoModel::calc_invdist(Set_interpolacja ustaw)
                 progres.pcur=progres.pcur+1;
             }
     last_set=ustaw;
+    cube->min_max();
     modset->min_val=cube->get_min();
     modset->max_val=cube->get_max();
     modset->algorytm = INVDIST;
@@ -152,6 +153,7 @@ void GeoModel::calc_okriging(Set_interpolacja ustaw)
                progres.pcur = progres.pcur+1;
             }
     last_set=ustaw;
+    cube->min_max();
     modset->min_val=cube->get_min();
     modset->max_val=cube->get_max();
     modset->algorytm = OKRIGING;
