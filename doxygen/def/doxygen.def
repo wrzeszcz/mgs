@@ -919,10 +919,10 @@ _EnD_oF_dEf_TeXt_;
 wypiszGlo - wypisuje dane (wsp. globalne) do strumienia
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param os - refrencja do strumienia
+\param os - referencja do strumienia
 \param tylkoXYZ - bool - czy wypisac tylko wsp. XYZ
-\param limit -
-\param sep
+\param limit - referencja do strumienia
+\param sep - separator (domyślnie tabulacja)
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -952,11 +952,11 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoCube.h';
       sec-mem-desc-line = '107';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-wypiszGlo
+wypiszGlo - wypisuje dane (wsp. globalne) do strumienia
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param os
-\param sep
+\param os - referencja do strumienia
+\param sep - separator (domyślnie tabulacja)
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
