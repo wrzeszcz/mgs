@@ -186,16 +186,16 @@ void GeoCube::setRekLok(wektor3i poz, wektor3d dane)
 
     wektor3d tmp = cube[poz.x][poz.y][poz.z];
 
-        if (tmp.x == NULLDAT || tmp.x == -NULLDAT) return;
+    if (tmp.x == NULLDAT || tmp.x == -NULLDAT) return;
 
-        if (tmp.x > w_max.x) w_max.x = tmp.x;
-        if (tmp.x < w_min.x) w_min.x = tmp.x;
+    if (tmp.x > w_max.x) w_max.x = tmp.x;
+    else if (tmp.x < w_min.x) w_min.x = tmp.x;
 
-        if (tmp.y > w_max.y) w_max.y = tmp.y;
-        if (tmp.y < w_min.y) w_min.y = tmp.y;
+    if (tmp.y > w_max.y) w_max.y = tmp.y;
+    else if (tmp.y < w_min.y) w_min.y = tmp.y;
 
-        if (tmp.z > w_max.z) w_max.z = tmp.z;
-        if (tmp.z < w_min.z) w_min.z = tmp.z;
+    if (tmp.z > w_max.z) w_max.z = tmp.z;
+    else if (tmp.z < w_min.z) w_min.z = tmp.z;
 }
 //------------------------------------------------------------------------------
 void GeoCube::setRekGlo(wektor3d poz, wektor3d dane)
@@ -234,13 +234,13 @@ void GeoCube::min_max()
                 tmp = cube[a][b][c];
 
                 if      (tmp.x > w_max.x) w_max.x = tmp.x;
-                else if ( tmp.x < w_min.x) w_min.x = tmp.x;
+                else if (tmp.x < w_min.x) w_min.x = tmp.x;
 
                 if      (tmp.y > w_max.y) w_max.y = tmp.y;
                 else if (tmp.y < w_min.y) w_min.y = tmp.y;
 
                 if      (tmp.z > w_max.z) w_max.z = tmp.z;
-                else if ( tmp.z < w_min.z) w_min.z = tmp.z;
+                else if (tmp.z < w_min.z) w_min.z = tmp.z;
 
             }
 }
