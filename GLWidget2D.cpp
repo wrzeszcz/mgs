@@ -23,13 +23,12 @@
 #include <QDebug>
 //------------------------------------------------------------------------------
 GLWidget2D::GLWidget2D(GeoModel *_model, Vset _widok, QWidget *parent):
-    GLWidget(_model,_widok,parent)
+    GLWidget(_model,_widok,parent), Z(0)
 {
     scale = 0.8;
     dx = dy = 0.0;
     mouse_pos = QPoint(0,0);
     model_size = QSize(sett->wym.x+sett->sp,sett->wym.y+sett->sp);
-    Z = 0;
     setAutoFillBackground(false);
 }
 //------------------------------------------------------------------------------
@@ -53,12 +52,12 @@ void GLWidget2D::paintGL()
     glOrtho (   -model_size.width() /2, model_size.width()   /2,
                       -model_size.height()/2, model_size.height() /2,-1,1);
 
-    //--------------------------------------------------------------------------
-    //makeCurrent();
+    //-------------------------------------------------------------------------
 
     glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
     glPushMatrix();
-        glLoadIdentity();
+
         glTranslatef(0.375,0.375,0);
 
         glTranslatef(dx/5.0, dy/5.0, 1.0);
@@ -80,10 +79,11 @@ void GLWidget2D::paintGL()
             paint_model();
         }
 
-         RenderString(0,0,Qt::red, QString::number(Z));
+        RenderString(0,0,80,50, Qt::red, QString::number(Z));
 
+    glFlush();
     glPopMatrix();
-    glLoadIdentity();
+
 }
 //------------------------------------------------------------------------------
 void GLWidget2D::mouseMoveEvent(QMouseEvent *event)
@@ -191,6 +191,7 @@ void GLWidget2D::RenderString(int x,int y,int w,int h,QColor rgb,QString text)
     glPushMatrix();
 
     glMatrixMode(GL_PROJECTION);
+
     glLoadIdentity();
     glViewport(x,y,w,h);
 
@@ -198,7 +199,7 @@ void GLWidget2D::RenderString(int x,int y,int w,int h,QColor rgb,QString text)
     glLoadIdentity();
 
     glColor3f(rgb.redF(), rgb.greenF(), rgb.blueF());
-    renderText(0,0,0, text, QFont("Helvetica [Cronyx]", 20, QFont::Bold));
+    renderText(0,0,0, text, QFont("Helvetica [Cronyx]", 16, QFont::Bold));
 
     glPopMatrix();
 }

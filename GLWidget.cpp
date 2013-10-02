@@ -48,16 +48,6 @@ void GLWidget::initializeGL()
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_TEXTURE_2D);
     glShadeModel(GL_SMOOTH);
-    //--------------------------------------------------------------------------
-//    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-//    glEnable(GL_BLEND);
-//    glEnable(GL_POINT_SMOOTH);
-//    glHint(GL_POINT_SMOOTH_HINT, GL_NICEST);
-//    glEnable(GL_LINE_SMOOTH);
-//    glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
-//    glEnable(GL_POLYGON_SMOOTH);
-//    glHint(GL_POLYGON_SMOOTH_HINT, GL_NICEST);
-    //--------------------------------------------------------------------------
 }
 
 void GLWidget::resizeGL(int width, int height)
