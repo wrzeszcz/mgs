@@ -94,7 +94,7 @@ void GeoCube::wypiszLok(ostream &os, bool tylkoXYZ, double limit)
             for(int b=0; b<dim3i.y;++b)
                 for(int c=0; c<dim3i.z;++c)
                     if(cube [a][b][c].x>limit)
-                    os<<a<<" "<<b<<" "<<c<<" "<<cube[a][b][c].x<<endl;
+                    os << a <<" "<< b <<" "<< c <<" "<< cube[a][b][c].x << endl;
     }
 }
 //------------------------------------------------------------------------------
@@ -165,7 +165,7 @@ wektor3d GeoCube::getRekLok(wektor3i poz)
     return cube[poz.x][poz.y][poz.z];
     else return wektor3d();
 }
-//--------------------------------------------------------------------
+//------------------------------------------------------------------------------
 wektor3d GeoCube::getRekGlo(wektor3d poz)
 {
     wektor3i lokal;

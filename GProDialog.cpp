@@ -115,7 +115,7 @@ void GProDialog::createLayoutAll()
         sb_min_otocz->setAlignment(Qt::AlignRight);
         connect(sb_min_otocz,SIGNAL(valueChanged(int)),this,SLOT(slot_min_otocz(int)));
         layoutAll->addWidget(lab_min,5,0);
-         layoutAll->addWidget(sb_min_otocz,5,1);
+        layoutAll->addWidget(sb_min_otocz,5,1);
 
         lab_max = new QLabel("max w otoczeniu",this);
         sb_max_otocz = new QSpinBox(this);

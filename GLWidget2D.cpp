@@ -30,6 +30,8 @@ GLWidget2D::GLWidget2D(GeoModel *_model, Vset _widok, QWidget *parent):
     mouse_pos = QPoint(0,0);
     model_size = QSize(sett->wym.x+sett->sp,sett->wym.y+sett->sp);
     setAutoFillBackground(false);
+
+    setMouseTracking(true);
 }
 //------------------------------------------------------------------------------
 GLWidget2D::~GLWidget2D()
@@ -66,7 +68,7 @@ void GLWidget2D::paintGL()
         glColor3f(0.0,1.0,0.0);
         paintPkt(curPoint-sett->wym/2,5);
 
-
+        RenderString(0,0, Qt::red, QString::number(mouse_pos.x()));
 
         glLineWidth(2);
         if(widok.zakres)
@@ -80,6 +82,7 @@ void GLWidget2D::paintGL()
         }
 
         RenderString(0,0,80,50, Qt::red, QString::number(Z));
+
 
     glFlush();
     glPopMatrix();
