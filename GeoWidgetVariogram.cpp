@@ -110,6 +110,8 @@ void GeoWidgetVariogram::slot_przelicz()
 //-----------------------------------------------------------------------------
 void GeoWidgetVariogram::create()
 {
+    gModel->nowy_variogram(gModel->get_last_set().rozmiar_klasy);
+
     graph = new GraphWidget(this);
     QPalette p(palette());
     p.setColor(QPalette::Background, Qt::black);

@@ -60,7 +60,7 @@ void GeoModel::wczytaj_dane(string fileName, string sep, bool nowe, bool sred)
 
     updateModel();
 
-    nowy_variogram(last_set.rozmiar_klasy);
+    //nowy_variogram(last_set.rozmiar_klasy);
     modset->cutoff = dane->get_min_value().x+
             0.5 * (dane->get_max_value().x-dane->get_min_value().x);
 
@@ -80,7 +80,7 @@ bool GeoModel::wczytaj_proj(Mset _modset, Set_interpolacja _interp)
 
     updateModel();
 
-    nowy_variogram(last_set.rozmiar_klasy);
+    //nowy_variogram(last_set.rozmiar_klasy);
 
     return true;
 }

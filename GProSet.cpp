@@ -77,19 +77,19 @@ void GProSet::createLayoutModel()
     sbPoczX = new QDoubleSpinBox(this);
     sbPoczX->setAlignment(Qt::AlignRight);
     sbPoczX->setDecimals(3);
-    sbPoczX->setRange(-999999.000,999999.000);
+    sbPoczX->setRange(-9999999.000,9999999.000);
     connect(sbPoczX,SIGNAL(valueChanged(double)),this,SLOT(slotPoczX(double)));
 
     sbPoczY = new QDoubleSpinBox(this);
     sbPoczY->setAlignment(Qt::AlignRight);
     sbPoczY->setDecimals(3);
-    sbPoczY->setRange(-999999.000,999999.000);
+    sbPoczY->setRange(-9999999.000,9999999.000);
     connect(sbPoczY,SIGNAL(valueChanged(double)),this,SLOT(slotPoczY(double)));
 
     sbPoczZ = new QDoubleSpinBox(this);
     sbPoczZ->setAlignment(Qt::AlignRight);
     sbPoczZ->setDecimals(3);
-    sbPoczZ->setRange(-999999.000,999999.000);
+    sbPoczZ->setRange(-9999999.000,9999999.000);
     connect(sbPoczZ,SIGNAL(valueChanged(double)),this,SLOT(slotPoczZ(double)));
 
     sbGestosc = new QDoubleSpinBox(this);
