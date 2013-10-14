@@ -245,11 +245,11 @@ private:
     ///
     /// \brief modset
     ///
-    Mset    *modset;
+    Mset *modset;
     ///
     /// \brief dane
     ///
-    GeoDat  *dane;
+    GeoDat *dane;
     ///
     /// \brief cube
     ///
@@ -265,11 +265,11 @@ private:
     ///
     /// \brief strRaport
     ///
-    string  strRaport;
+    string strRaport;
     ///
     /// \brief dist
     ///
-    Odl     dist;
+    Odl dist;
     ///
     /// \brief progres
     ///

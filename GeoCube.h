@@ -121,7 +121,7 @@ public:
     /// \brief getSize
     /// \return
     ///
-    wektor3i getSize() {return dim3i;}
+    wektor3i getSize(){return dim3i;}
     ///
     /// \brief size_x
     /// \return
@@ -146,7 +146,7 @@ public:
     /// \brief getSpac
     /// \return
     ///
-    double getSpac() {return spacing;}
+    double getSpac(){return spacing;}
     ///
     /// \brief get_max
     /// \return
