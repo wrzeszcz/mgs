@@ -24,6 +24,7 @@
 #include "GeoWidgetVariogram.h"
 #include "GeoWidget2D.h"
 #include "GeoWidget3D.h"
+#include "GProAnaliza.h"
 
 #include <QMenuBar>
 #include <QMenu>
@@ -124,7 +125,7 @@ void GMainWin::createActions()
     actionSave->setStatusTip(tr("Zapisz projekt"));
     connect(actionSave, SIGNAL(triggered()), this, SLOT(slot_save_proj()));
 
-    actionSaveAs = new QAction(tr("Zapisz &Jako"), this);
+    actionSaveAs = new QAction(QIcon(":/save_as"),tr("Zapisz &Jako"), this);
     actionSaveAs->setShortcut(QKeySequence::SaveAs);
     actionSaveAs->setStatusTip(tr("Zapisz projekt jako ..."));
     connect(actionSaveAs, SIGNAL(triggered()), this, SLOT(slot_save_proj_as()));
@@ -483,7 +484,7 @@ void GMainWin::updateWindowMenu()
 {
     QMessageBox::information(this,"INFORMACJA","to do");
 }
-
+//------------------------------------------------------------------------------
 void GMainWin::slot_tabbed()
 {
     if(mdiArea->viewMode() == QMdiArea::SubWindowView)
@@ -508,6 +509,8 @@ void GMainWin::slot_zasoby()
 void GMainWin::slot_analiza()
 {
     QString a = QString::fromStdString(curModel->analizaZasobyReport(10));
+    GProAnaliza an(new GeoZasoby(curModel->ptr_mset(),curModel->ptr_cube()),this);
+    an.show();
     QMessageBox::information(this,"ANALIZA",a);
 }
 //------------------------------------------------------------------------------
