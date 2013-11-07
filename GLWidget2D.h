@@ -21,7 +21,7 @@
 #ifndef GLWIDGET2D_H
 #define GLWIDGET2D_H
 #include "GLWidget.h"
-#include "GL/glu.h"
+//#include "GL/glu.h"
 //#include "GL/glut.h"
 ///
 /// \brief The GLWidget2D class

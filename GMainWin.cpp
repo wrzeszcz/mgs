@@ -219,6 +219,10 @@ void GMainWin::createActions()
     actPrev->setStatusTip(tr("Uaktywnij poprzenie okno"));
     connect(actPrev,SIGNAL(triggered()),mdiArea,SLOT(activatePreviousSubWindow()));
 
+    actTabbed = new QAction(tr("Widok zkładek"), this);
+    actTabbed->setCheckable(true);
+    connect(actTabbed,SIGNAL(triggered()),this,SLOT(slot_tabbed()));
+
     //--------------------------------------------------------------------------
 
     actionAbout = new QAction(QIcon(":/mw"), tr("&O programie"), this);
@@ -270,6 +274,8 @@ void GMainWin::createMenus()
     menuWindow->addAction(actCascade);
     menuWindow->addAction(actNext);
     menuWindow->addAction(actPrev);
+    menuWindow->addSeparator();
+    menuWindow->addAction(actTabbed);
 
     menuHelp = menuBar()->addMenu(tr("&Pomoc"));
     menuHelp->addAction(actionAbout);
@@ -476,6 +482,13 @@ void GMainWin::about()
 void GMainWin::updateWindowMenu()
 {
     QMessageBox::information(this,"INFORMACJA","to do");
+}
+
+void GMainWin::slot_tabbed()
+{
+    if(mdiArea->viewMode() == QMdiArea::SubWindowView)
+        mdiArea->setViewMode(QMdiArea::TabbedView);
+    else mdiArea->setViewMode(QMdiArea::SubWindowView);
 }
 //------------------------------------------------------------------------------
 void GMainWin::createEmptyModel()

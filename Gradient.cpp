@@ -28,9 +28,9 @@ Gradient::Gradient():
 //------------------------------------------------------------------------------
 QColor Gradient::get_kolor(double poz)
 {
-    if (poz>1)poz=poz-int(poz);
+    if ( poz > 1.0 ) poz = poz - int(poz);
 
-    int pixelDistance=(int)( (poz * 1792.0) / 1.0 );
+    int pixelDistance=(int)( poz * 1792.0 );
     int red, green, blue;
 
     if (pixelDistance < 256)

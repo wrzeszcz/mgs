@@ -51,7 +51,7 @@ wektor3d GeoZasoby::przelicz_zasoby()
                 if(blok.x > cutof)
                 {
                     licz2++;
-                    blok2=blok2+policzBlok(blok,modelSet->sp);
+                    blok2 = blok2 + policzBlok(blok,modelSet->sp);
                 }
             }
     blok2.y=licz2;
@@ -74,7 +74,7 @@ wektor3d GeoZasoby::przelicz_zasoby(double _minp, double _maxp)
                 if(blok.x >= _minp && blok.x < _maxp)
                 {
                     licz2++;
-                    blok2=blok2+policzBlok(blok,modelSet->sp);
+                    blok2 = blok2 + policzBlok(blok,modelSet->sp);
                 }
             }
     blok2.y=licz2;

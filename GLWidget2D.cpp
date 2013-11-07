@@ -21,6 +21,7 @@
 #include "GLWidget2D.h"
 #include <QPainter>
 #include <QDebug>
+#include <cmath>
 //------------------------------------------------------------------------------
 GLWidget2D::GLWidget2D(GeoModel *_model, Vset _widok, QWidget *parent):
     GLWidget(_model,_widok,parent), Z(0)
@@ -253,7 +254,7 @@ void GLWidget2D::paintBlok(wektor3d srod, double bok)
         glVertex2f (p.x,p.y+bok);
 
         glVertex2f (p.x,p.y+bok);
-         glVertex2f (p.x,p.y);
+        glVertex2f (p.x,p.y);
     glEnd();
 }
 //------------------------------------------------------------------------------

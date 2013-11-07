@@ -18,8 +18,7 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 
-QT       += core gui\
-	    opengl\
+QT       += core gui opengl
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -82,7 +81,6 @@ RESOURCES += \
     geostat.qrc
 
 LIBS += -L/usr/local/lib -lGLU
-#LIBS += -lglut
 
 
 

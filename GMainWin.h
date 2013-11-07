@@ -48,9 +48,9 @@ class QProgressBar;
 #include "GProDialog.h"
 
 ///
-/// \brief APPNAME
+/// \brief APPNAME stała - nazwa programu
 ///
-QString const APPNAME = "GeoStat";
+QString const APPNAME = "MGeoStat";
 ///
 /// \brief Klasa GMainWin - GUI aplikacji
 ///
@@ -70,13 +70,13 @@ public:
     ///
     enum ZAPIS{DANE,MODEL,ZASOBY,RAPORT};
     ///
-    /// \brief The OKNO enum
+    /// \brief typ wyliczeniowy dla pod-okien MDI
     ///
     enum OKNO{TABELA,VARIOGRAM,MAPA,WIDOK,RAP};
 
 protected:
     ///
-    /// \brief closeEvent
+    /// \brief closeEvent - zdarzenie wyjścia z programu
     /// \param event
     ///
     void closeEvent(QCloseEvent *event);
@@ -238,6 +238,10 @@ private slots:
     /// \brief updateWindowMenu
     ///
     void updateWindowMenu();
+    ///
+    /// \brief slot_tabbed
+    ///
+    void slot_tabbed();
 
 private:
     ///
@@ -517,6 +521,10 @@ private:
     /// \brief actPrev
     ///
     QAction *actPrev;
+    ///
+    /// \brief actTabbed
+    ///
+    QAction *actTabbed;
 
     ///
     /// \brief actionAbout
