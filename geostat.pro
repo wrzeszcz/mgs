@@ -72,8 +72,7 @@ HEADERS  += \
     GLWidget2D.h \
     GLWidget3D.h \
     Gradient.h \
-    GeoZasoby.h \
-    IMat3.h
+    GeoZasoby.h
 
 RC_FILE = geostat.txt
 
