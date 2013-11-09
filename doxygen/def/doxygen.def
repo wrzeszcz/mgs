@@ -26,7 +26,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'set';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '664';
+      sec-mem-desc-line = '682';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator ()
 _EnD_oF_dEf_TeXt_;
@@ -38,7 +38,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-  cp-fileline  = '656';
+  cp-fileline  = '675';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 The Cube2win struct.
 _EnD_oF_dEf_TeXt_;
@@ -61,7 +61,7 @@ wektor3d
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'zakres_min';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '546';
+      sec-mem-desc-line = '565';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -79,7 +79,7 @@ wektor3d
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'zakres_max';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '547';
+      sec-mem-desc-line = '566';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -89,7 +89,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-  cp-fileline  = '545';
+  cp-fileline  = '564';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 The DataInfo struct.
 _EnD_oF_dEf_TeXt_;
@@ -98,13 +98,13 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 180;
+        node-id    = 188;
         node-label = 'DataInfo';
         node-link = {
           node-link-id = 'df/dcf/globalne_8h#d8/d97/structDataInfo';
         };
         node-child = {
-          child-id = '181';
+          child-id = '189';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 zakres_max
@@ -113,7 +113,7 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 181;
+        node-id    = 189;
         node-label = 'wektor3d';
         node-link = {
           node-link-id = 'dc/d07/classwektor3d';
@@ -149,7 +149,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'b';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '309';
+      sec-mem-desc-line = '308';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator ()
 _EnD_oF_dEf_TeXt_;
@@ -220,7 +220,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'b';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '331';
+      sec-mem-desc-line = '330';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator ()
 _EnD_oF_dEf_TeXt_;
@@ -280,27 +280,27 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 186;
+        node-id    = 194;
         node-label = 'wektor3d';
         node-link = {
           node-link-id = 'dc/d07/classwektor3d';
         };
       }; /* node */
       node = {
-        node-id    = 185;
+        node-id    = 193;
         node-label = 'G3d_comp_odl_pkt';
         node-link = {
           node-link-id = 'd2/d5c/structG3d__comp__odl__pkt';
         };
         node-child = {
-          child-id = '186';
+          child-id = '194';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 p
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '187';
+          child-id = '195';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 odl
@@ -308,7 +308,7 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 187;
+        node-id    = 195;
         node-label = 'Odl2';
         node-link = {
           node-link-id = 'd9/d7b/structOdl2';
@@ -421,13 +421,13 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 189;
+        node-id    = 197;
         node-label = 'geo3d';
         node-link = {
           node-link-id = 'df/d64/structgeo3d';
         };
         node-child = {
-          child-id = '190';
+          child-id = '198';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 dat
@@ -436,7 +436,7 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 190;
+        node-id    = 198;
         node-label = 'wektor3d';
         node-link = {
           node-link-id = 'dc/d07/classwektor3d';
@@ -528,7 +528,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'event_';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/main.cpp';
-      sec-mem-desc-line = '49';
+      sec-mem-desc-line = '48';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 notify
 _EnD_oF_dEf_TeXt_;
@@ -549,17 +549,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 192;
+        node-id    = 200;
         node-label = 'QApplication';
       }; /* node */
       node = {
-        node-id    = 191;
+        node-id    = 199;
         node-label = 'geoApplication';
         node-link = {
           node-link-id = 'd3/de0/classgeoApplication';
         };
         node-child = {
-          child-id = '192';
+          child-id = '200';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -567,17 +567,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 194;
+        node-id    = 202;
         node-label = 'QApplication';
       }; /* node */
       node = {
-        node-id    = 193;
+        node-id    = 201;
         node-label = 'geoApplication';
         node-link = {
           node-link-id = 'd3/de0/classgeoApplication';
         };
         node-child = {
-          child-id = '194';
+          child-id = '202';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -2259,7 +2259,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 's';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoDat.h';
-      sec-mem-desc-line = '267';
+      sec-mem-desc-line = '266';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 str2double
 _EnD_oF_dEf_TeXt_;
@@ -2461,7 +2461,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '50';
+      sec-mem-desc-line = '48';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 GeoDoubleSpin.
 _EnD_oF_dEf_TeXt_;
@@ -2484,36 +2484,36 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 199;
+        node-id    = 207;
         node-label = 'GeoDoubleSpin';
         node-link = {
           node-link-id = 'dd/d62/classGeoDoubleSpin';
         };
         node-child = {
-          child-id = '200';
+          child-id = '208';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 200;
+        node-id    = 208;
         node-label = 'QDoubleSpinBox';
       }; /* node */
 
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 201;
+        node-id    = 209;
         node-label = 'GeoDoubleSpin';
         node-link = {
           node-link-id = 'dd/d62/classGeoDoubleSpin';
         };
         node-child = {
-          child-id = '202';
+          child-id = '210';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 202;
+        node-id    = 210;
         node-label = 'QDoubleSpinBox';
       }; /* node */
 
@@ -3204,7 +3204,7 @@ true
 _EnD_oF_dEf_TeXt_;
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoModel.h';
-      sec-mem-desc-line = '53';
+      sec-mem-desc-line = '52';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 wczytaj_dane
 _EnD_oF_dEf_TeXt_;
@@ -4735,7 +4735,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'range';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoVariogramModel.h';
-      sec-mem-desc-line = '56';
+      sec-mem-desc-line = '55';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 set_param
 _EnD_oF_dEf_TeXt_;
@@ -5235,90 +5235,90 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 217;
+        node-id    = 225;
         node-label = 'GeoWidgetVariogram';
         node-link = {
           node-link-id = 'dc/d81/classGeoWidgetVariogram';
         };
         node-child = {
-          child-id = '211';
+          child-id = '219';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 211;
+        node-id    = 219;
         node-label = 'GeoWidget';
         node-link = {
           node-link-id = 'd9/df4/classGeoWidget';
         };
         node-child = {
-          child-id = '212';
+          child-id = '220';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 215;
+        node-id    = 223;
         node-label = 'GeoWidgetDane';
         node-link = {
           node-link-id = 'd7/d50/classGeoWidgetDane';
         };
         node-child = {
-          child-id = '211';
+          child-id = '219';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 216;
+        node-id    = 224;
         node-label = 'GeoWidgetRaport';
         node-link = {
           node-link-id = 'df/d16/classGeoWidgetRaport';
         };
         node-child = {
-          child-id = '211';
+          child-id = '219';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 214;
+        node-id    = 222;
         node-label = 'GeoWidget3D';
         node-link = {
           node-link-id = 'dd/d0c/classGeoWidget3D';
         };
         node-child = {
-          child-id = '211';
+          child-id = '219';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 213;
+        node-id    = 221;
         node-label = 'GeoWidget2D';
         node-link = {
           node-link-id = 'dd/dd3/classGeoWidget2D';
         };
         node-child = {
-          child-id = '211';
+          child-id = '219';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 212;
+        node-id    = 220;
         node-label = 'QWidget';
       }; /* node */
 
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 218;
+        node-id    = 226;
         node-label = 'GeoWidget';
         node-link = {
           node-link-id = 'd9/df4/classGeoWidget';
         };
         node-child = {
-          child-id = '219';
+          child-id = '227';
           relation = public-inheritance;
         }; /* node-child */
         node-child = {
-          child-id = '220';
+          child-id = '228';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 gModel
@@ -5326,14 +5326,14 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 220;
+        node-id    = 228;
         node-label = 'GeoModel';
         node-link = {
           node-link-id = 'd6/d62/classGeoModel';
         };
       }; /* node */
       node = {
-        node-id    = 219;
+        node-id    = 227;
         node-label = 'QWidget';
       }; /* node */
 
@@ -5976,46 +5976,46 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 222;
+        node-id    = 230;
         node-label = 'GeoWidget';
         node-link = {
           node-link-id = 'd9/df4/classGeoWidget';
         };
         node-child = {
-          child-id = '223';
+          child-id = '231';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 221;
+        node-id    = 229;
         node-label = 'GeoWidget2D';
         node-link = {
           node-link-id = 'dd/dd3/classGeoWidget2D';
         };
         node-child = {
-          child-id = '222';
+          child-id = '230';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 223;
+        node-id    = 231;
         node-label = 'QWidget';
       }; /* node */
 
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 225;
+        node-id    = 233;
         node-label = 'GeoWidget';
         node-link = {
           node-link-id = 'd9/df4/classGeoWidget';
         };
         node-child = {
-          child-id = '226';
+          child-id = '234';
           relation = public-inheritance;
         }; /* node-child */
         node-child = {
-          child-id = '227';
+          child-id = '235';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 gModel
@@ -6023,25 +6023,25 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 227;
+        node-id    = 235;
         node-label = 'GeoModel';
         node-link = {
           node-link-id = 'd6/d62/classGeoModel';
         };
       }; /* node */
       node = {
-        node-id    = 224;
+        node-id    = 232;
         node-label = 'GeoWidget2D';
         node-link = {
           node-link-id = 'dd/dd3/classGeoWidget2D';
         };
         node-child = {
-          child-id = '225';
+          child-id = '233';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 226;
+        node-id    = 234;
         node-label = 'QWidget';
       }; /* node */
 
@@ -6642,46 +6642,46 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 229;
+        node-id    = 237;
         node-label = 'GeoWidget';
         node-link = {
           node-link-id = 'd9/df4/classGeoWidget';
         };
         node-child = {
-          child-id = '230';
+          child-id = '238';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 228;
+        node-id    = 236;
         node-label = 'GeoWidget3D';
         node-link = {
           node-link-id = 'dd/d0c/classGeoWidget3D';
         };
         node-child = {
-          child-id = '229';
+          child-id = '237';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 230;
+        node-id    = 238;
         node-label = 'QWidget';
       }; /* node */
 
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 232;
+        node-id    = 240;
         node-label = 'GeoWidget';
         node-link = {
           node-link-id = 'd9/df4/classGeoWidget';
         };
         node-child = {
-          child-id = '233';
+          child-id = '241';
           relation = public-inheritance;
         }; /* node-child */
         node-child = {
-          child-id = '234';
+          child-id = '242';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 gModel
@@ -6689,25 +6689,25 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 234;
+        node-id    = 242;
         node-label = 'GeoModel';
         node-link = {
           node-link-id = 'd6/d62/classGeoModel';
         };
       }; /* node */
       node = {
-        node-id    = 231;
+        node-id    = 239;
         node-label = 'GeoWidget3D';
         node-link = {
           node-link-id = 'dd/d0c/classGeoWidget3D';
         };
         node-child = {
-          child-id = '232';
+          child-id = '240';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 233;
+        node-id    = 241;
         node-label = 'QWidget';
       }; /* node */
 
@@ -6954,46 +6954,46 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 236;
+        node-id    = 244;
         node-label = 'GeoWidget';
         node-link = {
           node-link-id = 'd9/df4/classGeoWidget';
         };
         node-child = {
-          child-id = '237';
+          child-id = '245';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 235;
+        node-id    = 243;
         node-label = 'GeoWidgetDane';
         node-link = {
           node-link-id = 'd7/d50/classGeoWidgetDane';
         };
         node-child = {
-          child-id = '236';
+          child-id = '244';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 237;
+        node-id    = 245;
         node-label = 'QWidget';
       }; /* node */
 
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 239;
+        node-id    = 247;
         node-label = 'GeoWidget';
         node-link = {
           node-link-id = 'd9/df4/classGeoWidget';
         };
         node-child = {
-          child-id = '240';
+          child-id = '248';
           relation = public-inheritance;
         }; /* node-child */
         node-child = {
-          child-id = '241';
+          child-id = '249';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 gModel
@@ -7001,25 +7001,25 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 238;
+        node-id    = 246;
         node-label = 'GeoWidgetDane';
         node-link = {
           node-link-id = 'd7/d50/classGeoWidgetDane';
         };
         node-child = {
-          child-id = '239';
+          child-id = '247';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 241;
+        node-id    = 249;
         node-label = 'GeoModel';
         node-link = {
           node-link-id = 'd6/d62/classGeoModel';
         };
       }; /* node */
       node = {
-        node-id    = 240;
+        node-id    = 248;
         node-label = 'QWidget';
       }; /* node */
 
@@ -7270,46 +7270,46 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 243;
+        node-id    = 251;
         node-label = 'GeoWidget';
         node-link = {
           node-link-id = 'd9/df4/classGeoWidget';
         };
         node-child = {
-          child-id = '244';
+          child-id = '252';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 242;
+        node-id    = 250;
         node-label = 'GeoWidgetRaport';
         node-link = {
           node-link-id = 'df/d16/classGeoWidgetRaport';
         };
         node-child = {
-          child-id = '243';
+          child-id = '251';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 244;
+        node-id    = 252;
         node-label = 'QWidget';
       }; /* node */
 
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 246;
+        node-id    = 254;
         node-label = 'GeoWidget';
         node-link = {
           node-link-id = 'd9/df4/classGeoWidget';
         };
         node-child = {
-          child-id = '247';
+          child-id = '255';
           relation = public-inheritance;
         }; /* node-child */
         node-child = {
-          child-id = '248';
+          child-id = '256';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 gModel
@@ -7317,25 +7317,25 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 245;
+        node-id    = 253;
         node-label = 'GeoWidgetRaport';
         node-link = {
           node-link-id = 'df/d16/classGeoWidgetRaport';
         };
         node-child = {
-          child-id = '246';
+          child-id = '254';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 248;
+        node-id    = 256;
         node-label = 'GeoModel';
         node-link = {
           node-link-id = 'd6/d62/classGeoModel';
         };
       }; /* node */
       node = {
-        node-id    = 247;
+        node-id    = 255;
         node-label = 'QWidget';
       }; /* node */
 
@@ -7973,57 +7973,57 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 249;
+        node-id    = 257;
         node-label = 'GeoWidgetVariogram';
         node-link = {
           node-link-id = 'dc/d81/classGeoWidgetVariogram';
         };
         node-child = {
-          child-id = '250';
+          child-id = '258';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 250;
+        node-id    = 258;
         node-label = 'GeoWidget';
         node-link = {
           node-link-id = 'd9/df4/classGeoWidget';
         };
         node-child = {
-          child-id = '251';
+          child-id = '259';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 251;
+        node-id    = 259;
         node-label = 'QWidget';
       }; /* node */
 
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 252;
+        node-id    = 260;
         node-label = 'GeoWidgetVariogram';
         node-link = {
           node-link-id = 'dc/d81/classGeoWidgetVariogram';
         };
         node-child = {
-          child-id = '253';
+          child-id = '261';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 253;
+        node-id    = 261;
         node-label = 'GeoWidget';
         node-link = {
           node-link-id = 'd9/df4/classGeoWidget';
         };
         node-child = {
-          child-id = '254';
+          child-id = '262';
           relation = public-inheritance;
         }; /* node-child */
         node-child = {
-          child-id = '255';
+          child-id = '263';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 gModel
@@ -8031,14 +8031,14 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 255;
+        node-id    = 263;
         node-label = 'GeoModel';
         node-link = {
           node-link-id = 'd6/d62/classGeoModel';
         };
       }; /* node */
       node = {
-        node-id    = 254;
+        node-id    = 262;
         node-label = 'QWidget';
       }; /* node */
 
@@ -8233,6 +8233,30 @@ _EnD_oF_dEf_TeXt_;
 \param kl
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd8/de8/classGeoZasoby_1a7b488e0d18516e8c172e8f48690c7722';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'set_klasy';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'ile';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoZasoby.h';
+      sec-mem-desc-line = '87';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+set_klasy
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+\param ile
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
   }; /* cp-section */
   cp-section = {
     sec-kind = 'private-func';
@@ -8246,7 +8270,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'ustaw_klasy';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoZasoby.h';
-      sec-mem-desc-line = '88';
+      sec-mem-desc-line = '93';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 ustaw_klasy
 _EnD_oF_dEf_TeXt_;
@@ -8276,7 +8300,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'rozmiar';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoZasoby.h';
-      sec-mem-desc-line = '95';
+      sec-mem-desc-line = '100';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 policzBlok
 _EnD_oF_dEf_TeXt_;
@@ -8299,7 +8323,7 @@ Mset *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'modelSet';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoZasoby.h';
-      sec-mem-desc-line = '99';
+      sec-mem-desc-line = '104';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 modelSet
 _EnD_oF_dEf_TeXt_;
@@ -8317,7 +8341,7 @@ GeoCube *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'geoCube';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoZasoby.h';
-      sec-mem-desc-line = '103';
+      sec-mem-desc-line = '108';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 geoCube
 _EnD_oF_dEf_TeXt_;
@@ -8335,7 +8359,7 @@ wektor3d
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'zasoby';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoZasoby.h';
-      sec-mem-desc-line = '107';
+      sec-mem-desc-line = '112';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 zasoby
 _EnD_oF_dEf_TeXt_;
@@ -8353,7 +8377,7 @@ std::vector< geo3d >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'wynikAnalizy';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoZasoby.h';
-      sec-mem-desc-line = '111';
+      sec-mem-desc-line = '116';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 wynikAnalizy
 _EnD_oF_dEf_TeXt_;
@@ -8371,7 +8395,7 @@ KlasyZas
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'klasyZas';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoZasoby.h';
-      sec-mem-desc-line = '115';
+      sec-mem-desc-line = '120';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 klasyZas
 _EnD_oF_dEf_TeXt_;
@@ -8389,7 +8413,7 @@ int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'ileKlas';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoZasoby.h';
-      sec-mem-desc-line = '119';
+      sec-mem-desc-line = '124';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 ileKlas
 _EnD_oF_dEf_TeXt_;
@@ -8434,7 +8458,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'set';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '698';
+      sec-mem-desc-line = '716';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator ()
 _EnD_oF_dEf_TeXt_;
@@ -8446,7 +8470,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-  cp-fileline  = '690';
+  cp-fileline  = '709';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 The Glob2lok struct.
 _EnD_oF_dEf_TeXt_;
@@ -9310,39 +9334,39 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 262;
+        node-id    = 270;
         node-label = 'GLWidget2D';
         node-link = {
           node-link-id = 'dd/d6e/classGLWidget2D';
         };
         node-child = {
-          child-id = '260';
+          child-id = '268';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 260;
+        node-id    = 268;
         node-label = 'GLWidget';
         node-link = {
           node-link-id = 'd4/dc5/classGLWidget';
         };
         node-child = {
-          child-id = '261';
+          child-id = '269';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 261;
+        node-id    = 269;
         node-label = 'QGLWidget';
       }; /* node */
       node = {
-        node-id    = 263;
+        node-id    = 271;
         node-label = 'GLWidget3D';
         node-link = {
           node-link-id = 'd1/d2f/classGLWidget3D';
         };
         node-child = {
-          child-id = '260';
+          child-id = '268';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -9350,34 +9374,34 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 271;
+        node-id    = 279;
         node-label = 'Vset';
         node-link = {
           node-link-id = 'da/d07/structVset';
         };
       }; /* node */
       node = {
-        node-id    = 270;
+        node-id    = 278;
         node-label = 'GeoDat';
         node-link = {
           node-link-id = 'd3/dac/classGeoDat';
         };
       }; /* node */
       node = {
-        node-id    = 272;
+        node-id    = 280;
         node-label = 'GeoModel';
         node-link = {
           node-link-id = 'd6/d62/classGeoModel';
         };
       }; /* node */
       node = {
-        node-id    = 267;
+        node-id    = 275;
         node-label = 'Mset';
         node-link = {
           node-link-id = 'de/def/structMset';
         };
         node-child = {
-          child-id = '266';
+          child-id = '274';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 wym
@@ -9388,7 +9412,7 @@ start
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '268';
+          child-id = '276';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 grid
@@ -9396,66 +9420,66 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 273;
+        node-id    = 281;
         node-label = 'GeoCube';
         node-link = {
           node-link-id = 'd0/df3/classGeoCube';
         };
       }; /* node */
       node = {
-        node-id    = 264;
+        node-id    = 272;
         node-label = 'GLWidget';
         node-link = {
           node-link-id = 'd4/dc5/classGLWidget';
         };
         node-child = {
-          child-id = '265';
+          child-id = '273';
           relation = public-inheritance;
         }; /* node-child */
         node-child = {
-          child-id = '266';
+          child-id = '274';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 curPoint
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '267';
+          child-id = '275';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 sett
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '269';
+          child-id = '277';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 kolor
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '270';
+          child-id = '278';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 dane
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '271';
+          child-id = '279';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 widok
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '272';
+          child-id = '280';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 model
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '273';
+          child-id = '281';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 cube
@@ -9463,25 +9487,25 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 266;
+        node-id    = 274;
         node-label = 'wektor3d';
         node-link = {
           node-link-id = 'dc/d07/classwektor3d';
         };
       }; /* node */
       node = {
-        node-id    = 268;
+        node-id    = 276;
         node-label = 'wektor3i';
         node-link = {
           node-link-id = 'd1/de1/structwektor3i';
         };
       }; /* node */
       node = {
-        node-id    = 265;
+        node-id    = 273;
         node-label = 'QGLWidget';
       }; /* node */
       node = {
-        node-id    = 269;
+        node-id    = 277;
         node-label = 'Gradient';
         node-link = {
           node-link-id = 'd3/dc6/classGradient';
@@ -10009,74 +10033,74 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 274;
+        node-id    = 282;
         node-label = 'GLWidget2D';
         node-link = {
           node-link-id = 'dd/d6e/classGLWidget2D';
         };
         node-child = {
-          child-id = '275';
+          child-id = '283';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 275;
+        node-id    = 283;
         node-label = 'GLWidget';
         node-link = {
           node-link-id = 'd4/dc5/classGLWidget';
         };
         node-child = {
-          child-id = '276';
+          child-id = '284';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 276;
+        node-id    = 284;
         node-label = 'QGLWidget';
       }; /* node */
 
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 285;
+        node-id    = 293;
         node-label = 'Vset';
         node-link = {
           node-link-id = 'da/d07/structVset';
         };
       }; /* node */
       node = {
-        node-id    = 277;
+        node-id    = 285;
         node-label = 'GLWidget2D';
         node-link = {
           node-link-id = 'dd/d6e/classGLWidget2D';
         };
         node-child = {
-          child-id = '278';
+          child-id = '286';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 284;
+        node-id    = 292;
         node-label = 'GeoDat';
         node-link = {
           node-link-id = 'd3/dac/classGeoDat';
         };
       }; /* node */
       node = {
-        node-id    = 286;
+        node-id    = 294;
         node-label = 'GeoModel';
         node-link = {
           node-link-id = 'd6/d62/classGeoModel';
         };
       }; /* node */
       node = {
-        node-id    = 281;
+        node-id    = 289;
         node-label = 'Mset';
         node-link = {
           node-link-id = 'de/def/structMset';
         };
         node-child = {
-          child-id = '280';
+          child-id = '288';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 wym
@@ -10087,7 +10111,7 @@ start
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '282';
+          child-id = '290';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 grid
@@ -10095,66 +10119,66 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 287;
+        node-id    = 295;
         node-label = 'GeoCube';
         node-link = {
           node-link-id = 'd0/df3/classGeoCube';
         };
       }; /* node */
       node = {
-        node-id    = 278;
+        node-id    = 286;
         node-label = 'GLWidget';
         node-link = {
           node-link-id = 'd4/dc5/classGLWidget';
         };
         node-child = {
-          child-id = '279';
+          child-id = '287';
           relation = public-inheritance;
         }; /* node-child */
         node-child = {
-          child-id = '280';
+          child-id = '288';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 curPoint
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '281';
+          child-id = '289';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 sett
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '283';
+          child-id = '291';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 kolor
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '284';
+          child-id = '292';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 dane
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '285';
+          child-id = '293';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 widok
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '286';
+          child-id = '294';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 model
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '287';
+          child-id = '295';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 cube
@@ -10162,25 +10186,25 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 280;
+        node-id    = 288;
         node-label = 'wektor3d';
         node-link = {
           node-link-id = 'dc/d07/classwektor3d';
         };
       }; /* node */
       node = {
-        node-id    = 282;
+        node-id    = 290;
         node-label = 'wektor3i';
         node-link = {
           node-link-id = 'd1/de1/structwektor3i';
         };
       }; /* node */
       node = {
-        node-id    = 279;
+        node-id    = 287;
         node-label = 'QGLWidget';
       }; /* node */
       node = {
-        node-id    = 283;
+        node-id    = 291;
         node-label = 'Gradient';
         node-link = {
           node-link-id = 'd3/dc6/classGradient';
@@ -10725,28 +10749,28 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 289;
+        node-id    = 297;
         node-label = 'GLWidget';
         node-link = {
           node-link-id = 'd4/dc5/classGLWidget';
         };
         node-child = {
-          child-id = '290';
+          child-id = '298';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 290;
+        node-id    = 298;
         node-label = 'QGLWidget';
       }; /* node */
       node = {
-        node-id    = 288;
+        node-id    = 296;
         node-label = 'GLWidget3D';
         node-link = {
           node-link-id = 'd1/d2f/classGLWidget3D';
         };
         node-child = {
-          child-id = '289';
+          child-id = '297';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -10754,34 +10778,34 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 299;
+        node-id    = 307;
         node-label = 'Vset';
         node-link = {
           node-link-id = 'da/d07/structVset';
         };
       }; /* node */
       node = {
-        node-id    = 298;
+        node-id    = 306;
         node-label = 'GeoDat';
         node-link = {
           node-link-id = 'd3/dac/classGeoDat';
         };
       }; /* node */
       node = {
-        node-id    = 300;
+        node-id    = 308;
         node-label = 'GeoModel';
         node-link = {
           node-link-id = 'd6/d62/classGeoModel';
         };
       }; /* node */
       node = {
-        node-id    = 295;
+        node-id    = 303;
         node-label = 'Mset';
         node-link = {
           node-link-id = 'de/def/structMset';
         };
         node-child = {
-          child-id = '294';
+          child-id = '302';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 wym
@@ -10792,7 +10816,7 @@ start
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '296';
+          child-id = '304';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 grid
@@ -10800,66 +10824,66 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 301;
+        node-id    = 309;
         node-label = 'GeoCube';
         node-link = {
           node-link-id = 'd0/df3/classGeoCube';
         };
       }; /* node */
       node = {
-        node-id    = 292;
+        node-id    = 300;
         node-label = 'GLWidget';
         node-link = {
           node-link-id = 'd4/dc5/classGLWidget';
         };
         node-child = {
-          child-id = '293';
+          child-id = '301';
           relation = public-inheritance;
         }; /* node-child */
         node-child = {
-          child-id = '294';
+          child-id = '302';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 curPoint
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '295';
+          child-id = '303';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 sett
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '297';
+          child-id = '305';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 kolor
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '298';
+          child-id = '306';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 dane
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '299';
+          child-id = '307';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 widok
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '300';
+          child-id = '308';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 model
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '301';
+          child-id = '309';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 cube
@@ -10867,38 +10891,38 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 294;
+        node-id    = 302;
         node-label = 'wektor3d';
         node-link = {
           node-link-id = 'dc/d07/classwektor3d';
         };
       }; /* node */
       node = {
-        node-id    = 296;
+        node-id    = 304;
         node-label = 'wektor3i';
         node-link = {
           node-link-id = 'd1/de1/structwektor3i';
         };
       }; /* node */
       node = {
-        node-id    = 293;
+        node-id    = 301;
         node-label = 'QGLWidget';
       }; /* node */
       node = {
-        node-id    = 297;
+        node-id    = 305;
         node-label = 'Gradient';
         node-link = {
           node-link-id = 'd3/dc6/classGradient';
         };
       }; /* node */
       node = {
-        node-id    = 291;
+        node-id    = 299;
         node-label = 'GLWidget3D';
         node-link = {
           node-link-id = 'd1/d2f/classGLWidget3D';
         };
         node-child = {
-          child-id = '292';
+          child-id = '300';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -10949,7 +10973,7 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
       sec-mem-desc-line = '75';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-The OKNO enum.
+typ wyliczeniowy dla pod-okien MDI
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -11104,7 +11128,7 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
       sec-mem-desc-line = '82';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-closeEvent
+closeEvent - zdarzenie wyjścia z programu
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 \param event
@@ -11129,7 +11153,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'zapis';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '250';
+      sec-mem-desc-line = '254';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 zapisz
 _EnD_oF_dEf_TeXt_;
@@ -11147,7 +11171,7 @@ bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'zapisz_projekt';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '255';
+      sec-mem-desc-line = '259';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 zapisz_projekt
 _EnD_oF_dEf_TeXt_;
@@ -11171,7 +11195,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'metoda';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '260';
+      sec-mem-desc-line = '264';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 interpolacja
 _EnD_oF_dEf_TeXt_;
@@ -11195,7 +11219,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'okno';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '265';
+      sec-mem-desc-line = '269';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 otworz
 _EnD_oF_dEf_TeXt_;
@@ -11213,7 +11237,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'createActions';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '269';
+      sec-mem-desc-line = '273';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 createActions
 _EnD_oF_dEf_TeXt_;
@@ -11231,7 +11255,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'createMenus';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '273';
+      sec-mem-desc-line = '277';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 createMenus
 _EnD_oF_dEf_TeXt_;
@@ -11249,7 +11273,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'createToolBars';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '277';
+      sec-mem-desc-line = '281';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 createToolBars
 _EnD_oF_dEf_TeXt_;
@@ -11267,7 +11291,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'createStatusBar';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '281';
+      sec-mem-desc-line = '285';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 createStatusBar
 _EnD_oF_dEf_TeXt_;
@@ -11285,7 +11309,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'createDockWin';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '285';
+      sec-mem-desc-line = '289';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 createDockWin
 _EnD_oF_dEf_TeXt_;
@@ -11303,7 +11327,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'readSettings';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '289';
+      sec-mem-desc-line = '293';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 readSettings
 _EnD_oF_dEf_TeXt_;
@@ -11321,7 +11345,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'writeSettings';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '293';
+      sec-mem-desc-line = '297';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 writeSettings
 _EnD_oF_dEf_TeXt_;
@@ -11339,7 +11363,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'createEmptyModel';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '297';
+      sec-mem-desc-line = '301';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 createEmptyModel
 _EnD_oF_dEf_TeXt_;
@@ -11357,7 +11381,7 @@ QWidget *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'activeMdiW';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '307';
+      sec-mem-desc-line = '311';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 activeMdiW
 _EnD_oF_dEf_TeXt_;
@@ -11381,7 +11405,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'wName';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '313';
+      sec-mem-desc-line = '317';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 findMdiW
 _EnD_oF_dEf_TeXt_;
@@ -11406,7 +11430,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'akcess_name';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '319';
+      sec-mem-desc-line = '323';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 is_win
 _EnD_oF_dEf_TeXt_;
@@ -11428,7 +11452,7 @@ QFutureWatcher< void >
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'watcher';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '246';
+      sec-mem-desc-line = '250';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 watcher
 _EnD_oF_dEf_TeXt_;
@@ -11446,7 +11470,7 @@ QString
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'projFile';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '302';
+      sec-mem-desc-line = '306';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 projFile
 _EnD_oF_dEf_TeXt_;
@@ -11464,7 +11488,7 @@ GProTree *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'proTree';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '323';
+      sec-mem-desc-line = '327';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 proTree
 _EnD_oF_dEf_TeXt_;
@@ -11482,7 +11506,7 @@ GProSet *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'proSet';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '327';
+      sec-mem-desc-line = '331';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 proSet
 _EnD_oF_dEf_TeXt_;
@@ -11500,7 +11524,7 @@ GeoModel *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'curModel';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '331';
+      sec-mem-desc-line = '335';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 curModel
 _EnD_oF_dEf_TeXt_;
@@ -11518,7 +11542,7 @@ QMdiArea *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'mdiArea';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '335';
+      sec-mem-desc-line = '339';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 mdiArea
 _EnD_oF_dEf_TeXt_;
@@ -11536,7 +11560,7 @@ QDockWidget *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dockTree';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '339';
+      sec-mem-desc-line = '343';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 dockTree
 _EnD_oF_dEf_TeXt_;
@@ -11554,7 +11578,7 @@ QDockWidget *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dockSet';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '343';
+      sec-mem-desc-line = '347';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 dockSet
 _EnD_oF_dEf_TeXt_;
@@ -11572,7 +11596,7 @@ QProgressBar *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'progresBar';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '347';
+      sec-mem-desc-line = '351';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 progresBar
 _EnD_oF_dEf_TeXt_;
@@ -11590,7 +11614,7 @@ QTimer *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'progresTimer';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '351';
+      sec-mem-desc-line = '355';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 progresTimer
 _EnD_oF_dEf_TeXt_;
@@ -11608,7 +11632,7 @@ QTime
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'zegar';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '355';
+      sec-mem-desc-line = '359';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 zegar
 _EnD_oF_dEf_TeXt_;
@@ -11626,7 +11650,7 @@ QMenu *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'menuProj';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '360';
+      sec-mem-desc-line = '364';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 menuProj
 _EnD_oF_dEf_TeXt_;
@@ -11644,7 +11668,7 @@ QMenu *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'menuData';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '364';
+      sec-mem-desc-line = '368';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 menuData
 _EnD_oF_dEf_TeXt_;
@@ -11662,7 +11686,7 @@ QMenu *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'subMenuOpen';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '368';
+      sec-mem-desc-line = '372';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 subMenuOpen
 _EnD_oF_dEf_TeXt_;
@@ -11680,7 +11704,7 @@ QMenu *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'subMenuSave';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '372';
+      sec-mem-desc-line = '376';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 subMenuSave
 _EnD_oF_dEf_TeXt_;
@@ -11698,7 +11722,7 @@ QMenu *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'menuInterp';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '376';
+      sec-mem-desc-line = '380';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 menuInterp
 _EnD_oF_dEf_TeXt_;
@@ -11716,7 +11740,7 @@ QMenu *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'menuZasoby';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '380';
+      sec-mem-desc-line = '384';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 menuZasoby
 _EnD_oF_dEf_TeXt_;
@@ -11734,7 +11758,7 @@ QMenu *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'menuTools';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '384';
+      sec-mem-desc-line = '388';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 menuTools
 _EnD_oF_dEf_TeXt_;
@@ -11752,7 +11776,7 @@ QMenu *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'menuWindow';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '388';
+      sec-mem-desc-line = '392';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 menuWindow
 _EnD_oF_dEf_TeXt_;
@@ -11770,7 +11794,7 @@ QMenu *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'menuHelp';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '392';
+      sec-mem-desc-line = '396';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 menuHelp
 _EnD_oF_dEf_TeXt_;
@@ -11788,7 +11812,7 @@ QToolBar *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'toolBarProj';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '397';
+      sec-mem-desc-line = '401';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 toolBarProj
 _EnD_oF_dEf_TeXt_;
@@ -11806,7 +11830,7 @@ QToolBar *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'toolBarDane';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '401';
+      sec-mem-desc-line = '405';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 toolBarDane
 _EnD_oF_dEf_TeXt_;
@@ -11824,7 +11848,7 @@ QToolBar *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'toolBarInte';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '405';
+      sec-mem-desc-line = '409';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 toolBarInte
 _EnD_oF_dEf_TeXt_;
@@ -11842,7 +11866,7 @@ QToolBar *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'toolBarZaso';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '409';
+      sec-mem-desc-line = '413';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 toolBarZaso
 _EnD_oF_dEf_TeXt_;
@@ -11860,7 +11884,7 @@ QToolBar *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'toolBarTool';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '413';
+      sec-mem-desc-line = '417';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 toolBarTool
 _EnD_oF_dEf_TeXt_;
@@ -11878,7 +11902,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionNew';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '418';
+      sec-mem-desc-line = '422';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionNew
 _EnD_oF_dEf_TeXt_;
@@ -11896,7 +11920,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionOpen';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '422';
+      sec-mem-desc-line = '426';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionOpen
 _EnD_oF_dEf_TeXt_;
@@ -11914,7 +11938,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionSave';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '426';
+      sec-mem-desc-line = '430';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionSave
 _EnD_oF_dEf_TeXt_;
@@ -11932,7 +11956,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionSaveAs';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '430';
+      sec-mem-desc-line = '434';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionSaveAs
 _EnD_oF_dEf_TeXt_;
@@ -11950,7 +11974,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionExit';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '434';
+      sec-mem-desc-line = '438';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionExit
 _EnD_oF_dEf_TeXt_;
@@ -11968,7 +11992,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionOpenData';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '439';
+      sec-mem-desc-line = '443';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionOpenData
 _EnD_oF_dEf_TeXt_;
@@ -11986,7 +12010,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionOpenModel';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '443';
+      sec-mem-desc-line = '447';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionOpenModel
 _EnD_oF_dEf_TeXt_;
@@ -12004,7 +12028,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionOpenSurf';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '447';
+      sec-mem-desc-line = '451';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionOpenSurf
 _EnD_oF_dEf_TeXt_;
@@ -12022,7 +12046,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionZapiszDane';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '451';
+      sec-mem-desc-line = '455';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionZapiszDane
 _EnD_oF_dEf_TeXt_;
@@ -12040,7 +12064,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionZapiszModel';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '455';
+      sec-mem-desc-line = '459';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionZapiszModel
 _EnD_oF_dEf_TeXt_;
@@ -12058,7 +12082,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionZapiszZasoby';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '459';
+      sec-mem-desc-line = '463';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionZapiszZasoby
 _EnD_oF_dEf_TeXt_;
@@ -12076,7 +12100,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionZapiszRaport';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '463';
+      sec-mem-desc-line = '467';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionZapiszRaport
 _EnD_oF_dEf_TeXt_;
@@ -12094,7 +12118,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionDaneStat';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '467';
+      sec-mem-desc-line = '471';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionDaneStat
 _EnD_oF_dEf_TeXt_;
@@ -12112,7 +12136,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'action_invdist';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '472';
+      sec-mem-desc-line = '476';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 action_invdist
 _EnD_oF_dEf_TeXt_;
@@ -12130,7 +12154,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'action_okriging';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '476';
+      sec-mem-desc-line = '480';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 action_okriging
 _EnD_oF_dEf_TeXt_;
@@ -12148,7 +12172,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionZasoby';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '481';
+      sec-mem-desc-line = '485';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionZasoby
 _EnD_oF_dEf_TeXt_;
@@ -12166,7 +12190,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionAnaliza';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '485';
+      sec-mem-desc-line = '489';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionAnaliza
 _EnD_oF_dEf_TeXt_;
@@ -12184,7 +12208,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionToolSend';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '490';
+      sec-mem-desc-line = '494';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionToolSend
 _EnD_oF_dEf_TeXt_;
@@ -12202,7 +12226,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionToolPdf';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '494';
+      sec-mem-desc-line = '498';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionToolPdf
 _EnD_oF_dEf_TeXt_;
@@ -12220,7 +12244,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actZamk';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '499';
+      sec-mem-desc-line = '503';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actZamk
 _EnD_oF_dEf_TeXt_;
@@ -12238,7 +12262,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actZamkAll';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '503';
+      sec-mem-desc-line = '507';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actZamkAll
 _EnD_oF_dEf_TeXt_;
@@ -12256,7 +12280,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actTile';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '507';
+      sec-mem-desc-line = '511';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actTile
 _EnD_oF_dEf_TeXt_;
@@ -12274,7 +12298,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actCascade';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '511';
+      sec-mem-desc-line = '515';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actCascade
 _EnD_oF_dEf_TeXt_;
@@ -12292,7 +12316,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actNext';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '515';
+      sec-mem-desc-line = '519';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actNext
 _EnD_oF_dEf_TeXt_;
@@ -12310,9 +12334,27 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actPrev';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '519';
+      sec-mem-desc-line = '523';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actPrev
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'dd/d90/classGMainWin_1ab78f5e265b1a4bbcf9337c0c24e6be6a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+QAction *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'actTabbed';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
+      sec-mem-desc-line = '527';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+actTabbed
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -12328,7 +12370,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionAbout';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '524';
+      sec-mem-desc-line = '532';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionAbout
 _EnD_oF_dEf_TeXt_;
@@ -12346,7 +12388,7 @@ QAction *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'actionHelp';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
-      sec-mem-desc-line = '528';
+      sec-mem-desc-line = '536';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 actionHelp
 _EnD_oF_dEf_TeXt_;
@@ -12945,6 +12987,24 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'slot';
+      sec-mem-id   = 'dd/d90/classGMainWin_1a119cbdf6b45271c6f62c1ec4fe799a81';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'slot_tabbed';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
+      sec-mem-desc-line = '244';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+slot_tabbed
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
   cp-fileline  = '58';
@@ -12956,37 +13016,527 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 302;
+        node-id    = 310;
         node-label = 'GMainWin';
         node-link = {
           node-link-id = 'dd/d90/classGMainWin';
         };
         node-child = {
-          child-id = '303';
+          child-id = '311';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 303;
+        node-id    = 311;
         node-label = 'QMainWindow';
       }; /* node */
 
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 304;
+        node-id    = 312;
         node-label = 'GMainWin';
         node-link = {
           node-link-id = 'dd/d90/classGMainWin';
         };
         node-child = {
-          child-id = '305';
+          child-id = '313';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 305;
+        node-id    = 313;
         node-label = 'QMainWindow';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'd3/d4d/classGProAnaliza';
+  cp-name   = 'GProAnaliza';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'd9/d46/classQDialog';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1ad58d1ababa0158e8b410570fd0dd4fd0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GProAnaliza';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+GeoZasoby *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'zasoby';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+GeoModel *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'model';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+QWidget *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'parent';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '45';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+GProAnaliza.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+\param zasoby
+\param parent
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1a5e131d2ff0272ed9cc2b899593f125e7';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~GProAnaliza';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '49';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+~GProAnaliza
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1abf16c77efb60982980b2fc56ca7b8596';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_klasy';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '51';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1acfcfd713b1612b4616fae0126376821a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'createLayout';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '58';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1a1c6adecbe4bcba9771e33af260c25237';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'createLayoutAll';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '59';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1afc4b7751175bce3f91f0892925a062af';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'createTableView';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '60';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1ade455eb5482bc6ffd4a8fc50c785f16d';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'update_all';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '61';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1ad3ac81bf66cb4bb70b489fe547284c4c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+GeoZasoby *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'geoZasoby';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '62';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1a0cd65628c97ab150ec75428bc333b927';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+GeoModel *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'geoModel';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '63';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1add2264758b87177c03d24d2c8989481e';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::vector< geo3d >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'analiza';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '66';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1a453fc9f9ac910ad6cf88cda02a174bc1';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'klasy';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '67';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1ac913f2737cc8b84705d0503869695604';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+GraphColumnWidget *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'graph';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '68';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1ae44a6651af5160ffaa67a71181af9ec4';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+QDialogButtonBox *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'butBox';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '70';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1a3e3a4cb04137253078ba7f3ef1315a1f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+QVBoxLayout *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mainLayout';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '71';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1abcd0bf24aab3dc16b735e39477d8d3f5';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+QGroupBox *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'all_grup';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '72';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1ade01057ab116e20b63ba7a5d542366aa';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+QGridLayout *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'layoutAll';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '73';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1ad4593e108195c456708e9278e6afe172';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+QLabel *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'lab_klasy';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '75';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1ad7f9e451bafbd5a5bfe1bdced48468bd';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+QSpinBox *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'sb_klasy';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '76';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1a5bde5c21703e1e538e002c52aa8b1b07';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+QStandardItemModel *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'itemModel';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '78';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1a0de1280973b660c2118121d7c9e92609';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+QTableView *
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'tableView';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '79';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-slot';
+    sec-member = {
+      sec-mem-kind = 'slot';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1a12ed0625270633ece0a1e2190ac43354';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'slot_klasy';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-defname = 'i';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '54';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'slot';
+      sec-mem-id   = 'd3/d4d/classGProAnaliza_1a8de2a72f9f23c48469e6346dad75f406';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'slot_table';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+      sec-mem-desc-line = '55';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
+  cp-fileline  = '37';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+The GProAnaliza class.
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 315;
+        node-label = 'QDialog';
+      }; /* node */
+      node = {
+        node-id    = 314;
+        node-label = 'GProAnaliza';
+        node-link = {
+          node-link-id = 'd3/d4d/classGProAnaliza';
+        };
+        node-child = {
+          child-id = '315';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 317;
+        node-label = 'QDialog';
+      }; /* node */
+      node = {
+        node-id    = 316;
+        node-label = 'GProAnaliza';
+        node-link = {
+          node-link-id = 'd3/d4d/classGProAnaliza';
+        };
+        node-child = {
+          child-id = '317';
+          relation = public-inheritance;
+        }; /* node-child */
       }; /* node */
 
 _EnD_oF_dEf_TeXt_;
@@ -13847,17 +14397,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 307;
+        node-id    = 319;
         node-label = 'QDialog';
       }; /* node */
       node = {
-        node-id    = 306;
+        node-id    = 318;
         node-label = 'GProDialog';
         node-link = {
           node-link-id = 'db/deb/classGProDialog';
         };
         node-child = {
-          child-id = '307';
+          child-id = '319';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -13865,17 +14415,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 309;
+        node-id    = 321;
         node-label = 'QDialog';
       }; /* node */
       node = {
-        node-id    = 308;
+        node-id    = 320;
         node-label = 'GProDialog';
         node-link = {
           node-link-id = 'db/deb/classGProDialog';
         };
         node-child = {
-          child-id = '309';
+          child-id = '321';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -14849,36 +15399,36 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 310;
+        node-id    = 322;
         node-label = 'GProSet';
         node-link = {
           node-link-id = 'd1/d17/classGProSet';
         };
         node-child = {
-          child-id = '311';
+          child-id = '323';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 311;
+        node-id    = 323;
         node-label = 'QWidget';
       }; /* node */
 
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 312;
+        node-id    = 324;
         node-label = 'GProSet';
         node-link = {
           node-link-id = 'd1/d17/classGProSet';
         };
         node-child = {
-          child-id = '313';
+          child-id = '325';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 313;
+        node-id    = 325;
         node-label = 'QWidget';
       }; /* node */
 
@@ -15115,17 +15665,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 315;
+        node-id    = 327;
         node-label = 'QTreeView';
       }; /* node */
       node = {
-        node-id    = 314;
+        node-id    = 326;
         node-label = 'GProTree';
         node-link = {
           node-link-id = 'd5/d31/classGProTree';
         };
         node-child = {
-          child-id = '315';
+          child-id = '327';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -15133,17 +15683,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 317;
+        node-id    = 329;
         node-label = 'QTreeView';
       }; /* node */
       node = {
-        node-id    = 316;
+        node-id    = 328;
         node-label = 'GProTree';
         node-link = {
           node-link-id = 'd5/d31/classGProTree';
         };
         node-child = {
-          child-id = '317';
+          child-id = '329';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -15226,6 +15776,240 @@ _EnD_oF_dEf_TeXt_;
 The Gradient class.
 _EnD_oF_dEf_TeXt_;
   cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'd5/d12/classGraphColumnWidget';
+  cp-name   = 'GraphColumnWidget';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'd8/ded/classQWidget';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd5/d12/classGraphColumnWidget_1a28b708f0035d5b0160b497fbb49977a8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GraphColumnWidget';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+QWidget *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'parent';
+        sec-mem-param-defval = <<_EnD_oF_dEf_TeXt_
+0
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GraphColumnWidget.h';
+      sec-mem-desc-line = '12';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd5/d12/classGraphColumnWidget_1a54622fa4bbd80e9bc985c4841346ea71';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'set_data';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::vector< geo3d > &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'data';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GraphColumnWidget.h';
+      sec-mem-desc-line = '14';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'protected-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd5/d12/classGraphColumnWidget_1ad5318b82984afca062dfe46a74317af6';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'paintEvent';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+QPaintEvent *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'e';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GraphColumnWidget.h';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'd5/d12/classGraphColumnWidget_1a19bd14a3d5d8c9139d2b96043905c840';
+      sec-mem-virt = normal;
+      sec-mem-prot = protected;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'resizeEvent';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+QResizeEvent *
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'e';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GraphColumnWidget.h';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd5/d12/classGraphColumnWidget_1a832c32bd9473282d1bc0e7bbd354027a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::vector< geo3d >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'dane';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GraphColumnWidget.h';
+      sec-mem-desc-line = '21';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd5/d12/classGraphColumnWidget_1ad8680c8efb067c0fac33c6ff75f1f07c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+double
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'max_masa';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GraphColumnWidget.h';
+      sec-mem-desc-line = '22';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd5/d12/classGraphColumnWidget_1af56758476f4355b717eb9f174e5479b7';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+QSize
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'border';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GraphColumnWidget.h';
+      sec-mem-desc-line = '23';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'd5/d12/classGraphColumnWidget_1a9fdda299bf03487ad35c7bade83b91b2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+QSize
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'area';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GraphColumnWidget.h';
+      sec-mem-desc-line = '24';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GraphColumnWidget.h';
+  cp-fileline  = '10';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 332;
+        node-label = 'GraphColumnWidget';
+        node-link = {
+          node-link-id = 'd5/d12/classGraphColumnWidget';
+        };
+        node-child = {
+          child-id = '333';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 333;
+        node-label = 'QWidget';
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 334;
+        node-label = 'GraphColumnWidget';
+        node-link = {
+          node-link-id = 'd5/d12/classGraphColumnWidget';
+        };
+        node-child = {
+          child-id = '335';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 335;
+        node-label = 'QWidget';
+      }; /* node */
 
 _EnD_oF_dEf_TeXt_;
 }; /* class */
@@ -15655,17 +16439,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 321;
+        node-id    = 337;
         node-label = 'QWidget';
       }; /* node */
       node = {
-        node-id    = 320;
+        node-id    = 336;
         node-label = 'GraphWidget';
         node-link = {
           node-link-id = 'd8/d93/classGraphWidget';
         };
         node-child = {
-          child-id = '321';
+          child-id = '337';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -15673,17 +16457,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 323;
+        node-id    = 339;
         node-label = 'QWidget';
       }; /* node */
       node = {
-        node-id    = 322;
+        node-id    = 338;
         node-label = 'GraphWidget';
         node-link = {
           node-link-id = 'd8/d93/classGraphWidget';
         };
         node-child = {
-          child-id = '323';
+          child-id = '339';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -15717,7 +16501,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'set';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '715';
+      sec-mem-desc-line = '733';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator ()
 _EnD_oF_dEf_TeXt_;
@@ -15729,7 +16513,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-  cp-fileline  = '707';
+  cp-fileline  = '726';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 The Lok2glob struct.
 _EnD_oF_dEf_TeXt_;
@@ -15752,7 +16536,7 @@ struct = {
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'Mset';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '417';
+      sec-mem-desc-line = '403';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Mset.
 _EnD_oF_dEf_TeXt_;
@@ -15762,7 +16546,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'de/def/structMset_1abbb359c62f3f0051a725b51d41bcafee';
+      sec-mem-id   = 'de/def/structMset_1ab4d19a465228bd1c3d3b1b5d9811f58e';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -15841,8 +16625,14 @@ METODA
 _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'alg';
       }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'klz';
+      }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '450';
+      sec-mem-desc-line = '437';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Mset.
 _EnD_oF_dEf_TeXt_;
@@ -15857,7 +16647,9 @@ _EnD_oF_dEf_TeXt_;
 \param min_dat
 \param max_dat
 \param gest
-\param jedn
+\param jed
+\param alg
+\param klz
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -15870,12 +16662,12 @@ int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_bloki';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '454';
+      sec-mem-desc-line = '461';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+get_bloki
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
+\return
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -15888,12 +16680,12 @@ double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_objetosc';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '456';
+      sec-mem-desc-line = '466';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+get_objetosc
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
+\return
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -15906,12 +16698,12 @@ double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_masa';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '458';
+      sec-mem-desc-line = '471';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+get_masa
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
+\return
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -15924,12 +16716,12 @@ wektor3d
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_wymiary';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '460';
+      sec-mem-desc-line = '476';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
+get_wymiary
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
+\return
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
@@ -15945,7 +16737,7 @@ wektor3i
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'grid';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '462';
+      sec-mem-desc-line = '478';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -15963,7 +16755,7 @@ wektor3d
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'start';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '463';
+      sec-mem-desc-line = '479';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -15981,7 +16773,7 @@ wektor3d
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'start_grid';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '464';
+      sec-mem-desc-line = '480';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -15999,7 +16791,7 @@ wektor3d
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'wym';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '465';
+      sec-mem-desc-line = '481';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16017,7 +16809,7 @@ string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'name';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '466';
+      sec-mem-desc-line = '482';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16035,7 +16827,7 @@ double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sp';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '467';
+      sec-mem-desc-line = '483';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16053,7 +16845,7 @@ double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'cutoff';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '468';
+      sec-mem-desc-line = '484';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16071,7 +16863,7 @@ bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'flag';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '469';
+      sec-mem-desc-line = '485';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16089,7 +16881,7 @@ wektor3d
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'min_val';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '470';
+      sec-mem-desc-line = '486';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16107,7 +16899,7 @@ wektor3d
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'max_val';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '471';
+      sec-mem-desc-line = '487';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16125,7 +16917,7 @@ double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'gestosc';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '472';
+      sec-mem-desc-line = '488';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16143,7 +16935,7 @@ JEDNOSTKI
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'jednostki';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '473';
+      sec-mem-desc-line = '489';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16161,7 +16953,25 @@ METODA
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'algorytm';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '474';
+      sec-mem-desc-line = '490';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'de/def/structMset_1a7bc4e998d873a8b4daa9c8be420863b4';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'klasy_zas';
+      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
+      sec-mem-desc-line = '491';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16180,13 +16990,13 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 327;
+        node-id    = 343;
         node-label = 'Mset';
         node-link = {
           node-link-id = 'de/def/structMset';
         };
         node-child = {
-          child-id = '328';
+          child-id = '344';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 wym
@@ -16197,7 +17007,7 @@ start
 _EnD_oF_dEf_TeXt_;
         }; /* node-child */
         node-child = {
-          child-id = '329';
+          child-id = '345';
           relation = usage;
           edgelabel = <<_EnD_oF_dEf_TeXt_
 grid
@@ -16205,14 +17015,14 @@ _EnD_oF_dEf_TeXt_;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 328;
+        node-id    = 344;
         node-label = 'wektor3d';
         node-link = {
           node-link-id = 'dc/d07/classwektor3d';
         };
       }; /* node */
       node = {
-        node-id    = 329;
+        node-id    = 345;
         node-label = 'wektor3i';
         node-link = {
           node-link-id = 'd1/de1/structwektor3i';
@@ -16248,7 +17058,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'b';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '223';
+      sec-mem-desc-line = '222';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator ()
 _EnD_oF_dEf_TeXt_;
@@ -16295,7 +17105,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'b';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '239';
+      sec-mem-desc-line = '238';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator ()
 _EnD_oF_dEf_TeXt_;
@@ -16330,7 +17140,7 @@ struct = {
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'Progres';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '728';
+      sec-mem-desc-line = '747';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Progres.
 _EnD_oF_dEf_TeXt_;
@@ -16366,7 +17176,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = '_cur';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '735';
+      sec-mem-desc-line = '754';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Progres.
 _EnD_oF_dEf_TeXt_;
@@ -16386,7 +17196,7 @@ float
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_part';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '741';
+      sec-mem-desc-line = '759';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 get_part
 _EnD_oF_dEf_TeXt_;
@@ -16407,7 +17217,7 @@ int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'pmin';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '744';
+      sec-mem-desc-line = '763';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16425,7 +17235,7 @@ int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'pmax';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '744';
+      sec-mem-desc-line = '763';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16443,7 +17253,7 @@ int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'pcur';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '744';
+      sec-mem-desc-line = '763';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16453,7 +17263,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-  cp-fileline  = '724';
+  cp-fileline  = '743';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 The Progres struct.
 _EnD_oF_dEf_TeXt_;
@@ -16480,17 +17290,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 336;
+        node-id    = 352;
         node-label = 'QApplication';
       }; /* node */
       node = {
-        node-id    = 337;
+        node-id    = 353;
         node-label = 'geoApplication';
         node-link = {
           node-link-id = 'd3/de0/classgeoApplication';
         };
         node-child = {
-          child-id = '336';
+          child-id = '352';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -16500,6 +17310,12 @@ _EnD_oF_dEf_TeXt_;
 class = {
   cp-id     = 'd9/d46/classQDialog';
   cp-name   = 'QDialog';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'd3/d4d/classGProAnaliza';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
   cp-ref     = {
     ref-type = derived;
     ref-id   = 'db/deb/classGProDialog';
@@ -16516,17 +17332,28 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 339;
+        node-id    = 355;
         node-label = 'QDialog';
       }; /* node */
       node = {
-        node-id    = 340;
+        node-id    = 357;
         node-label = 'GProDialog';
         node-link = {
           node-link-id = 'db/deb/classGProDialog';
         };
         node-child = {
-          child-id = '339';
+          child-id = '355';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 356;
+        node-label = 'GProAnaliza';
+        node-link = {
+          node-link-id = 'd3/d4d/classGProAnaliza';
+        };
+        node-child = {
+          child-id = '355';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -16552,18 +17379,18 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 343;
+        node-id    = 360;
         node-label = 'GeoDoubleSpin';
         node-link = {
           node-link-id = 'dd/d62/classGeoDoubleSpin';
         };
         node-child = {
-          child-id = '342';
+          child-id = '359';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 342;
+        node-id    = 359;
         node-label = 'QDoubleSpinBox';
       }; /* node */
 
@@ -16588,39 +17415,39 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 347;
+        node-id    = 364;
         node-label = 'GLWidget2D';
         node-link = {
           node-link-id = 'dd/d6e/classGLWidget2D';
         };
         node-child = {
-          child-id = '346';
+          child-id = '363';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 346;
+        node-id    = 363;
         node-label = 'GLWidget';
         node-link = {
           node-link-id = 'd4/dc5/classGLWidget';
         };
         node-child = {
-          child-id = '345';
+          child-id = '362';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 345;
+        node-id    = 362;
         node-label = 'QGLWidget';
       }; /* node */
       node = {
-        node-id    = 348;
+        node-id    = 365;
         node-label = 'GLWidget3D';
         node-link = {
           node-link-id = 'd1/d2f/classGLWidget3D';
         };
         node-child = {
-          child-id = '346';
+          child-id = '363';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -16646,18 +17473,18 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 351;
+        node-id    = 368;
         node-label = 'GMainWin';
         node-link = {
           node-link-id = 'dd/d90/classGMainWin';
         };
         node-child = {
-          child-id = '350';
+          child-id = '367';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 350;
+        node-id    = 367;
         node-label = 'QMainWindow';
       }; /* node */
 
@@ -16682,17 +17509,17 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 353;
+        node-id    = 370;
         node-label = 'QTreeView';
       }; /* node */
       node = {
-        node-id    = 354;
+        node-id    = 371;
         node-label = 'GProTree';
         node-link = {
           node-link-id = 'd5/d31/classGProTree';
         };
         node-child = {
-          child-id = '353';
+          child-id = '370';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -16716,6 +17543,12 @@ class = {
   };
   cp-ref     = {
     ref-type = derived;
+    ref-id   = 'd5/d12/classGraphColumnWidget';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
     ref-id   = 'd8/d93/classGraphWidget';
     ref-prot = public;
     ref-virt = non-virtual;
@@ -16730,94 +17563,105 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
   cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
       node = {
-        node-id    = 362;
+        node-id    = 379;
         node-label = 'GeoWidgetVariogram';
         node-link = {
           node-link-id = 'dc/d81/classGeoWidgetVariogram';
         };
         node-child = {
-          child-id = '357';
+          child-id = '374';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 357;
+        node-id    = 374;
         node-label = 'GeoWidget';
         node-link = {
           node-link-id = 'd9/df4/classGeoWidget';
         };
         node-child = {
-          child-id = '356';
+          child-id = '373';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 360;
+        node-id    = 377;
         node-label = 'GeoWidgetDane';
         node-link = {
           node-link-id = 'd7/d50/classGeoWidgetDane';
         };
         node-child = {
-          child-id = '357';
+          child-id = '374';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 361;
+        node-id    = 378;
         node-label = 'GeoWidgetRaport';
         node-link = {
           node-link-id = 'df/d16/classGeoWidgetRaport';
         };
         node-child = {
-          child-id = '357';
+          child-id = '374';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 359;
+        node-id    = 381;
+        node-label = 'GraphColumnWidget';
+        node-link = {
+          node-link-id = 'd5/d12/classGraphColumnWidget';
+        };
+        node-child = {
+          child-id = '373';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 376;
         node-label = 'GeoWidget3D';
         node-link = {
           node-link-id = 'dd/d0c/classGeoWidget3D';
         };
         node-child = {
-          child-id = '357';
+          child-id = '374';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 358;
+        node-id    = 375;
         node-label = 'GeoWidget2D';
         node-link = {
           node-link-id = 'dd/dd3/classGeoWidget2D';
         };
         node-child = {
-          child-id = '357';
+          child-id = '374';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 363;
+        node-id    = 380;
         node-label = 'GProSet';
         node-link = {
           node-link-id = 'd1/d17/classGProSet';
         };
         node-child = {
-          child-id = '356';
+          child-id = '373';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
       node = {
-        node-id    = 356;
+        node-id    = 373;
         node-label = 'QWidget';
       }; /* node */
       node = {
-        node-id    = 364;
+        node-id    = 382;
         node-label = 'GraphWidget';
         node-link = {
           node-link-id = 'd8/d93/classGraphWidget';
         };
         node-child = {
-          child-id = '356';
+          child-id = '373';
           relation = public-inheritance;
         }; /* node-child */
       }; /* node */
@@ -16839,7 +17683,7 @@ struct = {
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'Set_interpolacja';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '600';
+      sec-mem-desc-line = '609';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Set_interpolacja.
 _EnD_oF_dEf_TeXt_;
@@ -16857,7 +17701,7 @@ string
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'toString';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '608';
+      sec-mem-desc-line = '626';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 toString
 _EnD_oF_dEf_TeXt_;
@@ -16878,7 +17722,7 @@ variogram
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'vario';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '623';
+      sec-mem-desc-line = '642';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16896,7 +17740,7 @@ double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'nuget_c0';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '624';
+      sec-mem-desc-line = '643';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16914,7 +17758,7 @@ double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sill_c1';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '625';
+      sec-mem-desc-line = '644';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16932,7 +17776,7 @@ double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'range_a';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '626';
+      sec-mem-desc-line = '645';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16950,7 +17794,7 @@ float
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'potega';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '627';
+      sec-mem-desc-line = '646';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16968,7 +17812,7 @@ double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'promien';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '628';
+      sec-mem-desc-line = '647';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -16986,7 +17830,7 @@ int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'min_ilosc';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '629';
+      sec-mem-desc-line = '648';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -17004,7 +17848,7 @@ int
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'max_ilosc';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '630';
+      sec-mem-desc-line = '649';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -17022,7 +17866,7 @@ double
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'rozmiar_klasy';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '631';
+      sec-mem-desc-line = '650';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -17032,7 +17876,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-  cp-fileline  = '586';
+  cp-fileline  = '605';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 The Set_interpolacja struct.
 _EnD_oF_dEf_TeXt_;
@@ -17055,7 +17899,7 @@ struct = {
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'Vset';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '568';
+      sec-mem-desc-line = '577';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 Vset.
 _EnD_oF_dEf_TeXt_;
@@ -17076,7 +17920,7 @@ bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'zakres';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '571';
+      sec-mem-desc-line = '590';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -17094,7 +17938,7 @@ bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dane';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '572';
+      sec-mem-desc-line = '591';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -17112,7 +17956,7 @@ bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'siatka';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '573';
+      sec-mem-desc-line = '592';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -17130,7 +17974,7 @@ bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'wezel';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '574';
+      sec-mem-desc-line = '593';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -17148,7 +17992,7 @@ bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'zasoby';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '575';
+      sec-mem-desc-line = '594';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -17166,7 +18010,7 @@ bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'perspektywa';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '576';
+      sec-mem-desc-line = '595';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -17184,7 +18028,7 @@ bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'tlo';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '577';
+      sec-mem-desc-line = '596';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -17202,7 +18046,7 @@ bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'interp';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '578';
+      sec-mem-desc-line = '597';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -17220,7 +18064,7 @@ bool
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'error_map';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '579';
+      sec-mem-desc-line = '598';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -17230,7 +18074,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-  cp-fileline  = '554';
+  cp-fileline  = '573';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 The Vset struct.
 _EnD_oF_dEf_TeXt_;
@@ -17265,7 +18109,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'b';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '356';
+      sec-mem-desc-line = '355';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator ()
 _EnD_oF_dEf_TeXt_;
@@ -17312,7 +18156,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'b';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '373';
+      sec-mem-desc-line = '372';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator ()
 _EnD_oF_dEf_TeXt_;
@@ -17359,7 +18203,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'b';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '390';
+      sec-mem-desc-line = '389';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator ()
 _EnD_oF_dEf_TeXt_;
@@ -17406,7 +18250,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'b';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '292';
+      sec-mem-desc-line = '291';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator ()
 _EnD_oF_dEf_TeXt_;
@@ -17503,7 +18347,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'd';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '108';
+      sec-mem-desc-line = '107';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator +
 _EnD_oF_dEf_TeXt_;
@@ -17528,7 +18372,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'd';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '117';
+      sec-mem-desc-line = '116';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator -
 _EnD_oF_dEf_TeXt_;
@@ -17553,7 +18397,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'liczba';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '126';
+      sec-mem-desc-line = '125';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator *
 _EnD_oF_dEf_TeXt_;
@@ -17578,7 +18422,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'liczba';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '135';
+      sec-mem-desc-line = '134';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator /
 _EnD_oF_dEf_TeXt_;
@@ -17603,7 +18447,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'd';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '144';
+      sec-mem-desc-line = '143';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator <
 _EnD_oF_dEf_TeXt_;
@@ -17628,7 +18472,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'd';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '156';
+      sec-mem-desc-line = '155';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator ==
 _EnD_oF_dEf_TeXt_;
@@ -17859,7 +18703,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'set';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      sec-mem-desc-line = '681';
+      sec-mem-desc-line = '699';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator ()
 _EnD_oF_dEf_TeXt_;
@@ -17871,7 +18715,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-  cp-fileline  = '673';
+  cp-fileline  = '692';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 The Win2cube struct.
 _EnD_oF_dEf_TeXt_;
@@ -18325,7 +19169,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 't';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      func-mem-desc-line = '60';
+      func-mem-desc-line = '59';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -18355,7 +19199,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'd';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      func-mem-desc-line = '171';
+      func-mem-desc-line = '170';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator <<
 _EnD_oF_dEf_TeXt_;
@@ -18387,7 +19231,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'd';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      func-mem-desc-line = '183';
+      func-mem-desc-line = '182';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator >>
 _EnD_oF_dEf_TeXt_;
@@ -18419,7 +19263,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'd';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      func-mem-desc-line = '195';
+      func-mem-desc-line = '194';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator <<
 _EnD_oF_dEf_TeXt_;
@@ -18451,7 +19295,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'd';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      func-mem-desc-line = '205';
+      func-mem-desc-line = '204';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator >>
 _EnD_oF_dEf_TeXt_;
@@ -18483,7 +19327,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'd';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      func-mem-desc-line = '275';
+      func-mem-desc-line = '274';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator <<
 _EnD_oF_dEf_TeXt_;
@@ -18515,7 +19359,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'd';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      func-mem-desc-line = '483';
+      func-mem-desc-line = '499';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator <<
 _EnD_oF_dEf_TeXt_;
@@ -18547,7 +19391,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'd';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      func-mem-desc-line = '504';
+      func-mem-desc-line = '521';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator >>
 _EnD_oF_dEf_TeXt_;
@@ -18579,7 +19423,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-declname = 'd';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/globalne.h';
-      func-mem-desc-line = '640';
+      func-mem-desc-line = '658';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 operator <<
 _EnD_oF_dEf_TeXt_;
@@ -18720,12 +19564,12 @@ QString const
 _EnD_oF_dEf_TeXt_;
       var-mem-name = 'APPNAME';
       var-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= "GeoStat"
+= "MGeoStat"
 _EnD_oF_dEf_TeXt_;
       var-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
       var-mem-desc-line = '53';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-APPNAME.
+APPNAME stała - nazwa programu.
 _EnD_oF_dEf_TeXt_;
       var-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -18733,6 +19577,30 @@ _EnD_oF_dEf_TeXt_;
     }; /* var-member */
     };
   file-full-name  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd7/d35/GProAnaliza_8cpp';
+  file-name = 'GProAnaliza.cpp';
+  file-full-name  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd0/d76/GProAnaliza_8h';
+  file-name = 'GProAnaliza.h';
+  file-full-name  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProAnaliza.h';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
 
@@ -18838,6 +19706,30 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
 }; /* file */
 file = {
+  file-id   = 'd6/dea/GraphColumnWidget_8cpp';
+  file-name = 'GraphColumnWidget.cpp';
+  file-full-name  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GraphColumnWidget.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'd3/d5a/GraphColumnWidget_8h';
+  file-name = 'GraphColumnWidget.h';
+  file-full-name  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GraphColumnWidget.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
   file-id   = 'd1/dbd/GraphWidget_8cpp';
   file-name = 'GraphWidget.cpp';
   file-full-name  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GraphWidget.cpp';
@@ -18888,7 +19780,7 @@ _EnD_oF_dEf_TeXt_;
         func-mem-param-array = '[]';
       }; /*        func-mem-param--param */
       func-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/main.cpp';
-      func-mem-desc-line = '71';
+      func-mem-desc-line = '70';
       func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 main
 _EnD_oF_dEf_TeXt_;

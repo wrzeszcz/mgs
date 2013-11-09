@@ -15,5 +15,6 @@ var searchData=
   ['_7eglwidget2d',['~GLWidget2D',['../dd/d6e/classGLWidget2D.html#a6c25e547c1eab0a57f9b6050e86b1876',1,'GLWidget2D']]],
   ['_7eglwidget3d',['~GLWidget3D',['../d1/d2f/classGLWidget3D.html#a307ba50ef76f718f6db44f37b09170bb',1,'GLWidget3D']]],
   ['_7egmainwin',['~GMainWin',['../dd/d90/classGMainWin.html#ac06ca74bea6b2d52fe0b26f0aed2c491',1,'GMainWin']]],
+  ['_7egproanaliza',['~GProAnaliza',['../d3/d4d/classGProAnaliza.html#a5e131d2ff0272ed9cc2b899593f125e7',1,'GProAnaliza']]],
   ['_7egprodialog',['~GProDialog',['../db/deb/classGProDialog.html#a8fc534339735c9b4654f33f815ec046c',1,'GProDialog']]]
 ];

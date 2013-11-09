@@ -63,6 +63,10 @@ var files =
     ] ],
     [ "GMainWin.cpp", "d0/dc8/GMainWin_8cpp.html", null ],
     [ "GMainWin.h", "d7/d45/GMainWin_8h.html", "d7/d45/GMainWin_8h" ],
+    [ "GProAnaliza.cpp", "d7/d35/GProAnaliza_8cpp.html", null ],
+    [ "GProAnaliza.h", "d0/d76/GProAnaliza_8h.html", [
+      [ "GProAnaliza", "d3/d4d/classGProAnaliza.html", "d3/d4d/classGProAnaliza" ]
+    ] ],
     [ "GProDialog.cpp", "d5/d16/GProDialog_8cpp.html", null ],
     [ "GProDialog.h", "d0/d1b/GProDialog_8h.html", [
       [ "GeoDoubleSpin", "dd/d62/classGeoDoubleSpin.html", "dd/d62/classGeoDoubleSpin" ],
@@ -79,6 +83,10 @@ var files =
     [ "Gradient.cpp", "da/d56/Gradient_8cpp.html", null ],
     [ "Gradient.h", "d4/d3f/Gradient_8h.html", [
       [ "Gradient", "d3/dc6/classGradient.html", "d3/dc6/classGradient" ]
+    ] ],
+    [ "GraphColumnWidget.cpp", "d6/dea/GraphColumnWidget_8cpp.html", null ],
+    [ "GraphColumnWidget.h", "d3/d5a/GraphColumnWidget_8h.html", [
+      [ "GraphColumnWidget", "d5/d12/classGraphColumnWidget.html", "d5/d12/classGraphColumnWidget" ]
     ] ],
     [ "GraphWidget.cpp", "d1/dbd/GraphWidget_8cpp.html", null ],
     [ "GraphWidget.h", "d0/dda/GraphWidget_8h.html", [

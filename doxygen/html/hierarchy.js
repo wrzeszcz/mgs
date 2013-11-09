@@ -23,6 +23,7 @@ var hierarchy =
       [ "geoApplication", "d3/de0/classgeoApplication.html", null ]
     ] ],
     [ "QDialog", null, [
+      [ "GProAnaliza", "d3/d4d/classGProAnaliza.html", null ],
       [ "GProDialog", "db/deb/classGProDialog.html", null ]
     ] ],
     [ "QDoubleSpinBox", null, [
@@ -49,6 +50,7 @@ var hierarchy =
         [ "GeoWidgetVariogram", "dc/d81/classGeoWidgetVariogram.html", null ]
       ] ],
       [ "GProSet", "d1/d17/classGProSet.html", null ],
+      [ "GraphColumnWidget", "d5/d12/classGraphColumnWidget.html", null ],
       [ "GraphWidget", "d8/d93/classGraphWidget.html", null ]
     ] ],
     [ "Set_interpolacja", "de/d72/structSet__interpolacja.html", null ],

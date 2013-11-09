@@ -1,7 +1,7 @@
 var structMset =
 [
     [ "Mset", "de/def/structMset.html#a431c8dd5357b5c9901802b3bf8b448b2", null ],
-    [ "Mset", "de/def/structMset.html#abbb359c62f3f0051a725b51d41bcafee", null ],
+    [ "Mset", "de/def/structMset.html#ab4d19a465228bd1c3d3b1b5d9811f58e", null ],
     [ "get_bloki", "de/def/structMset.html#ac64a1903287f9ecce8f753eda05945c4", null ],
     [ "get_masa", "de/def/structMset.html#a6049b73add36f7a2709dcf2e527778c5", null ],
     [ "get_objetosc", "de/def/structMset.html#a88cb7fc98d0162678c8f5c6d9e9e59db", null ],
@@ -12,6 +12,7 @@ var structMset =
     [ "gestosc", "de/def/structMset.html#aaf265d04da58a881799fbdebbfc89e14", null ],
     [ "grid", "de/def/structMset.html#aede03131ea895ec3f04e6bd4e411ff24", null ],
     [ "jednostki", "de/def/structMset.html#ab9551ebac71e9ba1e342e8bd504bb104", null ],
+    [ "klasy_zas", "de/def/structMset.html#a7bc4e998d873a8b4daa9c8be420863b4", null ],
     [ "max_val", "de/def/structMset.html#adb80278237afb51f85e8c1301ab5efc7", null ],
     [ "min_val", "de/def/structMset.html#a4552364a688a9c2c7913436e2751e1c2", null ],
     [ "name", "de/def/structMset.html#abb4008e66a939ea0f4ba4826e0a58512", null ],

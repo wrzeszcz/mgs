@@ -21,7 +21,7 @@ var searchData=
   ['get_5fbloki',['get_bloki',['../de/def/structMset.html#ac64a1903287f9ecce8f753eda05945c4',1,'Mset']]],
   ['get_5fend',['get_end',['../d3/dac/classGeoDat.html#a210271649a59de96800b59ca48bdb196',1,'GeoDat']]],
   ['get_5fiset',['get_iset',['../d6/d62/classGeoModel.html#ad223b46182c20249e6fa44561bfe0f44',1,'GeoModel']]],
-  ['get_5fklasy',['get_klasy',['../d6/d41/classGeoVariogram.html#a3110d322c80fbb9cdaf2f80cec9a3de4',1,'GeoVariogram']]],
+  ['get_5fklasy',['get_klasy',['../d6/d41/classGeoVariogram.html#a3110d322c80fbb9cdaf2f80cec9a3de4',1,'GeoVariogram::get_klasy()'],['../d3/d4d/classGProAnaliza.html#abf16c77efb60982980b2fc56ca7b8596',1,'GProAnaliza::get_klasy()']]],
   ['get_5fkolor',['get_kolor',['../d3/dc6/classGradient.html#a690d5054528c23d70352bd7ee0966df3',1,'Gradient']]],
   ['get_5flast_5fset',['get_last_set',['../d6/d62/classGeoModel.html#ad0573cb833452b99f8afc046183d6edc',1,'GeoModel']]],
   ['get_5fmasa',['get_masa',['../de/def/structMset.html#a6049b73add36f7a2709dcf2e527778c5',1,'Mset']]],
@@ -58,9 +58,11 @@ var searchData=
   ['glwidget2d',['GLWidget2D',['../dd/d6e/classGLWidget2D.html#a04c822cbf0525500af5c32e339efdfde',1,'GLWidget2D']]],
   ['glwidget3d',['GLWidget3D',['../d1/d2f/classGLWidget3D.html#a906eb4f0ff38aea91b69ae9ad3de2d4a',1,'GLWidget3D']]],
   ['gmainwin',['GMainWin',['../dd/d90/classGMainWin.html#a1034f23203f1e982dbe56eca1604e84c',1,'GMainWin']]],
+  ['gproanaliza',['GProAnaliza',['../d3/d4d/classGProAnaliza.html#ad58d1ababa0158e8b410570fd0dd4fd0',1,'GProAnaliza']]],
   ['gprodialog',['GProDialog',['../db/deb/classGProDialog.html#a9cfa5f7ce4f8d408284c611ffc6d99b6',1,'GProDialog']]],
   ['gproset',['GProSet',['../d1/d17/classGProSet.html#aab243a59638a24bcefa0cd95e8bbc3eb',1,'GProSet::GProSet(QWidget *parent=0)'],['../d1/d17/classGProSet.html#a79d200ac0242fbd2bfae15e4f14f6299',1,'GProSet::GProSet(Mset *ustawienia, QWidget *parent=0)']]],
   ['gprotree',['GProTree',['../d5/d31/classGProTree.html#affde8b5a809943d5cf342229b1966ec5',1,'GProTree']]],
   ['gradient',['Gradient',['../d3/dc6/classGradient.html#adefc9d359417f35bfb200657a52b5049',1,'Gradient']]],
+  ['graphcolumnwidget',['GraphColumnWidget',['../d5/d12/classGraphColumnWidget.html#a28b708f0035d5b0160b497fbb49977a8',1,'GraphColumnWidget']]],
   ['graphwidget',['GraphWidget',['../d8/d93/classGraphWidget.html#a969641702003abe2dc07ef4db21948fe',1,'GraphWidget']]]
 ];

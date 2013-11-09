@@ -23,9 +23,11 @@ var searchData=
   ['glwidget2d',['GLWidget2D',['../dd/d6e/classGLWidget2D.html',1,'']]],
   ['glwidget3d',['GLWidget3D',['../d1/d2f/classGLWidget3D.html',1,'']]],
   ['gmainwin',['GMainWin',['../dd/d90/classGMainWin.html',1,'']]],
+  ['gproanaliza',['GProAnaliza',['../d3/d4d/classGProAnaliza.html',1,'']]],
   ['gprodialog',['GProDialog',['../db/deb/classGProDialog.html',1,'']]],
   ['gproset',['GProSet',['../d1/d17/classGProSet.html',1,'']]],
   ['gprotree',['GProTree',['../d5/d31/classGProTree.html',1,'']]],
   ['gradient',['Gradient',['../d3/dc6/classGradient.html',1,'']]],
+  ['graphcolumnwidget',['GraphColumnWidget',['../d5/d12/classGraphColumnWidget.html',1,'']]],
   ['graphwidget',['GraphWidget',['../d8/d93/classGraphWidget.html',1,'']]]
 ];

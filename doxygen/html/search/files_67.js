@@ -35,6 +35,8 @@ var searchData=
   ['glwidget3d_2eh',['GLWidget3D.h',['../d8/dde/GLWidget3D_8h.html',1,'']]],
   ['gmainwin_2ecpp',['GMainWin.cpp',['../d0/dc8/GMainWin_8cpp.html',1,'']]],
   ['gmainwin_2eh',['GMainWin.h',['../d7/d45/GMainWin_8h.html',1,'']]],
+  ['gproanaliza_2ecpp',['GProAnaliza.cpp',['../d7/d35/GProAnaliza_8cpp.html',1,'']]],
+  ['gproanaliza_2eh',['GProAnaliza.h',['../d0/d76/GProAnaliza_8h.html',1,'']]],
   ['gprodialog_2ecpp',['GProDialog.cpp',['../d5/d16/GProDialog_8cpp.html',1,'']]],
   ['gprodialog_2eh',['GProDialog.h',['../d0/d1b/GProDialog_8h.html',1,'']]],
   ['gproset_2ecpp',['GProSet.cpp',['../da/de2/GProSet_8cpp.html',1,'']]],
@@ -43,6 +45,8 @@ var searchData=
   ['gprotree_2eh',['GProTree.h',['../d1/d74/GProTree_8h.html',1,'']]],
   ['gradient_2ecpp',['Gradient.cpp',['../da/d56/Gradient_8cpp.html',1,'']]],
   ['gradient_2eh',['Gradient.h',['../d4/d3f/Gradient_8h.html',1,'']]],
+  ['graphcolumnwidget_2ecpp',['GraphColumnWidget.cpp',['../d6/dea/GraphColumnWidget_8cpp.html',1,'']]],
+  ['graphcolumnwidget_2eh',['GraphColumnWidget.h',['../d3/d5a/GraphColumnWidget_8h.html',1,'']]],
   ['graphwidget_2ecpp',['GraphWidget.cpp',['../d1/dbd/GraphWidget_8cpp.html',1,'']]],
   ['graphwidget_2eh',['GraphWidget.h',['../d0/dda/GraphWidget_8h.html',1,'']]]
 ];

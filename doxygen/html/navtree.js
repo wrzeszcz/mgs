@@ -1,7 +1,7 @@
 var NAVTREE =
 [
   [ "GeoStat", "index.html", [
-    [ "mgeostat", "d0/d30/md_README.html", null ],
+    [ "mgeostat", "d2/dc1/md__home_marek_2013_8pro_2013_8mgeostat_mgeostat_README.html", null ],
     [ "Klasy", null, [
       [ "Lista klas", "annotated.html", "annotated" ],
       [ "Indeks klas", "classes.html", null ],
@@ -31,8 +31,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"d6/d34/GeoDat_8h.html",
-"de/d72/structSet__interpolacja.html#a6f5155d19551d738011b73a3ab831e45"
+"d5/d12/classGraphColumnWidget.html#a54622fa4bbd80e9bc985c4841346ea71",
+"dd/dd3/classGeoWidget2D.html#a435ee0c280eb5ec3e3deccc2a57fad09"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

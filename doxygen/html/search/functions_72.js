@@ -6,5 +6,6 @@ var searchData=
   ['recalc',['recalc',['../d6/d41/classGeoVariogram.html#aa141dd4e804a670310901f53cdfaaa8c',1,'GeoVariogram::recalc(double rozmiar_klasy)'],['../d6/d41/classGeoVariogram.html#aee8843838f32e0e55884417a923cee19',1,'GeoVariogram::recalc()']]],
   ['reset_5fmin_5fmax',['reset_min_max',['../d0/df3/classGeoCube.html#a5c3e33368d05fd54b709fc150faf7408',1,'GeoCube']]],
   ['resetmodel',['resetModel',['../d6/d62/classGeoModel.html#aa3c3a312b2066beffd1e1a17ec03ce03',1,'GeoModel']]],
+  ['resizeevent',['resizeEvent',['../d5/d12/classGraphColumnWidget.html#a19bd14a3d5d8c9139d2b96043905c840',1,'GraphColumnWidget']]],
   ['resizegl',['resizeGL',['../d4/dc5/classGLWidget.html#ac0d2a8ecf60907a81c0d73475d851025',1,'GLWidget']]]
 ];
