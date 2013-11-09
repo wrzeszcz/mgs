@@ -413,7 +413,8 @@ struct Mset
         max_val(0.0,0.0,0.0),
         gestosc(2.5),
         jednostki(PPM),
-        algorytm(OKRIGING)
+        algorytm(OKRIGING),
+        klasy_zas(10)
     {
 
     }
@@ -429,11 +430,13 @@ struct Mset
     /// \param min_dat
     /// \param max_dat
     /// \param gest
-    /// \param jedn
+    /// \param jed
+    /// \param alg
+    /// \param klz
     ///
     Mset (wektor3i cub, wektor3d pocz, wektor3d wymiary, string nazwa,
           double spa,double ct, bool fl, wektor3d min_dat, wektor3d max_dat,
-          double gest, JEDNOSTKI jed, METODA alg):
+          double gest, JEDNOSTKI jed, METODA alg, int klz):
         grid(cub),
         start(pocz),
         start_grid(pocz),
@@ -446,17 +449,30 @@ struct Mset
         max_val(max_dat),
         gestosc(gest),
         jednostki(jed),
-        algorytm(alg)
+        algorytm(alg),
+        klasy_zas(klz)
     {
 
     }
-
+    ///
+    /// \brief get_bloki
+    /// \return
+    ///
     int get_bloki(){return grid.x*grid.y*grid.z;}
-
+    ///
+    /// \brief get_objetosc
+    /// \return
+    ///
     double get_objetosc(){return get_bloki() * sp * sp * sp;}
-
+    ///
+    /// \brief get_masa
+    /// \return
+    ///
     double get_masa(){return get_objetosc() * gestosc;}
-
+    ///
+    /// \brief get_wymiary
+    /// \return
+    ///
     wektor3d get_wymiary(){return wektor3d(grid.x * sp, grid.y*sp,grid.z *sp);}
 
     wektor3i grid;
@@ -472,6 +488,7 @@ struct Mset
     double gestosc;
     JEDNOSTKI jednostki;
     METODA algorytm;
+    int klasy_zas;
 };
 ///
 /// \brief operator <<
@@ -492,7 +509,8 @@ inline ostream& operator << (ostream& os, const Mset &d)
               << d.max_val << endl
               << d.gestosc << endl
               << d.jednostki << endl
-              << d.algorytm << endl;
+              << d.algorytm << endl
+              << d.klasy_zas << endl;
 }
 ///
 /// \brief operator >>
@@ -517,7 +535,8 @@ inline istream& operator >> (istream& is, Mset& d)
        >> d.max_val
        >> d.gestosc
        >> jedn
-       >> algo;
+       >> algo
+       >> d.klasy_zas;
 
     switch(jedn)
     {

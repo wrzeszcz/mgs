@@ -84,6 +84,7 @@ wektor3d GeoZasoby::przelicz_zasoby(double _minp, double _maxp)
 //------------------------------------------------------------------------------
 std::vector<geo3d> GeoZasoby::analiza_zasoby()
 {
+    ustaw_klasy();
     wynikAnalizy.clear();
     for(unsigned int i =0; i<klasyZas.size(); ++i)
     {
@@ -125,7 +126,6 @@ std::vector<geo3d> GeoZasoby::analiza_zasoby()
 std::vector<geo3d> GeoZasoby::analiza_zasoby(int _ileKlas)
 {
     ileKlas = _ileKlas;
-    ustaw_klasy();
     return analiza_zasoby();
 }
 //------------------------------------------------------------------------------

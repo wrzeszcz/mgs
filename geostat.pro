@@ -48,7 +48,8 @@ SOURCES += main.cpp\
     GLWidget3D.cpp \
     Gradient.cpp \
     GeoZasoby.cpp \
-    GProAnaliza.cpp
+    GProAnaliza.cpp \
+    GraphColumnWidget.cpp
 
 HEADERS  += \
     GProSet.h \
@@ -74,7 +75,8 @@ HEADERS  += \
     GLWidget3D.h \
     Gradient.h \
     GeoZasoby.h \
-    GProAnaliza.h
+    GProAnaliza.h \
+    GraphColumnWidget.h
 
 RC_FILE = geostat.txt
 

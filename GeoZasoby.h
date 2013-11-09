@@ -80,6 +80,11 @@ public:
     /// \param kl
     ///
     void set_klasy(KlasyZas kl){klasyZas = kl;}
+    ///
+    /// \brief set_klasy
+    /// \param ile
+    ///
+    void set_klasy(int ile){ileKlas = ile;}
 
 private:
     ///

@@ -93,7 +93,7 @@ void GeoWidgetRaport::slot_create_report()
             "w "+cos2str(zas.y)+"blokach "
                 "o objętości "+cos2str(zas.y*ms->sp*ms->sp*ms->sp)+"\n"
             "dla poszczególnych przedziałow całego modelu:\n"
-                + gModel->analizaZasobyReport(10) +"\n\n"
+                + gModel->analizaZasobyReport(gModel->ptr_mset()->klasy_zas) +"\n\n"
             "INTERPOLACJA ====================================================\n"
             "algorytm:\t"+s+"\n"+cos2str(met)+"\n"
             "zakres wartości:\t"+cos2str(ms->min_val.x)+ "-" + cos2str(ms->max_val.x)+"\n"
