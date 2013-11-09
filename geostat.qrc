@@ -32,5 +32,7 @@
         <file>img/ano1.ico</file>
         <file alias="ano">img/ano2.ico</file>
         <file alias="save_as">img/save_as.png</file>
+        <file alias="open_dat">img/open_dat.png</file>
+        <file alias="save_report">img/save_report.png</file>
     </qresource>
 </RCC>

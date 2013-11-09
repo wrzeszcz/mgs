@@ -137,17 +137,17 @@ void GMainWin::createActions()
 
     //--------------------------------------------------------------------------
 
-    actionOpenData = new QAction(QIcon(":/open"), tr("Wczytaj dane"), this);
+    actionOpenData = new QAction(QIcon(":/open_dat"), tr("Wczytaj dane"), this);
     actionOpenData->setShortcut(Qt::CTRL + Qt::Key_D);
     actionOpenData->setStatusTip(tr("Wczytuje dane z pliku tekstowego"));
     connect(actionOpenData, SIGNAL(triggered()), this, SLOT(slot_wczytaj_dane()));
 
-    actionOpenModel = new QAction(QIcon(":/open"), tr("Wczytaj model"), this);
+    actionOpenModel = new QAction(QIcon(":/open_dat"), tr("Wczytaj model"), this);
     actionOpenModel->setShortcut(Qt::CTRL + Qt::Key_M);
     actionOpenModel->setStatusTip(tr("Wczytuje model z pliku"));
     connect(actionOpenModel, SIGNAL(triggered()), this, SLOT(slot_wczytaj_model()));
 
-    actionOpenSurf = new QAction(QIcon(":/open"), tr("Wczytaj powierzchnię"),this);
+    actionOpenSurf = new QAction(QIcon(":/open_dat"), tr("Wczytaj powierzchnię"),this);
     actionOpenSurf->setShortcut(Qt::CTRL + Qt::Key_P);
     actionOpenSurf->setStatusTip(tr("Wczytuje powierzchnię"));
     connect(actionOpenSurf, SIGNAL(triggered()), this, SLOT(slot_wczytaj_surf()));
@@ -161,7 +161,7 @@ void GMainWin::createActions()
     actionZapiszZasoby = new QAction(QIcon(":/save"), tr("Zapisz zasoby"),this);
     connect(actionZapiszZasoby,SIGNAL(triggered()), this, SLOT(slot_zapis_zasoby()));
 
-    actionZapiszRaport = new QAction(QIcon(":/save"), tr("Zapisz raport"),this);
+    actionZapiszRaport = new QAction(QIcon(":/save_report"), tr("Zapisz raport"),this);
     connect(actionZapiszRaport,SIGNAL(triggered()), this, SLOT(slot_zapis_raport()));
 
     //--------------------------------------------------------------------------
@@ -246,7 +246,7 @@ void GMainWin::createMenus()
     menuProj->addAction(actionExit);
 
     menuData= menuBar()->addMenu(tr("&Dane"));
-    subMenuOpen = menuData->addMenu(QIcon(":/open"),"Wczytaj");
+    subMenuOpen = menuData->addMenu(QIcon(":/open_dat"),"Wczytaj");
     subMenuOpen->addAction(actionOpenData);
     subMenuOpen->addAction(actionOpenModel);
     subMenuOpen->addAction(actionOpenSurf);
@@ -321,7 +321,7 @@ void GMainWin::updateMenus()
 //------------------------------------------------------------------------------
 void GMainWin::readSettings()
 {
-    QSettings settings("Marek Wrzeszcz", "GeoStat");
+    QSettings settings("Marek Wrzeszcz", "MGeoStat");
     settings.beginGroup("GMainWindow");
         resize(settings.value("size", QSize(400, 400)).toSize());
         move(settings.value("pos", QPoint(200, 200)).toPoint());
@@ -330,7 +330,7 @@ void GMainWin::readSettings()
 //------------------------------------------------------------------------------
 void GMainWin::writeSettings()
 {
-    QSettings settings("Marek Wrzeszcz", "GeoStat");
+    QSettings settings("Marek Wrzeszcz", "MGeoStat");
     settings.beginGroup("GMainWindow");
          settings.setValue("size", size());
          settings.setValue("pos", pos());

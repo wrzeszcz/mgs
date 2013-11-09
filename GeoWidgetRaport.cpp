@@ -107,7 +107,7 @@ void GeoWidgetRaport::create_text_edit()
 {
     textEdit = new QTextEdit();
     boxLayout->addWidget(textEdit);
-    actZapiszRaport= new QAction(QIcon(":/save"), tr("Zapisz raport"),this);
+    actZapiszRaport= new QAction(QIcon(":/save_report"), tr("Zapisz raport"),this);
     actCreateRaport= new QAction(QIcon(":/raport"),tr("Przygotuj raport"),this);
     toolBar->addAction(actZapiszRaport);
     toolBar->addAction(actCreateRaport);
