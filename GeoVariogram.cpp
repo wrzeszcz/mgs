@@ -19,18 +19,21 @@
 *******************************************************************************/
 
 #include "GeoVariogram.h"
+#include <iostream>
 //------------------------------------------------------------------------------
 GeoVariogram::GeoVariogram(GeoDat *_dane, double rozmiar_klasy):
     dane(_dane),
     rozmiar(rozmiar_klasy)
 {
+    max_dist = find_max_dis(dane);
     recalc();
 }
 //------------------------------------------------------------------------------
 GeoVariogram::GeoVariogram(GeoDat *_dane):
     dane(_dane)
 {
-    rozmiar = auto_rozmiar(dist_delta,100);
+    max_dist = find_max_dis(dane);
+    rozmiar = auto_rozmiar(max_dist,100);
     recalc();
 }
 //------------------------------------------------------------------------------
@@ -48,6 +51,38 @@ void GeoVariogram::recalc()
 
     dist_delta.clear();
     dist_delta_klas.clear();
+
+    policz_klasy(vario_data);
+
+    for(; it != end; ++it)
+        for(jt = it ; jt != end; ++jt)
+        {
+            double dst(0.0), kw(0.0);
+            dst = dist( it->first, jt->first );
+            kw = (it->second.x - jt->second.x)*(it->second.x - jt->second.x);
+
+            for(unsigned int i =0; i<vario_data.size(); ++i)
+            {
+                if(!dst) break;
+                if(dst >= vario_data[i].xyz.y && dst < vario_data[i].xyz.z)
+                {
+                    vario_data[i].dat.y = vario_data[i].dat.y + kw;
+                    vario_data[i].dat.z = vario_data[i].dat.z + 1;
+                }
+            }
+
+
+        }
+
+
+    for(unsigned int i =0; i<vario_data.size(); ++i)
+    {
+        vario_data[i].dat.y = vario_data[i].dat.y/ (2*vario_data[i].dat.z);
+    }
+//---------------------------------------------------------
+     it = dane->get_begin();
+     end = dane->get_end();
+
 
     for(; it != end; ++it)
         for(jt = it ; jt != end; ++jt)
@@ -80,18 +115,21 @@ void GeoVariogram::recalc()
             limit +=rozmiar;
         }
     }
+    std::cout<< this->get_raport() << endl;
 }
 //------------------------------------------------------------------------------
 void GeoVariogram::set_dane(GeoDat *_dane, double rozmiar_klasy)
 {
     dane = _dane;
+    max_dist = find_max_dis(dane);
     rozmiar = rozmiar_klasy;
 }
 //------------------------------------------------------------------------------
 void GeoVariogram::set_dane(GeoDat *_dane)
 {
     dane = _dane;
-    rozmiar = auto_rozmiar(dist_delta,100);
+    max_dist = find_max_dis(dane);
+    rozmiar = auto_rozmiar(max_dist,100);
 }
 //------------------------------------------------------------------------------
 string GeoVariogram::get_raport()
@@ -102,6 +140,10 @@ string GeoVariogram::get_raport()
         ss << dist_delta_klas[i].x << "\t"
            << dist_delta_klas[i].y << "\t"
            << dist_delta_klas[i].z << endl;
+    }
+    for(unsigned i=0; i <  vario_data.size(); ++i)
+    {
+        ss << vario_data[i] << endl;
     }
     return ss.str();
 }
@@ -121,10 +163,49 @@ void GeoVariogram::wypisz_dist_delta(string filename)
         wy.close();
     }
 }
-//------------------------------------------------------------------------------
-double GeoVariogram::auto_rozmiar(const std::vector<wektor3d> &delty, int ile)
+
+double GeoVariogram::auto_rozmiar(double siz, int ile)
 {
-    return ( delty[delty.size()-1].x / ile );
+    return ceil(siz)/(double)ile;
 }
+//------------------------------------------------------------------------------
+
+
+double GeoVariogram::find_max_dis(GeoDat *d)
+{
+    double maxd = 0.0;
+    GeoMapa::iterator it = d->get_begin();
+    GeoMapa::iterator end = d->get_end();
+    GeoMapa::iterator jt;
+    for(; it != end; ++it)
+        for(jt = it ; jt != end; ++jt)
+        {
+            double tmp = dist( it->first, jt->first );
+            if(maxd < tmp) maxd =tmp;
+        }
+    std::cout << maxd << std::endl;
+    return maxd;
+}
+
+void GeoVariogram::policz_klasy(std::vector<geo3d> &vd)
+{
+    vd.clear();
+    geo3d tmpklas;
+    tmpklas.xyz.x = 1.0;
+    tmpklas.xyz.y = 0.0;
+    tmpklas.xyz.z = rozmiar;
+    tmpklas.dat.x = tmpklas.xyz.y + (tmpklas.xyz.z - tmpklas.xyz.y) / 2.0;
+
+    while(tmpklas.xyz.y < max_dist)
+    {
+        vd.push_back(tmpklas);
+        tmpklas.xyz.x = tmpklas.xyz.x+1;
+        tmpklas.xyz.y = tmpklas.xyz.z;
+        tmpklas.xyz.z = tmpklas.xyz.z + rozmiar;
+        tmpklas.dat.x = tmpklas.xyz.y + (tmpklas.xyz.z - tmpklas.xyz.y) / 2.0;
+    }
+}
+
+
 //------------------------------------------------------------------------------
 

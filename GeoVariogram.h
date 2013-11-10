@@ -80,6 +80,7 @@ public:
     /// \return
     ///
     std::vector<wektor3d> &get_klasy(){return dist_delta_klas;}
+    std::vector<geo3d> &get_data(){return vario_data;}
 
 private:
     ///
@@ -88,7 +89,9 @@ private:
     /// \param ile
     /// \return
     ///
-    double auto_rozmiar(const std::vector<wektor3d> &delty, int ile);
+    double auto_rozmiar(double siz, int ile);
+    double find_max_dis(GeoDat *d);
+    void policz_klasy(std::vector<geo3d> &vd);
     ///
     /// \brief dist_delta
     ///
@@ -97,6 +100,7 @@ private:
     /// \brief dist_delta_klas
     ///
     std::vector<wektor3d> dist_delta_klas;
+    std::vector<geo3d> vario_data;
     ///
     /// \brief gIt
     ///
@@ -113,6 +117,7 @@ private:
     /// \brief dist
     ///
     Odl dist;
+    double max_dist;
 };
 
 #endif // GEOVARIOGRAM_H

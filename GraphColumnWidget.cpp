@@ -44,12 +44,9 @@ void GraphColumnWidget::paintEvent(QPaintEvent *e)
         int h = f * area.height();
         int x = (area.width() / kl) ;
         int y = height()-border.height()/2 -h;
-        //p.drawRect( x*i, y, x , h);
-        //QRect r((width()/kl)*i, height() - f* height(), width()/kl, f* height());
         QRect r1(x*i+ border.width()/2, y, x, h);
         p.drawRect(r1);
         p.fillRect(r1,QBrush(c));
-
     }
 
     p.end();
