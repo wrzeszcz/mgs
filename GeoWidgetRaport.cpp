@@ -90,7 +90,7 @@ void GeoWidgetRaport::slot_create_report()
             "ZASOBY =========================================================\n"
             "wartości graniczna (cut-off):\t"+cos2str(ms->cutoff) + "\tppm\n"
             "zasoby wynosza: \t\t"+ cos2str(zas.x) + "\tton\n"+
-            "w "+cos2str(zas.y)+"blokach "
+            "w "+cos2str(zas.y)+" blokach "
                 "o objętości "+cos2str(zas.y*ms->sp*ms->sp*ms->sp)+"\n"
             "dla poszczególnych przedziałow całego modelu:\n"
                 + gModel->analizaZasobyReport(gModel->ptr_mset()->klasy_zas) +"\n\n"

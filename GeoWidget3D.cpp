@@ -83,7 +83,8 @@ void GeoWidget3D::create_toolbar()
     connect(act_zoom_minus,SIGNAL(triggered()),this,SLOT(slot_zoom_out()));
     toolBar->addAction(act_zoom_minus);
 
-    act_zoom_select = new QAction(QIcon(":/zoomselect"), tr("Powiększ do zaznaczenia"),this);
+    act_zoom_select = new QAction(QIcon(":/rot_reset"), tr("Resutuj obrót"),this);
+    connect(act_zoom_select,SIGNAL(triggered()),this,SLOT(slot_reset_view()));
     toolBar->addAction(act_zoom_select);
 }
 
@@ -138,6 +139,11 @@ void GeoWidget3D::slot_zoom_fit()
 {
     wiev3d->set_zoom(75);
     wiev3d->repaint();
+}
+
+void GeoWidget3D::slot_reset_view()
+{
+    wiev3d->set_rot(0.0,0.0,0.0);
 }
 
 void GeoWidget3D::slot_punkt(wektor3d p)

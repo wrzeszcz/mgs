@@ -69,7 +69,7 @@ void GLWidget2D::paintGL()
         glColor3f(0.0,1.0,0.0);
         paintPkt(curPoint-sett->wym/2,5);
 
-        RenderString(0,0, Qt::red, QString::number(mouse_pos.x()));
+        //RenderString(0,0, Qt::red, QString::number(mouse_pos.x()));
 
         glLineWidth(2);
         if(widok.zakres)

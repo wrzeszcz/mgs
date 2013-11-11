@@ -47,7 +47,8 @@ double GeoVariogramModel::licz_vario(double h)
         else ret = c0 + c1 * (1 - exp(-3*h/a));
         break;
     case GAUSSIAN:
-        ret = c0 + c1 * (1 - exp(-3*h*h/a/a));
+        if(h==0.0) return ret=0.0;
+        ret = c0 + c1 * (1 - exp( (-3*h*h) / (a*a) ) );
         break;
     case SPHERICAL:
         if ( h < a )

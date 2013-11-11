@@ -62,6 +62,14 @@ template<typename T> string cos2str(T t)
     s << t;
     return s.str();
 }
+template<typename T> string cos2str(T t, int p)
+{
+    stringstream s;
+    s.setf(ios::fixed);
+    s.precision(p);
+    s << t;
+    return s.str();
+}
 //------------------------------------------------------------------------------
 ///
 /// \brief The wektor3i struct

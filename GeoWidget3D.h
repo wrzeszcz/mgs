@@ -98,6 +98,11 @@ protected slots:
     ///
     void slot_zoom_fit();
     ///
+    /// \brief slot_reset_view
+    /// \return
+    ///
+    void slot_reset_view();
+    ///
     /// \brief slot_punkt
     ///
     void slot_punkt(wektor3d);

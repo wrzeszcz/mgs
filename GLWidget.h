@@ -73,6 +73,13 @@ public:
     /// \brief update_model
     ///
     void update_model();
+    ///
+    /// \brief set_rot
+    /// \param x
+    /// \param y
+    /// \param z
+    ///
+    virtual void set_rot(float x, float y, float z);
 
 protected:
     ///

@@ -42,6 +42,12 @@ void GLWidget::update_model()
     sett = model->ptr_mset();
 }
 
+void GLWidget::set_rot(float x, float y, float z)
+{
+    rotX = x; rotY = y; rotZ = z;
+    updateGL();
+}
+
 void GLWidget::initializeGL()
 {
     glClearColor(0.0,0.0,0.0,0.0);  // kolor tła - bufor koloru

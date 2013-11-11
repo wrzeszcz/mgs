@@ -71,40 +71,47 @@ public:
     ///
     string get_raport();
     ///
-    /// \brief wypisz_dist_delta
-    /// \param filename
-    ///
-    void wypisz_dist_delta(string filename);
-    ///
     /// \brief get_klasy
     /// \return
     ///
     std::vector<wektor3d> &get_klasy(){return dist_delta_klas;}
+    ///
+    /// \brief get_data
+    /// \return
+    ///
     std::vector<geo3d> &get_data(){return vario_data;}
 
 private:
     ///
     /// \brief auto_rozmiar
-    /// \param delty
+    /// \param siz
     /// \param ile
     /// \return
     ///
     double auto_rozmiar(double siz, int ile);
+    ///
+    /// \brief find_max_dis
+    /// \param d
+    /// \return
+    ///
     double find_max_dis(GeoDat *d);
+    ///
+    /// \brief policz_klasy
+    /// \param vd
+    ///
     void policz_klasy(std::vector<geo3d> &vd);
-    ///
-    /// \brief dist_delta
-    ///
-    std::vector<wektor3d> dist_delta;
     ///
     /// \brief dist_delta_klas
     ///
     std::vector<wektor3d> dist_delta_klas;
+    ///
+    /// \brief vario_data
+    ///
     std::vector<geo3d> vario_data;
     ///
     /// \brief gIt
     ///
-    std::vector<wektor3d>::iterator gIt;
+    //std::vector<wektor3d>::iterator gIt;
     ///
     /// \brief dane
     ///
@@ -117,6 +124,9 @@ private:
     /// \brief dist
     ///
     Odl dist;
+    ///
+    /// \brief max_dist
+    ///
     double max_dist;
 };
 

@@ -25,20 +25,21 @@ GeoVariogram::GeoVariogram(GeoDat *_dane, double rozmiar_klasy):
     dane(_dane),
     rozmiar(rozmiar_klasy)
 {
-    max_dist = find_max_dis(dane);
-    recalc();
+    //max_dist = find_max_dis(dane);
+    //recalc();
 }
 //------------------------------------------------------------------------------
 GeoVariogram::GeoVariogram(GeoDat *_dane):
     dane(_dane)
 {
-    max_dist = find_max_dis(dane);
-    rozmiar = auto_rozmiar(max_dist,100);
-    recalc();
+   max_dist = find_max_dis(dane);
+   rozmiar = auto_rozmiar(max_dist,100);
+   //recalc();
 }
 //------------------------------------------------------------------------------
 void GeoVariogram::recalc(double rozmiar_klasy)
 {
+    max_dist = find_max_dis(dane);
     rozmiar = rozmiar_klasy;
     recalc();
 }
@@ -48,9 +49,6 @@ void GeoVariogram::recalc()
     GeoMapa::iterator it = dane->get_begin();
     GeoMapa::iterator end = dane->get_end();
     GeoMapa::iterator jt;
-
-    dist_delta.clear();
-    dist_delta_klas.clear();
 
     policz_klasy(vario_data);
 
@@ -70,52 +68,22 @@ void GeoVariogram::recalc()
                     vario_data[i].dat.z = vario_data[i].dat.z + 1;
                 }
             }
-
-
         }
 
 
     for(unsigned int i =0; i<vario_data.size(); ++i)
     {
-        vario_data[i].dat.y = vario_data[i].dat.y/ (2*vario_data[i].dat.z);
+        vario_data[i].dat.y = vario_data[i].dat.y / (2*vario_data[i].dat.z);
     }
-//---------------------------------------------------------
-     it = dane->get_begin();
-     end = dane->get_end();
 
 
-    for(; it != end; ++it)
-        for(jt = it ; jt != end; ++jt)
-        {
-            wektor3d tmp;
-            tmp.x = dist( it->first, jt->first );
-            tmp.y = (it->second.x - jt->second.x)*(it->second.x - jt->second.x);
-            if(tmp.y) dist_delta.push_back(tmp);
-        }
-
-    std::sort(dist_delta.begin(),dist_delta.end());
-
-    double limit = rozmiar;
-    double suma(0.0);
-    int licz(0);
-    if(!limit)return;
-    for(unsigned i=0;i <dist_delta.size();++i)
+    wektor3d tmp;
+    dist_delta_klas.clear();
+    for(unsigned int i =0; i<vario_data.size(); ++i)
     {
-        if(dist_delta[i].x < limit)
-        {
-            suma += dist_delta[i].y;
-            licz++;
-        }
-        else
-        {
-            if(licz)
-            dist_delta_klas.push_back(wektor3d(limit - rozmiar/2.0, suma/(2*licz),licz));
-            suma=0.0;
-            licz=0;
-            limit +=rozmiar;
-        }
+        tmp = vario_data[i].dat;
+        if(tmp.z) dist_delta_klas.push_back(tmp);
     }
-    std::cout<< this->get_raport() << endl;
 }
 //------------------------------------------------------------------------------
 void GeoVariogram::set_dane(GeoDat *_dane, double rozmiar_klasy)
@@ -135,12 +103,6 @@ void GeoVariogram::set_dane(GeoDat *_dane)
 string GeoVariogram::get_raport()
 {
     stringstream ss;
-    for(unsigned i=0; i <  dist_delta_klas.size(); ++i)
-    {
-        ss << dist_delta_klas[i].x << "\t"
-           << dist_delta_klas[i].y << "\t"
-           << dist_delta_klas[i].z << endl;
-    }
     for(unsigned i=0; i <  vario_data.size(); ++i)
     {
         ss << vario_data[i] << endl;
@@ -148,29 +110,11 @@ string GeoVariogram::get_raport()
     return ss.str();
 }
 //------------------------------------------------------------------------------
-void GeoVariogram::wypisz_dist_delta(string filename)
-{
-    ofstream wy(filename.c_str());
-    if(wy.is_open())
-    {
-        wy << dist_delta[dist_delta.size()-1].x << endl;
-        for (unsigned i=0; i < dist_delta.size(); ++i)
-        {
-            wy << dist_delta[i].x << "\t"
-               << dist_delta[i].y << "\t"
-               << dist_delta[i].z << endl;
-        }
-        wy.close();
-    }
-}
-
 double GeoVariogram::auto_rozmiar(double siz, int ile)
 {
     return ceil(siz)/(double)ile;
 }
 //------------------------------------------------------------------------------
-
-
 double GeoVariogram::find_max_dis(GeoDat *d)
 {
     double maxd = 0.0;
@@ -186,7 +130,7 @@ double GeoVariogram::find_max_dis(GeoDat *d)
     std::cout << maxd << std::endl;
     return maxd;
 }
-
+//------------------------------------------------------------------------------
 void GeoVariogram::policz_klasy(std::vector<geo3d> &vd)
 {
     vd.clear();
@@ -205,7 +149,5 @@ void GeoVariogram::policz_klasy(std::vector<geo3d> &vd)
         tmpklas.dat.x = tmpklas.xyz.y + (tmpklas.xyz.z - tmpklas.xyz.y) / 2.0;
     }
 }
-
-
 //------------------------------------------------------------------------------
 

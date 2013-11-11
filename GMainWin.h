@@ -68,7 +68,7 @@ public:
     ///
     /// \brief typ wyliczeniowy ZAPIS
     ///
-    enum ZAPIS{DANE,MODEL,ZASOBY,RAPORT};
+    enum ZAPIS{DANE,MODEL,ZASOBY,RAPORT,SEMIVARIOGRAM};
     ///
     /// \brief typ wyliczeniowy dla pod-okien MDI
     ///
@@ -146,6 +146,10 @@ private slots:
     ///
     void slot_zapis_raport();
     ///
+    /// \brief slot_zapis_variogram
+    ///
+    void slot_zapis_variogram();
+    ///
     /// \brief slot_dane_stat
     ///
     void slot_dane_stat();
@@ -158,6 +162,10 @@ private slots:
     /// \brief slot_okriging
     ///
     void slot_okriging();
+    ///
+    /// \brief slot_okno_variogram
+    ///
+    void slot_variogram();
 
     ///
     /// \brief slot_zasoby
@@ -466,6 +474,10 @@ private:
     ///
     QAction *actionZapiszRaport;
     ///
+    /// \brief actionZapiszVariogram
+    ///
+    QAction *actionZapiszVariogram;
+    ///
     /// \brief actionDaneStat
     ///
     QAction *actionDaneStat;
@@ -478,6 +490,10 @@ private:
     /// \brief action_okriging
     ///
     QAction *action_okriging;
+    ///
+    /// \brief action_variogram
+    ///
+    QAction *action_variogram;
 
     ///
     /// \brief actionZasoby

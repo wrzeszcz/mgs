@@ -149,7 +149,6 @@ void GMainWin::createActions()
 
     actionOpenSurf = new QAction(QIcon(":/open_dat"), tr("Wczytaj powierzchnię"),this);
     actionOpenSurf->setShortcut(Qt::CTRL + Qt::Key_P);
-    actionOpenSurf->setStatusTip(tr("Wczytuje powierzchnię"));
     connect(actionOpenSurf, SIGNAL(triggered()), this, SLOT(slot_wczytaj_surf()));
 
     actionZapiszDane = new QAction(QIcon(":/save"), tr("Zapisz dane"),this);
@@ -164,6 +163,9 @@ void GMainWin::createActions()
     actionZapiszRaport = new QAction(QIcon(":/save_report"), tr("Zapisz raport"),this);
     connect(actionZapiszRaport,SIGNAL(triggered()), this, SLOT(slot_zapis_raport()));
 
+    actionZapiszVariogram = new QAction(QIcon(":/save"), tr("Zapisz wariogram"),this);
+    connect(actionZapiszVariogram,SIGNAL(triggered()), this, SLOT(slot_zapis_variogram()));
+
     //--------------------------------------------------------------------------
 
     action_invdist = new QAction(QIcon(":/grid"),tr("odwrotne odległości"),this);
@@ -173,6 +175,10 @@ void GMainWin::createActions()
     action_okriging = new QAction(QIcon(":/krige"),tr("kriging zwykły"),this);
     action_okriging->setStatusTip(tr("ordinary kriging"));
     connect(action_okriging,SIGNAL(triggered()),this,SLOT(slot_okriging()));
+
+    action_variogram = new QAction(QIcon(":/vario"),tr("semiwariogram empiryczny"),this);
+    action_variogram->setStatusTip(tr("semiwariogram empiryczny"));
+    connect(action_variogram,SIGNAL(triggered()),this,SLOT(slot_variogram()));
 
     //--------------------------------------------------------------------------
 
@@ -202,11 +208,11 @@ void GMainWin::createActions()
     actZamkAll->setStatusTip(tr("Zamknij wszystkie okna"));
     connect(actZamkAll,SIGNAL(triggered()),mdiArea,SLOT(closeAllSubWindows()));
 
-    actTile = new QAction(tr("Tile"), this);
+    actTile = new QAction(QIcon(":/tile"),tr("Tile"), this);
     actTile->setStatusTip(tr("Tile"));
     connect(actZamkAll,SIGNAL(triggered()),mdiArea,SLOT(tileSubWindows()));
 
-    actCascade = new QAction(tr("Kaskada"), this);
+    actCascade = new QAction(QIcon(":/cascade"),tr("Kaskada"), this);
     actCascade->setStatusTip(tr("Kaskada"));
     connect(actCascade,SIGNAL(triggered()),mdiArea,SLOT(cascadeSubWindows()));
 
@@ -255,10 +261,13 @@ void GMainWin::createMenus()
     subMenuSave->addAction(actionZapiszModel);
     subMenuSave->addAction(actionZapiszZasoby);
     subMenuSave->addAction(actionZapiszRaport);
+    subMenuSave->addAction(actionZapiszVariogram);
 
     menuInterp = menuBar()->addMenu(tr("&Interpolacja"));
     menuInterp->addAction(action_invdist);
     menuInterp->addAction(action_okriging);
+    menuInterp->addSeparator();
+    menuInterp->addAction(action_variogram);
 
     menuZasoby = menuBar()->addMenu("&Zasoby");
     menuZasoby->addAction(actionZasoby);
@@ -296,6 +305,7 @@ void GMainWin::createToolBars()
     toolBarInte = addToolBar(tr("Interpolacja"));
     toolBarInte->addAction(action_invdist);
     toolBarInte->addAction(action_okriging);
+    toolBarInte->addAction(action_variogram);
 
     toolBarZaso = addToolBar(tr("Zasoby"));
     toolBarZaso->addAction(actionZasoby);
@@ -477,7 +487,7 @@ void GMainWin::slot_wczytaj_surf()
 void GMainWin::about()
 {
     QMessageBox::about(this, tr("PROJEKT GEOSTAT 2013"),
-             tr("wersja 0.1\nautor @ Marek Wrzeszcz 2013"));
+             tr("wersja 0.1\nautor @ Marek Wrzeszcz 2013\n\n GNU General Public License \n www.gnu.org/licenses"));
 }
 //------------------------------------------------------------------------------
 void GMainWin::updateWindowMenu()
@@ -571,6 +581,18 @@ void GMainWin::slot_okriging()
     interpolacja(OKRIGING);
 }
 //------------------------------------------------------------------------------
+void GMainWin::slot_variogram()
+{
+    progresBar->show();
+    progresTimer->start();
+    zegar.start();
+    QFuture<void> future;
+    future = QtConcurrent::run( boost::bind( &GeoModel::calc_variogram,
+                                             curModel,
+                                             curModel->get_last_set().rozmiar_klasy) );
+    watcher.setFuture(future);
+}
+//------------------------------------------------------------------------------
 void GMainWin::zapisz(ZAPIS zapis)
 {
     QString fileName = QFileDialog::getSaveFileName(this, "Zapisz");
@@ -593,6 +615,10 @@ void GMainWin::zapisz(ZAPIS zapis)
     case RAPORT:
          QMessageBox::information(this,"ZAPISANO RAPORT",fileName);
          curModel->wypisz_raport(fileName.toStdString());
+         break;
+    case SEMIVARIOGRAM:
+         QMessageBox::information(this,"ZAPISANO SEMIVARIOGRAM",fileName);
+         curModel->wypisz_vario(fileName.toStdString());
          break;
     default:
          break;
@@ -746,6 +772,11 @@ void GMainWin::slot_okno_raport()
  void GMainWin::slot_zapis_raport()
  {
      zapisz(RAPORT);
+ }
+ //------------------------------------------------------------------------------
+ void GMainWin::slot_zapis_variogram()
+ {
+     zapisz(SEMIVARIOGRAM);
  }
  //-----------------------------------------------------------------------------
  void GMainWin::slot_dane_stat()

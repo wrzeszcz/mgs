@@ -20,6 +20,9 @@
 
 #include "GeoWidgetVariogram.h"
 #include <QSpinBox>
+#include <QFuture>
+#include <QtConcurrentRun>
+#include <boost/bind.hpp>
 //------------------------------------------------------------------------------
 GeoWidgetVariogram::GeoWidgetVariogram(GeoModel *ptrModel, QWidget *parent):
     GeoWidget(ptrModel, parent)
@@ -27,10 +30,15 @@ GeoWidgetVariogram::GeoWidgetVariogram(GeoModel *ptrModel, QWidget *parent):
     this->setAccessibleName("VARIOGRAM");
     this->setWindowTitle("SEMIWARIOGRAM");
     create();
+
     slot_update_dane();
 
     connect(parent,SIGNAL(signal_zmiana_danych()),
             this,SLOT(slot_update_dane()));
+    connect(actZapiszVariogram,SIGNAL(triggered()),
+            parent, SLOT(slot_zapis_variogram()));
+     connect(act_przelicz,SIGNAL(triggered()),
+             parent,SLOT(slot_variogram()));
 }
 //------------------------------------------------------------------------------
 GeoWidgetVariogram::~GeoWidgetVariogram()
@@ -51,6 +59,7 @@ void GeoWidgetVariogram::slot_update_dane()
 {
    if(gModel->ptr_vario())
    {
+        //gModel->calc_variogram(cur_set_vario.rozmiar_klasy);
         graph->set_pkt_vario(gModel->ptr_vario()->get_klasy());
         graph->set_function(gModel->get_iset());
    }
@@ -103,6 +112,9 @@ void GeoWidgetVariogram::slot_kopuj_do()
 void GeoWidgetVariogram::slot_przelicz()
 {
     gModel->set_iset(cur_set_vario);
+    //QFuture<void> future;
+    //future = QtConcurrent::run(boost::bind( &GeoModel::calc_variogram,
+    //                                       gModel, cur_set_vario.rozmiar_klasy));
     gModel->calc_variogram(cur_set_vario.rozmiar_klasy);
     slot_update_dane();
     graph->repaint();
@@ -110,7 +122,7 @@ void GeoWidgetVariogram::slot_przelicz()
 //-----------------------------------------------------------------------------
 void GeoWidgetVariogram::create()
 {
-    gModel->nowy_variogram(gModel->get_last_set().rozmiar_klasy);
+    //gModel->nowy_variogram(gModel->get_last_set().rozmiar_klasy);
 
     graph = new GraphWidget(this);
     QPalette p(palette());
@@ -181,7 +193,6 @@ void GeoWidgetVariogram::create()
     connect(actCopyToSet,SIGNAL(triggered()),this,SLOT(slot_kopuj_do()));
 
     act_przelicz=new QAction(QIcon(":/calc"), tr("Przelicz"),this);
-    connect(act_przelicz,SIGNAL(triggered()),this,SLOT(slot_przelicz()));
 
     toolBar->addAction(act_przelicz);
     toolBar->addAction(actCopyToSet);

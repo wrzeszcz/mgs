@@ -26,7 +26,7 @@ GeoModel::GeoModel()
     modset = new Mset();
     dane = new GeoDat();
     cube = new GeoCube(modset->start,modset->sp,modset->grid);
-    curVariogram = NULL;
+    curVariogram = new GeoVariogram(dane,last_set.rozmiar_klasy);
     this->raport_add("nowy model \n");
 }
 GeoModel::~GeoModel()
@@ -269,6 +269,16 @@ void GeoModel::wypisz_raport(string fileName)
     if(of.is_open())
     {
         of << strRaport;
+        of.close();
+    }
+}
+
+void GeoModel::wypisz_vario(string fileName)
+{
+    ofstream of(fileName.c_str());
+    if(of.is_open())
+    {
+        of << curVariogram->get_raport();
         of.close();
     }
 }
