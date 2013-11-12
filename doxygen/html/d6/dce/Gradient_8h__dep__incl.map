@@ -1,14 +1,15 @@
-<map id="/home/marek/2013.pro/mgeostat/Gradient.h" name="/home/marek/2013.pro/mgeostat/Gradient.h">
-<area shape="rect" id="node3" href="$d5/d9e/GLWidget_8h.html" title="/home/marek/2013.pro\l/mgeostat/GLWidget.h" alt="" coords="432,102,584,149"/>
-<area shape="rect" id="node26" href="$da/d56/Gradient_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/Gradient.cpp" alt="" coords="608,102,765,149"/>
-<area shape="rect" id="node5" href="$dc/dc1/GLWidget2D_8h.html" title="/home/marek/2013.pro\l/mgeostat/GLWidget2D.h" alt="" coords="219,198,389,245"/>
-<area shape="rect" id="node15" href="$d8/dde/GLWidget3D_8h.html" title="/home/marek/2013.pro\l/mgeostat/GLWidget3D.h" alt="" coords="423,198,593,245"/>
-<area shape="rect" id="node24" href="$dd/d52/GLWidget_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GLWidget.cpp" alt="" coords="617,198,783,245"/>
-<area shape="rect" id="node7" href="$d3/d0a/GeoWidget2D_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget2D.h" alt="" coords="12,294,188,341"/>
-<area shape="rect" id="node13" href="$d8/d3a/GLWidget2D_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GLWidget2D.cpp" alt="" coords="212,294,396,341"/>
-<area shape="rect" id="node9" href="$d3/d69/GeoWidget2D_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget2D.cpp" alt="" coords="5,390,195,437"/>
-<area shape="rect" id="node11" href="$d0/dc8/GMainWin_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GMainWin.cpp" alt="" coords="219,390,389,437"/>
-<area shape="rect" id="node17" href="$d4/d5c/GeoWidget3D_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget3D.h" alt="" coords="420,294,596,341"/>
-<area shape="rect" id="node22" href="$d7/d3c/GLWidget3D_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GLWidget3D.cpp" alt="" coords="620,294,804,341"/>
-<area shape="rect" id="node19" href="$d7/d87/GeoWidget3D_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget3D.cpp" alt="" coords="413,390,603,437"/>
+<map id="/home/marek/2013.pro/2013.mgeostat/mgeostat/Gradient.h" name="/home/marek/2013.pro/2013.mgeostat/mgeostat/Gradient.h">
+<area shape="rect" id="node3" href="$d5/d9e/GLWidget_8h.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GLWidget.h" alt="" coords="395,117,565,181"/>
+<area shape="rect" id="node26" href="$da/d56/Gradient_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/Gradient.cpp" alt="" coords="589,117,760,181"/>
+<area shape="rect" id="node28" href="$d6/dea/GraphColumnWidget_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GraphColumnWidget.cpp" alt="" coords="784,117,955,181"/>
+<area shape="rect" id="node5" href="$dc/dc1/GLWidget2D_8h.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GLWidget2D.h" alt="" coords="200,229,371,293"/>
+<area shape="rect" id="node15" href="$d8/dde/GLWidget3D_8h.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GLWidget3D.h" alt="" coords="395,229,565,293"/>
+<area shape="rect" id="node24" href="$dd/d52/GLWidget_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GLWidget.cpp" alt="" coords="589,229,760,293"/>
+<area shape="rect" id="node7" href="$d3/d0a/GeoWidget2D_8h.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidget2D.h" alt="" coords="5,341,176,405"/>
+<area shape="rect" id="node13" href="$d8/d3a/GLWidget2D_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GLWidget2D.cpp" alt="" coords="200,341,371,405"/>
+<area shape="rect" id="node9" href="$d3/d69/GeoWidget2D_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidget2D.cpp" alt="" coords="5,453,176,517"/>
+<area shape="rect" id="node11" href="$d0/dc8/GMainWin_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GMainWin.cpp" alt="" coords="200,453,371,517"/>
+<area shape="rect" id="node17" href="$d4/d5c/GeoWidget3D_8h.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidget3D.h" alt="" coords="395,341,565,405"/>
+<area shape="rect" id="node22" href="$d7/d3c/GLWidget3D_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GLWidget3D.cpp" alt="" coords="589,341,760,405"/>
+<area shape="rect" id="node19" href="$d7/d87/GeoWidget3D_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidget3D.cpp" alt="" coords="395,453,565,517"/>
 </map>

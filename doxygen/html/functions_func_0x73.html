@@ -28,6 +28,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="ResEst.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">GeoStat
    &#160;<span id="projectnumber">0.1</span>
@@ -89,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
       <li><a href="functions_func.html#index_a"><span>a</span></a></li>
       <li><a href="functions_func_0x63.html#index_c"><span>c</span></a></li>
       <li><a href="functions_func_0x64.html#index_d"><span>d</span></a></li>
+      <li><a href="functions_func_0x66.html#index_f"><span>f</span></a></li>
       <li><a href="functions_func_0x67.html#index_g"><span>g</span></a></li>
       <li><a href="functions_func_0x69.html#index_i"><span>i</span></a></li>
       <li><a href="functions_func_0x6c.html#index_l"><span>l</span></a></li>
@@ -139,7 +141,7 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>set_dane()
-: <a class="el" href="d6/d41/classGeoVariogram.html#a84dbb31323406f0df0d7ee98bd8c5930">GeoVariogram</a>
+: <a class="el" href="d6/d41/classGeoVariogram.html#a8a0e36602edf22db3f43a7f28cdf494e">GeoVariogram</a>
 </li>
 <li>set_data()
 : <a class="el" href="d5/d12/classGraphColumnWidget.html#a54622fa4bbd80e9bc985c4841346ea71">GraphColumnWidget</a>
@@ -187,9 +189,15 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 <li>set_pkt_vario()
 : <a class="el" href="d8/d93/classGraphWidget.html#aaf493f8c61c16a03a858d59c3be02782">GraphWidget</a>
 </li>
+<li>set_progres_cur()
+: <a class="el" href="d6/d62/classGeoModel.html#a1ae4e2db8f893e30832a89adc3c47818">GeoModel</a>
+</li>
 <li>set_range()
 : <a class="el" href="d1/d0e/classGeoKriging.html#af72e8cbb87c80195c9618d9295260830">GeoKriging</a>
 , <a class="el" href="d6/dc3/classGeoVariogramModel.html#a32901722b95f3ea4d10a37e637f05d15">GeoVariogramModel</a>
+</li>
+<li>set_rot()
+: <a class="el" href="d4/dc5/classGLWidget.html#a4cdeb512ea88c6990c86405fc59a2ca8">GLWidget</a>
 </li>
 <li>set_scale()
 : <a class="el" href="d4/dc5/classGLWidget.html#ab4651f5c9072f485b87c898c81490585">GLWidget</a>
@@ -225,6 +233,9 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 </li>
 <li>signal_open_win()
 : <a class="el" href="d5/d31/classGProTree.html#a3c114a867a2bb29fbd1ed003a9b5ad96">GProTree</a>
+</li>
+<li>signal_recalc()
+: <a class="el" href="dc/d81/classGeoWidgetVariogram.html#a0653a186c5eae98db0c01af47d198db6">GeoWidgetVariogram</a>
 </li>
 <li>signal_selected()
 : <a class="el" href="d7/d50/classGeoWidgetDane.html#a2c2805fc98e7376895f92f638db5b082">GeoWidgetDane</a>
@@ -272,6 +283,9 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 <li>slot_create_report()
 : <a class="el" href="df/d16/classGeoWidgetRaport.html#a8460994cfad2dd4a5c9ded68936935f5">GeoWidgetRaport</a>
 </li>
+<li>slot_ile_klas()
+: <a class="el" href="dc/d81/classGeoWidgetVariogram.html#aa307449d3c14116efddb8147f26f55a8">GeoWidgetVariogram</a>
+</li>
 <li>slot_klasa()
 : <a class="el" href="dc/d81/classGeoWidgetVariogram.html#a4b984b8fb5919e97d8e3416563c2a7f8">GeoWidgetVariogram</a>
 </li>
@@ -281,6 +295,9 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 <li>slot_max_otocz()
 : <a class="el" href="db/deb/classGProDialog.html#ae68b323e0a8062e8d068e1e477025124">GProDialog</a>
 </li>
+<li>slot_min_klas()
+: <a class="el" href="dc/d81/classGeoWidgetVariogram.html#a507fee04d38d4181bc855175977e6178">GeoWidgetVariogram</a>
+</li>
 <li>slot_min_otocz()
 : <a class="el" href="db/deb/classGProDialog.html#a1acb69a24145f228fad5126daeac97eb">GProDialog</a>
 </li>
@@ -289,8 +306,8 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 , <a class="el" href="db/deb/classGProDialog.html#afc15def6d7a08fa455367b900de1543c">GProDialog</a>
 </li>
 <li>slot_point()
-: <a class="el" href="d4/dc5/classGLWidget.html#ade15f01c257c904e00510bb9873baac1">GLWidget</a>
-, <a class="el" href="dd/d6e/classGLWidget2D.html#ae25029d217d3355ba4045fd0ca64c385">GLWidget2D</a>
+: <a class="el" href="dd/d6e/classGLWidget2D.html#ae25029d217d3355ba4045fd0ca64c385">GLWidget2D</a>
+, <a class="el" href="d4/dc5/classGLWidget.html#ade15f01c257c904e00510bb9873baac1">GLWidget</a>
 </li>
 <li>slot_potega()
 : <a class="el" href="db/deb/classGProDialog.html#a9bf94aadd9c259c42e316b7ada4929e6">GProDialog</a>
@@ -302,12 +319,15 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 : <a class="el" href="dc/d81/classGeoWidgetVariogram.html#adc9fabac869e807ecd79444c936c5613">GeoWidgetVariogram</a>
 </li>
 <li>slot_punkt()
-: <a class="el" href="dd/d0c/classGeoWidget3D.html#a4f2c90e408c0782b0afcc85b06f79b9f">GeoWidget3D</a>
-, <a class="el" href="dd/dd3/classGeoWidget2D.html#a0bd02292bf00ae8436fe57805771b6bb">GeoWidget2D</a>
+: <a class="el" href="dd/dd3/classGeoWidget2D.html#a0bd02292bf00ae8436fe57805771b6bb">GeoWidget2D</a>
+, <a class="el" href="dd/d0c/classGeoWidget3D.html#a4f2c90e408c0782b0afcc85b06f79b9f">GeoWidget3D</a>
 </li>
 <li>slot_range()
 : <a class="el" href="dc/d81/classGeoWidgetVariogram.html#a054fe0f71cb8e0d82727a46510b26007">GeoWidgetVariogram</a>
 , <a class="el" href="db/deb/classGProDialog.html#a30f15e2b80453142b1a07a672fda7556">GProDialog</a>
+</li>
+<li>slot_reset_view()
+: <a class="el" href="dd/d0c/classGeoWidget3D.html#ac6a5ac90a85f444cac001b8faeba7fe4">GeoWidget3D</a>
 </li>
 <li>slot_selected()
 : <a class="el" href="d7/d50/classGeoWidgetDane.html#a71119424a7966a864e88de94237de254">GeoWidgetDane</a>
@@ -323,18 +343,18 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 : <a class="el" href="dd/dd3/classGeoWidget2D.html#a435ee0c280eb5ec3e3deccc2a57fad09">GeoWidget2D</a>
 </li>
 <li>slot_update_dane()
-: <a class="el" href="dd/dd3/classGeoWidget2D.html#a0db32e5f88c564010eea97ff618effa7">GeoWidget2D</a>
-, <a class="el" href="dd/d0c/classGeoWidget3D.html#a6fff77fad46b9cb827688c96b0bb822d">GeoWidget3D</a>
+: <a class="el" href="d9/df4/classGeoWidget.html#a203762de274f7246e70f051ad7874ec6">GeoWidget</a>
+, <a class="el" href="dd/dd3/classGeoWidget2D.html#a0db32e5f88c564010eea97ff618effa7">GeoWidget2D</a>
 , <a class="el" href="d7/d50/classGeoWidgetDane.html#a9f173303c79865c4c6c97d378ea847e4">GeoWidgetDane</a>
-, <a class="el" href="dc/d81/classGeoWidgetVariogram.html#a9e22d64e1018e454880b1ba4a907d65e">GeoWidgetVariogram</a>
 , <a class="el" href="df/d16/classGeoWidgetRaport.html#a8dffdf2e09c11fa39948a741357b4ff5">GeoWidgetRaport</a>
-, <a class="el" href="d9/df4/classGeoWidget.html#a203762de274f7246e70f051ad7874ec6">GeoWidget</a>
+, <a class="el" href="dc/d81/classGeoWidgetVariogram.html#a9e22d64e1018e454880b1ba4a907d65e">GeoWidgetVariogram</a>
+, <a class="el" href="dd/d0c/classGeoWidget3D.html#a6fff77fad46b9cb827688c96b0bb822d">GeoWidget3D</a>
 </li>
 <li>slot_update_model()
-: <a class="el" href="dd/d0c/classGeoWidget3D.html#ad4a17af02cccc453b858b24fb7864d8d">GeoWidget3D</a>
-, <a class="el" href="d9/df4/classGeoWidget.html#a3f7b2037ad08b05b6b4ff2ae6102c9fd">GeoWidget</a>
-, <a class="el" href="dd/dd3/classGeoWidget2D.html#a303a1747b21b6c7504416ad1a9d6003d">GeoWidget2D</a>
+: <a class="el" href="dd/dd3/classGeoWidget2D.html#a303a1747b21b6c7504416ad1a9d6003d">GeoWidget2D</a>
 , <a class="el" href="df/d16/classGeoWidgetRaport.html#a7990a81d953eb2f74e269392c141c53b">GeoWidgetRaport</a>
+, <a class="el" href="dd/d0c/classGeoWidget3D.html#ad4a17af02cccc453b858b24fb7864d8d">GeoWidget3D</a>
+, <a class="el" href="d9/df4/classGeoWidget.html#a3f7b2037ad08b05b6b4ff2ae6102c9fd">GeoWidget</a>
 </li>
 <li>slot_update_view()
 : <a class="el" href="dd/d0c/classGeoWidget3D.html#a1a5429e60a863f617804787d613b6a5d">GeoWidget3D</a>
@@ -345,12 +365,12 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 , <a class="el" href="dc/d81/classGeoWidgetVariogram.html#a929b3e2abbfc91f526a06620e5bb9dbe">GeoWidgetVariogram</a>
 </li>
 <li>slot_zoom_fit()
-: <a class="el" href="dd/dd3/classGeoWidget2D.html#add522d4faa27426e9e92ca6665646e47">GeoWidget2D</a>
-, <a class="el" href="dd/d0c/classGeoWidget3D.html#ac6f94a379e050250b8c12ae60677b083">GeoWidget3D</a>
+: <a class="el" href="dd/d0c/classGeoWidget3D.html#ac6f94a379e050250b8c12ae60677b083">GeoWidget3D</a>
+, <a class="el" href="dd/dd3/classGeoWidget2D.html#add522d4faa27426e9e92ca6665646e47">GeoWidget2D</a>
 </li>
 <li>slot_zoom_in()
-: <a class="el" href="dd/d0c/classGeoWidget3D.html#a7c6ab010f58afe92ca4c088ce18dcb72">GeoWidget3D</a>
-, <a class="el" href="dd/dd3/classGeoWidget2D.html#a4fa99aca27b858ecd191efb87ed22721">GeoWidget2D</a>
+: <a class="el" href="dd/dd3/classGeoWidget2D.html#a4fa99aca27b858ecd191efb87ed22721">GeoWidget2D</a>
+, <a class="el" href="dd/d0c/classGeoWidget3D.html#a7c6ab010f58afe92ca4c088ce18dcb72">GeoWidget3D</a>
 </li>
 <li>slot_zoom_out()
 : <a class="el" href="dd/d0c/classGeoWidget3D.html#a01d3cb99638469438782df60b57e3bce">GeoWidget3D</a>
@@ -360,8 +380,8 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 : <a class="el" href="d1/d17/classGProSet.html#a927acc4dc926bfa1495e2d1b187dcaa5">GProSet</a>
 </li>
 <li>slotDane()
-: <a class="el" href="dd/d0c/classGeoWidget3D.html#a1a7f49361b0cd0459b9f632abab3571a">GeoWidget3D</a>
-, <a class="el" href="dd/dd3/classGeoWidget2D.html#a7a84c5c3f342b9c80f8c55133b73b99b">GeoWidget2D</a>
+: <a class="el" href="dd/dd3/classGeoWidget2D.html#a7a84c5c3f342b9c80f8c55133b73b99b">GeoWidget2D</a>
+, <a class="el" href="dd/d0c/classGeoWidget3D.html#a1a7f49361b0cd0459b9f632abab3571a">GeoWidget3D</a>
 </li>
 <li>slotDimS()
 : <a class="el" href="d1/d17/classGProSet.html#a0d881169df3ee85c434132fcfb5d9d8c">GProSet</a>
@@ -391,19 +411,19 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 : <a class="el" href="d1/d17/classGProSet.html#ae339939e6e474975b84f1f341430730c">GProSet</a>
 </li>
 <li>slotSiatka()
-: <a class="el" href="dd/d0c/classGeoWidget3D.html#afcf282cb11b20f02c2da72ecae07b389">GeoWidget3D</a>
-, <a class="el" href="dd/dd3/classGeoWidget2D.html#ad74f0df70bb0c1f51f13c34fbbd20a11">GeoWidget2D</a>
+: <a class="el" href="dd/dd3/classGeoWidget2D.html#ad74f0df70bb0c1f51f13c34fbbd20a11">GeoWidget2D</a>
+, <a class="el" href="dd/d0c/classGeoWidget3D.html#afcf282cb11b20f02c2da72ecae07b389">GeoWidget3D</a>
 </li>
 <li>slotUpdateSet()
 : <a class="el" href="d1/d17/classGProSet.html#a2f45f6e05c35adf642ea05a20dcfc459">GProSet</a>
 </li>
 <li>slotWezel()
-: <a class="el" href="dd/d0c/classGeoWidget3D.html#a457e10dd5495de05a015609e8a7fbade">GeoWidget3D</a>
-, <a class="el" href="dd/dd3/classGeoWidget2D.html#a786b9124a4b1c320c3c03e24b6e82158">GeoWidget2D</a>
+: <a class="el" href="dd/dd3/classGeoWidget2D.html#a786b9124a4b1c320c3c03e24b6e82158">GeoWidget2D</a>
+, <a class="el" href="dd/d0c/classGeoWidget3D.html#a457e10dd5495de05a015609e8a7fbade">GeoWidget3D</a>
 </li>
 <li>slotZakres()
-: <a class="el" href="dd/d0c/classGeoWidget3D.html#a2eaed244dd44af1feffd0a79a01cb9d5">GeoWidget3D</a>
-, <a class="el" href="dd/dd3/classGeoWidget2D.html#a3f022159fedea5e07d66e5851612ee60">GeoWidget2D</a>
+: <a class="el" href="dd/dd3/classGeoWidget2D.html#a3f022159fedea5e07d66e5851612ee60">GeoWidget2D</a>
+, <a class="el" href="dd/d0c/classGeoWidget3D.html#a2eaed244dd44af1feffd0a79a01cb9d5">GeoWidget3D</a>
 </li>
 <li>slotZasoby()
 : <a class="el" href="dd/dd3/classGeoWidget2D.html#ae05971ca5209139ed7e30059b6909112">GeoWidget2D</a>
@@ -415,7 +435,7 @@ $(document).ready(function(){initNavTree('functions_func_0x73.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Wygenerowano N, 10 lis 2013 00:37:59 dla GeoStat programem
+    <li class="footer">Wygenerowano Wt, 12 lis 2013 18:49:51 dla GeoStat programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

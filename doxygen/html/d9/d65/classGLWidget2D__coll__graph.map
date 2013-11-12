@@ -1,11 +1,11 @@
 <map id="GLWidget2D" name="GLWidget2D">
-<area shape="rect" id="node2" href="$d4/dc5/classGLWidget.html" title="The GLWidget class." alt="" coords="336,267,416,296"/>
-<area shape="rect" id="node6" href="$dc/d07/classwektor3d.html" title="The wektor3d class." alt="" coords="124,5,199,35"/>
-<area shape="rect" id="node8" href="$de/def/structMset.html" title="The Mset struct." alt="" coords="221,171,272,200"/>
-<area shape="rect" id="node11" href="$d1/de1/structwektor3i.html" title="The wektor3i struct." alt="" coords="239,5,308,35"/>
-<area shape="rect" id="node13" href="$d3/dc6/classGradient.html" title="The Gradient class." alt="" coords="296,171,365,200"/>
-<area shape="rect" id="node15" href="$d3/dac/classGeoDat.html" title="The GeoDat class." alt="" coords="389,171,456,200"/>
-<area shape="rect" id="node17" href="$da/d07/structVset.html" title="The Vset struct." alt="" coords="480,171,528,200"/>
-<area shape="rect" id="node19" href="$d6/d62/classGeoModel.html" title="The GeoModel class." alt="" coords="552,171,632,200"/>
-<area shape="rect" id="node21" href="$d0/df3/classGeoCube.html" title="Klasa GeoCube." alt="" coords="656,171,733,200"/>
+<area shape="rect" id="node2" href="$d4/dc5/classGLWidget.html" title="The GLWidget class. " alt="" coords="336,267,416,296"/>
+<area shape="rect" id="node6" href="$dc/d07/classwektor3d.html" title="The wektor3d class. " alt="" coords="124,5,199,35"/>
+<area shape="rect" id="node8" href="$de/def/structMset.html" title="The Mset struct. " alt="" coords="221,171,272,200"/>
+<area shape="rect" id="node11" href="$d1/de1/structwektor3i.html" title="The wektor3i struct. " alt="" coords="239,5,308,35"/>
+<area shape="rect" id="node13" href="$d3/dc6/classGradient.html" title="The Gradient class. " alt="" coords="296,171,365,200"/>
+<area shape="rect" id="node15" href="$d3/dac/classGeoDat.html" title="The GeoDat class. " alt="" coords="389,171,456,200"/>
+<area shape="rect" id="node17" href="$da/d07/structVset.html" title="The Vset struct. " alt="" coords="480,171,528,200"/>
+<area shape="rect" id="node19" href="$d6/d62/classGeoModel.html" title="The GeoModel class. " alt="" coords="552,171,632,200"/>
+<area shape="rect" id="node21" href="$d0/df3/classGeoCube.html" title="Klasa GeoCube. " alt="" coords="656,171,733,200"/>
 </map>

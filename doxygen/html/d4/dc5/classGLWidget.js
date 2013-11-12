@@ -17,6 +17,7 @@ var classGLWidget =
     [ "resizeGL", "d4/dc5/classGLWidget.html#ac0d2a8ecf60907a81c0d73475d851025", null ],
     [ "set_dx", "d4/dc5/classGLWidget.html#a7a1e1dee5e6cfdb74746719a373c8f53", null ],
     [ "set_dy", "d4/dc5/classGLWidget.html#ae58a19efc9f0930e5a3029276ead8624", null ],
+    [ "set_rot", "d4/dc5/classGLWidget.html#a4cdeb512ea88c6990c86405fc59a2ca8", null ],
     [ "set_scale", "d4/dc5/classGLWidget.html#ab4651f5c9072f485b87c898c81490585", null ],
     [ "slot_point", "d4/dc5/classGLWidget.html#ade15f01c257c904e00510bb9873baac1", null ],
     [ "slot_set_widok", "d4/dc5/classGLWidget.html#af743d72482508ed710c2e1b266340181", null ],

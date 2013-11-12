@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['dane',['DANE',['../dd/d90/classGMainWin.html#a2ff605add3bed95d9b65eabedc8b98f7a8cf6749c3079dfa98ffd52329514b686',1,'GMainWin::DANE()'],['../da/d07/structVset.html#a1a28b12644516751827790f9e74c8812',1,'Vset::dane()'],['../d4/dc5/classGLWidget.html#accb7bd3bbbbfb81269d0b1b8ef93ab09',1,'GLWidget::dane()']]],
+  ['dane',['dane',['../da/d07/structVset.html#a1a28b12644516751827790f9e74c8812',1,'Vset::dane()'],['../d4/dc5/classGLWidget.html#accb7bd3bbbbfb81269d0b1b8ef93ab09',1,'GLWidget::dane()'],['../dd/d90/classGMainWin.html#a2ff605add3bed95d9b65eabedc8b98f7a8cf6749c3079dfa98ffd52329514b686',1,'GMainWin::DANE()']]],
   ['dat',['dat',['../df/d64/structgeo3d.html#ab79727162ebd08d027f2b670f112a214',1,'geo3d']]],
   ['datainfo',['DataInfo',['../df/dcf/globalne_8h.html#d8/d97/structDataInfo',1,'']]],
   ['dodaj_5frek',['dodaj_rek',['../d3/dac/classGeoDat.html#a4fd17004d4b70715fc204d1806a0b5c9',1,'GeoDat::dodaj_rek(geo3d rek, bool nadpisz)'],['../d3/dac/classGeoDat.html#ab2c6396c25601fbdc2a319057695ae49',1,'GeoDat::dodaj_rek(wektor3d wsp, wektor3d geoval, bool nadpisz)'],['../d3/dac/classGeoDat.html#a187968130a5f6ab25c797ab0260853a9',1,'GeoDat::dodaj_rek(string linia, string sep, bool nadpisz)']]],

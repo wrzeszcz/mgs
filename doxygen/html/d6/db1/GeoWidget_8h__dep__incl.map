@@ -1,14 +1,14 @@
-<map id="/home/marek/2013.pro/mgeostat/GeoWidget.h" name="/home/marek/2013.pro/mgeostat/GeoWidget.h">
-<area shape="rect" id="node3" href="$d1/d04/GeoWidget_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget.cpp" alt="" coords="5,102,179,149"/>
-<area shape="rect" id="node5" href="$d3/d0a/GeoWidget2D_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget2D.h" alt="" coords="203,102,379,149"/>
-<area shape="rect" id="node11" href="$d4/d5c/GeoWidget3D_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget3D.h" alt="" coords="403,102,579,149"/>
-<area shape="rect" id="node16" href="$d2/d89/GeoWidgetDane_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidgetDane.h" alt="" coords="603,102,792,149"/>
-<area shape="rect" id="node21" href="$db/dcb/GeoWidgetRaport_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidgetRaport.h" alt="" coords="816,102,1013,149"/>
-<area shape="rect" id="node26" href="$dc/d78/GeoWidgetVariogram_8h.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidgetVariogram.h" alt="" coords="1037,102,1256,149"/>
-<area shape="rect" id="node7" href="$d3/d69/GeoWidget2D_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget2D.cpp" alt="" coords="80,198,269,245"/>
-<area shape="rect" id="node9" href="$d0/dc8/GMainWin_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GMainWin.cpp" alt="" coords="507,198,677,245"/>
-<area shape="rect" id="node13" href="$d7/d87/GeoWidget3D_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidget3D.cpp" alt="" coords="293,198,483,245"/>
-<area shape="rect" id="node18" href="$df/d26/GeoWidgetDane_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidgetDane.cpp" alt="" coords="701,198,907,245"/>
-<area shape="rect" id="node23" href="$da/d17/GeoWidgetRaport_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidgetRaport.cpp" alt="" coords="931,198,1144,245"/>
-<area shape="rect" id="node28" href="$da/dac/GeoWidgetVariogram_8cpp.html" title="/home/marek/2013.pro\l/mgeostat/GeoWidgetVariogram.cpp" alt="" coords="1168,198,1400,245"/>
+<map id="/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoWidget.h" name="/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoWidget.h">
+<area shape="rect" id="node3" href="$d1/d04/GeoWidget_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidget.cpp" alt="" coords="5,117,176,181"/>
+<area shape="rect" id="node5" href="$d3/d0a/GeoWidget2D_8h.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidget2D.h" alt="" coords="200,117,371,181"/>
+<area shape="rect" id="node11" href="$d4/d5c/GeoWidget3D_8h.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidget3D.h" alt="" coords="395,117,565,181"/>
+<area shape="rect" id="node16" href="$d2/d89/GeoWidgetDane_8h.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidgetDane.h" alt="" coords="589,117,760,181"/>
+<area shape="rect" id="node21" href="$db/dcb/GeoWidgetRaport_8h.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidgetRaport.h" alt="" coords="784,117,955,181"/>
+<area shape="rect" id="node26" href="$dc/d78/GeoWidgetVariogram_8h.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidgetVariogram.h" alt="" coords="979,117,1149,181"/>
+<area shape="rect" id="node7" href="$d3/d69/GeoWidget2D_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidget2D.cpp" alt="" coords="103,229,273,293"/>
+<area shape="rect" id="node9" href="$d0/dc8/GMainWin_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GMainWin.cpp" alt="" coords="492,229,663,293"/>
+<area shape="rect" id="node13" href="$d7/d87/GeoWidget3D_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidget3D.cpp" alt="" coords="297,229,468,293"/>
+<area shape="rect" id="node18" href="$df/d26/GeoWidgetDane_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidgetDane.cpp" alt="" coords="687,229,857,293"/>
+<area shape="rect" id="node23" href="$da/d17/GeoWidgetRaport_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidgetRaport.cpp" alt="" coords="881,229,1052,293"/>
+<area shape="rect" id="node28" href="$da/dac/GeoWidgetVariogram_8cpp.html" title="/home/marek/2013.pro\l/2013.mgeostat/mgeostat\l/GeoWidgetVariogram.cpp" alt="" coords="1076,229,1249,293"/>
 </map>

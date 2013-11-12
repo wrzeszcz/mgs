@@ -12,7 +12,6 @@ var searchData=
   ['wypisz',['wypisz',['../d3/dac/classGeoDat.html#a3956f5569ec6cbe79f26fec7df5b855c',1,'GeoDat']]],
   ['wypisz_5fdane',['wypisz_dane',['../d6/d62/classGeoModel.html#aeb8e5d2a6c3b2af48cd66c7645ec6058',1,'GeoModel']]],
   ['wypisz_5fdat',['wypisz_dat',['../d3/dac/classGeoDat.html#a62b3685b613c72449a75a0c9b4cdd73b',1,'GeoDat::wypisz_dat(vector&lt; geo3d &gt; &amp;vec)'],['../d3/dac/classGeoDat.html#ae256481c5ccb090bb2e6ac9fe260a34a',1,'GeoDat::wypisz_dat(vector&lt; geo3d &gt; &amp;vec, wektor3d centr, double r)']]],
-  ['wypisz_5fdist_5fdelta',['wypisz_dist_delta',['../d6/d41/classGeoVariogram.html#ab75ab60103d386a391620d2d9ca4e3f2',1,'GeoVariogram']]],
   ['wypisz_5fmodel',['wypisz_model',['../d6/d62/classGeoModel.html#a8d4c52dd31b40e6cf0028a230d085124',1,'GeoModel']]],
   ['wypisz_5fplik',['wypisz_plik',['../d3/dac/classGeoDat.html#a206ba4ae643769050c3d4f799467821e',1,'GeoDat']]],
   ['wypisz_5fraport',['wypisz_raport',['../d6/d62/classGeoModel.html#a1905a110997ad1a00a3db869513f0227',1,'GeoModel']]],

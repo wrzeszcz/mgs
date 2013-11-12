@@ -1,13 +1,13 @@
-<map id="/home/marek/2013.pro/mgeostat/GeoWidgetVariogram.cpp" name="/home/marek/2013.pro/mgeostat/GeoWidgetVariogram.cpp">
-<area shape="rect" id="node3" href="$dc/d78/GeoWidgetVariogram_8h.html" title="GeoWidgetVariogram.h" alt="" coords="936,101,1093,131"/>
-<area shape="rect" id="node5" href="$d4/d1c/GeoVariogram_8h.html" title="GeoVariogram.h" alt="" coords="299,333,413,363"/>
-<area shape="rect" id="node23" href="$df/dcf/globalne_8h.html" title="globalne.h" alt="" coords="581,488,661,517"/>
-<area shape="rect" id="node35" href="$da/d96/GeoVariogramModel_8h.html" title="GeoVariogramModel.h" alt="" coords="547,411,696,440"/>
-<area shape="rect" id="node38" href="$d1/dd7/GeoWidget_8h.html" title="GeoWidget.h" alt="" coords="745,179,844,208"/>
-<area shape="rect" id="node76" href="$d0/dda/GraphWidget_8h.html" title="GraphWidget.h" alt="" coords="868,179,977,208"/>
-<area shape="rect" id="node7" href="$d6/d34/GeoDat_8h.html" title="GeoDat.h" alt="" coords="144,411,221,440"/>
-<area shape="rect" id="node46" href="$d6/dde/GeoModel_8h.html" title="GeoModel.h" alt="" coords="772,256,863,285"/>
-<area shape="rect" id="node48" href="$d5/d19/GeoCube_8h.html" title="GeoCube.h" alt="" coords="1155,411,1243,440"/>
-<area shape="rect" id="node57" href="$d1/d09/GeoKriging_8h.html" title="GeoKriging.h" alt="" coords="803,333,899,363"/>
-<area shape="rect" id="node71" href="$d5/d59/GeoZasoby_8h.html" title="GeoZasoby.h" alt="" coords="680,333,779,363"/>
+<map id="/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoWidgetVariogram.cpp" name="/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoWidgetVariogram.cpp">
+<area shape="rect" id="node3" href="$dc/d78/GeoWidgetVariogram_8h.html" title="GeoWidgetVariogram.h" alt="" coords="595,117,752,147"/>
+<area shape="rect" id="node5" href="$d4/d1c/GeoVariogram_8h.html" title="GeoVariogram.h" alt="" coords="1104,349,1219,379"/>
+<area shape="rect" id="node23" href="$df/dcf/globalne_8h.html" title="globalne.h" alt="" coords="727,504,807,533"/>
+<area shape="rect" id="node35" href="$da/d96/GeoVariogramModel_8h.html" title="GeoVariogramModel.h" alt="" coords="428,427,577,456"/>
+<area shape="rect" id="node38" href="$d1/dd7/GeoWidget_8h.html" title="GeoWidget.h" alt="" coords="331,195,429,224"/>
+<area shape="rect" id="node73" href="$d0/dda/GraphWidget_8h.html" title="GraphWidget.h" alt="" coords="121,195,231,224"/>
+<area shape="rect" id="node7" href="$d6/d34/GeoDat_8h.html" title="GeoDat.h" alt="" coords="1217,427,1295,456"/>
+<area shape="rect" id="node46" href="$d6/dde/GeoModel_8h.html" title="GeoModel.h" alt="" coords="676,272,767,301"/>
+<area shape="rect" id="node48" href="$d5/d19/GeoCube_8h.html" title="GeoCube.h" alt="" coords="1004,427,1092,456"/>
+<area shape="rect" id="node57" href="$d1/d09/GeoKriging_8h.html" title="GeoKriging.h" alt="" coords="735,349,831,379"/>
+<area shape="rect" id="node67" href="$d5/d59/GeoZasoby_8h.html" title="GeoZasoby.h" alt="" coords="612,349,711,379"/>
 </map>

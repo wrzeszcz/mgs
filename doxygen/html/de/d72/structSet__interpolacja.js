@@ -8,7 +8,7 @@ var structSet__interpolacja =
     [ "potega", "de/d72/structSet__interpolacja.html#adc2d4ce5c05b21b06d217ba22fa0fe8e", null ],
     [ "promien", "de/d72/structSet__interpolacja.html#ab3a085263565a75360fbec4e070b15cc", null ],
     [ "range_a", "de/d72/structSet__interpolacja.html#a6f5155d19551d738011b73a3ab831e45", null ],
-    [ "rozmiar_klasy", "de/d72/structSet__interpolacja.html#aca237fccda0fada7d7ea8eb1915a6295", null ],
+    [ "set_variogram", "de/d72/structSet__interpolacja.html#a4e0706713cb69d88d437e4db19aa0f8c", null ],
     [ "sill_c1", "de/d72/structSet__interpolacja.html#a84cf94a481682946b54eeefb26ac7aac", null ],
     [ "vario", "de/d72/structSet__interpolacja.html#a72f85659d6652b51b3fb05970a9f5d1a", null ]
 ];

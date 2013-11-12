@@ -39,6 +39,7 @@ var globalne_8h =
       [ "GAUSSIAN", "df/dcf/globalne_8h.html#a732b7fed053257c3fa7ec8cfb576912bafca8f51c9117fbb492a2184e9df9e412", null ]
     ] ],
     [ "cos2str", "df/dcf/globalne_8h.html#af279711681e6eb816e2d07c4fc564ad3", null ],
+    [ "cos2str", "df/dcf/globalne_8h.html#a850839e116c18540f71cade863c0b76b", null ],
     [ "operator<<", "df/dcf/globalne_8h.html#adff086b36240f26b3f5e9538f0acb240", null ],
     [ "operator<<", "df/dcf/globalne_8h.html#a4a4f7be8e181734d566fe2c5fb24d45d", null ],
     [ "operator<<", "df/dcf/globalne_8h.html#a04d76208c625333c16f7517a37051072", null ],
@@ -47,5 +48,6 @@ var globalne_8h =
     [ "operator>>", "df/dcf/globalne_8h.html#a16996a06d3a50139843d243ffdf19834", null ],
     [ "operator>>", "df/dcf/globalne_8h.html#afd50bfa8bf830e7d402e8a60e8739912", null ],
     [ "operator>>", "df/dcf/globalne_8h.html#a133bacfdeae2be4b87b731960025fc2f", null ],
+    [ "operator>>", "df/dcf/globalne_8h.html#aab9b1e16a75177f56299f7812a76a07c", null ],
     [ "NULLDAT", "df/dcf/globalne_8h.html#abd8d9d37ff2f6367a7eae5456bbc0304", null ]
 ];

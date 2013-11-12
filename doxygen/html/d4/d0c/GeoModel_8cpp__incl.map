@@ -1,10 +1,10 @@
-<map id="/home/marek/2013.pro/mgeostat/GeoModel.cpp" name="/home/marek/2013.pro/mgeostat/GeoModel.cpp">
-<area shape="rect" id="node3" href="$d6/dde/GeoModel_8h.html" title="GeoModel.h" alt="" coords="480,101,571,131"/>
-<area shape="rect" id="node5" href="$d5/d19/GeoCube_8h.html" title="GeoCube.h" alt="" coords="690,256,778,285"/>
-<area shape="rect" id="node22" href="$d1/d09/GeoKriging_8h.html" title="GeoKriging.h" alt="" coords="399,179,495,208"/>
-<area shape="rect" id="node37" href="$d4/d1c/GeoVariogram_8h.html" title="GeoVariogram.h" alt="" coords="808,179,923,208"/>
-<area shape="rect" id="node39" href="$d6/d34/GeoDat_8h.html" title="GeoDat.h" alt="" coords="1004,256,1082,285"/>
-<area shape="rect" id="node59" href="$d5/d59/GeoZasoby_8h.html" title="GeoZasoby.h" alt="" coords="276,179,375,208"/>
-<area shape="rect" id="node15" href="$df/dcf/globalne_8h.html" title="globalne.h" alt="" coords="447,333,527,363"/>
-<area shape="rect" id="node29" href="$da/d96/GeoVariogramModel_8h.html" title="GeoVariogramModel.h" alt="" coords="316,256,466,285"/>
+<map id="/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoModel.cpp" name="/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoModel.cpp">
+<area shape="rect" id="node3" href="$d6/dde/GeoModel_8h.html" title="GeoModel.h" alt="" coords="185,117,276,147"/>
+<area shape="rect" id="node5" href="$d5/d19/GeoCube_8h.html" title="GeoCube.h" alt="" coords="73,272,161,301"/>
+<area shape="rect" id="node22" href="$d1/d09/GeoKriging_8h.html" title="GeoKriging.h" alt="" coords="313,195,409,224"/>
+<area shape="rect" id="node33" href="$d4/d1c/GeoVariogram_8h.html" title="GeoVariogram.h" alt="" coords="667,195,781,224"/>
+<area shape="rect" id="node35" href="$d6/d34/GeoDat_8h.html" title="GeoDat.h" alt="" coords="863,272,940,301"/>
+<area shape="rect" id="node55" href="$d5/d59/GeoZasoby_8h.html" title="GeoZasoby.h" alt="" coords="181,195,280,224"/>
+<area shape="rect" id="node15" href="$df/dcf/globalne_8h.html" title="globalne.h" alt="" coords="321,349,401,379"/>
+<area shape="rect" id="node25" href="$da/d96/GeoVariogramModel_8h.html" title="GeoVariogramModel.h" alt="" coords="287,272,436,301"/>
 </map>

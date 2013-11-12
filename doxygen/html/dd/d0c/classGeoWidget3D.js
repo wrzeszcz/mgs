@@ -5,6 +5,7 @@ var classGeoWidget3D =
     [ "create_toolbar", "dd/d0c/classGeoWidget3D.html#af89be6e8bb80e016c59fb6654260e26e", null ],
     [ "signalUpdateView", "dd/d0c/classGeoWidget3D.html#a3dd6ebd9298a4da45521640932096a66", null ],
     [ "slot_punkt", "dd/d0c/classGeoWidget3D.html#a4f2c90e408c0782b0afcc85b06f79b9f", null ],
+    [ "slot_reset_view", "dd/d0c/classGeoWidget3D.html#ac6a5ac90a85f444cac001b8faeba7fe4", null ],
     [ "slot_update_dane", "dd/d0c/classGeoWidget3D.html#a6fff77fad46b9cb827688c96b0bb822d", null ],
     [ "slot_update_model", "dd/d0c/classGeoWidget3D.html#ad4a17af02cccc453b858b24fb7864d8d", null ],
     [ "slot_update_view", "dd/d0c/classGeoWidget3D.html#a1a5429e60a863f617804787d613b6a5d", null ],

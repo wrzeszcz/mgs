@@ -11,7 +11,8 @@ var classGMainWin =
       [ "DANE", "dd/d90/classGMainWin.html#a2ff605add3bed95d9b65eabedc8b98f7a8cf6749c3079dfa98ffd52329514b686", null ],
       [ "MODEL", "dd/d90/classGMainWin.html#a2ff605add3bed95d9b65eabedc8b98f7a5ecfc0fc860501ba5f834adc3aadf19e", null ],
       [ "ZASOBY", "dd/d90/classGMainWin.html#a2ff605add3bed95d9b65eabedc8b98f7a8569b8791ea23f9fa064af7d8e76d48f", null ],
-      [ "RAPORT", "dd/d90/classGMainWin.html#a2ff605add3bed95d9b65eabedc8b98f7ab163d58d4346106890c11ecf636d8ad3", null ]
+      [ "RAPORT", "dd/d90/classGMainWin.html#a2ff605add3bed95d9b65eabedc8b98f7ab163d58d4346106890c11ecf636d8ad3", null ],
+      [ "SEMIVARIOGRAM", "dd/d90/classGMainWin.html#a2ff605add3bed95d9b65eabedc8b98f7a70c017962ed31e010d70423d87661d1d", null ]
     ] ],
     [ "GMainWin", "dd/d90/classGMainWin.html#a1034f23203f1e982dbe56eca1604e84c", null ],
     [ "~GMainWin", "dd/d90/classGMainWin.html#ac06ca74bea6b2d52fe0b26f0aed2c491", null ],
