@@ -216,12 +216,12 @@ public:
     /// \brief nowy_variogram
     /// \param rozmiar_klasy
     ///
-    void nowy_variogram(double rozmiar_klasy);
+    void nowy_variogram(wektor3d ust);
     ///
     /// \brief calc_variogram
     /// \param rozmiar_klasy
     ///
-    void calc_variogram(double rozmiar_klasy);
+    void calc_variogram(wektor3d ust);
     ///
     /// \brief get_last_set
     /// \return
@@ -232,6 +232,15 @@ public:
     /// \return
     ///
     Progres get_progres(){return progres;}
+    ///
+    /// \brief set_progres_cur
+    /// \param v
+    ///
+    void set_progres_cur(int v){progres.pcur=v;}
+    ///
+    /// \brief get_progres_cur
+    ///
+    int get_progres_cur(){return progres.pcur;}
 
 private:
     ///

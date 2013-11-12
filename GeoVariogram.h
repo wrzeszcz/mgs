@@ -39,7 +39,7 @@ public:
     /// \param dane
     /// \param rozmiar_klasy
     ///
-    GeoVariogram(GeoDat *dane, double rozmiar_klasy);
+    GeoVariogram(GeoDat *dane, wektor3d ustawienie);
     ///
     /// \brief GeoVariogram
     /// \param dane
@@ -49,7 +49,7 @@ public:
     /// \brief recalc
     /// \param rozmiar_klasy
     ///
-    void recalc(double rozmiar_klasy);
+    void recalc(wektor3d ustawienie);
     ///
     /// \brief recalc
     ///
@@ -59,7 +59,7 @@ public:
     /// \param dane
     /// \param rozmiar_klasy
     ///
-    void set_dane(GeoDat *dane, double rozmiar_klasy);
+    void set_dane(GeoDat *dane, wektor3d ustawienie);
     ///
     /// \brief set_dane
     /// \param dane
@@ -80,6 +80,12 @@ public:
     /// \return
     ///
     std::vector<geo3d> &get_data(){return vario_data;}
+    ///
+    /// \brief find_max_dis
+    /// \param d
+    /// \return
+    ///
+    double find_max_dis(GeoDat *d);
 
 private:
     ///
@@ -89,12 +95,6 @@ private:
     /// \return
     ///
     double auto_rozmiar(double siz, int ile);
-    ///
-    /// \brief find_max_dis
-    /// \param d
-    /// \return
-    ///
-    double find_max_dis(GeoDat *d);
     ///
     /// \brief policz_klasy
     /// \param vd
@@ -109,17 +109,9 @@ private:
     ///
     std::vector<geo3d> vario_data;
     ///
-    /// \brief gIt
-    ///
-    //std::vector<wektor3d>::iterator gIt;
-    ///
     /// \brief dane
     ///
     GeoDat *dane;
-    ///
-    /// \brief rozmiar
-    ///
-    double rozmiar;
     ///
     /// \brief dist
     ///
@@ -128,6 +120,12 @@ private:
     /// \brief max_dist
     ///
     double max_dist;
+    ///
+    /// \brief vario_set
+    /// vario_set.x - rozmiar klasy
+    /// vario_set.y - ilosc klas
+    /// vario_set.z - min ilość par
+    wektor3d vario_set;
 };
 
 #endif // GEOVARIOGRAM_H

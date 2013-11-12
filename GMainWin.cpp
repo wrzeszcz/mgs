@@ -372,7 +372,7 @@ void GMainWin::slot_open_proj()
         {
             Mset m;
             Set_interpolacja s;
-            if(we >> m)
+            if(we >> m >> s)
             {
                 if(curModel->wczytaj_proj(m, s))
                 {
@@ -589,7 +589,7 @@ void GMainWin::slot_variogram()
     QFuture<void> future;
     future = QtConcurrent::run( boost::bind( &GeoModel::calc_variogram,
                                              curModel,
-                                             curModel->get_last_set().rozmiar_klasy) );
+                                             curModel->get_last_set().set_variogram) );
     watcher.setFuture(future);
 }
 //------------------------------------------------------------------------------
@@ -631,7 +631,7 @@ bool GMainWin::zapisz_projekt()
     ofstream wy(projFile.toStdString().c_str());
     if(wy.is_open())
     {
-         wy << *curModel->ptr_mset();
+         wy << *curModel->ptr_mset() << endl << curModel->get_iset();
          wy.close();
          return true;
     }
@@ -706,7 +706,7 @@ void GMainWin::slot_okno_variogram()
     subWindow->setWidget(new GeoWidgetVariogram(curModel,this));
     subWindow->setAttribute(Qt::WA_DeleteOnClose);
     subWindow->setWindowIcon(QIcon(":/vario"));
-    subWindow->resize(650,300);
+    subWindow->resize(890,350);
     mdiArea->addSubWindow(subWindow)->show();
 }
 //------------------------------------------------------------------------------

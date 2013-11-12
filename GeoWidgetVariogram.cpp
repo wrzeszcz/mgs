@@ -37,8 +37,8 @@ GeoWidgetVariogram::GeoWidgetVariogram(GeoModel *ptrModel, QWidget *parent):
             this,SLOT(slot_update_dane()));
     connect(actZapiszVariogram,SIGNAL(triggered()),
             parent, SLOT(slot_zapis_variogram()));
-     connect(act_przelicz,SIGNAL(triggered()),
-             parent,SLOT(slot_variogram()));
+     connect(this,SIGNAL(signal_recalc()),
+            parent,SLOT(slot_variogram()));
 }
 //------------------------------------------------------------------------------
 GeoWidgetVariogram::~GeoWidgetVariogram()
@@ -59,7 +59,6 @@ void GeoWidgetVariogram::slot_update_dane()
 {
    if(gModel->ptr_vario())
    {
-        //gModel->calc_variogram(cur_set_vario.rozmiar_klasy);
         graph->set_pkt_vario(gModel->ptr_vario()->get_klasy());
         graph->set_function(gModel->get_iset());
    }
@@ -101,7 +100,7 @@ void GeoWidgetVariogram::slot_range(QString d)
 //------------------------------------------------------------------------------
 void GeoWidgetVariogram::slot_klasa(QString d)
 {
-    cur_set_vario.rozmiar_klasy = d.toDouble();
+    cur_set_vario.set_variogram.x = d.toDouble();
 }
 //------------------------------------------------------------------------------
 void GeoWidgetVariogram::slot_kopuj_do()
@@ -112,18 +111,23 @@ void GeoWidgetVariogram::slot_kopuj_do()
 void GeoWidgetVariogram::slot_przelicz()
 {
     gModel->set_iset(cur_set_vario);
-    //QFuture<void> future;
-    //future = QtConcurrent::run(boost::bind( &GeoModel::calc_variogram,
-    //                                       gModel, cur_set_vario.rozmiar_klasy));
-    gModel->calc_variogram(cur_set_vario.rozmiar_klasy);
+    emit signal_recalc();
     slot_update_dane();
     graph->repaint();
+}
+
+void GeoWidgetVariogram::slot_ile_klas(int i)
+{
+    cur_set_vario.set_variogram.y = i;
+}
+
+void GeoWidgetVariogram::slot_min_klas(int i)
+{
+    cur_set_vario.set_variogram.z = i;
 }
 //-----------------------------------------------------------------------------
 void GeoWidgetVariogram::create()
 {
-    //gModel->nowy_variogram(gModel->get_last_set().rozmiar_klasy);
-
     graph = new GraphWidget(this);
     QPalette p(palette());
     p.setColor(QPalette::Background, Qt::black);
@@ -189,10 +193,33 @@ void GeoWidgetVariogram::create()
     toolBar->addWidget(lab_kla);
     toolBar->addWidget(le_klasa);
 
+    lab_kla_ile = new QLabel("ilość:");
+    lab_kla_ile->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
+    sb_kla_ile = new QSpinBox(this);
+    sb_kla_ile->setRange(1,1000);
+    sb_kla_ile->setAlignment(Qt::AlignRight);
+
+    connect(sb_kla_ile,SIGNAL(valueChanged(int)),this,SLOT(slot_ile_klas(int)));
+
+    toolBar->addWidget(lab_kla_ile);
+    toolBar->addWidget(sb_kla_ile);
+
+    lab_kla_min = new QLabel("min par:");
+    lab_kla_min->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
+    sb_kla_min = new QSpinBox(this);
+    sb_kla_min->setRange(1,1000);
+    sb_kla_min->setAlignment(Qt::AlignRight);
+
+    connect(sb_kla_min,SIGNAL(valueChanged(int)),this,SLOT(slot_min_klas(int)));
+
+    toolBar->addWidget(lab_kla_min);
+    toolBar->addWidget(sb_kla_min);
+
     actCopyToSet=new QAction(QIcon(":/copy"), tr("Kopiuj do ustwień"),this);
     connect(actCopyToSet,SIGNAL(triggered()),this,SLOT(slot_kopuj_do()));
 
     act_przelicz=new QAction(QIcon(":/calc"), tr("Przelicz"),this);
+    connect(act_przelicz,SIGNAL(triggered()),this,SLOT(slot_przelicz()));
 
     toolBar->addAction(act_przelicz);
     toolBar->addAction(actCopyToSet);
@@ -204,8 +231,9 @@ void GeoWidgetVariogram::update_edit()
     le_nugget ->setText(QString::number(cur_set_vario.nuget_c0,'f',2));
     le_sill   ->setText(QString::number(cur_set_vario.sill_c1 ,'f',2));
     le_range  ->setText(QString::number(cur_set_vario.range_a ,'f',2));
-    le_klasa  ->setText(QString::number(cur_set_vario.rozmiar_klasy,'f',2));
-
+    le_klasa  ->setText(QString::number(cur_set_vario.set_variogram.x,'f',2));
+    sb_kla_ile->setValue(cur_set_vario.set_variogram.y);
+    sb_kla_min->setValue(cur_set_vario.set_variogram.z);
     if(cur_set_vario.vario==EXPONENTIAL) combo_vario->setCurrentIndex(0);
     else if (cur_set_vario.vario==SPHERICAL)combo_vario->setCurrentIndex(1);
     else combo_vario->setCurrentIndex(2);

@@ -623,7 +623,7 @@ struct Set_interpolacja
         promien(50.0),
         min_ilosc(1),
         max_ilosc(32),
-        rozmiar_klasy(1.0)
+        set_variogram( wektor3d (1.0,100.0,32))
     {
 
     }
@@ -655,7 +655,7 @@ struct Set_interpolacja
     double promien;
     int min_ilosc;
     int max_ilosc;
-    double rozmiar_klasy;
+     wektor3d set_variogram;
 };
 ///
 /// \brief operator <<
@@ -673,7 +673,37 @@ inline ostream& operator << (ostream& os, const Set_interpolacja &d)
               << d.promien << endl
               << d.min_ilosc << endl
               << d.max_ilosc << endl
-              << d.rozmiar_klasy << endl;
+              << d.set_variogram << endl;
+}
+///
+/// \brief operator >>
+/// \param is
+/// \param d
+/// \return
+///
+inline istream& operator >> (istream& is, Set_interpolacja& d)
+{
+    if(!is) return is;
+    int enum_vario = 0;
+
+    is >> enum_vario
+       >> d.nuget_c0
+       >> d.sill_c1
+       >> d.range_a
+       >> d.potega
+       >> d.promien
+       >> d.min_ilosc
+       >> d.max_ilosc
+       >> d.set_variogram;
+
+    switch(enum_vario)
+    {
+        case EXPONENTIAL:
+        case SPHERICAL:
+        case GAUSSIAN: d.vario = (variogram)enum_vario; break;
+        default: d.vario = SPHERICAL;break;
+    }
+    return is;
 }
 //------------------------------------------------------------------------------
 ///

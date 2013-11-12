@@ -26,6 +26,7 @@
 #include "GeoWidget.h"
 #include "globalne.h"
 #include "GraphWidget.h"
+//#include "GProDialog.h"
 
 #include <QAction>
 #include <QMouseEvent>
@@ -33,6 +34,7 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QComboBox>
+#include <QSpinBox>
 ///
 /// \brief The GeoWidgetVariogram class
 ///
@@ -50,7 +52,11 @@ public:
     /// \brief ~GeoWidgetVariogram
     ///
     virtual ~GeoWidgetVariogram();
-
+signals:
+    ///
+    /// \brief signal_recalc
+    ///
+    void signal_recalc();
 protected:
     ///
     /// \brief paintEvent
@@ -100,7 +106,14 @@ protected slots:
     /// \brief slot_przelicz
     ///
     void slot_przelicz();
-
+    ///
+    /// \brief slot_ile_klas
+    ///
+    void slot_ile_klas(int);
+    ///
+    /// \brief slot_min_klas
+    ///
+    void slot_min_klas(int);
 private:
     ///
     /// \brief create
@@ -174,6 +187,22 @@ private:
     /// \brief lab_kla
     ///
     QLabel *lab_kla;
+    ///
+    /// \brief lab_kla_ile
+    ///
+    QLabel *lab_kla_ile;
+    ///
+    /// \brief sb_kla_ile
+    ///
+    QSpinBox *sb_kla_ile;
+    ///
+    /// \brief lab_kla_min
+    ///
+    QLabel *lab_kla_min;
+    ///
+    /// \brief sb_kla_min
+    ///
+    QSpinBox *sb_kla_min;
 };
 
 #endif // GEOWIDGETVARIOGRAM_H

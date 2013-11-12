@@ -26,7 +26,7 @@ GeoModel::GeoModel()
     modset = new Mset();
     dane = new GeoDat();
     cube = new GeoCube(modset->start,modset->sp,modset->grid);
-    curVariogram = new GeoVariogram(dane,last_set.rozmiar_klasy);
+    curVariogram = new GeoVariogram(dane,last_set.set_variogram);
     this->raport_add("nowy model \n");
 }
 GeoModel::~GeoModel()
@@ -60,7 +60,7 @@ void GeoModel::wczytaj_dane(string fileName, string sep, bool nowe, bool sred)
 
     updateModel();
 
-    //nowy_variogram(last_set.rozmiar_klasy);
+    nowy_variogram(last_set.set_variogram);
     modset->cutoff = dane->get_min_value().x+
             0.5 * (dane->get_max_value().x-dane->get_min_value().x);
 
@@ -80,7 +80,7 @@ bool GeoModel::wczytaj_proj(Mset _modset, Set_interpolacja _interp)
 
     updateModel();
 
-    //nowy_variogram(last_set.rozmiar_klasy);
+    nowy_variogram(last_set.set_variogram);
 
     return true;
 }
@@ -319,14 +319,16 @@ wektor3d GeoModel::inv_dist(const wektor3d& pkt, double promien, float potega)
     return wektor3d( NULLDAT, NULLDAT, NULLDAT);
 }
 //------------------------------------------------------------------------------
- void GeoModel::nowy_variogram(double rozmiar_klasy)
+ void GeoModel::nowy_variogram(wektor3d ust)
  {
      if(curVariogram) delete curVariogram;
-     curVariogram = new GeoVariogram(dane,rozmiar_klasy);
+     curVariogram = new GeoVariogram(dane,ust);
  }
 //------------------------------------------------------------------------------
- void GeoModel::calc_variogram(double rozmiar_klasy)
+ void GeoModel::calc_variogram(wektor3d ust)
  {
-     if(curVariogram) curVariogram->recalc(rozmiar_klasy);
+     progres.pmax = dane->get_size()*dane->get_size();
+     progres.pmin = progres.pcur = 0;
+     if(curVariogram) curVariogram->recalc(ust);
  }
 //------------------------------------------------------------------------------

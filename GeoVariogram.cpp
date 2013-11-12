@@ -21,26 +21,23 @@
 #include "GeoVariogram.h"
 #include <iostream>
 //------------------------------------------------------------------------------
-GeoVariogram::GeoVariogram(GeoDat *_dane, double rozmiar_klasy):
+GeoVariogram::GeoVariogram(GeoDat *_dane, wektor3d ustawienie):
     dane(_dane),
-    rozmiar(rozmiar_klasy)
+    vario_set(ustawienie)
 {
-    //max_dist = find_max_dis(dane);
-    //recalc();
+
 }
 //------------------------------------------------------------------------------
 GeoVariogram::GeoVariogram(GeoDat *_dane):
-    dane(_dane)
+    dane(_dane),
+    vario_set(wektor3d(1.0,100.0,32.0))
 {
-   max_dist = find_max_dis(dane);
-   rozmiar = auto_rozmiar(max_dist,100);
-   //recalc();
+
 }
 //------------------------------------------------------------------------------
-void GeoVariogram::recalc(double rozmiar_klasy)
+void GeoVariogram::recalc(wektor3d ustawienie)
 {
-    max_dist = find_max_dis(dane);
-    rozmiar = rozmiar_klasy;
+    vario_set = ustawienie;
     recalc();
 }
 //------------------------------------------------------------------------------
@@ -52,52 +49,49 @@ void GeoVariogram::recalc()
 
     policz_klasy(vario_data);
 
+    double dst(0.0), kw(0.0);
+
     for(; it != end; ++it)
         for(jt = it ; jt != end; ++jt)
-        {
-            double dst(0.0), kw(0.0);
+        {          
             dst = dist( it->first, jt->first );
+            if(dst > max_dist) continue;
             kw = (it->second.x - jt->second.x)*(it->second.x - jt->second.x);
 
             for(unsigned int i =0; i<vario_data.size(); ++i)
             {
-                if(!dst) break;
                 if(dst >= vario_data[i].xyz.y && dst < vario_data[i].xyz.z)
                 {
+                    vario_data[i].dat.x = vario_data[i].dat.x + dst;
                     vario_data[i].dat.y = vario_data[i].dat.y + kw;
                     vario_data[i].dat.z = vario_data[i].dat.z + 1;
                 }
             }
         }
-
-
     for(unsigned int i =0; i<vario_data.size(); ++i)
     {
+        vario_data[i].dat.x =  vario_data[i].dat.x /  vario_data[i].dat.z;
         vario_data[i].dat.y = vario_data[i].dat.y / (2*vario_data[i].dat.z);
-    }
-
-
+    }    
     wektor3d tmp;
     dist_delta_klas.clear();
     for(unsigned int i =0; i<vario_data.size(); ++i)
     {
         tmp = vario_data[i].dat;
-        if(tmp.z) dist_delta_klas.push_back(tmp);
+        if(tmp.z>=vario_set.z) dist_delta_klas.push_back(tmp);
     }
 }
 //------------------------------------------------------------------------------
-void GeoVariogram::set_dane(GeoDat *_dane, double rozmiar_klasy)
+void GeoVariogram::set_dane(GeoDat *_dane, wektor3d ust)
 {
     dane = _dane;
-    max_dist = find_max_dis(dane);
-    rozmiar = rozmiar_klasy;
+    vario_set = ust;
 }
 //------------------------------------------------------------------------------
 void GeoVariogram::set_dane(GeoDat *_dane)
 {
     dane = _dane;
-    max_dist = find_max_dis(dane);
-    rozmiar = auto_rozmiar(max_dist,100);
+    vario_set = wektor3d(1.0,100.0,32.0);
 }
 //------------------------------------------------------------------------------
 string GeoVariogram::get_raport()
@@ -133,20 +127,21 @@ double GeoVariogram::find_max_dis(GeoDat *d)
 //------------------------------------------------------------------------------
 void GeoVariogram::policz_klasy(std::vector<geo3d> &vd)
 {
+    max_dist = vario_set.x*vario_set.y;
     vd.clear();
     geo3d tmpklas;
+
     tmpklas.xyz.x = 1.0;
     tmpklas.xyz.y = 0.0;
-    tmpklas.xyz.z = rozmiar;
-    tmpklas.dat.x = tmpklas.xyz.y + (tmpklas.xyz.z - tmpklas.xyz.y) / 2.0;
+    tmpklas.xyz.z = vario_set.x;
+    vd.push_back(tmpklas);
 
-    while(tmpklas.xyz.y < max_dist)
+    for(int i = 1; i < (int)vario_set.y; ++i)
     {
+        tmpklas.xyz.x = i+1.0;
+        tmpklas.xyz.y = tmpklas.xyz.z ;
+        tmpklas.xyz.z = tmpklas.xyz.z+vario_set.x;
         vd.push_back(tmpklas);
-        tmpklas.xyz.x = tmpklas.xyz.x+1;
-        tmpklas.xyz.y = tmpklas.xyz.z;
-        tmpklas.xyz.z = tmpklas.xyz.z + rozmiar;
-        tmpklas.dat.x = tmpklas.xyz.y + (tmpklas.xyz.z - tmpklas.xyz.y) / 2.0;
     }
 }
 //------------------------------------------------------------------------------
