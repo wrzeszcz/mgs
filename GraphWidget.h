@@ -123,6 +123,14 @@ private:
     /// \brief pkt_funkc
     ///
     std::vector<QPointF> pkt_funkc;
+    ///
+    /// \brief vMargins
+    ///
+    QPoint vMargins;
+    ///
+    /// \brief hMargins
+    ///
+    QPoint hMargins;
 };
 
 #endif // GRAPHWIDGET_H

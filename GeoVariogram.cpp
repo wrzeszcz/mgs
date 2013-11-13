@@ -53,9 +53,9 @@ void GeoVariogram::recalc()
 
     for(; it != end; ++it)
         for(jt = it ; jt != end; ++jt)
-        {          
+        {
             dst = dist( it->first, jt->first );
-            if(dst > max_dist) continue;
+            if(!dst || dst > max_dist) continue;
             kw = (it->second.x - jt->second.x)*(it->second.x - jt->second.x);
 
             for(unsigned int i =0; i<vario_data.size(); ++i)

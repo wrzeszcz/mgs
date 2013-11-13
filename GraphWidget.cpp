@@ -24,7 +24,9 @@
 #include "GeoVariogramModel.h"
 //------------------------------------------------------------------------------
 GraphWidget::GraphWidget(QWidget *parent) :
-    QWidget(parent)
+    QWidget(parent),
+    hMargins(QPoint(40,40)),
+    vMargins(QPoint(60,20))
 {
     function_set = Set_interpolacja();
 }
@@ -57,7 +59,9 @@ void GraphWidget::paintEvent(QPaintEvent *e)
     pen.setColor(Qt::white);
     p.setPen(pen);
 
-    p.drawRect(40.0,20.0,this->width()-60,this->height()-40);
+    p.drawRect(hMargins.x(),vMargins.y(),this->width()-60,this->height()-60);
+    p.drawText(this->width()/2,this->height()-5, "h");
+    p.drawText(5,15, "γ(h)");
     if (!pkt_vario.size())return;
 
     draw_funkction(function_set);
@@ -107,14 +111,16 @@ void GraphWidget::draw_ox()
     for(int i=0; i<hor; i+=30)
     {
         int a = i+40;
-        QPoint pkt(a,this->height()-5);
+        QPoint pkt(a,this->height()-25);
         p.drawText(pkt,QString::number(int(i/skalax())));
+
     }
+
 }
 //------------------------------------------------------------------------------
 void GraphWidget::draw_oy()
 {
-    int wer = this->height()-40;
+    int wer = this->height()-60;
     QPainter p(this);
     p.setPen(Qt::red);
     for(int i=0; i<wer; i+=30)
@@ -139,7 +145,7 @@ double GraphWidget::skalax()
 //------------------------------------------------------------------------------
 double GraphWidget::skalay()
 {
-    int wer = this->height()-40;
+    int wer = this->height()-60;
     double max;
     if(pkt_vario.size())
     {
@@ -157,6 +163,6 @@ float GraphWidget::x_scale(double X)
 float GraphWidget::y_scale(double Y)
 {
     int wer = this->height();
-    return float( wer-Y*skalay()-20);
+    return float( wer-Y*skalay()-40);
 }
 //------------------------------------------------------------------------------
