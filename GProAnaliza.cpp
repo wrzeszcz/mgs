@@ -30,19 +30,13 @@ GProAnaliza::GProAnaliza(GeoZasoby *zasoby, GeoModel *model, QWidget *parent):
     klasy(geoModel->ptr_mset()->klasy_zas)
 {
     this->setModal(true);
-
     this->setWindowTitle(tr("DOBIERZ KLASY ANALIZY ZASOBÓW"));
     this->resize(500,400);
     butBox = new QDialogButtonBox((QDialogButtonBox::Ok | QDialogButtonBox::Cancel), Qt::Horizontal,this);
     connect(butBox, SIGNAL(accepted()), this, SLOT(accept()));
     connect(butBox, SIGNAL(rejected()), this, SLOT(reject()));
-
-
     createLayout();
     update_all();
-    //slot_table();
-
-
 }
 
 GProAnaliza::~GProAnaliza()
@@ -96,38 +90,23 @@ void GProAnaliza::createLayout()
     mainLayout->setSizeConstraint(QLayout::SetNoConstraint);
     all_grup = new QGroupBox();
     createLayoutAll();
-
     createTableView();
-
-
-
     graph = new GraphColumnWidget();
     QPalette p(palette());
     p.setColor(QPalette::Background, Qt::black);
     graph->setAutoFillBackground(true);
     graph->setPalette(p);
-    //graph->resize(100,500);
-
     QGroupBox *formGroupBox = new QGroupBox(tr("WYKRES"));
     QFormLayout *layout = new QFormLayout;
     layout->addRow(new QLabel(tr("Line 1:")),graph);
     formGroupBox->setLayout(layout);
-
     layoutAll->setRowMinimumHeight(2,150);
     layoutAll->addWidget(graph,2,0, 4, 2);
     layoutAll->setColumnStretch(0,20);
-
-
     all_grup->setLayout(layoutAll);
     mainLayout->addWidget(all_grup);
-
-    //mainLayout->addWidget(formGroupBox);
-
-
-
     mainLayout->addWidget(tableView);
     mainLayout->addWidget(butBox);
-
     setLayout(mainLayout);
 }
 

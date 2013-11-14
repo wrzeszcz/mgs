@@ -49,7 +49,16 @@ public:
     /// \param _zoom
     ///
     void set_zoom(float _zoom){zoom=_zoom;}
+    ///
+    /// \brief get_zoom
+    /// \return
+    ///
     float get_zoom(){return zoom;}
+    ///
+    /// \brief setZ
+    /// \param _z
+    ///
+    void setZ(int _z){z=_z;}
 
 protected:
     ///
@@ -136,6 +145,7 @@ private:
     /// \brief v_it
     ///
     std::vector <wektor3d>::iterator v_it;
+    int z;
 };
 
 

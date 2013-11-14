@@ -21,6 +21,7 @@
 #include "GeoWidget3D.h"
 #include <QAction>
 #include <QCheckBox>
+#include <QSlider>
 
 GeoWidget3D::GeoWidget3D(GeoModel *ptrModel, QWidget *parent):
      GeoWidget(ptrModel, parent)
@@ -32,6 +33,8 @@ GeoWidget3D::GeoWidget3D(GeoModel *ptrModel, QWidget *parent):
    boxLayout->addWidget(wiev3d);
 
     create_toolbar();
+    create_slider();
+
     connect(parent,SIGNAL(signal_zmiana_danych()),this,SLOT(slot_update_dane()));
     connect(parent,SIGNAL(signal_zmiana_modelu()),this,SLOT(slot_update_model()));
     connect(this,SIGNAL(signalUpdateView(Vset)),wiev3d,SLOT(slot_set_widok(Vset)));
@@ -86,6 +89,19 @@ void GeoWidget3D::create_toolbar()
     act_zoom_select = new QAction(QIcon(":/rot_reset"), tr("Resutuj obrót"),this);
     connect(act_zoom_select,SIGNAL(triggered()),this,SLOT(slot_reset_view()));
     toolBar->addAction(act_zoom_select);
+}
+
+void GeoWidget3D::create_slider()
+{
+    sliderZ = new QSlider(this);
+    int z = gModel->ptr_mset()->grid.z;
+    if (!z) z=1;
+    sliderZ->setRange(0,z-1);
+    sliderZ->setOrientation(Qt::Horizontal);
+
+    connect(sliderZ,SIGNAL(valueChanged(int)),this,SLOT(slot_slider_z(int)));
+    sliderZ->setValue(sliderZ->maximum());
+    boxLayout->addWidget(sliderZ);
 }
 
 void GeoWidget3D::slot_update_dane()
@@ -161,5 +177,11 @@ void GeoWidget3D::slot_zoom_out()
 {
     float zoom = wiev3d->get_zoom() * 1.1;
     wiev3d->set_zoom(zoom);
+    wiev3d->repaint();
+}
+
+void GeoWidget3D::slot_slider_z(int i)
+{
+    wiev3d->setZ(i);
     wiev3d->repaint();
 }

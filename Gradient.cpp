@@ -19,6 +19,7 @@
 *******************************************************************************/
 
 #include "Gradient.h"
+#include <iostream>
 //------------------------------------------------------------------------------
 Gradient::Gradient():
     k(QColor(0,0,0))
@@ -28,10 +29,11 @@ Gradient::Gradient():
 //------------------------------------------------------------------------------
 QColor Gradient::get_kolor(double poz)
 {
-    if ( poz > 1.0 ) poz = poz - int(poz);
+    if ( poz > 1.0 ) poz = 1.0;// poz - int(poz);
+    if (poz < 0.0) poz = 0.0;
 
-    int pixelDistance=(int)( poz * 1792.0 );
-    int red, green, blue;
+    int pixelDistance = (int)( poz * 1792.0 );
+    unsigned int red, green, blue;
 
     if (pixelDistance < 256)
     {   // BLACK to BLUE
@@ -72,8 +74,13 @@ QColor Gradient::get_kolor(double poz)
     else
     {   // MAGENTA to WHITE
         red = 255;
-        green = pixelDistance - 1537;
+        green = pixelDistance - 1536;
         blue = 255;
+    }
+
+    if(red > 255 || green > 255 || blue > 255)
+    {
+        std::cout<<red<<" "<<green<<" "<<blue<<" "<< pixelDistance << std::endl;
     }
     return QColor(red, green, blue);
 }

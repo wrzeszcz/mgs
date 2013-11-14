@@ -26,6 +26,7 @@
 #include "globalne.h"
 
 class QCheckBox;
+class QSlider;
 ///
 /// \brief The GeoWidget3D class
 ///
@@ -38,7 +39,7 @@ public:
     /// \param ptrModel
     /// \param parent
     ///
-    GeoWidget3D(GeoModel *ptrModel, QWidget *parent = 0);
+    explicit GeoWidget3D(GeoModel *ptrModel, QWidget *parent = 0);
     ///
     /// \brief ~GeoWidget3D
     ///
@@ -49,6 +50,10 @@ protected:
     /// \brief create_toolbar
     ///
     void create_toolbar();
+    ///
+    /// \brief create_slider
+    ///
+    void create_slider();
 
 signals:
     ///
@@ -114,12 +119,21 @@ protected slots:
     /// \brief slot_zoom_out
     ///
     void slot_zoom_out();
+    ///
+    /// \brief slot_slider_z
+    /// \param i
+    ///
+    void slot_slider_z(int i);
 
 private:
     ///
     /// \brief wiev3d
     ///
     GLWidget3D *wiev3d;
+    ///
+    /// \brief sliderZ
+    ///
+    QSlider   *sliderZ;
     ///
     /// \brief cbZakres
     ///

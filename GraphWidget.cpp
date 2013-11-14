@@ -24,9 +24,9 @@
 #include "GeoVariogramModel.h"
 //------------------------------------------------------------------------------
 GraphWidget::GraphWidget(QWidget *parent) :
-    QWidget(parent),
-    hMargins(QPoint(40,40)),
-    vMargins(QPoint(60,20))
+    QWidget(parent),   
+    vMargins(QPoint(60,20)),
+    hMargins(QPoint(40,40))
 {
     function_set = Set_interpolacja();
 }

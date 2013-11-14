@@ -132,6 +132,7 @@ void GLWidget3D::paint_model()
         for(int b=0; b<cube->getSize().y;++b)
             for(int c=0; c<cube->getSize().z;++c)
             {
+
                 if(widok.wezel)
                 {
                     glColor3f(1.0,0.0,0.0);
@@ -145,7 +146,8 @@ void GLWidget3D::paint_model()
                     glLineWidth(0.5);
                     paintBlok(cube2w(wektor3d(a,b,c),*sett),sett->sp,-1.0);
                 }
-                if(widok.zasoby)
+                //if(c>z) continue;
+                if(widok.zasoby && c<=z)
                 {
                     if (cube->getRek(a,b,c).x > sett->cutoff && test_otoczenia(a,b,c))
                     {
@@ -243,7 +245,8 @@ void GLWidget3D::paintBlok(wektor3d srod, double bok, float color)
     {
         wektor3d min = cube->get_min();
         wektor3d max = cube->get_max();
-        double k = (color-min.x) / (max.x - min.x);
+        //double k = (color-min.x) / (max.x - min.x);
+        double k = (color - sett->cutoff) / (max.x - sett->cutoff);
         QColor c = kolor.get_kolor(k);
         glColor3f(c.redF(),c.greenF(),c.blueF());
     }
@@ -322,7 +325,8 @@ bool GLWidget3D::test_otoczenia(int a, int b, int c)
     if (a==0 || b==0 || c==0) return true;
     if (a==cube->getSize().x-1 ||
         b==cube->getSize().y-1 ||
-        b==cube->getSize().z-1) return true;
+        c==cube->getSize().z-1 ||
+        c==z   ) return true;
 
     if( cube->getRek(a-1,b,c).x > sett->cutoff &&
         cube->getRek(a+1,b,c).x > sett->cutoff &&
