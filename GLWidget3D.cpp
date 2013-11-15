@@ -81,6 +81,7 @@ void GLWidget3D::paintGL()
         if(widok.zakres)  paint_zakres();
         //rysowanie osi w innym view porcie
         paintAxis();
+        paintScale();
     glFlush();
     glPopMatrix();
 }
@@ -243,10 +244,10 @@ void GLWidget3D::paintBlok(wektor3d srod, double bok, float color)
 {
     if(color>=0)
     {
-        wektor3d min = cube->get_min();
+        //wektor3d min = cube->get_min();
         wektor3d max = cube->get_max();
         //double k = (color-min.x) / (max.x - min.x);
-        double k = (color - sett->cutoff) / (max.x - sett->cutoff);
+        double k = (color - sett->cutoff*0.95) / (max.x - sett->cutoff*0.95);
         QColor c = kolor.get_kolor(k);
         glColor3f(c.redF(),c.greenF(),c.blueF());
     }
@@ -317,6 +318,40 @@ void GLWidget3D::paintAxis()
     glVertex3f(0.0,0.0,1.0);
 
     glEnd() ;
+    glPopMatrix();
+}
+
+void GLWidget3D::paintScale()
+{
+    glPushMatrix();
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glViewport(10,80,70,300);
+
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+
+    glPolygonMode(GL_FRONT_AND_BACK,GL_FILL);
+
+    int i;
+    float f1,f2;
+    float f = 1.0/8.0;
+    for(i=0; i<8; ++i)
+    {
+        f1=f*i;
+        f2=f*(i+1);
+        glBegin(GL_QUADS);
+        QColor c1= kolor.get_kolor(f1);
+        QColor c2= kolor.get_kolor(f2);
+    glColor3f(c1.redF(),c1.greenF(),c1.blueF());
+    glVertex3f(0.0,f1,0.0);
+    glVertex3f(0.5,f1,0.0);
+    glColor3f(c2.redF(),c2.greenF(),c2.blueF());
+    glVertex3f(0.5,f2,0.0);
+    glVertex3f(0.0,f2,0.0);
+    glEnd() ;
+    }
+
     glPopMatrix();
 }
 //-----------------------------------------------------------------------------

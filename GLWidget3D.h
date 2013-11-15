@@ -122,6 +122,10 @@ private:
     ///
     void paintAxis();
     ///
+    /// \brief paintScale
+    ///
+    void paintScale();
+    ///
     /// \brief test_otoczenia
     /// \param a
     /// \param b

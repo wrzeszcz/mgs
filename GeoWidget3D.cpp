@@ -108,6 +108,8 @@ void GeoWidget3D::slot_update_dane()
 {
     wiev3d->wczytajObiekty();
     wiev3d->update_model();
+    sliderZ->setRange(0,gModel->ptr_mset()->grid.z-1);
+    sliderZ->setValue(sliderZ->maximum());
     wiev3d->repaint();
 }
 
