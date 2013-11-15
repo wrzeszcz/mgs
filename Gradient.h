@@ -22,7 +22,8 @@
 #define GRADIENT_H
 #include <QColor>
 ///
-/// \brief The Gradient class
+/// \brief Klasa Gradient
+/// oblicza skalę barw dla przedziału 0.0-1.0
 ///
 class Gradient
 {
@@ -33,8 +34,8 @@ public:
     Gradient();
     ///
     /// \brief get_kolor
-    /// \param poz
-    /// \return
+    /// \param double od 0.0 do 1.0
+    /// \return kolor w skali barw
     ///
     QColor get_kolor(double poz);
 private:
