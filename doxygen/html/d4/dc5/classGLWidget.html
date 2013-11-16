@@ -133,7 +133,7 @@ Diagram współpracy dla GLWidget:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d3/d11/classGLWidget__coll__graph.png" border="0" usemap="#GLWidget_coll__map" alt="Collaboration graph"/></div>
 <map name="GLWidget_coll__map" id="GLWidget_coll__map">
-<area shape="rect" id="node4" href="../../dc/d07/classwektor3d.html" title="The wektor3d class. " alt="" coords="124,5,199,35"/><area shape="rect" id="node6" href="../../de/def/structMset.html" title="The Mset struct. " alt="" coords="221,171,272,200"/><area shape="rect" id="node9" href="../../d1/de1/structwektor3i.html" title="The wektor3i struct. " alt="" coords="239,5,308,35"/><area shape="rect" id="node11" href="../../d3/dc6/classGradient.html" title="The Gradient class. " alt="" coords="296,171,365,200"/><area shape="rect" id="node13" href="../../d3/dac/classGeoDat.html" title="The GeoDat class. " alt="" coords="389,171,456,200"/><area shape="rect" id="node15" href="../../da/d07/structVset.html" title="The Vset struct. " alt="" coords="480,171,528,200"/><area shape="rect" id="node17" href="../../d6/d62/classGeoModel.html" title="The GeoModel class. " alt="" coords="552,171,632,200"/><area shape="rect" id="node19" href="../../d0/df3/classGeoCube.html" title="Klasa GeoCube. " alt="" coords="656,171,733,200"/></map>
+<area shape="rect" id="node4" href="../../dc/d07/classwektor3d.html" title="The wektor3d class. " alt="" coords="124,5,199,35"/><area shape="rect" id="node6" href="../../de/def/structMset.html" title="The Mset struct. " alt="" coords="221,171,272,200"/><area shape="rect" id="node9" href="../../d1/de1/structwektor3i.html" title="The wektor3i struct. " alt="" coords="239,5,308,35"/><area shape="rect" id="node11" href="../../d3/dc6/classGradient.html" title="Klasa Gradient oblicza skalę barw dla przedziału 0.0&#45;1.0. " alt="" coords="296,171,365,200"/><area shape="rect" id="node13" href="../../d3/dac/classGeoDat.html" title="The GeoDat class. " alt="" coords="389,171,456,200"/><area shape="rect" id="node15" href="../../da/d07/structVset.html" title="The Vset struct. " alt="" coords="480,171,528,200"/><area shape="rect" id="node17" href="../../d6/d62/classGeoModel.html" title="The GeoModel class. " alt="" coords="552,171,632,200"/><area shape="rect" id="node19" href="../../d0/df3/classGeoCube.html" title="Klasa GeoCube. " alt="" coords="656,171,733,200"/></map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legenda</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
@@ -198,6 +198,11 @@ Metody chronione</h2></td></tr>
 <tr class="memitem:a5702a23f7cf42d05fe55a417d810a4b6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a5702a23f7cf42d05fe55a417d810a4b6">wheelEvent</a> (QWheelEvent *event)</td></tr>
 <tr class="memdesc:a5702a23f7cf42d05fe55a417d810a4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">wheelEvent  <a href="#a5702a23f7cf42d05fe55a417d810a4b6">Więcej...</a><br/></td></tr>
 <tr class="separator:a5702a23f7cf42d05fe55a417d810a4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdfede895d0d19e648335e51979825b6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#afdfede895d0d19e648335e51979825b6">drawString</a> (float x, float y, QColor rgb, int fontSize, QString text)</td></tr>
+<tr class="memdesc:afdfede895d0d19e648335e51979825b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">drawString  <a href="#afdfede895d0d19e648335e51979825b6">Więcej...</a><br/></td></tr>
+<tr class="separator:afdfede895d0d19e648335e51979825b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9832f3cdf3ad2fbf4cd0976422de78"><td class="memItemLeft" align="right" valign="top">virtual QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a6b9832f3cdf3ad2fbf4cd0976422de78">calcKolor</a> (const double &amp;minv, const double &amp;maxv, const double &amp;value)</td></tr>
+<tr class="separator:a6b9832f3cdf3ad2fbf4cd0976422de78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1665a2bbb8e8036b1d1751d95ffc1942"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc5/classGLWidget.html#a1665a2bbb8e8036b1d1751d95ffc1942">paint_model_siatka</a> ()</td></tr>
 <tr class="memdesc:a1665a2bbb8e8036b1d1751d95ffc1942"><td class="mdescLeft">&#160;</td><td class="mdescRight">paint_model_siatka  <a href="#a1665a2bbb8e8036b1d1751d95ffc1942">Więcej...</a><br/></td></tr>
 <tr class="separator:a1665a2bbb8e8036b1d1751d95ffc1942"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -390,6 +395,114 @@ Atrybuty chronione</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="a6b9832f3cdf3ad2fbf4cd0976422de78"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor GLWidget::calcKolor </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>minv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>maxv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="../../#L91">91</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afdfede895d0d19e648335e51979825b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLWidget::drawString </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QColor&#160;</td>
+          <td class="paramname"><em>rgb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fontSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>drawString </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+    <tr><td class="paramname">rgb</td><td></td></tr>
+    <tr><td class="paramname">fontSize</td><td></td></tr>
+    <tr><td class="paramname">text</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="../../#L85">85</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="abfbb33fbc354d5d9715c512c14cd0c23"></a>
 <div class="memitem">
 <div class="memproto">
@@ -538,7 +651,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>paint_dane </p>
 
-<p>Definicja w linii <a class="el" href="../../#L122">122</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L135">135</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -565,7 +678,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>paint_model </p>
 
-<p>Definicja w linii <a class="el" href="../../#L117">117</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L130">130</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -592,7 +705,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>paint_model_siatka </p>
 
-<p>Definicja w linii <a class="el" href="../../#L102">102</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L115">115</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -619,7 +732,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>paint_model_wezly </p>
 
-<p>Definicja w linii <a class="el" href="../../#L107">107</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L120">120</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -646,7 +759,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>paint_model_zasoby </p>
 
-<p>Definicja w linii <a class="el" href="../../#L112">112</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L125">125</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -673,7 +786,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>paint_zakres </p>
 
-<p>Definicja w linii <a class="el" href="../../#L127">127</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L140">140</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -935,7 +1048,7 @@ Atrybuty chronione</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definicja w linii <a class="el" href="../../#L91">91</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L104">104</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -963,7 +1076,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>slot_set_widok </p>
 
-<p>Definicja w linii <a class="el" href="../../#L85">85</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L98">98</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -1009,7 +1122,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>wczytajObiekty </p>
 
-<p>Definicja w linii <a class="el" href="../../#L97">97</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L110">110</a> pliku <a class="el" href="../../">GLWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -1070,7 +1183,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>cube </p>
 
-<p>Definicja w linii <a class="el" href="../../#L166">166</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L177">177</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1094,7 +1207,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>curPoint </p>
 
-<p>Definicja w linii <a class="el" href="../../#L182">182</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L193">193</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1231,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>dane </p>
 
-<p>Definicja w linii <a class="el" href="../../#L170">170</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L181">181</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1255,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>dx </p>
 
-<p>Definicja w linii <a class="el" href="../../#L190">190</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L201">201</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1166,7 +1279,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>dy </p>
 
-<p>Definicja w linii <a class="el" href="../../#L194">194</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L205">205</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1190,7 +1303,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>dz </p>
 
-<p>Definicja w linii <a class="el" href="../../#L198">198</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L209">209</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1327,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>kolor </p>
 
-<p>Definicja w linii <a class="el" href="../../#L178">178</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L189">189</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1238,7 +1351,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>model </p>
 
-<p>Definicja w linii <a class="el" href="../../#L158">158</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L169">169</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1262,7 +1375,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>model_size </p>
 
-<p>Definicja w linii <a class="el" href="../../#L222">222</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L233">233</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1286,7 +1399,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>mouse_pos </p>
 
-<p>Definicja w linii <a class="el" href="../../#L214">214</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L225">225</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1310,7 +1423,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>rotX </p>
 
-<p>Definicja w linii <a class="el" href="../../#L202">202</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L213">213</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1334,7 +1447,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>rotY </p>
 
-<p>Definicja w linii <a class="el" href="../../#L206">206</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L217">217</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1358,7 +1471,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>rotZ </p>
 
-<p>Definicja w linii <a class="el" href="../../#L210">210</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L221">221</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1382,7 +1495,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>scale </p>
 
-<p>Definicja w linii <a class="el" href="../../#L186">186</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L197">197</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1406,7 +1519,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>sett </p>
 
-<p>Definicja w linii <a class="el" href="../../#L174">174</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L185">185</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1430,7 +1543,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>widok </p>
 
-<p>Definicja w linii <a class="el" href="../../#L162">162</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L173">173</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1454,7 +1567,7 @@ Atrybuty chronione</h2></td></tr>
 
 <p>win_size </p>
 
-<p>Definicja w linii <a class="el" href="../../#L218">218</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L229">229</a> pliku <a class="el" href="../../">GLWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1468,7 +1581,7 @@ Atrybuty chronione</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d4/dc5/classGLWidget.html">GLWidget</a></li>
-    <li class="footer">Wygenerowano Wt, 12 lis 2013 18:49:51 dla GeoStat programem
+    <li class="footer">Wygenerowano So, 16 lis 2013 22:21:55 dla GeoStat programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

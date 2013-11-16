@@ -1,5 +1,10 @@
 var NAVTREEINDEX2 =
 {
+"dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3a42ed278b22dd794b19310d739592aa85":[1,0,24,0,1],
+"dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3a75069a9e4b79656b0523b4a3c9d1d609":[1,0,24,0,2],
+"dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3ae348ce52005ca0117f40574d1573accd":[1,0,24,0,4],
+"dd/d90/classGMainWin.html#a6c18baed567fb707dcc81b354f1035c4":[1,0,24,5],
+"dd/d90/classGMainWin.html#a8b2e3e1dfff603b6dd3c2e06951b3726":[1,0,24,4],
 "dd/d90/classGMainWin.html#ab839f811afb23e4b152040d45a257a85":[1,0,24,7],
 "dd/d90/classGMainWin.html#abecd1fd244dc3248db68a880798462a7":[1,0,24,8],
 "dd/d90/classGMainWin.html#ac06ca74bea6b2d52fe0b26f0aed2c491":[1,0,24,3],
@@ -101,8 +106,8 @@ var NAVTREEINDEX2 =
 "df/dcf/globalne_8h.html#afd50bfa8bf830e7d402e8a60e8739912":[2,0,26,31],
 "df/dcf/globalne_8h.html#d8/d97/structDataInfo":[1,0,1],
 "files.html":[2,0],
-"functions.html":[1,3,0],
 "functions.html":[1,3,0,0],
+"functions.html":[1,3,0],
 "functions_0x62.html":[1,3,0,1],
 "functions_0x63.html":[1,3,0,2],
 "functions_0x64.html":[1,3,0,3],

@@ -3,6 +3,8 @@ var classGLWidget =
     [ "GLWidget", "d4/dc5/classGLWidget.html#ab79c391c86de1ffb76f6950b49d82c0c", null ],
     [ "GLWidget", "d4/dc5/classGLWidget.html#aa07d2c9ee03c33431223fb9c74448643", null ],
     [ "~GLWidget", "d4/dc5/classGLWidget.html#a38c4b473053effbf4d0274b27b2d3d7d", null ],
+    [ "calcKolor", "d4/dc5/classGLWidget.html#a6b9832f3cdf3ad2fbf4cd0976422de78", null ],
+    [ "drawString", "d4/dc5/classGLWidget.html#afdfede895d0d19e648335e51979825b6", null ],
     [ "get_scale", "d4/dc5/classGLWidget.html#abfbb33fbc354d5d9715c512c14cd0c23", null ],
     [ "initializeGL", "d4/dc5/classGLWidget.html#a7fab13e8cc9fc0730ca54c08b2c923a7", null ],
     [ "mouseMoveEvent", "d4/dc5/classGLWidget.html#a9043bac13d6f0a5307ea5c7f9b3caa50", null ],
