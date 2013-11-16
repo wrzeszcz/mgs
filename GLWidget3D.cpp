@@ -248,6 +248,8 @@ void GLWidget3D::paintBlok(wektor3d srod, double bok, float color)
         wektor3d max = cube->get_max();
         //double k = (color-min.x) / (max.x - min.x);
         double k = (color - sett->cutoff*0.95) / (max.x - sett->cutoff*0.95);
+
+        //float color = k*(max.x - sett->cutoff*0.95)- sett->cutoff*0.95;
         QColor c = kolor.get_kolor(k);
         glColor3f(c.redF(),c.greenF(),c.blueF());
     }
@@ -320,36 +322,42 @@ void GLWidget3D::paintAxis()
     glEnd() ;
     glPopMatrix();
 }
-
+//-----------------------------------------------------------------------------
 void GLWidget3D::paintScale()
 {
     glPushMatrix();
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    glViewport(10,80,70,300);
+    glViewport(20,10,70,400);
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 
     glPolygonMode(GL_FRONT_AND_BACK,GL_FILL);
 
+    float v ;
+
     int i;
     float f1,f2;
     float f = 1.0/8.0;
+    wektor3d maks = cube->get_max();
     for(i=0; i<8; ++i)
     {
         f1=f*i;
         f2=f*(i+1);
-        glBegin(GL_QUADS);
         QColor c1= kolor.get_kolor(f1);
         QColor c2= kolor.get_kolor(f2);
-    glColor3f(c1.redF(),c1.greenF(),c1.blueF());
-    glVertex3f(0.0,f1,0.0);
-    glVertex3f(0.5,f1,0.0);
-    glColor3f(c2.redF(),c2.greenF(),c2.blueF());
-    glVertex3f(0.5,f2,0.0);
-    glVertex3f(0.0,f2,0.0);
-    glEnd() ;
+        v = f1*(maks.x - sett->cutoff*0.95)+ sett->cutoff*0.95;
+        if(maks.x!= NULLDAT)
+        drawString(-1,f1,Qt::white,10, QString::number(v,'f',2));
+        glBegin(GL_QUADS);
+            glColor3f(c1.redF(),c1.greenF(),c1.blueF());
+            glVertex3f(0.0,f1,0.0);
+            glVertex3f(0.5,f1,0.0);
+            glColor3f(c2.redF(),c2.greenF(),c2.blueF());
+            glVertex3f(0.5,f2,0.0);
+            glVertex3f(0.0,f2,0.0);
+        glEnd() ;
     }
 
     glPopMatrix();

@@ -111,6 +111,17 @@ protected:
     /// \param event
     ///
     virtual void wheelEvent(QWheelEvent *event);
+    ///
+    /// \brief drawString
+    /// \param x
+    /// \param y
+    /// \param rgb
+    /// \param fontSize
+    /// \param text
+    ///
+    virtual void drawString(float x, float y, QColor rgb, int fontSize, QString text);
+    ///
+    virtual QColor calcKolor(const double& minv, const double& maxv, const double& value);
 
 public slots:
     ///

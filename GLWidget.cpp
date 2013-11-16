@@ -82,6 +82,19 @@ void GLWidget::wheelEvent(QWheelEvent *event)
     Q_UNUSED(event);
 }
 
+void GLWidget::drawString(float x, float y, QColor rgb, int fontSize, QString text)
+{
+    glColor3f(rgb.redF(), rgb.greenF(), rgb.blueF());
+    renderText(x,y,0, text, QFont("Helvetica [Cronyx]", fontSize, QFont::Bold));
+}
+
+QColor GLWidget::calcKolor(const double &minv, const double &maxv, const double &value)
+{
+    double k = (value - minv) / (maxv - minv);
+    QColor c = kolor.get_kolor(k);
+    return c;
+}
+
 void GLWidget::slot_set_widok(Vset w)
 {
     widok = w;

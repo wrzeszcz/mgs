@@ -61,7 +61,7 @@ void GLWidget2D::paintGL()
     glLoadIdentity();
     glPushMatrix();
 
-        glTranslatef(0.375,0.375,0);
+        //glTranslatef(0.375,0.375,0);
 
         glTranslatef(dx/5.0, dy/5.0, 1.0);
         glScalef(scale,scale,1);
@@ -69,7 +69,7 @@ void GLWidget2D::paintGL()
         glColor3f(0.0,1.0,0.0);
         paintPkt(curPoint-sett->wym/2,5);
 
-        //RenderString(0,0, Qt::red, QString::number(mouse_pos.x()));
+        //drawString(0,0, Qt::red, 20, QString::number(mouse_pos.x()));
 
         glLineWidth(2);
         if(widok.zakres)
@@ -87,6 +87,8 @@ void GLWidget2D::paintGL()
 
     glFlush();
     glPopMatrix();
+
+    paintScale();
 
 }
 //------------------------------------------------------------------------------
@@ -155,6 +157,14 @@ void GLWidget2D::paint_model()
                     else
                      paintBlok(cube2w(wektor3d(a,b,0),*sett),sett->sp,cube->getRek(a,b,Z).y);
                 }
+               if(0 && a < cube->size_x()-1 && b < cube->size_y()-1)
+                {
+                paintQuad ( geo3d(cube2w(wektor3d(a,b,Z),*sett), cube->getRek(a,b,Z)),
+                            geo3d(cube2w(wektor3d(a+1,b,Z),*sett), cube->getRek(a+1,b,Z)),
+                            geo3d(cube2w(wektor3d(a+1,b+1,Z),*sett), cube->getRek(a+1,b+1,Z)),
+                            geo3d(cube2w(wektor3d(a,b+1,Z),*sett), cube->getRek(a,b+1,Z))
+                            );
+                }
             }
 }
 //------------------------------------------------------------------------------
@@ -181,13 +191,12 @@ void GLWidget2D::paint_zakres()
 
         glVertex2f(-x,y);
         glVertex2f(-x,-y);
-    glEnd();
+        glEnd();
 }
 //------------------------------------------------------------------------------
-void GLWidget2D::RenderString(float x, float y, QColor rgb, QString text)
+void GLWidget2D::paint_mapa()
 {
-    glColor3f(rgb.redF(), rgb.greenF(), rgb.blueF());
-    renderText(x,y,0, text, QFont("Helvetica [Cronyx]", 16, QFont::Bold));
+
 }
 //------------------------------------------------------------------------------
 void GLWidget2D::RenderString(int x,int y,int w,int h,QColor rgb,QString text)
@@ -218,17 +227,20 @@ void GLWidget2D::paintPkt(wektor3d pkt, float roz)
 //------------------------------------------------------------------------------
 void GLWidget2D::paintBlok(wektor3d srod, double bok, float color)
 {
-    double k;
     wektor3d min = cube->get_min();
     wektor3d max = cube->get_max();
-    if(!widok.error_map) k = (color-min.x) / (max.x - min.x);
-    else k = (color-min.y) / (max.y - min.y);
     QColor c;
-    if(min.x!=-NULLDAT && color != NULLDAT && k<=1.0 && k>=0.0)
+    if(min.x!=-NULLDAT && color != NULLDAT)
     {
-    c= kolor.get_kolor(k);
+        if(!widok.error_map)
+        {
+            c = calcKolor(min.x, max.x, color);
+        }
+        else
+        {
+            c = calcKolor(min.y, max.y, color);
+        }
     }
-
     wektor3d p = srod-wektor3d(bok/2,bok/2,bok/2);
     glColor3f(c.redF(),c.greenF(),c.blueF());
     glBegin(GL_QUADS);
@@ -255,7 +267,63 @@ void GLWidget2D::paintBlok(wektor3d srod, double bok)
 
         glVertex2f (p.x,p.y+bok);
         glVertex2f (p.x,p.y);
+        glEnd();
+}
+//------------------------------------------------------------------------------
+void GLWidget2D::paintQuad(geo3d a, geo3d b, geo3d c, geo3d d)
+{
+
+    double min = cube->get_min().x;
+    double max = cube->get_max().x;
+    if(max == NULLDAT || min == -NULLDAT) return;
+    QColor k;
+
+    glBegin(GL_QUADS);
+        k = calcKolor(min, max, a.dat.x);
+        glColor3f(k.redF(),k.greenF(),k.blueF());
+        glVertex2f (a.xyz.x, a.xyz.y);
+        k = calcKolor(min, max, b.dat.x);
+        glColor3f(k.redF(),k.greenF(),k.blueF());
+        glVertex2f (b.xyz.x, b.xyz.y);
+        k = calcKolor(min, max, c.dat.x);
+        glColor3f(k.redF(),k.greenF(),k.blueF());
+        glVertex2f (c.xyz.x, c.xyz.y);
+        k = calcKolor(min, max, d.dat.x);
+        glColor3f(k.redF(),k.greenF(),k.blueF());
+        glVertex2f (d.xyz.x, d.xyz.y);
     glEnd();
+
+}
+//------------------------------------------------------------------------------
+void GLWidget2D::paintScale()
+{
+    double x = sett->wym.x/2;
+    double y = sett->wym.y/2;
+    float v ;
+    int i;
+    float f1,f2;
+    float f = y/8.0;
+    wektor3d maks = cube->get_max();
+    wektor3d mini = cube->get_min();
+    for(i=0; i<8; ++i)
+    {
+        f1=f*i;
+        f2=f*(i+1);
+        QColor c1= kolor.get_kolor(f1);
+        QColor c2= kolor.get_kolor(f2);
+        v = f1*(maks.x - mini.x)+ mini.x;
+        if(maks.x!= NULLDAT)
+        drawString(-1,f1,Qt::white,10, QString::number(v,'f',2));
+        glBegin(GL_QUADS);
+            glColor3f(c1.redF(),c1.greenF(),c1.blueF());
+            glVertex2f(x,f1);
+            glVertex2f(x+10,f1);
+            glColor3f(c2.redF(),c2.greenF(),c2.blueF());
+            glVertex2f(x+10,f2);
+            glVertex2f(x,f2);
+        glEnd() ;
+    }
+
 }
 //------------------------------------------------------------------------------
 

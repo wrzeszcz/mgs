@@ -200,7 +200,7 @@ void GMainWin::createActions()
 
     //--------------------------------------------------------------------------
 
-    actZamk = new QAction(tr("Zamknij okno"), this);
+    actZamk = new QAction(QIcon(":/close"),tr("Zamknij okno"), this);
     actZamk->setStatusTip(tr("Zamknij aktywne okno"));
     connect(actZamk, SIGNAL(triggered()),mdiArea, SLOT(closeActiveSubWindow()));
 
@@ -216,12 +216,12 @@ void GMainWin::createActions()
     actCascade->setStatusTip(tr("Kaskada"));
     connect(actCascade,SIGNAL(triggered()),mdiArea,SLOT(cascadeSubWindows()));
 
-    actNext = new QAction(tr("Kolejne okno"), this);
+    actNext = new QAction(QIcon(":/next"),tr("Kolejne okno"), this);
     actNext->setShortcuts(QKeySequence::NextChild);
     actNext->setStatusTip(tr("Uaktywnij kolejne okno"));
     connect(actNext,SIGNAL(triggered()),mdiArea,SLOT(activateNextSubWindow()));
 
-    actPrev = new QAction(tr("Poprzednie okno"), this);
+    actPrev = new QAction(QIcon(":/prev"),tr("Poprzednie okno"), this);
     actPrev->setShortcuts(QKeySequence::PreviousChild);
     actPrev->setStatusTip(tr("Uaktywnij poprzenie okno"));
     connect(actPrev,SIGNAL(triggered()),mdiArea,SLOT(activatePreviousSubWindow()));
@@ -234,11 +234,11 @@ void GMainWin::createActions()
 
     actionAbout = new QAction(QIcon(":/mw"), tr("&O programie"), this);
     actionAbout->setStatusTip(tr("O programie"));
-    connect(actionAbout, SIGNAL(triggered()), this, SLOT(about()));
+    connect(actionAbout, SIGNAL(triggered()), this, SLOT(slot_about()));
 
     actionHelp = new QAction(QIcon(":/instr"), tr("&Instrukcja"), this);
     actionHelp->setStatusTip(tr("Krótka instrukcja obsługi"));
-    connect(actionAbout, SIGNAL(triggered()), this, SLOT(about()));
+    connect(actionAbout, SIGNAL(triggered()), this, SLOT(slot_instrukcja()));
 }
 //------------------------------------------------------------------------------
 void GMainWin::createMenus()
@@ -484,10 +484,15 @@ void GMainWin::slot_wczytaj_surf()
     QMessageBox::information(this,"INFORMACJA","to do - slot_wczytaj_surf");
 }
 //------------------------------------------------------------------------------
-void GMainWin::about()
+void GMainWin::slot_about()
 {
     QMessageBox::about(this, tr("PROJEKT GEOSTAT 2013"),
-             tr("wersja 0.1\nautor @ Marek Wrzeszcz 2013\n\n GNU General Public License \n www.gnu.org/licenses"));
+                       tr("wersja 0.1\nautor @ Marek Wrzeszcz 2013\n\n GNU General Public License \n www.gnu.org/licenses"));
+}
+
+void GMainWin::slot_instrukcja()
+{
+
 }
 //------------------------------------------------------------------------------
 void GMainWin::updateWindowMenu()

@@ -87,13 +87,9 @@ private:
     ///
     void paint_zakres();
     ///
-    /// \brief RenderString
-    /// \param x
-    /// \param y
-    /// \param rgb
-    /// \param text
+    /// \brief paint_mapa
     ///
-    void RenderString(float x, float y, QColor rgb, QString text);
+    void paint_mapa();
     ///
     /// \brief RenderString
     /// \param x
@@ -123,6 +119,18 @@ private:
     /// \param bok
     ///
     void paintBlok  (wektor3d srod, double bok);
+    ///
+    /// \brief paintBlok
+    /// \param a
+    /// \param b
+    /// \param c
+    /// \param d
+    ///
+    void paintQuad(geo3d a, geo3d b, geo3d c, geo3d d);
+    ///
+    /// \brief paintScale
+    ///
+    void paintScale();
     ///
     /// \brief Z
     ///

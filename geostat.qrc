@@ -35,5 +35,8 @@
         <file alias="cascade">img/cascade.png</file>
         <file alias="tile">img/tile.png</file>
         <file alias="rot_reset">img/rotate_reset.png</file>
+        <file alias="close">img/close.png</file>
+        <file alias="next">img/next.png</file>
+        <file alias="prev">img/prev.png</file>
     </qresource>
 </RCC>

@@ -32,7 +32,7 @@ QColor Gradient::get_kolor(double poz)
     if ( poz > 1.0 ) poz = 1.0;// poz - int(poz);
     if (poz < 0.0) poz = 0.0;
 
-    int pixelDistance = (int)( poz * 1792.0 );
+    int pixelDistance = (int)( poz * 1791.0 );
     unsigned int red, green, blue;
 
     if (pixelDistance < 256)

@@ -237,7 +237,11 @@ private slots:
     ///
     /// \brief about
     ///
-    void about();
+    void slot_about();
+    ///
+    /// \brief slot_instrukcja
+    ///
+    void slot_instrukcja();
     ///
     /// \brief updateMenus
     ///
