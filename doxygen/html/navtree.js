@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "GeoStat", "index.html", [
+  [ "MGeoStat", "index.html", [
     [ "mgeostat", "d2/dc1/md__home_marek_2013_8pro_2013_8mgeostat_mgeostat_README.html", null ],
     [ "Klasy", null, [
       [ "Lista klas", "annotated.html", "annotated" ],

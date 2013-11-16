@@ -103,7 +103,7 @@ var searchData=
   ['gproanaliza',['GProAnaliza',['../d3/d4d/classGProAnaliza.html',1,'GProAnaliza'],['../d3/d4d/classGProAnaliza.html#ad58d1ababa0158e8b410570fd0dd4fd0',1,'GProAnaliza::GProAnaliza()']]],
   ['gproanaliza_2ecpp',['GProAnaliza.cpp',['../d7/d35/GProAnaliza_8cpp.html',1,'']]],
   ['gproanaliza_2eh',['GProAnaliza.h',['../d0/d76/GProAnaliza_8h.html',1,'']]],
-  ['gprodialog',['GProDialog',['../db/deb/classGProDialog.html',1,'GProDialog'],['../db/deb/classGProDialog.html#a9cfa5f7ce4f8d408284c611ffc6d99b6',1,'GProDialog::GProDialog()']]],
+  ['gprodialog',['GProDialog',['../db/deb/classGProDialog.html',1,'GProDialog'],['../db/deb/classGProDialog.html#a6187bc6717d061499626ded7e3c2a1ea',1,'GProDialog::GProDialog()']]],
   ['gprodialog_2ecpp',['GProDialog.cpp',['../d5/d16/GProDialog_8cpp.html',1,'']]],
   ['gprodialog_2eh',['GProDialog.h',['../d0/d1b/GProDialog_8h.html',1,'']]],
   ['gproset',['GProSet',['../d1/d17/classGProSet.html',1,'GProSet'],['../d1/d17/classGProSet.html#aab243a59638a24bcefa0cd95e8bbc3eb',1,'GProSet::GProSet(QWidget *parent=0)'],['../d1/d17/classGProSet.html#a79d200ac0242fbd2bfae15e4f14f6299',1,'GProSet::GProSet(Mset *ustawienia, QWidget *parent=0)']]],

@@ -61,7 +61,7 @@ var searchData=
   ['glwidget3d',['GLWidget3D',['../d1/d2f/classGLWidget3D.html#a906eb4f0ff38aea91b69ae9ad3de2d4a',1,'GLWidget3D']]],
   ['gmainwin',['GMainWin',['../dd/d90/classGMainWin.html#a1034f23203f1e982dbe56eca1604e84c',1,'GMainWin']]],
   ['gproanaliza',['GProAnaliza',['../d3/d4d/classGProAnaliza.html#ad58d1ababa0158e8b410570fd0dd4fd0',1,'GProAnaliza']]],
-  ['gprodialog',['GProDialog',['../db/deb/classGProDialog.html#a9cfa5f7ce4f8d408284c611ffc6d99b6',1,'GProDialog']]],
+  ['gprodialog',['GProDialog',['../db/deb/classGProDialog.html#a6187bc6717d061499626ded7e3c2a1ea',1,'GProDialog']]],
   ['gproset',['GProSet',['../d1/d17/classGProSet.html#aab243a59638a24bcefa0cd95e8bbc3eb',1,'GProSet::GProSet(QWidget *parent=0)'],['../d1/d17/classGProSet.html#a79d200ac0242fbd2bfae15e4f14f6299',1,'GProSet::GProSet(Mset *ustawienia, QWidget *parent=0)']]],
   ['gprotree',['GProTree',['../d5/d31/classGProTree.html#affde8b5a809943d5cf342229b1966ec5',1,'GProTree']]],
   ['gradient',['Gradient',['../d3/dc6/classGradient.html#adefc9d359417f35bfb200657a52b5049',1,'Gradient']]],

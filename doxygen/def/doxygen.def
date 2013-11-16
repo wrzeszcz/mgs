@@ -2477,7 +2477,7 @@ _EnD_oF_dEf_TeXt_;
   cp-filename  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
   cp-fileline  = '38';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
-The GeoDoubleSpin class.
+Klasa GeoDoubleSpin.
 _EnD_oF_dEf_TeXt_;
   cp-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -14174,7 +14174,7 @@ class = {
     sec-kind = 'public-func';
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'db/deb/classGProDialog_1a9cfa5f7ce4f8d408284c611ffc6d99b6';
+      sec-mem-id   = 'db/deb/classGProDialog_1a6187bc6717d061499626ded7e3c2a1ea';
       sec-mem-virt = normal;
       sec-mem-prot = public;
       sec-mem-type = <<_EnD_oF_dEf_TeXt_
@@ -14185,7 +14185,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
 Set_interpolacja
 _EnD_oF_dEf_TeXt_;
-        sec-mem-param-defname = 's';
+        sec-mem-param-declname = 's';
       }; /*        sec-mem-param--param */
       sec-mem-param = {
         sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
@@ -14203,12 +14203,13 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '69';
+      sec-mem-desc-line = '70';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 GProDialog.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param parent
+\param struktura ustawien intepolacji
+\param wskaźnik na wideget rodzica
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -14221,7 +14222,7 @@ virtual
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = '~GProDialog';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '73';
+      sec-mem-desc-line = '74';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 ~GProDialog
 _EnD_oF_dEf_TeXt_;
@@ -14239,7 +14240,7 @@ Set_interpolacja
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'get_set_interp';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '78';
+      sec-mem-desc-line = '79';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 get_set_interp
 _EnD_oF_dEf_TeXt_;
@@ -14266,7 +14267,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'd';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '85';
+      sec-mem-desc-line = '86';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 slot_promien
 _EnD_oF_dEf_TeXt_;
@@ -14290,7 +14291,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'v';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '90';
+      sec-mem-desc-line = '91';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 slot_vario
 _EnD_oF_dEf_TeXt_;
@@ -14314,7 +14315,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'd';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '95';
+      sec-mem-desc-line = '96';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 slot_nugget
 _EnD_oF_dEf_TeXt_;
@@ -14338,7 +14339,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'd';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '100';
+      sec-mem-desc-line = '101';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 slot_sill
 _EnD_oF_dEf_TeXt_;
@@ -14362,7 +14363,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'd';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '105';
+      sec-mem-desc-line = '106';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 slot_range
 _EnD_oF_dEf_TeXt_;
@@ -14386,7 +14387,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'd';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '110';
+      sec-mem-desc-line = '111';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 slot_potega
 _EnD_oF_dEf_TeXt_;
@@ -14410,7 +14411,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'i';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '115';
+      sec-mem-desc-line = '116';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 slot_min_otocz
 _EnD_oF_dEf_TeXt_;
@@ -14434,7 +14435,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'i';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '120';
+      sec-mem-desc-line = '121';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 slot_max_otocz
 _EnD_oF_dEf_TeXt_;
@@ -14455,7 +14456,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'update_all';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '126';
+      sec-mem-desc-line = '127';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 update_all
 _EnD_oF_dEf_TeXt_;
@@ -14473,7 +14474,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'createLayout';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '130';
+      sec-mem-desc-line = '131';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 createLayout
 _EnD_oF_dEf_TeXt_;
@@ -14491,7 +14492,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'createLayoutAll';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '134';
+      sec-mem-desc-line = '135';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 createLayoutAll
 _EnD_oF_dEf_TeXt_;
@@ -14509,7 +14510,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'createLayoutKri';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '138';
+      sec-mem-desc-line = '139';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 createLayoutKri
 _EnD_oF_dEf_TeXt_;
@@ -14527,7 +14528,7 @@ void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'createLayoutInv';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '142';
+      sec-mem-desc-line = '143';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 createLayoutInv
 _EnD_oF_dEf_TeXt_;
@@ -14548,7 +14549,7 @@ QVBoxLayout *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'mainLayout';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '147';
+      sec-mem-desc-line = '148';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 mainLayout
 _EnD_oF_dEf_TeXt_;
@@ -14566,7 +14567,7 @@ QGroupBox *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'all_grup';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '151';
+      sec-mem-desc-line = '152';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 all_grup
 _EnD_oF_dEf_TeXt_;
@@ -14584,7 +14585,7 @@ QGroupBox *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'kri_grup';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '155';
+      sec-mem-desc-line = '156';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 kri_grup
 _EnD_oF_dEf_TeXt_;
@@ -14602,7 +14603,7 @@ QGroupBox *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'inv_grup';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '159';
+      sec-mem-desc-line = '160';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 inv_grup
 _EnD_oF_dEf_TeXt_;
@@ -14620,7 +14621,7 @@ QGridLayout *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'layoutAll';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '164';
+      sec-mem-desc-line = '165';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 layoutAll
 _EnD_oF_dEf_TeXt_;
@@ -14638,7 +14639,7 @@ QGridLayout *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'layoutKri';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '168';
+      sec-mem-desc-line = '169';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 layoutKri
 _EnD_oF_dEf_TeXt_;
@@ -14656,7 +14657,7 @@ QGridLayout *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'layoutInv';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '172';
+      sec-mem-desc-line = '173';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 layoutInv
 _EnD_oF_dEf_TeXt_;
@@ -14674,7 +14675,7 @@ GeoDoubleSpin *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sb_promien';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '177';
+      sec-mem-desc-line = '178';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 sb_promien
 _EnD_oF_dEf_TeXt_;
@@ -14692,7 +14693,7 @@ GeoDoubleSpin *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sb_nugget';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '181';
+      sec-mem-desc-line = '182';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 sb_nugget
 _EnD_oF_dEf_TeXt_;
@@ -14710,7 +14711,7 @@ GeoDoubleSpin *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sb_sill';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '185';
+      sec-mem-desc-line = '186';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 sb_sill
 _EnD_oF_dEf_TeXt_;
@@ -14728,7 +14729,7 @@ GeoDoubleSpin *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sb_range';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '189';
+      sec-mem-desc-line = '190';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 sb_range
 _EnD_oF_dEf_TeXt_;
@@ -14746,7 +14747,7 @@ GeoDoubleSpin *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sb_potega';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '193';
+      sec-mem-desc-line = '194';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 sb_potega
 _EnD_oF_dEf_TeXt_;
@@ -14764,7 +14765,7 @@ QSpinBox *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sb_min_otocz';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '197';
+      sec-mem-desc-line = '198';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 sb_min_otocz
 _EnD_oF_dEf_TeXt_;
@@ -14782,7 +14783,7 @@ QSpinBox *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sb_max_otocz';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '201';
+      sec-mem-desc-line = '202';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 sb_max_otocz
 _EnD_oF_dEf_TeXt_;
@@ -14800,7 +14801,7 @@ QComboBox *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'combo_vario';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '205';
+      sec-mem-desc-line = '206';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 combo_vario
 _EnD_oF_dEf_TeXt_;
@@ -14818,7 +14819,7 @@ QLabel *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'lab_pro';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '209';
+      sec-mem-desc-line = '210';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 lab_pro
 _EnD_oF_dEf_TeXt_;
@@ -14836,7 +14837,7 @@ QLabel *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'lab_nug';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '213';
+      sec-mem-desc-line = '214';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 lab_nug
 _EnD_oF_dEf_TeXt_;
@@ -14854,7 +14855,7 @@ QLabel *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'lab_sil';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '217';
+      sec-mem-desc-line = '218';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 lab_sil
 _EnD_oF_dEf_TeXt_;
@@ -14872,7 +14873,7 @@ QLabel *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'lab_ran';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '221';
+      sec-mem-desc-line = '222';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 lab_ran
 _EnD_oF_dEf_TeXt_;
@@ -14890,7 +14891,7 @@ QLabel *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'lab_met';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '225';
+      sec-mem-desc-line = '226';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 lab_met
 _EnD_oF_dEf_TeXt_;
@@ -14908,7 +14909,7 @@ QLabel *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'lab_pot';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '229';
+      sec-mem-desc-line = '230';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 lab_pot
 _EnD_oF_dEf_TeXt_;
@@ -14926,7 +14927,7 @@ QLabel *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'lab_min';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '233';
+      sec-mem-desc-line = '234';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 lab_min
 _EnD_oF_dEf_TeXt_;
@@ -14944,7 +14945,7 @@ QLabel *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'lab_max';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '237';
+      sec-mem-desc-line = '238';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 lab_max
 _EnD_oF_dEf_TeXt_;
@@ -14962,7 +14963,7 @@ QDialogButtonBox *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'butBox';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '241';
+      sec-mem-desc-line = '242';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 butBox
 _EnD_oF_dEf_TeXt_;
@@ -14980,7 +14981,7 @@ Set_interpolacja
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'set_in';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '245';
+      sec-mem-desc-line = '246';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 set_in
 _EnD_oF_dEf_TeXt_;
@@ -14998,7 +14999,7 @@ METODA
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'metoda';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
-      sec-mem-desc-line = '249';
+      sec-mem-desc-line = '250';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 metoda
 _EnD_oF_dEf_TeXt_;
@@ -15010,7 +15011,7 @@ _EnD_oF_dEf_TeXt_;
   cp-filename  = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GProDialog.h';
   cp-fileline  = '62';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
-The GProDialog class.
+Klasa GProDialog.
 _EnD_oF_dEf_TeXt_;
   cp-documentation = <<_EnD_oF_dEf_TeXt_
 

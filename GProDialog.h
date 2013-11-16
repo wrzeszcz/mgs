@@ -32,7 +32,7 @@
 #include <QSpinBox>
 //------------------------------------------------------------------------------
 ///
-/// \brief The GeoDoubleSpin class
+/// \brief Klasa GeoDoubleSpin
 ///
 class GeoDoubleSpin: public QDoubleSpinBox
 {
@@ -56,7 +56,7 @@ public:
 };
 //------------------------------------------------------------------------------
 ///
-/// \brief The GProDialog class
+/// \brief Klasa GProDialog
 ///
 class GProDialog : public QDialog
 {
@@ -64,9 +64,10 @@ class GProDialog : public QDialog
 public:
     ///
     /// \brief GProDialog
-    /// \param parent
+    /// \param struktura ustawien intepolacji
+    /// \param wskaźnik na wideget rodzica
     ///
-    GProDialog(Set_interpolacja, METODA, QWidget *parent = 0);
+    GProDialog(Set_interpolacja s, METODA, QWidget *parent = 0);
     ///
     /// \brief ~GProDialog
     ///
