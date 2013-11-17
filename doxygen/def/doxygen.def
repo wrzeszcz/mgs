@@ -2466,11 +2466,11 @@ _EnD_oF_dEf_TeXt_;
 GeoDoubleSpin.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param min
-\param max
-\param dec
-\param step
-\param parent
+\param min - minimalna wartość
+\param max - maksymalna wartość
+\param dec - dokładność (części dziesietne)
+\param step - krok
+\param parent - wskaźnik na widdget rodzica
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
@@ -14208,7 +14208,7 @@ _EnD_oF_dEf_TeXt_;
 GProDialog.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param struktura ustawien intepolacji
+\param s struktura zawierająca ustawienia intepolacji (Set_interpolacja)
 \param wskaźnik na wideget rodzica
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
@@ -14245,7 +14245,7 @@ _EnD_oF_dEf_TeXt_;
 get_set_interp
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\return
+\return aktualna struktura zawierająca ustawienia interpolacji
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
