@@ -39,11 +39,11 @@ class GeoDoubleSpin: public QDoubleSpinBox
 public:
     ///
     /// \brief GeoDoubleSpin
-    /// \param min
-    /// \param max
-    /// \param dec
-    /// \param step
-    /// \param parent
+    /// \param min - minimalna wartość
+    /// \param max - maksymalna wartość
+    /// \param dec - dokładność (części dziesietne)
+    /// \param step - krok
+    /// \param parent - wskaźnik na widdget rodzica
     ///
     GeoDoubleSpin(double min,double max,int dec,double step, QWidget *parent=0):
         QDoubleSpinBox(parent)
@@ -64,7 +64,7 @@ class GProDialog : public QDialog
 public:
     ///
     /// \brief GProDialog
-    /// \param struktura ustawien intepolacji
+    /// \param s struktura zawierająca ustawienia intepolacji (Set_interpolacja)
     /// \param wskaźnik na wideget rodzica
     ///
     GProDialog(Set_interpolacja s, METODA, QWidget *parent = 0);
@@ -74,7 +74,7 @@ public:
     virtual ~GProDialog();
     ///
     /// \brief get_set_interp
-    /// \return
+    /// \return aktualna struktura zawierająca ustawienia interpolacji
     ///
     Set_interpolacja get_set_interp();
     
