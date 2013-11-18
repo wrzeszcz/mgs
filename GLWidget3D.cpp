@@ -20,6 +20,7 @@
 
 #include "GLWidget3D.h"
 #include <GL/glu.h>
+#include <QDebug>
 //------------------------------------------------------------------------------
 GLWidget3D::GLWidget3D(GeoModel *_model, Vset _widok, QWidget *parent):
     GLWidget(_model,_widok,parent)
@@ -332,7 +333,7 @@ void GLWidget3D::paintScale()
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-
+    glTranslatef(0.0,-.5,0);
     glPolygonMode(GL_FRONT_AND_BACK,GL_FILL);
 
     float v ;
@@ -341,6 +342,7 @@ void GLWidget3D::paintScale()
     float f1,f2;
     float f = 1.0/8.0;
     wektor3d maks = cube->get_max();
+
     for(i=0; i<8; ++i)
     {
         f1=f*i;
@@ -350,6 +352,7 @@ void GLWidget3D::paintScale()
         v = f1*(maks.x - sett->cutoff*0.95)+ sett->cutoff*0.95;
         if(maks.x!= NULLDAT)
         drawString(-1,f1,Qt::white,10, QString::number(v,'f',2));
+
         glBegin(GL_QUADS);
             glColor3f(c1.redF(),c1.greenF(),c1.blueF());
             glVertex3f(0.0,f1,0.0);
@@ -359,6 +362,8 @@ void GLWidget3D::paintScale()
             glVertex3f(0.0,f2,0.0);
         glEnd() ;
     }
+    v = f2*(maks.x - sett->cutoff*0.95)+ sett->cutoff*0.95;
+     drawString(-1,f2,Qt::white,10, QString::number(v,'f',2));
 
     glPopMatrix();
 }
@@ -366,9 +371,10 @@ void GLWidget3D::paintScale()
 bool GLWidget3D::test_otoczenia(int a, int b, int c)
 {
     if (a==0 || b==0 || c==0) return true;
-    if (a==cube->getSize().x-1 ||
-        b==cube->getSize().y-1 ||
-        c==cube->getSize().z-1 ||
+
+    if (a==cube->size_x()-1 ||
+        b==cube->size_y()-1 ||
+        c==cube->size_z()-1 ||
         c==z   ) return true;
 
     if( cube->getRek(a-1,b,c).x > sett->cutoff &&
