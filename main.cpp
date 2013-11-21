@@ -53,7 +53,7 @@ public:
       }
       catch (std::exception &ex)
       {
-        std::cerr << "std::exception = " <<ex.what()<< std::endl;
+        std::cerr << "std::exception = " << ex.what() << std::endl;
         QMessageBox::critical(0,"EXCEPTION", QString(ex.what()));
         this->exit(1);
       }
