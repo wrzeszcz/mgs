@@ -148,7 +148,6 @@ void GLWidget3D::paint_model()
                     glLineWidth(0.5);
                     paintBlok(cube2w(wektor3d(a,b,c),*sett),sett->sp,-1.0);
                 }
-                //if(c>z) continue;
                 if(widok.zasoby && c<=z)
                 {
                     if (cube->getRek(a,b,c).x > sett->cutoff && test_otoczenia(a,b,c))
@@ -351,19 +350,22 @@ void GLWidget3D::paintScale()
         QColor c2= kolor.get_kolor(f2);
         v = f1*(maks.x - sett->cutoff*0.95)+ sett->cutoff*0.95;
         if(maks.x!= NULLDAT)
-        drawString(-1,f1,Qt::white,10, QString::number(v,'f',2));
+            drawString(-0.3,f1,Qt::white,10, QString::number(v,'f',3));
 
         glBegin(GL_QUADS);
             glColor3f(c1.redF(),c1.greenF(),c1.blueF());
-            glVertex3f(0.0,f1,0.0);
-            glVertex3f(0.5,f1,0.0);
+            glVertex3f(-1.0,f1,0.0);
+            glVertex3f(-0.5,f1,0.0);
             glColor3f(c2.redF(),c2.greenF(),c2.blueF());
-            glVertex3f(0.5,f2,0.0);
-            glVertex3f(0.0,f2,0.0);
+            glVertex3f(-0.5,f2,0.0);
+            glVertex3f(-1.0,f2,0.0);
         glEnd() ;
     }
     v = f2*(maks.x - sett->cutoff*0.95)+ sett->cutoff*0.95;
-     drawString(-1,f2,Qt::white,10, QString::number(v,'f',2));
+    if(maks.x!= NULLDAT)
+        drawString(-0.3,f2,Qt::white,10, QString::number(v,'f',3));
+
+    glEnd() ;
 
     glPopMatrix();
 }

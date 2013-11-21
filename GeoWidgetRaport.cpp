@@ -57,49 +57,7 @@ void GeoWidgetRaport::slot_update_model()
 //------------------------------------------------------------------------------
 void GeoWidgetRaport::slot_create_report()
 {
-    gModel->raport_clear();
-    Mset *ms = gModel->ptr_mset();
-    METODA met = ms->algorytm;
-    string s;
-    if(met == OKRIGING) s = "krigring zwyczajny";
-    else if(met == INVDIST) s = "odwrotne odelgłości";
-    wektor3d zas = gModel->policzZasoby();
-    gModel->raport_add
-        (
-            "MGEOSTAT 0.1 2013 marek.wrzeszcz@hotmail.com\n"
-            "RAPORT =========================================================\n"
-            + QDateTime::currentDateTime().toString().toStdString() + "\n\n"
-            "DANE WEJŚCIOWE =================================================\n"
-            "dane: "+ ms->name + "\n"
-            "wiersze: " + cos2str(gModel->ptr_dane()->get_size()) + "\n"
-            "początek xyz:\t"+ cos2str(ms->start) + "\n"
-            "końcowe xyz:\t"+ cos2str(gModel->ptr_dane()->get_max_zakres())+"\n"
-            "min wartość:\t"+ cos2str(gModel->ptr_dane()->get_min_value())+"\n"
-            "max wartość:\t"+ cos2str(gModel->ptr_dane()->get_max_value())+"\n\n"
-            "MODEL ==========================================================\n"
-            "wymiary modelu: \t"+       cos2str(ms->grid) + "\n"
-            "rozmiar bloku : \t"+       cos2str(ms->sp) + "\n"
-            "początek xyz:\t"+          cos2str(ms->start) + "\n"
-            "wymiary xyz:\t"+           cos2str(ms->get_wymiary()) + "\n"
-            "ilość bloków: \t"+         cos2str(ms->get_bloki()) + "\n"
-            "objętość modelu: \t"+      cos2str(ms->get_objetosc()) + "\n"
-            "gęstość przestrzenna: \t"+ cos2str(ms->gestosc) + "\n"
-            "masa modelu: \t"+          cos2str(ms->get_masa()) + "\n"
-            "min wartość: \t"+          cos2str(ms->min_val)+"\n"
-            "max wartość: \t"+          cos2str(ms->max_val)+"\n\n"
-            "ZASOBY =========================================================\n"
-            "wartości graniczna (cut-off):\t"+cos2str(ms->cutoff) + "\tppm\n"
-            "zasoby wynosza: \t\t"+ cos2str(zas.x) + "\tton\n"+
-            "w "+cos2str(zas.y)+" blokach "
-                "o objętości "+cos2str(zas.y*ms->sp*ms->sp*ms->sp)+"\n"
-            "dla poszczególnych przedziałow całego modelu:\n"
-                + gModel->analizaZasobyReport(gModel->ptr_mset()->klasy_zas) +"\n\n"
-            "INTERPOLACJA ====================================================\n"
-            "algorytm:\t"+s+"\n"+cos2str(met)+"\n"
-            "zakres wartości:\t"+cos2str(ms->min_val.x)+ "-" + cos2str(ms->max_val.x)+"\n"
-            "zakres błędu:\t"+cos2str(ms->min_val.y)+ "-" + cos2str(ms->max_val.y)+"\n"
-            "ilość danych:\t"+cos2str(ms->min_val.z)+ "-" + cos2str(ms->max_val.z)+"\n"
-        );
+    gModel->recreate_rapor(QDateTime::currentDateTime().toString().toStdString());
     reload_report();
 }
 //------------------------------------------------------------------------------

@@ -523,7 +523,7 @@ void GMainWin::slot_zasoby()
 //------------------------------------------------------------------------------
 void GMainWin::slot_analiza()
 {
-    QString a = QString::fromStdString(curModel->analizaZasobyReport(curModel->ptr_mset()->klasy_zas));
+    //QString a = QString::fromStdString(curModel->analizaZasobyReport(curModel->ptr_mset()->klasy_zas));
     GProAnaliza an(new GeoZasoby(curModel->ptr_mset(),curModel->ptr_cube()), curModel, this);
     if(an.exec()==QDialog::Accepted)
     {

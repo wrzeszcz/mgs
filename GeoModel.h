@@ -192,12 +192,17 @@ public:
     /// \param _ileKlas
     /// \return
     ///
-    std::string analizaZasobyReport(int _ileKlas);
+    std::string analizaZasobyReport(int _ileKlas, int precyzja_liczb);
     ///
     /// \brief setGeoSet
     /// \param gset
     ///
     void setGeoSet(Mset gset){*modset = gset;}
+    ///
+    /// \brief create_rapor
+    /// \return
+    ///
+    std::string recreate_rapor(const std::string& datetimeStr);
     ///
     /// \brief raport_add
     /// \param str

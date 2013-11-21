@@ -172,10 +172,11 @@ std::vector<geo3d> GeoModel::analizaZasoby(int _ileKlas)
     return analiza;
 }
 //------------------------------------------------------------------------------
-string GeoModel::analizaZasobyReport(int _ileKlas)
+string GeoModel::analizaZasobyReport(int _ileKlas, int p)
 {
     GeoZasoby gZasoby(modset,cube);
     vector<geo3d> analiza = gZasoby.analiza_zasoby(_ileKlas);
+    if(!analiza.size()) return "brak danych";
     wektor3d suma;
     string aa;
     for(vector<geo3d>::iterator it = analiza.begin(); it!=analiza.end();++it)
@@ -184,18 +185,65 @@ string GeoModel::analizaZasobyReport(int _ileKlas)
            aa += cos2str(it->xyz.y) + " - ";
            aa += cos2str(it->xyz.z) + "\t";
            aa += cos2str(it->dat.x) + "\t";
-           aa += cos2str(it->dat.y) + "\t";
-           aa += cos2str(it->dat.z) + "\t";
+           aa += cos2str(it->dat.y,p) + "\t";
+           aa += cos2str(it->dat.z,3) + "\t";
            aa += "\n";
            suma.x += it->dat.x;
            suma.y += it->dat.y;
            suma.z += it->dat.z;
 
         }
+    aa += "w sumie :";
     aa += "\t\t\t"+cos2str(suma.x) + "\t";
     aa += cos2str(suma.y) + "\t";
     aa += cos2str(suma.z) + "\t";
     return aa;
+}
+//------------------------------------------------------------------------------
+std::string GeoModel::recreate_rapor(const std::string& datetimeStr)
+{
+    this->raport_clear();
+    string s;
+    if(modset->algorytm == OKRIGING) s = "krigring zwyczajny";
+    else if(modset->algorytm == INVDIST) s = "odwrotne odelgłości";
+    wektor3d zas = this->policzZasoby();
+    this->raport_add
+        (
+            "MGEOSTAT 0.1 2013 marek.wrzeszcz@hotmail.com\n"
+            "RAPORT =========================================================\n"
+            + datetimeStr + "\n\n"
+            "DANE WEJŚCIOWE =================================================\n"
+            "dane: "+ modset->name + "\n"
+            "wiersze:\t\t" + cos2str(dane->get_size()) + "\n"
+            "początek xyz:\t"+ cos2str(modset->start) + "\n"
+            "końcowe xyz:\t"+ cos2str(dane->get_max_zakres())+"\n"
+            "min wartość:\t"+ cos2str(dane->get_min_value())+"\n"
+            "max wartość:\t"+ cos2str(dane->get_max_value())+"\n\n"
+            "MODEL ==========================================================\n"
+            "wymiary modelu: \t"+       cos2str(modset->grid) + "\n"
+            "rozmiar bloku : \t"+       cos2str(modset->sp) + "\n"
+            "początek xyz:\t"+          cos2str(modset->start) + "\n"
+            "wymiary xyz:\t"+           cos2str(modset->get_wymiary()) + "\n"
+            "ilość bloków: \t"+         cos2str(modset->get_bloki()) + "\n"
+            "objętość modelu: \t"+      cos2str(modset->get_objetosc()) + "\n"
+            "gęstość przestrzenna: \t"+ cos2str(modset->gestosc) + "\n"
+            "masa modelu: \t"+          cos2str(modset->get_masa()) + "\n"
+            "min wartość: \t"+          cos2str(modset->min_val)+"\n"
+            "max wartość: \t"+          cos2str(modset->max_val)+"\n\n"
+            "ZASOBY =========================================================\n"
+            "wartości graniczna (cut-off):\t"+cos2str(modset->cutoff) + "\tppm\n"
+            "zasoby wynosza: \t\t"+ cos2str(zas.x) + "\tton\n"+
+            "w "+cos2str(zas.y)+" blokach "
+            "o objętości "+cos2str(zas.y*modset->sp*modset->sp*modset->sp)+"\n"
+            "dla poszczególnych przedziałow całego modelu:\n"
+            + this->analizaZasobyReport(modset->klasy_zas,7) +"\n\n"
+            "INTERPOLACJA ====================================================\n"
+            "algorytm:\t"+s+"\n"
+            "zakres wartości:\t"+cos2str(modset->min_val.x)+ " - " + cos2str(modset->max_val.x)+"\n"
+            "zakres błędu:\t"+cos2str(modset->min_val.y)+ " - " + cos2str(modset->max_val.y)+"\n"
+            "ilość danych:\t"+cos2str(modset->min_val.z)+ " - " + cos2str(modset->max_val.z)+"\n"
+        );
+    return raport_get();
 }
 //------------------------------------------------------------------------------
 void GeoModel::wypiszXYZdane(ostream &os)
