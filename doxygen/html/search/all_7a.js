@@ -5,5 +5,5 @@ var searchData=
   ['zakres_5fmax',['zakres_max',['../df/dcf/globalne_8h.html#a00f702fef5e6033aa0cdc68dc3c71661',1,'DataInfo']]],
   ['zakres_5fmin',['zakres_min',['../df/dcf/globalne_8h.html#aa6d86b9c071da9fc5b9da360a8b7e52f',1,'DataInfo']]],
   ['zapis',['ZAPIS',['../dd/d90/classGMainWin.html#a2ff605add3bed95d9b65eabedc8b98f7',1,'GMainWin']]],
-  ['zasoby',['zasoby',['../da/d07/structVset.html#a871c5412a63bbed05515724ac16ee47e',1,'Vset::zasoby()'],['../dd/d90/classGMainWin.html#a2ff605add3bed95d9b65eabedc8b98f7a8569b8791ea23f9fa064af7d8e76d48f',1,'GMainWin::ZASOBY()']]]
+  ['zasoby',['ZASOBY',['../dd/d90/classGMainWin.html#a2ff605add3bed95d9b65eabedc8b98f7a8569b8791ea23f9fa064af7d8e76d48f',1,'GMainWin::ZASOBY()'],['../da/d07/structVset.html#a871c5412a63bbed05515724ac16ee47e',1,'Vset::zasoby()']]]
 ];

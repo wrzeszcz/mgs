@@ -204,12 +204,15 @@ Metody publiczne</h2></td></tr>
 <tr class="memitem:a5867e3bcf4b28c0193552acd52d34aa8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../df/d64/structgeo3d.html">geo3d</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d62/classGeoModel.html#a5867e3bcf4b28c0193552acd52d34aa8">analizaZasoby</a> (int _ileKlas)</td></tr>
 <tr class="memdesc:a5867e3bcf4b28c0193552acd52d34aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">analizaZasoby  <a href="#a5867e3bcf4b28c0193552acd52d34aa8">Więcej...</a><br/></td></tr>
 <tr class="separator:a5867e3bcf4b28c0193552acd52d34aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988d2c081526b6dd1fee709f077aae90"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d62/classGeoModel.html#a988d2c081526b6dd1fee709f077aae90">analizaZasobyReport</a> (int _ileKlas)</td></tr>
-<tr class="memdesc:a988d2c081526b6dd1fee709f077aae90"><td class="mdescLeft">&#160;</td><td class="mdescRight">analizaZasobyReport  <a href="#a988d2c081526b6dd1fee709f077aae90">Więcej...</a><br/></td></tr>
-<tr class="separator:a988d2c081526b6dd1fee709f077aae90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc4c0fcf60a9ab5435ab0fff0f85c03"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d62/classGeoModel.html#aecc4c0fcf60a9ab5435ab0fff0f85c03">analizaZasobyReport</a> (int _ileKlas, int precyzja_liczb)</td></tr>
+<tr class="memdesc:aecc4c0fcf60a9ab5435ab0fff0f85c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">analizaZasobyReport  <a href="#aecc4c0fcf60a9ab5435ab0fff0f85c03">Więcej...</a><br/></td></tr>
+<tr class="separator:aecc4c0fcf60a9ab5435ab0fff0f85c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76360404f4f2132a32ac3d64e7beb565"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d62/classGeoModel.html#a76360404f4f2132a32ac3d64e7beb565">setGeoSet</a> (<a class="el" href="../../de/def/structMset.html">Mset</a> gset)</td></tr>
 <tr class="memdesc:a76360404f4f2132a32ac3d64e7beb565"><td class="mdescLeft">&#160;</td><td class="mdescRight">setGeoSet  <a href="#a76360404f4f2132a32ac3d64e7beb565">Więcej...</a><br/></td></tr>
 <tr class="separator:a76360404f4f2132a32ac3d64e7beb565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f46facd64638fb6b2fa8732eb1e0e2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d62/classGeoModel.html#a28f46facd64638fb6b2fa8732eb1e0e2">recreate_rapor</a> (const std::string &amp;datetimeStr)</td></tr>
+<tr class="memdesc:a28f46facd64638fb6b2fa8732eb1e0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">create_rapor  <a href="#a28f46facd64638fb6b2fa8732eb1e0e2">Więcej...</a><br/></td></tr>
+<tr class="separator:a28f46facd64638fb6b2fa8732eb1e0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a403b0502cd9eb67cab5222712d98f42e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d62/classGeoModel.html#a403b0502cd9eb67cab5222712d98f42e">raport_add</a> (string str)</td></tr>
 <tr class="memdesc:a403b0502cd9eb67cab5222712d98f42e"><td class="mdescLeft">&#160;</td><td class="mdescRight">raport_add  <a href="#a403b0502cd9eb67cab5222712d98f42e">Więcej...</a><br/></td></tr>
 <tr class="separator:a403b0502cd9eb67cab5222712d98f42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,7 +310,7 @@ Metody publiczne</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a988d2c081526b6dd1fee709f077aae90"></a>
+<a class="anchor" id="aecc4c0fcf60a9ab5435ab0fff0f85c03"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -315,8 +318,18 @@ Metody publiczne</h2></td></tr>
           <td class="memname">string GeoModel::analizaZasobyReport </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_ileKlas</em>)</td><td></td>
+          <td class="paramname"><em>_ileKlas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>precyzja_liczb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -408,7 +421,7 @@ Metody publiczne</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definicja w linii <a class="el" href="../../#L328">328</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L376">376</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -464,7 +477,7 @@ Metody publiczne</h2></td></tr>
 <p>get_last_set </p>
 <dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
 
-<p>Definicja w linii <a class="el" href="../../#L229">229</a> pliku <a class="el" href="../../">GeoModel.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L234">234</a> pliku <a class="el" href="../../">GeoModel.h</a>.</p>
 
 </div>
 </div>
@@ -492,7 +505,7 @@ Metody publiczne</h2></td></tr>
 <p>get_progres </p>
 <dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
 
-<p>Definicja w linii <a class="el" href="../../#L234">234</a> pliku <a class="el" href="../../">GeoModel.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L239">239</a> pliku <a class="el" href="../../">GeoModel.h</a>.</p>
 
 </div>
 </div>
@@ -519,7 +532,7 @@ Metody publiczne</h2></td></tr>
 
 <p>get_progres_cur </p>
 
-<p>Definicja w linii <a class="el" href="../../#L243">243</a> pliku <a class="el" href="../../">GeoModel.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L248">248</a> pliku <a class="el" href="../../">GeoModel.h</a>.</p>
 
 </div>
 </div>
@@ -556,7 +569,7 @@ Metody publiczne</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definicja w linii <a class="el" href="../../#L212">212</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L260">260</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -600,7 +613,7 @@ Metody publiczne</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definicja w linii <a class="el" href="../../#L219">219</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L267">267</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -627,7 +640,7 @@ Metody publiczne</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
 
-<p>Definicja w linii <a class="el" href="../../#L286">286</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L334">334</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -692,7 +705,7 @@ Metody publiczne</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
 
-<p>Definicja w linii <a class="el" href="../../#L291">291</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L339">339</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -718,7 +731,7 @@ Metody publiczne</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definicja w linii <a class="el" href="../../#L322">322</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L370">370</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -884,7 +897,7 @@ Metody publiczne</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definicja w linii <a class="el" href="../../#L205">205</a> pliku <a class="el" href="../../">GeoModel.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L210">210</a> pliku <a class="el" href="../../">GeoModel.h</a>.</p>
 
 </div>
 </div>
@@ -911,7 +924,7 @@ Metody publiczne</h2></td></tr>
 
 <p>raport_clear </p>
 
-<p>Definicja w linii <a class="el" href="../../#L209">209</a> pliku <a class="el" href="../../">GeoModel.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L214">214</a> pliku <a class="el" href="../../">GeoModel.h</a>.</p>
 
 </div>
 </div>
@@ -939,7 +952,28 @@ Metody publiczne</h2></td></tr>
 <p>raport_get </p>
 <dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
 
-<p>Definicja w linii <a class="el" href="../../#L214">214</a> pliku <a class="el" href="../../">GeoModel.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L219">219</a> pliku <a class="el" href="../../">GeoModel.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a28f46facd64638fb6b2fa8732eb1e0e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string GeoModel::recreate_rapor </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>datetimeStr</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create_rapor </p>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
+
+<p>Definicja w linii <a class="el" href="../../#L203">203</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1060,7 @@ Metody publiczne</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definicja w linii <a class="el" href="../../#L239">239</a> pliku <a class="el" href="../../">GeoModel.h</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L244">244</a> pliku <a class="el" href="../../">GeoModel.h</a>.</p>
 
 </div>
 </div>
@@ -1204,7 +1238,7 @@ Metody publiczne</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definicja w linii <a class="el" href="../../#L227">227</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L275">275</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -1241,7 +1275,7 @@ Metody publiczne</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definicja w linii <a class="el" href="../../#L237">237</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L285">285</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -1267,7 +1301,7 @@ Metody publiczne</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definicja w linii <a class="el" href="../../#L266">266</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L314">314</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -1293,7 +1327,7 @@ Metody publiczne</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definicja w linii <a class="el" href="../../#L276">276</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L324">324</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -1330,7 +1364,7 @@ Metody publiczne</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definicja w linii <a class="el" href="../../#L256">256</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L304">304</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -1356,7 +1390,7 @@ Metody publiczne</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definicja w linii <a class="el" href="../../#L201">201</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L249">249</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -1393,7 +1427,7 @@ Metody publiczne</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definicja w linii <a class="el" href="../../#L206">206</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
+<p>Definicja w linii <a class="el" href="../../#L254">254</a> pliku <a class="el" href="../../">GeoModel.cpp</a>.</p>
 
 </div>
 </div>
@@ -1407,7 +1441,7 @@ Metody publiczne</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d62/classGeoModel.html">GeoModel</a></li>
-    <li class="footer">Wygenerowano Pn, 18 lis 2013 00:40:41 dla MGeoStat programem
+    <li class="footer">Wygenerowano Cz, 21 lis 2013 23:39:11 dla MGeoStat programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.4 </li>
   </ul>

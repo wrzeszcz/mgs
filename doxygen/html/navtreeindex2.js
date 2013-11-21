@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3a16865ae4cbad24dcfe745a6ab2a37b78":[1,0,24,0,3],
 "dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3a42ed278b22dd794b19310d739592aa85":[1,0,24,0,1],
 "dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3a75069a9e4b79656b0523b4a3c9d1d609":[1,0,24,0,2],
 "dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3ae348ce52005ca0117f40574d1573accd":[1,0,24,0,4],
@@ -106,8 +107,8 @@ var NAVTREEINDEX2 =
 "df/dcf/globalne_8h.html#afd50bfa8bf830e7d402e8a60e8739912":[2,0,26,31],
 "df/dcf/globalne_8h.html#d8/d97/structDataInfo":[1,0,1],
 "files.html":[2,0],
-"functions.html":[1,3,0,0],
 "functions.html":[1,3,0],
+"functions.html":[1,3,0,0],
 "functions_0x62.html":[1,3,0,1],
 "functions_0x63.html":[1,3,0,2],
 "functions_0x64.html":[1,3,0,3],

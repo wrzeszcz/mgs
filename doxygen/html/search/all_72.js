@@ -8,6 +8,7 @@ var searchData=
   ['raport_5fget',['raport_get',['../d6/d62/classGeoModel.html#a33f0f33b7784a645dd984617cab163a5',1,'GeoModel']]],
   ['readme_2emd',['README.md',['../da/ddd/README_8md.html',1,'']]],
   ['recalc',['recalc',['../d6/d41/classGeoVariogram.html#a02f263e1ccfb6325f7b1e2bb489ada93',1,'GeoVariogram::recalc(wektor3d ustawienie)'],['../d6/d41/classGeoVariogram.html#aee8843838f32e0e55884417a923cee19',1,'GeoVariogram::recalc()']]],
+  ['recreate_5frapor',['recreate_rapor',['../d6/d62/classGeoModel.html#a28f46facd64638fb6b2fa8732eb1e0e2',1,'GeoModel']]],
   ['reset_5fmin_5fmax',['reset_min_max',['../d0/df3/classGeoCube.html#a5c3e33368d05fd54b709fc150faf7408',1,'GeoCube']]],
   ['resetmodel',['resetModel',['../d6/d62/classGeoModel.html#aa3c3a312b2066beffd1e1a17ec03ce03',1,'GeoModel']]],
   ['resizeevent',['resizeEvent',['../d5/d12/classGraphColumnWidget.html#a19bd14a3d5d8c9139d2b96043905c840',1,'GraphColumnWidget']]],
