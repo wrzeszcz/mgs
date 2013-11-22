@@ -622,9 +622,9 @@ _EnD_oF_dEf_TeXt_;
 GeoCube.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param start
-\param blok
-\param dim
+\param start - wektor zawierający wsþółrzędne X,Y,Z początku modelu
+\param blok - rozmiar bloku (bok sześcianu)
+\param dim - wymiary - wektor zawierający ilość bloków w kierunkach X,Y,Z
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -657,7 +657,7 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoCube.h';
       sec-mem-desc-line = '48';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-wyczysc
+wyczysc - zwalnia pamięć
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -681,10 +681,10 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoCube.h';
       sec-mem-desc-line = '54';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-getRekLok
+getRekLok - zwraca wartość w bloku (pozycja podana lokalnie) - po przekroczeniu zakresu zwaraca wektor(0,0,0)
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param poz
+\param poz - index tablicy 3 wymiarowej (0,0,0 == początek modelu)
 \return
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
@@ -706,10 +706,10 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoCube.h';
       sec-mem-desc-line = '60';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-getRekGlo
+getRekGlo - zwraca wartość w bloku (pozycja podana globalnie) - po przekroczeniu zakresu zwaraca wektor(0,0,0)
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param poz
+\param poz - współrzedne X,Y,Z
 \return
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
@@ -731,10 +731,10 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoCube.h';
       sec-mem-desc-line = '66';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-getRek
+getRek - jak getRekLok ale bez sprawdzania zakresu
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param poz
+\param poz - index tablicy 3 wymiarowej (0,0,0 == początek modelu)
 \return
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
@@ -768,12 +768,12 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoCube.h';
       sec-mem-desc-line = '74';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-getRek
+getRek - zwraca wartość w bloku (pozycja podana lokalnie), bez sprawdzania zakresu
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param a
-\param b
-\param c
+\param a - index X
+\param b - index Y
+\param c - index Z
 \return
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */

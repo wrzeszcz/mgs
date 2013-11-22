@@ -47,28 +47,28 @@ public:
     ///
     void wyczysc();
     ///
-    /// \brief getRekLok
-    /// \param poz
+    /// \brief getRekLok - zwraca wartość w bloku (pozycja podana lokalnie) - po przekroczeniu zakresu zwaraca wektor(0,0,0)
+    /// \param poz - index tablicy 3 wymiarowej (0,0,0 == początek modelu)
     /// \return
     ///
     wektor3d getRekLok(wektor3i  poz);
     ///
-    /// \brief getRekGlo
-    /// \param poz
+    /// \brief getRekGlo - zwraca wartość w bloku (pozycja podana globalnie) - po przekroczeniu zakresu zwaraca wektor(0,0,0)
+    /// \param poz - współrzedne X,Y,Z
     /// \return
     ///
     wektor3d getRekGlo(wektor3d poz);
     ///
-    /// \brief getRek
-    /// \param poz
+    /// \brief getRek - jak getRekLok ale bez sprawdzania zakresu
+    /// \param poz - index tablicy 3 wymiarowej (0,0,0 == początek modelu)
     /// \return
     ///
     wektor3d getRek(wektor3i poz);
     ///
-    /// \brief getRek
-    /// \param a
-    /// \param b
-    /// \param c
+    /// \brief getRek - zwraca wartość w bloku (pozycja podana lokalnie), bez sprawdzania zakresu
+    /// \param a - index X
+    /// \param b - index Y
+    /// \param c - index Z
     /// \return
     ///
     wektor3d getRek(int a,int b, int c);
