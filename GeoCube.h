@@ -36,14 +36,14 @@ class GeoCube
 public:
     ///
     /// \brief GeoCube
-    /// \param start
-    /// \param blok
-    /// \param dim
+    /// \param start - wektor zawierający wsþółrzędne X,Y,Z początku modelu
+    /// \param blok - rozmiar bloku (bok sześcianu)
+    /// \param dim - wymiary - wektor zawierający ilość bloków w kierunkach X,Y,Z
     ///
     GeoCube(wektor3d start, double blok, wektor3i dim);
     ~GeoCube();
     ///
-    /// \brief wyczysc
+    /// \brief wyczysc - zwalnia pamięć
     ///
     void wyczysc();
     ///
