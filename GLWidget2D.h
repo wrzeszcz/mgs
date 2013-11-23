@@ -128,10 +128,6 @@ private:
     ///
     void paintQuad(geo3d a, geo3d b, geo3d c, geo3d d);
     ///
-    /// \brief paintScale
-    ///
-    void paintScale();
-    ///
     /// \brief Z
     ///
     int Z;

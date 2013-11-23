@@ -112,6 +112,17 @@ protected:
     ///
     virtual void wheelEvent(QWheelEvent *event);
     ///
+    /// \brief paintScale
+    ///
+    virtual void paintScale();
+    ///
+    /// \brief paintScale
+    /// \param min
+    /// \param max
+    /// \param poz
+    ///
+    virtual void paintScale(const wektor3d& min, const wektor3d& max, const bool& poz);
+    ///
     /// \brief drawString
     /// \param x
     /// \param y
@@ -120,6 +131,12 @@ protected:
     /// \param text
     ///
     virtual void drawString(float x, float y, QColor rgb, int fontSize, QString text);
+    ///
+    /// \brief calcKolor
+    /// \param minv
+    /// \param maxv
+    /// \param value
+    /// \return
     ///
     virtual QColor calcKolor(const double& minv, const double& maxv, const double& value);
 

@@ -19,9 +19,8 @@
 *******************************************************************************/
 
 #include "GLWidget2D.h"
-#include <QPainter>
-#include <QDebug>
 #include <cmath>
+#include <QDebug>
 //------------------------------------------------------------------------------
 GLWidget2D::GLWidget2D(GeoModel *_model, Vset _widok, QWidget *parent):
     GLWidget(_model,_widok,parent), Z(0)
@@ -29,10 +28,9 @@ GLWidget2D::GLWidget2D(GeoModel *_model, Vset _widok, QWidget *parent):
     scale = 0.8;
     dx = dy = 0.0;
     mouse_pos = QPoint(0,0);
-    model_size = QSize(sett->wym.x+sett->sp,sett->wym.y+sett->sp);
+    model_size = QSizeF(sett->wym.x+sett->sp,sett->wym.y+sett->sp);
     setAutoFillBackground(false);
-
-    setMouseTracking(true);
+    //setMouseTracking(true);
 }
 //------------------------------------------------------------------------------
 GLWidget2D::~GLWidget2D()
@@ -42,34 +40,37 @@ GLWidget2D::~GLWidget2D()
 //------------------------------------------------------------------------------
 void GLWidget2D::paintGL()
 {
-    //glEnable(GL_BLEND);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
 
-    int max_size = qMax(win_size.width(),win_size.height());
-    int x = (win_size.width()-max_size)/2;
-    int y = (win_size.height()-max_size)/2;
-    glViewport(x, y,  max_size, max_size);
-    glOrtho (   -model_size.width() /2, model_size.width()   /2,
-                      -model_size.height()/2, model_size.height() /2,-1,1);
+    model_size = QSizeF(sett->wym.x+sett->sp,sett->wym.y+sett->sp);
+    int side = qMax(win_size.width(),win_size.height());
+
+    int x = (win_size.width()-side)/2;
+    int y = (win_size.height()-side)/2;
+
+    double aspect = model_size.width()/model_size.height();
+
+    glViewport(x, y,  side*aspect, side);
+
+    glOrtho (   -model_size.width() /2, model_size.width()/2,
+                -model_size.height()/2, model_size.height()/2,-1000,1000);
 
     //-------------------------------------------------------------------------
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
+
     glPushMatrix();
 
-        //glTranslatef(0.375,0.375,0);
+        glTranslatef(0.375,0.375,0);
 
-        glTranslatef(dx/5.0, dy/5.0, 1.0);
+        glTranslatef(dx/2.0, dy/2.0, 1.0);
         glScalef(scale,scale,1);
 
         glColor3f(0.0,1.0,0.0);
         paintPkt(curPoint-sett->wym/2,5);
-
-        //drawString(0,0, Qt::red, 20, QString::number(mouse_pos.x()));
 
         glLineWidth(2);
         if(widok.zakres)
@@ -82,16 +83,11 @@ void GLWidget2D::paintGL()
             paint_model();
         }
 
-        paintScale();
-
         RenderString(0,0,80,50, Qt::red, QString::number(Z));
-
+        paintScale(cube->get_min(),cube->get_max(),widok.error_map);
 
     glFlush();
     glPopMatrix();
-
-
-
 }
 //------------------------------------------------------------------------------
 void GLWidget2D::mouseMoveEvent(QMouseEvent *event)
@@ -153,7 +149,7 @@ void GLWidget2D::paint_model()
                     paintBlok(cube2w(wektor3d(a,b,0),*sett),sett->sp);
                 }
 
-                if(widok.tlo)
+                if(0 && widok.tlo)
                 {
                     if(!widok.error_map)
                      paintBlok(cube2w(wektor3d(a,b,0),*sett),sett->sp,cube->getRek(a,b,Z).x);
@@ -161,7 +157,7 @@ void GLWidget2D::paint_model()
                      paintBlok(cube2w(wektor3d(a,b,0),*sett),sett->sp,cube->getRek(a,b,Z).y);
                 }
                 //tymczasowo wyłączone
-                if(0 && a < cube->size_x()-1 && b < cube->size_y()-1)
+                if(1 && a < cube->size_x()-1 && b < cube->size_y()-1)
                 {
                 paintQuad ( geo3d(cube2w(wektor3d(a,b,Z),*sett), cube->getRek(a,b,Z)),
                             geo3d(cube2w(wektor3d(a+1,b,Z),*sett), cube->getRek(a+1,b,Z)),
@@ -276,61 +272,41 @@ void GLWidget2D::paintBlok(wektor3d srod, double bok)
 //------------------------------------------------------------------------------
 void GLWidget2D::paintQuad(geo3d a, geo3d b, geo3d c, geo3d d)
 {
-
-    double min = cube->get_min().x;
-    double max = cube->get_max().x;
+    double min, max;
+    if(!widok.error_map)
+    {
+        min = cube->get_min().x;
+        max = cube->get_max().x;
+    }
+    else
+    {
+        min = cube->get_min().y;
+        max = cube->get_max().y;
+    }
     if(max == NULLDAT || min == -NULLDAT) return;
     QColor k;
 
     glBegin(GL_QUADS);
-        k = calcKolor(min, max, a.dat.x);
+        if(!widok.error_map) k = calcKolor(min, max, a.dat.x);
+        else k = calcKolor(min, max, a.dat.y);
         glColor3f(k.redF(),k.greenF(),k.blueF());
         glVertex2f (a.xyz.x, a.xyz.y);
-        k = calcKolor(min, max, b.dat.x);
+
+        if(!widok.error_map) k = calcKolor(min, max, b.dat.x);
+        else k = calcKolor(min, max, b.dat.y);
         glColor3f(k.redF(),k.greenF(),k.blueF());
         glVertex2f (b.xyz.x, b.xyz.y);
-        k = calcKolor(min, max, c.dat.x);
+
+        if(!widok.error_map) k = calcKolor(min, max, c.dat.x);
+        else k = calcKolor(min, max, c.dat.y);
         glColor3f(k.redF(),k.greenF(),k.blueF());
         glVertex2f (c.xyz.x, c.xyz.y);
-        k = calcKolor(min, max, d.dat.x);
+
+        if(!widok.error_map) k = calcKolor(min, max, d.dat.x);
+        else k = calcKolor(min, max, d.dat.y);
         glColor3f(k.redF(),k.greenF(),k.blueF());
         glVertex2f (d.xyz.x, d.xyz.y);
     glEnd();
-
-}
-//------------------------------------------------------------------------------
-void GLWidget2D::paintScale()
-{
-    double x = sett->wym.x/2 + 20;
-    double y = sett->wym.y;//2;
-    //float v ;
-    int i;
-    float f1,f2;
-
-    float f = 1.0/8.0;
-    //wektor3d maks = cube->get_max();
-    //wektor3d mini = cube->get_min();
-
-    for(i=0; i<8; ++i)
-    {
-        f1=f*i;
-        f2=f*(i+1);
-        QColor c1= kolor.get_kolor(f1);
-        QColor c2= kolor.get_kolor(f2);
-        f1*=y;f1-=y/2;
-        f2*=y;f2-=y/2;
-        //v = f1*(maks.x - mini.x)+ mini.x;
-        //if(maks.x!= NULLDAT)
-            //drawString(-x+7,f1,Qt::white,10, QString::number(v,'f',2));
-        glBegin(GL_QUADS);
-            glColor3f(c1.redF(),c1.greenF(),c1.blueF());
-            glVertex2f(-x,f1);
-            glVertex2f(-x+5,f1);
-            glColor3f(c2.redF(),c2.greenF(),c2.blueF());
-            glVertex2f(-x+5,f2);
-            glVertex2f(-x,f2);
-        glEnd() ;
-    }
 
 }
 //------------------------------------------------------------------------------

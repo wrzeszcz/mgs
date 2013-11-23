@@ -122,10 +122,6 @@ private:
     ///
     void paintAxis();
     ///
-    /// \brief paintScale
-    ///
-    void paintScale();
-    ///
     /// \brief test_otoczenia
     /// \param a
     /// \param b
@@ -149,6 +145,9 @@ private:
     /// \brief v_it
     ///
     std::vector <wektor3d>::iterator v_it;
+    ///
+    /// \brief z
+    ///
     int z;
 };
 
