@@ -55,7 +55,8 @@ void GLWidget2D::paintGL()
     glViewport(x, y,  side*aspect, side);
 
     glOrtho (   -model_size.width() /2, model_size.width()/2,
-                -model_size.height()/2, model_size.height()/2,-1000,1000);
+                -model_size.height()/2, model_size.height()/2,
+                -1000,1000);
 
     //-------------------------------------------------------------------------
 
@@ -66,7 +67,7 @@ void GLWidget2D::paintGL()
 
         glTranslatef(0.375,0.375,0);
 
-        glTranslatef(dx/2.0, dy/2.0, 1.0);
+        glTranslatef(dx/2.0, dy/2.0, 0.0);
         glScalef(scale,scale,1);
 
         glColor3f(0.0,1.0,0.0);

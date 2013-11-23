@@ -58,6 +58,9 @@ void GeoModel::wczytaj_dane(string fileName, string sep, bool nowe, bool sred)
     modset->sp=s;
     modset->grid = wektor3i((int)(w.x/s+2),(int)(w.y/s+2),(int)(w.z/s+2));
 
+    modset->max_val = dane->get_max_value();
+    modset->min_val = dane->get_min_value();
+
     updateModel();
 
     nowy_variogram(last_set.set_variogram);

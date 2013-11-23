@@ -68,7 +68,6 @@ void GLWidget3D::paintGL()
         glRotatef(rotX,1.0,0.0,0.0);
         glRotatef(rotY,0.0,1.0,0.0);
         glRotatef(rotZ,0.0,0.0,1.0);
-
         //rysowanie obiektów
         //rysowanie danych
         if (widok.dane) paint_dane();
