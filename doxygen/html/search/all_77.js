@@ -13,7 +13,7 @@ var searchData=
   ['wektor3i',['wektor3i',['../d1/de1/structwektor3i.html',1,'wektor3i'],['../d1/de1/structwektor3i.html#a676b8fc899bf818d257da94b25ab7b1b',1,'wektor3i::wektor3i()'],['../d1/de1/structwektor3i.html#aec14a26db4b3594ed5c97010ade9d732',1,'wektor3i::wektor3i(int xx, int yy, int zz)']]],
   ['wezel',['wezel',['../da/d07/structVset.html#aa81f900955ff606b8a3010e743a6ada9',1,'Vset']]],
   ['wheelevent',['wheelEvent',['../d4/dc5/classGLWidget.html#a5702a23f7cf42d05fe55a417d810a4b6',1,'GLWidget::wheelEvent()'],['../dd/d6e/classGLWidget2D.html#a77f64d70d7edd2fff28e59a6a7844d80',1,'GLWidget2D::wheelEvent()'],['../d1/d2f/classGLWidget3D.html#a7872b81d6ffd2f73a32f1ed1eb2a8d0f',1,'GLWidget3D::wheelEvent()']]],
-  ['widok',['widok',['../d4/dc5/classGLWidget.html#a3616f27b345ad55b123900cefbc85218',1,'GLWidget::widok()'],['../dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3a16865ae4cbad24dcfe745a6ab2a37b78',1,'GMainWin::WIDOK()']]],
+  ['widok',['WIDOK',['../dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3a16865ae4cbad24dcfe745a6ab2a37b78',1,'GMainWin::WIDOK()'],['../d4/dc5/classGLWidget.html#a3616f27b345ad55b123900cefbc85218',1,'GLWidget::widok()']]],
   ['win2cube',['Win2cube',['../d7/d7a/structWin2cube.html',1,'']]],
   ['win_5fsize',['win_size',['../d4/dc5/classGLWidget.html#a26d9c0a16edd75c78a66e74dafff5aef',1,'GLWidget']]],
   ['wyczysc',['wyczysc',['../d0/df3/classGeoCube.html#a0181f9866cf74d00f869cf2920f40d63',1,'GeoCube']]],
