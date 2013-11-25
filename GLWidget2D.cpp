@@ -58,6 +58,7 @@ void GLWidget2D::paintGL()
                 -model_size.height()/2, model_size.height()/2,
                 -1000,1000);
 
+    double skale2 = model_size.height() / side;
     //-------------------------------------------------------------------------
 
     glMatrixMode(GL_MODELVIEW);
@@ -67,7 +68,7 @@ void GLWidget2D::paintGL()
 
         glTranslatef(0.375,0.375,0);
 
-        glTranslatef(dx/2.0, dy/2.0, 0.0);
+        glTranslatef(dx*skale2, dy*skale2, 0.0);
         glScalef(scale,scale,1);
 
         glColor3f(0.0,1.0,0.0);
