@@ -9,7 +9,7 @@ var searchData=
   ['paint_5fzakres',['paint_zakres',['../d4/dc5/classGLWidget.html#ad6dd10a5dbcd65a50b88fb907674ec14',1,'GLWidget']]],
   ['paintevent',['paintEvent',['../dc/d81/classGeoWidgetVariogram.html#a4718cb39baa796d3c55ea306aa7f4e46',1,'GeoWidgetVariogram::paintEvent()'],['../d5/d12/classGraphColumnWidget.html#ad5318b82984afca062dfe46a74317af6',1,'GraphColumnWidget::paintEvent()'],['../d8/d93/classGraphWidget.html#a0dd4f8554b9423199399733b5e8de70d',1,'GraphWidget::paintEvent()']]],
   ['paintgl',['paintGL',['../d4/dc5/classGLWidget.html#a640b5570cb2b37724fd5b58a77339c5e',1,'GLWidget::paintGL()'],['../dd/d6e/classGLWidget2D.html#a3f9e63306a255233d19aec2252cb5553',1,'GLWidget2D::paintGL()'],['../d1/d2f/classGLWidget3D.html#a93a0d493e6f4c368d09a00fe9b68f918',1,'GLWidget3D::paintGL()']]],
-  ['paintscale',['paintScale',['../d4/dc5/classGLWidget.html#a3ddfa05ae13a10c92eae0b2368c9d797',1,'GLWidget::paintScale()'],['../d4/dc5/classGLWidget.html#a02bd24541637b2fe8575ae4dfd654af1',1,'GLWidget::paintScale(const wektor3d &amp;min, const wektor3d &amp;max, const bool &amp;poz)']]],
+  ['paintscale',['paintScale',['../d4/dc5/classGLWidget.html#a02bd24541637b2fe8575ae4dfd654af1',1,'GLWidget']]],
   ['pcur',['pcur',['../d9/de3/structProgres.html#a18a211b9e28c1f7890a368240fafd9f4',1,'Progres']]],
   ['perspektywa',['perspektywa',['../da/d07/structVset.html#ab5c9226bb004456782c311fd2a797ee2',1,'Vset']]],
   ['pmax',['pmax',['../d9/de3/structProgres.html#acf6f39f8152c34131404afe092370c72',1,'Progres']]],

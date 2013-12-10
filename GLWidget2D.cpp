@@ -150,7 +150,7 @@ void GLWidget2D::paint_model()
                     glColor3f(0.5,0.5,0.5);
                     paintBlok(cube2w(wektor3d(a,b,0),*sett),sett->sp);
                 }
-
+                //tymczasowo wyłączone
                 if(0 && widok.tlo)
                 {
                     if(!widok.error_map)
@@ -158,7 +158,7 @@ void GLWidget2D::paint_model()
                     else
                      paintBlok(cube2w(wektor3d(a,b,0),*sett),sett->sp,cube->getRek(a,b,Z).y);
                 }
-                //tymczasowo wyłączone
+                //tymczasowo włączone
                 if(1 && a < cube->size_x()-1 && b < cube->size_y()-1)
                 {
                 paintQuad ( geo3d(cube2w(wektor3d(a,b,Z),*sett), cube->getRek(a,b,Z)),

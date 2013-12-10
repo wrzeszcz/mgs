@@ -16,7 +16,6 @@ var classGLWidget =
     [ "paint_model_zasoby", "d4/dc5/classGLWidget.html#a26aa71617a24d05ecd1c89a8f8bc06fe", null ],
     [ "paint_zakres", "d4/dc5/classGLWidget.html#ad6dd10a5dbcd65a50b88fb907674ec14", null ],
     [ "paintGL", "d4/dc5/classGLWidget.html#a640b5570cb2b37724fd5b58a77339c5e", null ],
-    [ "paintScale", "d4/dc5/classGLWidget.html#a3ddfa05ae13a10c92eae0b2368c9d797", null ],
     [ "paintScale", "d4/dc5/classGLWidget.html#a02bd24541637b2fe8575ae4dfd654af1", null ],
     [ "resizeGL", "d4/dc5/classGLWidget.html#ac0d2a8ecf60907a81c0d73475d851025", null ],
     [ "set_dx", "d4/dc5/classGLWidget.html#a7a1e1dee5e6cfdb74746719a373c8f53", null ],

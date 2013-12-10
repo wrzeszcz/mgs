@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3":[1,0,24,0],
 "dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3a048268247ff7c10d63b2c93a086ee0d4":[1,0,24,0,0],
 "dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3a16865ae4cbad24dcfe745a6ab2a37b78":[1,0,24,0,3],
 "dd/d90/classGMainWin.html#a52176b2531295df87c8ca0e4b1926ee3a42ed278b22dd794b19310d739592aa85":[1,0,24,0,1],

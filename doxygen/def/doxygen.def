@@ -9089,7 +9089,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-defname = 'w';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '147';
+      sec-mem-desc-line = '143';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 slot_set_widok
 _EnD_oF_dEf_TeXt_;
@@ -9113,7 +9113,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'p';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '152';
+      sec-mem-desc-line = '148';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 slot_point
 _EnD_oF_dEf_TeXt_;
@@ -9131,7 +9131,7 @@ virtual void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'wczytajObiekty';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '156';
+      sec-mem-desc-line = '152';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 wczytajObiekty
 _EnD_oF_dEf_TeXt_;
@@ -9283,24 +9283,6 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
       sec-mem-kind = 'function';
-      sec-mem-id   = 'd4/dc5/classGLWidget_1a3ddfa05ae13a10c92eae0b2368c9d797';
-      sec-mem-virt = virtual;
-      sec-mem-prot = protected;
-      sec-mem-type = <<_EnD_oF_dEf_TeXt_
-virtual void
-_EnD_oF_dEf_TeXt_;
-      sec-mem-name = 'paintScale';
-      sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '117';
-      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-paintScale
-_EnD_oF_dEf_TeXt_;
-      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-    }; /* sec-member */
-    sec-member = {
-      sec-mem-kind = 'function';
       sec-mem-id   = 'd4/dc5/classGLWidget_1a02bd24541637b2fe8575ae4dfd654af1';
       sec-mem-virt = virtual;
       sec-mem-prot = protected;
@@ -9327,7 +9309,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'poz';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '124';
+      sec-mem-desc-line = '120';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 paintScale
 _EnD_oF_dEf_TeXt_;
@@ -9377,7 +9359,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'text';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '133';
+      sec-mem-desc-line = '129';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 drawString
 _EnD_oF_dEf_TeXt_;
@@ -9417,7 +9399,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'value';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '141';
+      sec-mem-desc-line = '137';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 calcKolor
 _EnD_oF_dEf_TeXt_;
@@ -9438,7 +9420,7 @@ virtual void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'paint_model_siatka';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '162';
+      sec-mem-desc-line = '158';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 paint_model_siatka
 _EnD_oF_dEf_TeXt_;
@@ -9456,7 +9438,7 @@ virtual void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'paint_model_wezly';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '166';
+      sec-mem-desc-line = '162';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 paint_model_wezly
 _EnD_oF_dEf_TeXt_;
@@ -9474,7 +9456,7 @@ virtual void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'paint_model_zasoby';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '170';
+      sec-mem-desc-line = '166';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 paint_model_zasoby
 _EnD_oF_dEf_TeXt_;
@@ -9492,7 +9474,7 @@ virtual void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'paint_model';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '174';
+      sec-mem-desc-line = '170';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 paint_model
 _EnD_oF_dEf_TeXt_;
@@ -9510,7 +9492,7 @@ virtual void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'paint_dane';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '178';
+      sec-mem-desc-line = '174';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 paint_dane
 _EnD_oF_dEf_TeXt_;
@@ -9528,7 +9510,7 @@ virtual void
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'paint_zakres';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '182';
+      sec-mem-desc-line = '178';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 paint_zakres
 _EnD_oF_dEf_TeXt_;
@@ -9549,7 +9531,7 @@ GeoModel *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'model';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '186';
+      sec-mem-desc-line = '182';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 model
 _EnD_oF_dEf_TeXt_;
@@ -9567,7 +9549,7 @@ Vset
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'widok';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '190';
+      sec-mem-desc-line = '186';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 widok
 _EnD_oF_dEf_TeXt_;
@@ -9585,7 +9567,7 @@ GeoCube *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'cube';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '194';
+      sec-mem-desc-line = '190';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 cube
 _EnD_oF_dEf_TeXt_;
@@ -9603,7 +9585,7 @@ GeoDat *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dane';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '198';
+      sec-mem-desc-line = '194';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 dane
 _EnD_oF_dEf_TeXt_;
@@ -9621,7 +9603,7 @@ Mset *
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'sett';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '202';
+      sec-mem-desc-line = '198';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 sett
 _EnD_oF_dEf_TeXt_;
@@ -9639,7 +9621,7 @@ Gradient
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'kolor';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '206';
+      sec-mem-desc-line = '202';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 kolor
 _EnD_oF_dEf_TeXt_;
@@ -9657,7 +9639,7 @@ wektor3d
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'curPoint';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '210';
+      sec-mem-desc-line = '206';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 curPoint
 _EnD_oF_dEf_TeXt_;
@@ -9675,7 +9657,7 @@ GLfloat
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'scale';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '214';
+      sec-mem-desc-line = '210';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 scale
 _EnD_oF_dEf_TeXt_;
@@ -9693,7 +9675,7 @@ GLfloat
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dx';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '218';
+      sec-mem-desc-line = '214';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 dx
 _EnD_oF_dEf_TeXt_;
@@ -9711,7 +9693,7 @@ GLfloat
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dy';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '222';
+      sec-mem-desc-line = '218';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 dy
 _EnD_oF_dEf_TeXt_;
@@ -9729,7 +9711,7 @@ GLfloat
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'dz';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '226';
+      sec-mem-desc-line = '222';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 dz
 _EnD_oF_dEf_TeXt_;
@@ -9747,7 +9729,7 @@ GLfloat
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'rotX';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '230';
+      sec-mem-desc-line = '226';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 rotX
 _EnD_oF_dEf_TeXt_;
@@ -9765,7 +9747,7 @@ GLfloat
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'rotY';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '234';
+      sec-mem-desc-line = '230';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 rotY
 _EnD_oF_dEf_TeXt_;
@@ -9783,7 +9765,7 @@ GLfloat
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'rotZ';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '238';
+      sec-mem-desc-line = '234';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 rotZ
 _EnD_oF_dEf_TeXt_;
@@ -9801,7 +9783,7 @@ QPoint
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'mouse_pos';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '242';
+      sec-mem-desc-line = '238';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 mouse_pos
 _EnD_oF_dEf_TeXt_;
@@ -9819,7 +9801,7 @@ QSize
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'win_size';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '246';
+      sec-mem-desc-line = '242';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 win_size
 _EnD_oF_dEf_TeXt_;
@@ -9837,7 +9819,7 @@ QSizeF
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'model_size';
       sec-mem-desc-file = '/home/marek/2013.pro/2013.mgeostat/mgeostat/GLWidget.h';
-      sec-mem-desc-line = '250';
+      sec-mem-desc-line = '246';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 model_size
 _EnD_oF_dEf_TeXt_;

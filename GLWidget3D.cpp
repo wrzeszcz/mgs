@@ -81,7 +81,7 @@ void GLWidget3D::paintGL()
         if(widok.zakres)  paint_zakres();
         //rysowanie osi w innym view porcie
         paintAxis();
-        paintScale();
+        paintScale(wektor3d(sett->cutoff*0.95,0,0),cube->get_max(),0);
     glFlush();
     glPopMatrix();
 }

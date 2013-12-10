@@ -113,10 +113,6 @@ protected:
     virtual void wheelEvent(QWheelEvent *event);
     ///
     /// \brief paintScale
-    ///
-    virtual void paintScale();
-    ///
-    /// \brief paintScale
     /// \param min
     /// \param max
     /// \param poz
