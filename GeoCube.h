@@ -114,7 +114,7 @@ public:
     void wypiszGlo(vector<wektor3d> &vec, double limit, wektor3d ofset);
     ///
     /// \brief getStart
-    /// \return
+    /// \return współrzędne początku (0,0,0)
     ///
     wektor3d getStart(){return start3d;}
     ///
@@ -124,22 +124,22 @@ public:
     wektor3i getSize(){return dim3i;}
     ///
     /// \brief size_x
-    /// \return
+    /// \return rozmiar w kierunku x
     ///
     int size_x(){return dim3i.x;}
     ///
     /// \brief size_y
-    /// \return
+    /// \return rozmiar w kierunku y
     ///
     int size_y(){return dim3i.y;}
     ///
     /// \brief size_z
-    /// \return
+    /// \return rozmiar w kierunku z
     ///
     int size_z(){return dim3i.z;}
     ///
     /// \brief size
-    /// \return
+    /// \return ilość bloków
     ///
     int size(){return dim3i.x * dim3i.y * dim3i.z;}
     ///
