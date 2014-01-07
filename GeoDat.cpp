@@ -19,6 +19,7 @@
 *******************************************************************************/
 
 #include "GeoDat.h"
+#include <iostream>
 //------------------------------------------------------------------------------
 GeoDat::GeoDat()
 {
@@ -107,15 +108,23 @@ void GeoDat::usun ()
     min_zakres = max_zakres = min_value = max_value = wektor3d();
 }
 //------------------------------------------------------------------------------
-geo3d GeoDat::get_rek(unsigned int nr)
+geo3d GeoDat::getRek(unsigned int nr)
 {
     geo3d ret;
+
     if (nr < geoMap.size())
     {
         unsigned int licz=0;
-        for(it=geoMap.begin();it !=geoMap.end(); ++it)
+
+        it = geoMap.begin();
+
+        for(; it != geoMap.end(); ++it)
         {
-            if(licz==nr) ret = geo3d(it->first,it->second);
+            if(licz==nr)
+            {
+                ret = geo3d(it->first,it->second);
+                break;
+            }
             ++licz;
         }
     }

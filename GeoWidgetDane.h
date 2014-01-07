@@ -23,8 +23,64 @@
 
 #include "GeoWidget.h"
 #include <QStandardItemModel>
+#include <QAbstractTableModel>
+#include <QDebug>
+
 class QAction;
 class QTableView;
+
+class DatModel : public QAbstractTableModel
+{
+    Q_OBJECT
+public:
+    DatModel(QObject *parent, GeoDat *dat):QAbstractTableModel(parent), dane(dat) {}
+
+    int rowCount(const QModelIndex &parent = QModelIndex()) const
+    {
+        return dane->get_size();
+    }
+    int columnCount(const QModelIndex &parent = QModelIndex()) const
+    {
+        return 6;
+    }
+    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const
+    {
+        int row = index.row();
+        int col = index.column();
+
+        geo3d record = dane->getRek(row);;
+
+        if (role == Qt::DisplayRole)
+           {
+            switch (col) {
+                case 0:
+                    return record.xyz.x;
+                    break;
+                case 1:
+                    return record.xyz.y;
+                    break;
+                case 2:
+                    return record.xyz.z;
+                    break;
+                case 3:
+                    return record.dat.x;
+                    break;
+                case 4:
+                    return record.dat.y;
+                    break;
+                case 5:
+                    return record.dat.z;
+                    break;
+                default:
+                    break;
+            }
+           }
+        return QVariant();
+    }
+private:
+    GeoDat *dane;
+};
+
 ///
 /// \brief The GeoWidgetDane class
 ///
@@ -81,6 +137,8 @@ private:
     /// \brief actZapiszDane
     ///
     QAction *actZapiszDane;
+
+    DatModel *datModel;
 };
 
 #endif // GEOWIDGETDANE_H

@@ -23,6 +23,7 @@
 #include <QFuture>
 #include <QtConcurrentRun>
 #include <boost/bind.hpp>
+#include <QDebug>
 //------------------------------------------------------------------------------
 GeoWidgetVariogram::GeoWidgetVariogram(GeoModel *ptrModel, QWidget *parent):
     GeoWidget(ptrModel, parent)
@@ -70,9 +71,10 @@ void GeoWidgetVariogram::slot_update_dane()
 //------------------------------------------------------------------------------
 void GeoWidgetVariogram::slot_vario(int v)
 {
-    if(v==0)cur_set_vario.vario = EXPONENTIAL;
-    else if (v==1)cur_set_vario.vario = SPHERICAL;
-    else cur_set_vario.vario = GAUSSIAN;
+    //fi(v==0)cur_set_vario.vario = EXPONENTIAL;
+    //else if (v==1)cur_set_vario.vario = SPHERICAL;
+    cur_set_vario.vario = (variogram)v;
+    qDebug() << cur_set_vario.vario;
     graph->set_function(cur_set_vario);
     graph->repaint();
 }
@@ -143,6 +145,8 @@ void GeoWidgetVariogram::create()
     combo_vario->addItem("EXPONENTIAL",EXPONENTIAL);  
     combo_vario->addItem("SPHERICAL",SPHERICAL);
     combo_vario->addItem("GAUSSIAN",GAUSSIAN);
+    combo_vario->addItem("LINEAR",LINEAR);
+    combo_vario->addItem("POVER",POVER);
     connect(combo_vario,SIGNAL(currentIndexChanged(int)),
             this,SLOT(slot_vario(int)));
     toolBar->addWidget(combo_vario);
@@ -228,15 +232,23 @@ void GeoWidgetVariogram::create()
 //-----------------------------------------------------------------------------
 void GeoWidgetVariogram::update_edit()
 {
-    le_nugget ->setText(QString::number(cur_set_vario.nuget_c0,'f',2));
-    le_sill   ->setText(QString::number(cur_set_vario.sill_c1 ,'f',2));
-    le_range  ->setText(QString::number(cur_set_vario.range_a ,'f',2));
-    le_klasa  ->setText(QString::number(cur_set_vario.set_variogram.x,'f',2));
+    le_nugget ->setText(QString::number(cur_set_vario.nuget_c0,'f',3));
+    le_sill   ->setText(QString::number(cur_set_vario.sill_c1 ,'f',3));
+    le_range  ->setText(QString::number(cur_set_vario.range_a ,'f',3));
+    le_klasa  ->setText(QString::number(cur_set_vario.set_variogram.x,'f',3));
     sb_kla_ile->setValue(cur_set_vario.set_variogram.y);
     sb_kla_min->setValue(cur_set_vario.set_variogram.z);
-    if(cur_set_vario.vario==EXPONENTIAL) combo_vario->setCurrentIndex(0);
-    else if (cur_set_vario.vario==SPHERICAL)combo_vario->setCurrentIndex(1);
-    else combo_vario->setCurrentIndex(2);
+
+    switch (cur_set_vario.vario)
+    {
+        case EXPONENTIAL:
+        case SPHERICAL:
+        case GAUSSIAN:
+        case LINEAR:
+        case POVER:combo_vario->setCurrentIndex((int)cur_set_vario.vario);break;
+        default:combo_vario->setCurrentIndex(0);break;
+    }
+
 }
 //-----------------------------------------------------------------------------
 

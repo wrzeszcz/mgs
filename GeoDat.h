@@ -81,7 +81,7 @@ public:
     /// \param nr
     /// \return
     ///
-    geo3d get_rek(unsigned int nr);
+    geo3d getRek(unsigned int nr);
     ///
     /// \brief get_rek
     /// \param wsp
@@ -218,7 +218,7 @@ public:
     /// \brief get_size
     /// \return
     ///
-    int get_size(){return geoMap.size();}
+    int get_size()const{return geoMap.size();}
     ///
     /// \brief get_begin
     /// \return

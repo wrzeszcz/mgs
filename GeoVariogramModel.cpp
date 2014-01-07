@@ -39,15 +39,16 @@ GeoVariogramModel::GeoVariogramModel(variogram vario, double nugget, double sill
 //------------------------------------------------------------------------------
 double GeoVariogramModel::licz_vario(double h)
 {
-    double ret;
+    double ret = 0.0;
+    if(a==0.0) return ret;
     switch(cur_vario_model)
     {
     case EXPONENTIAL:
-        if(h==0.0) return ret=0.0;
-        else ret = c0 + c1 * (1 - exp(-3*h/a));
+        //if(h==0.0) return ret=0.0;
+        ret = c0 + c1 * (1 - exp(-3*h/a));
         break;
     case GAUSSIAN:
-        if(h==0.0) return ret=0.0;
+        //if(h==0.0) return ret=0.0;
         ret = c0 + c1 * (1 - exp( (-3*h*h) / (a*a) ) );
         break;
     case SPHERICAL:
@@ -55,6 +56,10 @@ double GeoVariogramModel::licz_vario(double h)
             ret = c0 + c1 * (1.5*h/a - 0.5*(h/a)*(h/a)*(h/a));
         else
             ret = c0 + c1;
+        break;
+    case LINEAR:
+        //if (h==0.0) ret = c0;
+        ret = c0 + c1/a * h * exp(0.0);
         break;
     default:
         ret = 0.0;

@@ -34,8 +34,10 @@ const double NULLDAT = -1e+20;
 enum variogram
 {
     EXPONENTIAL=0,
-    SPHERICAL=1,
-    GAUSSIAN=2
+    SPHERICAL  =1,
+    GAUSSIAN   =2,
+    LINEAR     =3,
+    POVER      =4
 };
 ///
 /// \brief The METODA enum
@@ -700,7 +702,9 @@ inline istream& operator >> (istream& is, Set_interpolacja& d)
     {
         case EXPONENTIAL:
         case SPHERICAL:
-        case GAUSSIAN: d.vario = (variogram)enum_vario; break;
+        case GAUSSIAN:
+        case LINEAR:
+        case POVER: d.vario = (variogram)enum_vario; break;
         default: d.vario = SPHERICAL;break;
     }
     return is;

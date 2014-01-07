@@ -20,14 +20,16 @@
 
 #include "GeoWidgetDane.h"
 #include <QTableView>
-
 #include <QAction>
+
 //------------------------------------------------------------------------------
 GeoWidgetDane::GeoWidgetDane(GeoModel *ptrModel, QWidget *parent):
     GeoWidget(ptrModel, parent)
 {
     this->setAccessibleName("DANE");
     this->setWindowTitle("DANE");
+
+    dane = gModel->ptr_dane();
 
     create_view();
     slot_update_dane();
@@ -51,10 +53,13 @@ void GeoWidgetDane::create_view()
 {
     tableView = new QTableView();
     itemModel = new QStandardItemModel();
+    //datModel = new DatModel(this, dane);
     QStringList labels;
     labels << "X" << "Y" << "Z" << "Par 1" << "Par 2" << "Par 3";
     itemModel->setHorizontalHeaderLabels(labels);
+
     tableView->setModel(itemModel);
+    //tableView->setModel(datModel);
     boxLayout->addWidget(tableView);
     actZapiszDane = new QAction(QIcon(":/save"), tr("Zapisz dane"),this);
     toolBar->addAction(actZapiszDane);
@@ -67,6 +72,7 @@ void GeoWidgetDane::slot_update_dane()
     if(gModel->ptr_dane())
     {
         dane = gModel->ptr_dane();
+
         GeoMapa::iterator it = dane->get_begin();
         for (; it != dane->get_end(); ++it)
         {
