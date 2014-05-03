@@ -50,7 +50,7 @@ public:
     ///
     virtual ~GLWidget(){}
     ///
-    /// \brief set_scale
+    /// \brief set_scale - ustawia skalę
     /// \param f
     ///
     void set_scale(float f){scale = f;}
