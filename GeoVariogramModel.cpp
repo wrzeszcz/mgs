@@ -41,6 +41,7 @@ double GeoVariogramModel::licz_vario(double h)
 {
     double ret = 0.0;
     if(a==0.0) return ret;
+
     switch(cur_vario_model)
     {
     case EXPONENTIAL:
@@ -59,7 +60,10 @@ double GeoVariogramModel::licz_vario(double h)
         break;
     case LINEAR:
         //if (h==0.0) ret = c0;
-        ret = c0 + c1/a * h * exp(0.0);
+        ret = c0 + c1/a * h;
+        break;
+    case POVER:
+
         break;
     default:
         ret = 0.0;

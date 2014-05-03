@@ -73,9 +73,9 @@ public:
     ///
     wektor3d getRek(int a,int b, int c);
     ///
-    /// \brief setRekLok
-    /// \param poz
-    /// \param dane
+    /// \brief setRekLok - ustawia wartość bloku lokalnie
+    /// \param poz - wektor okreslajacy pozycje
+    /// \param dane - wektor danych
     ///
     void setRekLok(wektor3i poz, wektor3d dane);
     ///
