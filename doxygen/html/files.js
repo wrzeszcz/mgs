@@ -36,6 +36,7 @@ var files =
     ] ],
     [ "GeoWidgetDane.cpp", "df/d26/GeoWidgetDane_8cpp.html", null ],
     [ "GeoWidgetDane.h", "d2/d89/GeoWidgetDane_8h.html", [
+      [ "DatModel", "d8/d63/classDatModel.html", "d8/d63/classDatModel" ],
       [ "GeoWidgetDane", "d7/d50/classGeoWidgetDane.html", "d7/d50/classGeoWidgetDane" ]
     ] ],
     [ "GeoWidgetRaport.cpp", "da/d17/GeoWidgetRaport_8cpp.html", null ],

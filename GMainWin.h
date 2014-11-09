@@ -50,7 +50,7 @@ class QProgressBar;
 ///
 /// \brief APPNAME stała - nazwa programu
 ///
-QString const APPNAME = "MGeoStat";
+QString const static APPNAME = "MGS";
 ///
 /// \brief Klasa GMainWin - GUI aplikacji
 ///

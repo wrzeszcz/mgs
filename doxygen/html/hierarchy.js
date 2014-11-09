@@ -19,6 +19,9 @@ var hierarchy =
     [ "Odl", "dc/dd0/structOdl.html", null ],
     [ "Odl2", "d9/d7b/structOdl2.html", null ],
     [ "Progres", "d9/de3/structProgres.html", null ],
+    [ "QAbstractTableModel", null, [
+      [ "DatModel", "d8/d63/classDatModel.html", null ]
+    ] ],
     [ "QApplication", null, [
       [ "geoApplication", "d3/de0/classgeoApplication.html", null ]
     ] ],

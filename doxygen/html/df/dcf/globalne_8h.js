@@ -36,7 +36,9 @@ var globalne_8h =
     [ "variogram", "df/dcf/globalne_8h.html#a732b7fed053257c3fa7ec8cfb576912b", [
       [ "EXPONENTIAL", "df/dcf/globalne_8h.html#a732b7fed053257c3fa7ec8cfb576912baa6055a3a8ab1aed0594419b51d9ec15e", null ],
       [ "SPHERICAL", "df/dcf/globalne_8h.html#a732b7fed053257c3fa7ec8cfb576912bae5031a2dca66aec4c071e90aa6bee1ff", null ],
-      [ "GAUSSIAN", "df/dcf/globalne_8h.html#a732b7fed053257c3fa7ec8cfb576912bafca8f51c9117fbb492a2184e9df9e412", null ]
+      [ "GAUSSIAN", "df/dcf/globalne_8h.html#a732b7fed053257c3fa7ec8cfb576912bafca8f51c9117fbb492a2184e9df9e412", null ],
+      [ "LINEAR", "df/dcf/globalne_8h.html#a732b7fed053257c3fa7ec8cfb576912badc101ebf31c49c2d4b80b7c6f59f22cb", null ],
+      [ "POVER", "df/dcf/globalne_8h.html#a732b7fed053257c3fa7ec8cfb576912ba8a2c99fb72389778f643939b01afa8b8", null ]
     ] ],
     [ "cos2str", "df/dcf/globalne_8h.html#af279711681e6eb816e2d07c4fc564ad3", null ],
     [ "cos2str", "df/dcf/globalne_8h.html#a850839e116c18540f71cade863c0b76b", null ],

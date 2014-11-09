@@ -486,8 +486,8 @@ void GMainWin::slot_wczytaj_surf()
 //------------------------------------------------------------------------------
 void GMainWin::slot_about()
 {
-    QMessageBox::about(this, tr("PROJEKT GEOSTAT 2013"),
-                       tr("wersja 0.1\nautor @ Marek Wrzeszcz 2013\n\n GNU General Public License \n www.gnu.org/licenses"));
+    QMessageBox::about(this, tr("PROJEKT MGS 2014"),
+                       tr("wersja 0.1\nautor @ Marek Wrzeszcz 2014\n\n GNU General Public License \n www.gnu.org/licenses"));
 }
 
 void GMainWin::slot_instrukcja()

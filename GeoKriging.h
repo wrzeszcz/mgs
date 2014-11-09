@@ -21,7 +21,6 @@
 #ifndef GEOKRIGING_H
 #define GEOKRIGING_H
 
-
 #include "globalne.h"
 #include "GeoVariogramModel.h"
 #include <vector>

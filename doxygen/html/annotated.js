@@ -1,7 +1,8 @@
 var annotated =
 [
     [ "Cube2win", "d6/d36/structCube2win.html", "d6/d36/structCube2win" ],
-    [ "DataInfo", "df/dcf/globalne_8h.html#d8/d97/structDataInfo", "df/dcf/globalne_8h" ],
+    [ "DataInfo", "df/dcf/globalne_8h.html#d8/d97/structDataInfo", "df/dcf/globalne_8h_d8/d97/structDataInfo" ],
+    [ "DatModel", "d8/d63/classDatModel.html", "d8/d63/classDatModel" ],
     [ "G3d_comp_dat_z", "d1/d27/structG3d__comp__dat__z.html", "d1/d27/structG3d__comp__dat__z" ],
     [ "G3d_comp_odl_pkt", "d2/d5c/structG3d__comp__odl__pkt.html", "d2/d5c/structG3d__comp__odl__pkt" ],
     [ "geo3d", "df/d64/structgeo3d.html", "df/d64/structgeo3d" ],
