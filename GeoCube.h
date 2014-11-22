@@ -49,19 +49,19 @@ public:
     ///
     /// \brief getRekLok - zwraca wartość w bloku (pozycja podana lokalnie) - po przekroczeniu zakresu zwaraca wektor(0,0,0)
     /// \param poz - index tablicy 3 wymiarowej (0,0,0 == początek modelu)
-    /// \return
+    /// \return wektor3d
     ///
     wektor3d getRekLok(wektor3i  poz);
     ///
     /// \brief getRekGlo - zwraca wartość w bloku (pozycja podana globalnie) - po przekroczeniu zakresu zwaraca wektor(0,0,0)
     /// \param poz - współrzedne X,Y,Z
-    /// \return
+    /// \return wektor3d
     ///
     wektor3d getRekGlo(wektor3d poz);
     ///
     /// \brief getRek - jak getRekLok ale bez sprawdzania zakresu
     /// \param poz - index tablicy 3 wymiarowej (0,0,0 == początek modelu)
-    /// \return
+    /// \return wektor3d
     ///
     wektor3d getRek(wektor3i poz);
     ///
@@ -69,7 +69,7 @@ public:
     /// \param a - index X
     /// \param b - index Y
     /// \param c - index Z
-    /// \return
+    /// \return wektor3d
     ///
     wektor3d getRek(int a,int b, int c);
     ///
@@ -119,74 +119,74 @@ public:
     wektor3d getStart(){return start3d;}
     ///
     /// \brief getSize
-    /// \return
+    /// \return wektor3i - rozmiar x,y,z
     ///
     wektor3i getSize(){return dim3i;}
     ///
     /// \brief size_x
-    /// \return rozmiar w kierunku x
+    /// \return int - rozmiar w kierunku x
     ///
     int size_x(){return dim3i.x;}
     ///
     /// \brief size_y
-    /// \return rozmiar w kierunku y
+    /// \return int - rozmiar w kierunku y
     ///
     int size_y(){return dim3i.y;}
     ///
     /// \brief size_z
-    /// \return rozmiar w kierunku z
+    /// \return int - rozmiar w kierunku z
     ///
     int size_z(){return dim3i.z;}
     ///
     /// \brief size
-    /// \return ilość bloków
+    /// \return int - ilość bloków
     ///
     int size(){return dim3i.x * dim3i.y * dim3i.z;}
     ///
     /// \brief getSpac
-    /// \return
+    /// \return doble - rozmiar bloku
     ///
     double getSpac(){return spacing;}
     ///
     /// \brief get_max
-    /// \return
+    /// \return wektor3d - maksymalne wartości zapisane w blokach
     ///
     wektor3d get_max(){return w_max;}
     ///
     /// \brief get_min
-    /// \return
+    /// \return wektor3d - minimalne wartości zapisane w blokach
     ///
     wektor3d get_min(){return w_min;}
     ///
     /// \brief min_max
-    /// \param min
-    /// \param max
+    /// \param min - modyfikowany wartoscia min
+    /// \param max - modyfikowany wartoscia max
     ///
     void min_max(wektor3d &min, wektor3d &max);
     ///
-    /// \brief min_max
+    /// \brief min_max - oblicza min-max
     ///
     void min_max();
     ///
-    /// \brief reset_min_max
+    /// \brief reset_min_max - resetuje min-max
     ///
     void reset_min_max();
 
 private:
     ///
-    /// \brief cube
+    /// \brief cube - dynamiczna tablica 3-wymiarowa
     ///
     wektor3d ***cube;
     ///
-    /// \brief start3d
+    /// \brief start3d - współrzędne początku modelu
     ///
     wektor3d start3d;
     ///
-    /// \brief dim3i
+    /// \brief dim3i - rozmiar cube
     ///
     wektor3i dim3i;
     ///
-    /// \brief spacing
+    /// \brief spacing - wielkość bloku
     ///
     double spacing;
     ///
@@ -194,11 +194,11 @@ private:
     ///
     void   inicjuj(); 
     ///
-    /// \brief w_max
+    /// \brief w_max - maksymalne wartosci
     ///
     wektor3d w_max;
     ///
-    /// \brief w_min
+    /// \brief w_min - minimalne wartosci
     ///
     wektor3d w_min;
 };
