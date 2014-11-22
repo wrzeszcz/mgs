@@ -137,7 +137,9 @@ private:
     /// \brief actZapiszDane
     ///
     QAction *actZapiszDane;
-
+    ///
+    /// \brief datModel
+    ///
     DatModel *datModel;
 };
 

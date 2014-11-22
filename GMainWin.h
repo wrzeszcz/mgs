@@ -68,11 +68,11 @@ public:
     ///
     /// \brief typ wyliczeniowy ZAPIS
     ///
-    enum ZAPIS{DANE,MODEL,ZASOBY,RAPORT,SEMIVARIOGRAM};
+    enum ZAPIS{DANE = 0, MODEL,ZASOBY,RAPORT,SEMIVARIOGRAM};
     ///
     /// \brief typ wyliczeniowy dla pod-okien MDI
     ///
-    enum OKNO{TABELA,VARIOGRAM,MAPA,WIDOK,RAP};
+    enum OKNO{TABELA = 0,VARIOGRAM,MAPA,WIDOK,RAP};
 
 protected:
     ///
