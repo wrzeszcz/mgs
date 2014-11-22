@@ -20,19 +20,23 @@
 
 #include "GProSet.h"
 //--------------------------------------------------------------------
-GProSet::GProSet(QWidget *parent) :  QWidget(parent)
+GProSet::GProSet(QWidget *parent) :  QWidget(parent),
+    isInitialized(false)
 {
     ustaw = new Mset();
     createLayout();
     slotUpdateSet();
+    isInitialized = true;
 }
 //--------------------------------------------------------------------
 GProSet::GProSet(Mset  *ustawienia, QWidget *parent):
     QWidget(parent),
-    ustaw(ustawienia)
+    ustaw(ustawienia),
+    isInitialized(false)
 {
     createLayout();
     slotUpdateSet();
+    isInitialized = true;
 }
 //--------------------------------------------------------------------
 void GProSet::createLayout()
@@ -105,6 +109,15 @@ void GProSet::createLayoutModel()
     laMasa = new QLabel();
     laMasa->setAlignment(Qt::AlignRight);
 
+    buttonZatw = new QPushButton(this);
+    buttonZatw->setText(tr("ZATWIERDŹ"));
+    buttonZatw->setVisible(false);
+    connect(buttonZatw, SIGNAL(clicked()), this, SLOT(slotButtZatw()));
+    buttonAnul = new QPushButton(this);
+    buttonAnul->setText(tr("ANULUJ"));
+    buttonAnul->setVisible(false);
+    connect(buttonAnul, SIGNAL(clicked()), this, SLOT(slotButtAnul()));
+
     layoutModel = new QGridLayout();
     layoutModel->addWidget(new QLabel("BLOKI X",this),0,0);
     layoutModel->addWidget(sbDimX,0,1);
@@ -129,6 +142,9 @@ void GProSet::createLayoutModel()
     layoutModel->addWidget(new QLabel("MASA",this),10,0);
     layoutModel->addWidget(laMasa,10,1);
     layoutModel->setAlignment(Qt::AlignTop);
+
+    layoutModel->addWidget(buttonAnul,11,0);
+    layoutModel->addWidget(buttonZatw,11,1);
 }
 //--------------------------------------------------------------------
 void GProSet::createLayoutZasoby()
@@ -166,9 +182,9 @@ void GProSet::createLayoutZasoby()
 //--------------------------------------------------------------------
 void GProSet::zmiana_modelu()
 {
-    emit signalUpdateModel();
-    emit signalZasoby();
-    slotUpdateSet();
+    if(!isInitialized)return;
+    buttonAnul->setVisible(true);
+    buttonZatw->setVisible(true);
 }
 //--------------------------------------------------------------------
 void GProSet::slotCutOff(double d)
@@ -184,50 +200,70 @@ void GProSet::slotModel()
 //--------------------------------------------------------------------
 void GProSet::slotDimX(int i)
 {
-    ustaw->grid.x=i;
-    zmiana_modelu();
+    if(ustaw->grid.x!=i) zmiana_modelu();
 }
 
 void GProSet::slotDimY(int i)
 {
-    ustaw->grid.y=i;
-    zmiana_modelu();
+    if(ustaw->grid.y!=i) zmiana_modelu();
 }
 
 void GProSet::slotDimZ(int i)
 {
-    ustaw->grid.z=i;
-    zmiana_modelu();
+    if(ustaw->grid.z!=i) zmiana_modelu();
 }
 
 void GProSet::slotDimS(double d)
 {
-    ustaw->sp=d;
-    zmiana_modelu();
+    if (ustaw->sp!=d) zmiana_modelu();
 }
 
 void GProSet::slotPoczX(double d)
 {
-    ustaw->start.x=d;
-    zmiana_modelu();
+    if (ustaw->start.x!=d) zmiana_modelu();
 }
 
 void GProSet::slotPoczY(double d)
 {
-    ustaw->start.y=d;
-    zmiana_modelu();
+   if( ustaw->start.y!=d ) zmiana_modelu();
 }
 
 void GProSet::slotPoczZ(double d)
 {
-    ustaw->start.z=d;
-    zmiana_modelu();
+   if( ustaw->start.z!=d ) zmiana_modelu();
 }
 
 void GProSet::slotGestosc(double d)
 {
     ustaw->gestosc=d;
     emit signalZasoby();
+    slotUpdateSet();
+}
+
+void GProSet::slotButtZatw()
+{
+    buttonZatw->setVisible(false);
+    buttonAnul->setVisible(false);
+
+    ustaw->grid.x = sbDimX->value();
+    ustaw->grid.y = sbDimY->value();
+    ustaw->grid.z = sbDimZ->value();
+
+    ustaw->sp = sbSpac->value();
+
+    ustaw->start.x = sbPoczX->value();
+    ustaw->start.y = sbPoczY->value();
+    ustaw->start.z = sbPoczZ->value();
+
+    emit signalUpdateModel();
+    emit signalZasoby();
+    slotUpdateSet();
+}
+
+void GProSet::slotButtAnul()
+{
+    buttonAnul->setVisible(false);
+    buttonZatw->setVisible(false);
     slotUpdateSet();
 }
 
@@ -240,6 +276,7 @@ void GProSet::slotUpdateSet()
     sbPoczX->setValue(ustaw->start.x);
     sbPoczY->setValue(ustaw->start.y);
     sbPoczZ->setValue(ustaw->start.z);
+
     laBloki->setText(QString::number(policzBloki()));
     laObjetosc->setText(QString::number(policzObjet(policzBloki())));
     sbGestosc->setValue(ustaw->gestosc);
@@ -258,4 +295,11 @@ void GProSet::setZasoby(wektor3d z)
     laZasobyBloki->setText(QString::number(zasoby3d.y));
     laZasobyObjetosc->setText(QString::number(policzObjet(zasoby3d.y)));
     laZasobyMasa->setText(QString::number(policz_masa(zasoby3d.y)));
+}
+
+void GProSet::updateView()
+{
+    isInitialized=false;
+    slotUpdateSet();
+    isInitialized=true;
 }

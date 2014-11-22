@@ -105,6 +105,7 @@ void GMainWin::createDockWin()
     addDockWidget(Qt::LeftDockWidgetArea, dockSet);
     connect(proSet,SIGNAL(signalZasoby()),this,SLOT(slot_zasoby()));
     connect(proSet,SIGNAL(signalUpdateModel()),this,SLOT(slot_reset_model()));
+    connect(proSet, SIGNAL(signalNeedRepaint()),this, SLOT(slot_repaint()));
 }
 //------------------------------------------------------------------------------
 void GMainWin::createActions()
@@ -331,7 +332,7 @@ void GMainWin::updateMenus()
 //------------------------------------------------------------------------------
 void GMainWin::readSettings()
 {
-    QSettings settings("Marek Wrzeszcz", "MGeoStat");
+    QSettings settings("Marek Wrzeszcz", "MGS");
     settings.beginGroup("GMainWindow");
         resize(settings.value("size", QSize(400, 400)).toSize());
         move(settings.value("pos", QPoint(200, 200)).toPoint());
@@ -340,7 +341,7 @@ void GMainWin::readSettings()
 //------------------------------------------------------------------------------
 void GMainWin::writeSettings()
 {
-    QSettings settings("Marek Wrzeszcz", "MGeoStat");
+    QSettings settings("Marek Wrzeszcz", "MGS");
     settings.beginGroup("GMainWindow");
          settings.setValue("size", size());
          settings.setValue("pos", pos());
@@ -401,10 +402,11 @@ void GMainWin::slot_open_win(QString s)
     else
     {
        if(s=="WIDOK 3D") otworz(WIDOK);
-       if(s=="MAPA") otworz(MAPA);
-       if(s=="DANE") otworz(TABELA);
-       if(s=="VARIOGRAM") otworz(VARIOGRAM);
-       if(s=="RAPORT") otworz(RAP);
+       else if(s=="MAPA") otworz(MAPA);
+       else if(s=="DANE") otworz(TABELA);
+       else if(s=="VARIOGRAM") otworz(VARIOGRAM);
+       else if(s=="RAPORT") otworz(RAP);
+       else return;
     }
 }
 //------------------------------------------------------------------------------
@@ -468,7 +470,8 @@ void GMainWin::slot_wczytaj_dane()
     {
         QMessageBox::information(this,"WYBRAŁEŚ",fileName);
         curModel->wczytaj_dane(fileName.toStdString(),"\t");
-        proSet->slotUpdateSet();
+        //proSet->slotUpdateSet();
+        proSet->updateView();
         emit signal_zmiana_danych();
     }
 }

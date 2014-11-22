@@ -5,8 +5,11 @@ var classGProSet =
     [ "setUstaw", "d1/d17/classGProSet.html#aef05a4199542b1c409bd1ffb31924dbb", null ],
     [ "setZasoby", "d1/d17/classGProSet.html#afd0bdcb8854eaaee638575a49ae2ac95", null ],
     [ "signalInterpol", "d1/d17/classGProSet.html#a19d0bf5aad92ed5d5234bffc86b86b58", null ],
+    [ "signalNeedRepaint", "d1/d17/classGProSet.html#a03fd8bc7fd5b1ac8444505b47a715e3a", null ],
     [ "signalUpdateModel", "d1/d17/classGProSet.html#a9277c75a806707971fe0cbcb540cc5b6", null ],
     [ "signalZasoby", "d1/d17/classGProSet.html#af81b8dc0c0ad19e4cfba75f2e55759b4", null ],
+    [ "slotButtAnul", "d1/d17/classGProSet.html#ac8a87488e24e0e0d3faa1ee19eb079aa", null ],
+    [ "slotButtZatw", "d1/d17/classGProSet.html#a56cad1ac79b380a9edab07d0add21035", null ],
     [ "slotCutOff", "d1/d17/classGProSet.html#a927acc4dc926bfa1495e2d1b187dcaa5", null ],
     [ "slotDimS", "d1/d17/classGProSet.html#a0d881169df3ee85c434132fcfb5d9d8c", null ],
     [ "slotDimX", "d1/d17/classGProSet.html#a20c3863f6cae653398838afa6b6d09cc", null ],
@@ -17,5 +20,6 @@ var classGProSet =
     [ "slotPoczX", "d1/d17/classGProSet.html#af9ae49964b6b8356cbbd5dba6b9b7058", null ],
     [ "slotPoczY", "d1/d17/classGProSet.html#acbdd352e0a5992fabe6df6b486cdff8c", null ],
     [ "slotPoczZ", "d1/d17/classGProSet.html#ae339939e6e474975b84f1f341430730c", null ],
-    [ "slotUpdateSet", "d1/d17/classGProSet.html#a2f45f6e05c35adf642ea05a20dcfc459", null ]
+    [ "slotUpdateSet", "d1/d17/classGProSet.html#a2f45f6e05c35adf642ea05a20dcfc459", null ],
+    [ "updateView", "d1/d17/classGProSet.html#a47a978a3d6bb6a2b16b172ce947b45cf", null ]
 ];

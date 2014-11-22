@@ -7,6 +7,7 @@ var hierarchy =
     [ "geo3d", "df/d64/structgeo3d.html", null ],
     [ "GeoCube", "d0/df3/classGeoCube.html", null ],
     [ "GeoDat", "d3/dac/classGeoDat.html", null ],
+    [ "geoDataRecord", "df/dcf/globalne_8h.html#d8/d80/classgeoDataRecord", null ],
     [ "GeoKriging", "d1/d0e/classGeoKriging.html", null ],
     [ "GeoModel", "d6/d62/classGeoModel.html", null ],
     [ "GeoVariogram", "d6/d41/classGeoVariogram.html", null ],
@@ -62,7 +63,9 @@ var hierarchy =
     [ "W3d_comp_y", "d6/d0e/structW3d__comp__y.html", null ],
     [ "W3d_comp_z", "d7/da5/structW3d__comp__z.html", null ],
     [ "W3d_odl", "d8/dc8/structW3d__odl.html", null ],
-    [ "wektor3d", "dc/d07/classwektor3d.html", null ],
+    [ "wektor3d", "dc/d07/classwektor3d.html", [
+      [ "geoWektor3d", "de/d69/classgeoWektor3d.html", null ]
+    ] ],
     [ "wektor3i", "d1/de1/structwektor3i.html", null ],
     [ "Win2cube", "d7/d7a/structWin2cube.html", null ]
 ];

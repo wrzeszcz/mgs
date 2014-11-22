@@ -2,6 +2,7 @@ var classwektor3d =
 [
     [ "wektor3d", "dc/d07/classwektor3d.html#ae2f94c04ec659ad46f75b3751aeed6a8", null ],
     [ "wektor3d", "dc/d07/classwektor3d.html#a07a58a25f68842938bc4acb48a010417", null ],
+    [ "~wektor3d", "dc/d07/classwektor3d.html#ac33532a8ef808512218d523c1934f93f", null ],
     [ "operator*", "dc/d07/classwektor3d.html#aa7b1f06d28bba8a8592987f90d049014", null ],
     [ "operator+", "dc/d07/classwektor3d.html#ad75af77c5488b7e5999551f954df9d16", null ],
     [ "operator-", "dc/d07/classwektor3d.html#a84ad2c81fcc311d79387f5b004865d74", null ],

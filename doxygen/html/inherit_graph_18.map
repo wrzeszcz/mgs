@@ -1,4 +1,5 @@
 <map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
-<area shape="rect" id="node3" href="$d3/d4d/classGProAnaliza.html" title="The GProAnaliza class. " alt="" coords="124,5,217,35"/>
-<area shape="rect" id="node5" href="$db/deb/classGProDialog.html" title="Klasa GProDialog. " alt="" coords="127,59,215,88"/>
+<area shape="rect" id="node2" href="$d4/dc5/classGLWidget.html" title="The GLWidget class. " alt="" coords="144,31,224,57"/>
+<area shape="rect" id="node3" href="$dd/d6e/classGLWidget2D.html" title="The GLWidget2D class. " alt="" coords="272,5,369,32"/>
+<area shape="rect" id="node4" href="$d1/d2f/classGLWidget3D.html" title="The GLWidget3D class. " alt="" coords="272,56,369,83"/>
 </map>

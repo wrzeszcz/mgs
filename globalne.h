@@ -110,6 +110,10 @@ public:
     ///
     wektor3d(double xx, double yy, double zz): x(xx), y(yy), z(zz){}
     ///
+    /// \brief ~wektor3d
+    ///
+    virtual ~wektor3d(){}
+    ///
     /// \brief operator +
     /// \param d
     /// \return
@@ -217,6 +221,20 @@ inline istream& operator >> (istream& is, wektor3i& d)
     if(!is) return is;
     return is;
 }
+//------------------------------------------------------------------------------
+class geoDataRecord
+{
+
+};
+
+class geoWektor3d : public wektor3d
+{
+protected:
+    geoDataRecord *data;
+public:
+    void setData(geoDataRecord *d){data = d;}
+    geoDataRecord* getData()const {return data;}
+};
 //------------------------------------------------------------------------------
 ///
 /// \brief The Odl struct

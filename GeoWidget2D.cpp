@@ -92,9 +92,9 @@ void GeoWidget2D::slotZasoby(int i)
 //------------------------------------------------------------------------------
 void GeoWidget2D::slot_zoom_fit()
 {
-    wiev2d->set_scale(0.9);
-    wiev2d->set_dx(0.0);
-    wiev2d->set_dy(0.0);
+    wiev2d->set_scale(0.9f);
+    wiev2d->set_dx(0.0f);
+    wiev2d->set_dy(0.0f);
     wiev2d->repaint();
 }
 //------------------------------------------------------------------------------

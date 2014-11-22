@@ -60,6 +60,8 @@ public:
     ///
     void setZasoby(wektor3d z);
 
+    void updateView();
+
 signals:
     ///
     /// \brief signalZasoby
@@ -72,7 +74,11 @@ signals:
     ///
     /// \brief signalUpdateModel
     ///
-    void signalUpdateModel();
+    void signalUpdateModel();  
+    ///
+    /// \brief signalNeedRepaint
+    ///
+    void signalNeedRepaint();
     
 public slots:
     ///
@@ -128,6 +134,9 @@ public slots:
     /// \param d
     ///
     void slotGestosc(double d);
+
+    void slotButtZatw();
+    void slotButtAnul();
 
 private:
     ///
@@ -206,7 +215,14 @@ private:
     /// \brief sbGestosc
     ///
     QDoubleSpinBox *sbGestosc;
-
+    ///
+    /// \brief buttonZatw
+    ///
+    QPushButton* buttonZatw;
+    ///
+    /// \brief buttonAnul
+    ///
+    QPushButton* buttonAnul;
     //obiekty zasoby
     ///
     /// \brief labelCutOff
@@ -254,6 +270,10 @@ private:
     /// \brief zasoby3d
     ///
     wektor3d zasoby3d;
+    ///
+    /// \brief isInitialized
+    ///
+    bool isInitialized;
 };
 
 #endif // PROSET_H

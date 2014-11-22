@@ -22,7 +22,8 @@
 
 GLWidget::GLWidget(QWidget *parent) :
     QGLWidget(parent),
-    model(NULL)
+    model(NULL),
+    lockPaint(false)
 {
 
 }
@@ -30,9 +31,10 @@ GLWidget::GLWidget(QWidget *parent) :
 GLWidget::GLWidget(GeoModel *_model, Vset _widok, QWidget *parent):
     QGLWidget(parent),
     model(_model),
-    widok(_widok)
+    widok(_widok),
+    lockPaint(false)
 {
-    update_model();
+    this->update_model();
 }
 
 void GLWidget::update_model()
@@ -109,7 +111,7 @@ void GLWidget::paintScale(const wektor3d &mini, const wektor3d &maks, const bool
         if(!poz) v = f1*(maks.x - mini.x)+ mini.x;
         else v = f1*(maks.y - mini.y)+ mini.y;
         if(maks.x!= NULLDAT)
-            drawString(-0.3,f1,Qt::white,10, QString::number(v,'f',3));
+            drawString(-0.3f,f1,Qt::white,10, QString::number(v,'f',3));
 
         glBegin(GL_QUADS);
             glColor3f(c1.redF(),c1.greenF(),c1.blueF());
@@ -123,7 +125,7 @@ void GLWidget::paintScale(const wektor3d &mini, const wektor3d &maks, const bool
     if(!poz) v = f2*(maks.x - mini.x)+ mini.x;
     else v = f2*(maks.y - mini.y)+ mini.y;
     if(maks.x!= NULLDAT)
-        drawString(-0.3,f2,Qt::white,10, QString::number(v,'f',3));
+        drawString(-0.3f,f2,Qt::white,10, QString::number(v,'f',3));
 
     glEnd() ;
 

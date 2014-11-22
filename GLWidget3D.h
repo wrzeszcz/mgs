@@ -104,7 +104,7 @@ private:
     /// \brief paintPkt
     /// \param pkt
     ///
-    void paintPkt   (wektor3d pkt);
+    void paintPkt   (const wektor3d& pkt);
     ///
     /// \brief paintPkt
     /// \param pkt3
@@ -116,7 +116,7 @@ private:
     /// \param bok
     /// \param kolor
     ///
-    void paintBlok  (wektor3d srod, double bok, float kolor);
+    void paintBlok( const wektor3d& srod, const double& bok, const float& kolor);
     ///
     /// \brief paintAxis
     ///
@@ -128,7 +128,7 @@ private:
     /// \param c
     /// \return
     ///
-    bool test_otoczenia(int a, int b, int c);
+    bool test_otoczenia(const int& a, const int& b, const int& c);
     ///
     /// \brief zoom
     ///

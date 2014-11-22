@@ -255,7 +255,7 @@ private:
     /// \param potega
     /// \return
     ///
-    wektor3d inv_dist(const wektor3d& pkt, double promien, float potega);
+    wektor3d inv_dist(const wektor3d& pkt, double promien, double potega);
     ///
     /// \brief modset
     ///

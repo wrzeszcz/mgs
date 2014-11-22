@@ -17,7 +17,7 @@
 **  You should have received a copy of the GNU General Public License
 **  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *******************************************************************************/
-
+#include <QDebug>
 #include "GProDialog.h"
 //-----------------------------------------------------------------------------------------
 GProDialog::GProDialog(Set_interpolacja s,METODA m, QWidget *parent):   
@@ -84,6 +84,7 @@ void GProDialog::createLayoutAll()
         combo_vario->addItem("WYKŁADNICZY",EXPONENTIAL);
         combo_vario->addItem("SFERYCZNY",SPHERICAL);
         combo_vario->addItem("GAUSOWSKI",GAUSSIAN);
+        combo_vario->addItem("LINIOWY", LINEAR);
         connect(combo_vario,SIGNAL(currentIndexChanged(int)),this,SLOT(slot_vario(int)));
         layoutAll->addWidget(combo_vario,1,1);
 
@@ -193,10 +194,13 @@ void GProDialog::slot_max_otocz(int i)
 }
 //-----------------------------------------------------------------------------------------
 void GProDialog::slot_vario(int v)
-{
+{   
      if(v==0)set_in.vario=EXPONENTIAL;
      else if (v==1)set_in.vario=SPHERICAL;
-     else set_in.vario=GAUSSIAN;
+     else if (v==2) set_in.vario=GAUSSIAN;
+     else if (v==3)set_in.vario=LINEAR;
+
+     qDebug() << QString::fromStdString(set_in.toString());
 }
 //-----------------------------------------------------------------------------------------
 void  GProDialog::update_all()

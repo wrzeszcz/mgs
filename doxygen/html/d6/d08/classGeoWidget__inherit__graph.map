@@ -1,7 +1,7 @@
 <map id="GeoWidget" name="GeoWidget">
-<area shape="rect" id="node5" href="$dd/dd3/classGeoWidget2D.html" title="The GeoWidget2D class. " alt="" coords="5,160,109,189"/>
-<area shape="rect" id="node7" href="$dd/d0c/classGeoWidget3D.html" title="The GeoWidget3D class. " alt="" coords="133,160,237,189"/>
-<area shape="rect" id="node9" href="$d7/d50/classGeoWidgetDane.html" title="The GeoWidgetDane class. " alt="" coords="261,160,379,189"/>
-<area shape="rect" id="node11" href="$df/d16/classGeoWidgetRaport.html" title="The GeoWidgetRaport class. " alt="" coords="403,160,528,189"/>
-<area shape="rect" id="node13" href="$dc/d81/classGeoWidgetVariogram.html" title="The GeoWidgetVariogram class. " alt="" coords="552,160,699,189"/>
+<area shape="rect" id="node3" href="$dd/dd3/classGeoWidget2D.html" title="The GeoWidget2D class. " alt="" coords="5,155,109,181"/>
+<area shape="rect" id="node4" href="$dd/d0c/classGeoWidget3D.html" title="The GeoWidget3D class. " alt="" coords="133,155,237,181"/>
+<area shape="rect" id="node5" href="$d7/d50/classGeoWidgetDane.html" title="The GeoWidgetDane class. " alt="" coords="262,155,381,181"/>
+<area shape="rect" id="node6" href="$df/d16/classGeoWidgetRaport.html" title="The GeoWidgetRaport class. " alt="" coords="405,155,531,181"/>
+<area shape="rect" id="node7" href="$dc/d81/classGeoWidgetVariogram.html" title="The GeoWidgetVariogram class. " alt="" coords="556,155,703,181"/>
 </map>

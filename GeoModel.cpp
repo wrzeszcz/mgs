@@ -21,7 +21,7 @@
 #include "GeoModel.h"
 #include <iostream>
 //------------------------------------------------------------------------------
-GeoModel::GeoModel()
+GeoModel::GeoModel(): modset(0), dane(0), cube(0), curVariogram(0)
 {
     modset = new Mset();
     dane = new GeoDat();
@@ -31,9 +31,9 @@ GeoModel::GeoModel()
 }
 GeoModel::~GeoModel()
 {
-    delete modset;
-    delete dane;
-    delete cube;
+    if (modset) delete modset;
+    if (dane) delete dane;
+    if (cube) delete cube;
     if (curVariogram) delete curVariogram;
 }
 //------------------------------------------------------------------------------
@@ -42,17 +42,14 @@ void GeoModel::wczytaj_dane(string fileName, string sep, bool nowe, bool sred)
     if(!dane) dane = new GeoDat();
     else if (nowe) dane->usun();
 
-    wektor3d w;
-
     dane->wczytaj_plik(fileName,sep, sred);
     modset->start = dane->get_min_zakres();
-    w = dane->get_wymiary();
+    wektor3d w = dane->get_wymiary();
 
-    double d = std::max(w.x, w.y);
-    d =std::max(d, w.z);
-    double s= ceil(d/50);
+    double d = std::max(std::max(w.x, w.y), w.z);
+    double s = ceil(d/50);
 
-    modset->wym =w;
+    modset->wym = w;
     modset->name = fileName;
 
     modset->sp=s;
@@ -344,7 +341,7 @@ wektor3d GeoModel::lok2glob(wektor3d wsp)
     return wsp*modset->sp+modset->start;
 }
 //------------------------------------------------------------------------------
-wektor3d GeoModel::inv_dist(const wektor3d& pkt, double promien, float potega)
+wektor3d GeoModel::inv_dist(const wektor3d& pkt, double promien, double potega)
 {
     wektor3d x,r, wsp2;
     double val(0.0), waga(0.0), odl(0.0), suma1(0.0), suma2(0.0);
@@ -364,10 +361,8 @@ wektor3d GeoModel::inv_dist(const wektor3d& pkt, double promien, float potega)
             suma2 += waga;
         }
     }
-    if (suma2)
-    return wektor3d( suma1/suma2, 0.0, waga);
-    else
-    return wektor3d( NULLDAT, NULLDAT, NULLDAT);
+    if (suma2) return wektor3d( suma1/suma2, 0.0, waga);
+    else return wektor3d( NULLDAT, NULLDAT, NULLDAT);
 }
 //------------------------------------------------------------------------------
  void GeoModel::nowy_variogram(wektor3d ust)

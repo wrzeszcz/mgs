@@ -2,6 +2,8 @@ var globalne_8h =
 [
     [ "wektor3i", "d1/de1/structwektor3i.html", "d1/de1/structwektor3i" ],
     [ "wektor3d", "dc/d07/classwektor3d.html", "dc/d07/classwektor3d" ],
+    [ "geoDataRecord", "df/dcf/globalne_8h.html#d8/d80/classgeoDataRecord", null ],
+    [ "geoWektor3d", "de/d69/classgeoWektor3d.html", "de/d69/classgeoWektor3d" ],
     [ "Odl", "dc/dd0/structOdl.html", "dc/dd0/structOdl" ],
     [ "Odl2", "d9/d7b/structOdl2.html", "d9/d7b/structOdl2" ],
     [ "geo3d", "df/d64/structgeo3d.html", "df/d64/structgeo3d" ],

@@ -1,13 +1,13 @@
-<map id="/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h" name="/home/marek/2013.pro/2013.mgeostat/mgeostat/GMainWin.h">
-<area shape="rect" id="node21" href="$d1/d74/GProTree_8h.html" title="GProTree.h" alt="" coords="1077,117,1165,147"/>
-<area shape="rect" id="node27" href="$dc/d37/GProSet_8h.html" title="GProSet.h" alt="" coords="1189,117,1272,147"/>
-<area shape="rect" id="node45" href="$df/dcf/globalne_8h.html" title="globalne.h" alt="" coords="2357,349,2437,379"/>
-<area shape="rect" id="node53" href="$d6/dde/GeoModel_8h.html" title="GeoModel.h" alt="" coords="2417,117,2508,147"/>
-<area shape="rect" id="node76" href="$d4/d1c/GeoVariogram_8h.html" title="GeoVariogram.h" alt="" coords="2724,195,2839,224"/>
-<area shape="rect" id="node105" href="$d0/d1b/GProDialog_8h.html" title="GProDialog.h" alt="" coords="1548,117,1647,147"/>
-<area shape="rect" id="node55" href="$d5/d19/GeoCube_8h.html" title="GeoCube.h" alt="" coords="2637,272,2725,301"/>
-<area shape="rect" id="node65" href="$d1/d09/GeoKriging_8h.html" title="GeoKriging.h" alt="" coords="2240,195,2336,224"/>
-<area shape="rect" id="node78" href="$d6/d34/GeoDat_8h.html" title="GeoDat.h" alt="" coords="2851,272,2928,301"/>
-<area shape="rect" id="node98" href="$d5/d59/GeoZasoby_8h.html" title="GeoZasoby.h" alt="" coords="2413,195,2512,224"/>
-<area shape="rect" id="node68" href="$da/d96/GeoVariogramModel_8h.html" title="GeoVariogramModel.h" alt="" coords="2213,272,2363,301"/>
+<map id="/home/marek/DYPLOM/mgeostat/GMainWin.h" name="/home/marek/DYPLOM/mgeostat/GMainWin.h">
+<area shape="rect" id="node11" href="$d1/d74/GProTree_8h.html" title="GProTree.h" alt="" coords="1083,95,1173,121"/>
+<area shape="rect" id="node14" href="$dc/d37/GProSet_8h.html" title="GProSet.h" alt="" coords="1197,95,1280,121"/>
+<area shape="rect" id="node23" href="$df/dcf/globalne_8h.html" title="globalne.h" alt="" coords="2373,319,2454,345"/>
+<area shape="rect" id="node27" href="$d6/dde/GeoModel_8h.html" title="GeoModel.h" alt="" coords="2435,95,2527,121"/>
+<area shape="rect" id="node35" href="$d4/d1c/GeoVariogram_8h.html" title="GeoVariogram.h" alt="" coords="2745,169,2861,196"/>
+<area shape="rect" id="node42" href="$d0/d1b/GProDialog_8h.html" title="GProDialog.h" alt="" coords="1559,95,1659,121"/>
+<area shape="rect" id="node28" href="$d5/d19/GeoCube_8h.html" title="GeoCube.h" alt="" coords="2657,244,2745,271"/>
+<area shape="rect" id="node32" href="$d1/d09/GeoKriging_8h.html" title="GeoKriging.h" alt="" coords="2258,169,2355,196"/>
+<area shape="rect" id="node36" href="$d6/d34/GeoDat_8h.html" title="GeoDat.h" alt="" coords="2871,244,2950,271"/>
+<area shape="rect" id="node41" href="$d5/d59/GeoZasoby_8h.html" title="GeoZasoby.h" alt="" coords="2431,169,2531,196"/>
+<area shape="rect" id="node33" href="$da/d96/GeoVariogramModel_8h.html" title="GeoVariogramModel.h" alt="" coords="2231,244,2382,271"/>
 </map>

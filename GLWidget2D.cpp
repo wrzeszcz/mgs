@@ -25,8 +25,8 @@
 GLWidget2D::GLWidget2D(GeoModel *_model, Vset _widok, QWidget *parent):
     GLWidget(_model,_widok,parent), Z(0)
 {
-    scale = 0.8;
-    dx = dy = 0.0;
+    scale = 0.8f;
+    dx = dy = 0.0f;
     mouse_pos = QPoint(0,0);
     model_size = QSizeF(sett->wym.x+sett->sp,sett->wym.y+sett->sp);
     setAutoFillBackground(false);
@@ -141,7 +141,7 @@ void GLWidget2D::paint_model()
                 {
                     if (cube->getRek(a,b,Z).x > sett->cutoff)
                     {
-                        glColor3f(0.1,0.1,0.1);
+                        glColor3f(0.1f,0.1f,0.1f);
                         paintBlok(cube2w(wektor3d(a,b,0),*sett),sett->sp);
                     }
                 }

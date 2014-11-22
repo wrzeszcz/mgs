@@ -81,6 +81,9 @@ public:
     ///
     virtual void set_rot(float x, float y, float z);
 
+    void setLockPaint(bool b){lockPaint=b;}
+    bool getLockPaint() const{return lockPaint;}
+
 protected:
     ///
     /// \brief initializeGL
@@ -244,6 +247,10 @@ protected:
     /// \brief model_size
     ///
     QSizeF  model_size;
+    ///
+    /// \brief lockPaint
+    ///
+    bool lockPaint;
 };
 
 #endif // GLWIDGET_H

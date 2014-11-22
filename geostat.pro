@@ -25,6 +25,9 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = MGS
 TEMPLATE = app
 
+win32:INCLUDEPATH += D:/boost_1_57_0
+unix:LIBS += -L/usr/local/lib -lGLU
+
 SOURCES += main.cpp\
     GProSet.cpp \
     GProTree.cpp \
@@ -83,7 +86,7 @@ RC_FILE = geostat.txt
 RESOURCES += \
     geostat.qrc
 
-LIBS += -L/usr/local/lib -lGLU
+
 
 
 

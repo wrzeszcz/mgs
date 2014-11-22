@@ -1,9 +1,9 @@
-<map id="/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoZasoby.h" name="/home/marek/2013.pro/2013.mgeostat/mgeostat/GeoZasoby.h">
-<area shape="rect" id="node3" href="$d6/dde/GeoModel_8h.html" title="GeoModel.h" alt="" coords="663,117,753,147"/>
-<area shape="rect" id="node15" href="$df/dcf/globalne_8h.html" title="globalne.h" alt="" coords="624,349,704,379"/>
-<area shape="rect" id="node5" href="$d5/d19/GeoCube_8h.html" title="GeoCube.h" alt="" coords="899,272,987,301"/>
-<area shape="rect" id="node22" href="$d1/d09/GeoKriging_8h.html" title="GeoKriging.h" alt="" coords="589,195,685,224"/>
-<area shape="rect" id="node33" href="$d4/d1c/GeoVariogram_8h.html" title="GeoVariogram.h" alt="" coords="279,195,393,224"/>
-<area shape="rect" id="node35" href="$d6/d34/GeoDat_8h.html" title="GeoDat.h" alt="" coords="120,272,197,301"/>
-<area shape="rect" id="node25" href="$da/d96/GeoVariogramModel_8h.html" title="GeoVariogramModel.h" alt="" coords="675,272,824,301"/>
+<map id="/home/marek/DYPLOM/mgeostat/GeoZasoby.h" name="/home/marek/DYPLOM/mgeostat/GeoZasoby.h">
+<area shape="rect" id="node2" href="$d6/dde/GeoModel_8h.html" title="GeoModel.h" alt="" coords="666,95,758,121"/>
+<area shape="rect" id="node8" href="$df/dcf/globalne_8h.html" title="globalne.h" alt="" coords="629,319,710,345"/>
+<area shape="rect" id="node3" href="$d5/d19/GeoCube_8h.html" title="GeoCube.h" alt="" coords="905,244,993,271"/>
+<area shape="rect" id="node11" href="$d1/d09/GeoKriging_8h.html" title="GeoKriging.h" alt="" coords="593,169,690,196"/>
+<area shape="rect" id="node14" href="$d4/d1c/GeoVariogram_8h.html" title="GeoVariogram.h" alt="" coords="282,169,398,196"/>
+<area shape="rect" id="node15" href="$d6/d34/GeoDat_8h.html" title="GeoDat.h" alt="" coords="122,244,201,271"/>
+<area shape="rect" id="node12" href="$da/d96/GeoVariogramModel_8h.html" title="GeoVariogramModel.h" alt="" coords="679,244,830,271"/>
 </map>

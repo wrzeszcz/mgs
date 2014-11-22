@@ -31,6 +31,7 @@ GLWidget3D::GLWidget3D(GeoModel *_model, Vset _widok, QWidget *parent):
     mouse_pos = QPoint(0,0);
     zoom = 90.0;
     wczytajObiekty();
+    //lockPaint = true;
 }
 //------------------------------------------------------------------------------
 GLWidget3D::~GLWidget3D()
@@ -40,12 +41,13 @@ GLWidget3D::~GLWidget3D()
 //------------------------------------------------------------------------------
 void GLWidget3D::paintGL()
 {
+    if(lockPaint) return;
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
 
     int side = qMax(win_size.width(),win_size.height());
-    int dal = qMax(sett->wym.x, sett->wym.y);
+    int dal  = qMax(sett->wym.x, sett->wym.y);
 
     glViewport( (win_size.width() - side) / 2,
                 (win_size.height() - side) / 2, side, side );
@@ -129,23 +131,25 @@ void GLWidget3D::wczytajObiekty()
 //------------------------------------------------------------------------------
 void GLWidget3D::paint_model()
 {
+    wektor3d pkt;
+
     for(int a=0; a<cube->getSize().x;++a)
         for(int b=0; b<cube->getSize().y;++b)
             for(int c=0; c<cube->getSize().z;++c)
             {
-
+                pkt = cube2w(wektor3d(a,b,c),*sett);
                 if(widok.wezel)
                 {
                     glColor3f(1.0,0.0,0.0);
                     glPointSize(2.5);
-                    paintPkt(cube2w(wektor3d(a,b,c),*sett));
+                    paintPkt(pkt);
                 }
                 if(widok.siatka)
                 {
                     glPolygonMode(GL_FRONT_AND_BACK,GL_LINE);
                     glColor3f(0.5,0.5,0.5);
                     glLineWidth(0.5);
-                    paintBlok(cube2w(wektor3d(a,b,c),*sett),sett->sp,-1.0);
+                    paintBlok(pkt,sett->sp,-1.0);
                 }
                 if(widok.zasoby && c<=z)
                 {
@@ -155,11 +159,11 @@ void GLWidget3D::paint_model()
                         glPolygonOffset(-1.0,-1.0);
                         glColor3f(0.0f,0.5f,0.5f);
                         glEnable(GL_POLYGON_OFFSET_LINE);
-                        paintBlok(cube2w(wektor3d(a,b,c),*sett),sett->sp,cube->getRek(a,b,c).x);
+                        paintBlok(pkt,sett->sp,cube->getRek(a,b,c).x);
                         glPolygonMode(GL_FRONT_AND_BACK,GL_LINE);
                         glColor3f(0,0.5,0.5);
                         glLineWidth(1.0f);
-                        paintBlok(cube2w(wektor3d(a,b,c),*sett),sett->sp,-1);
+                        paintBlok(pkt,sett->sp,-1);
                         glDisable(GL_POLYGON_OFFSET_LINE);
                     }
                 }
@@ -221,7 +225,7 @@ void GLWidget3D::paint_zakres()
     glEnd();
 }
 //------------------------------------------------------------------------------
-void GLWidget3D::paintPkt(wektor3d pkt)
+void GLWidget3D::paintPkt(const wektor3d &pkt)
 {
     glBegin(GL_POINTS);
     glVertex3f(pkt.x,pkt.y,pkt.z);
@@ -239,7 +243,7 @@ void GLWidget3D::paintPkt(std::vector<wektor3d> &pkt3)
     glEnd() ;
 }
 //------------------------------------------------------------------------------
-void GLWidget3D::paintBlok(wektor3d srod, double bok, float color)
+void GLWidget3D::paintBlok(const wektor3d &srod, const double &bok, const float &color)
 {
     if(color>=0)
     {
@@ -316,7 +320,7 @@ void GLWidget3D::paintAxis()
     glPopMatrix();
 }
 //------------------------------------------------------------------------------
-bool GLWidget3D::test_otoczenia(int a, int b, int c)
+bool GLWidget3D::test_otoczenia(const int &a, const int &b, const int &c)
 {
     if (a==0 || b==0 || c==0) return true;
 

@@ -1,11 +1,11 @@
 <map id="GLWidget3D" name="GLWidget3D">
-<area shape="rect" id="node2" href="$d4/dc5/classGLWidget.html" title="The GLWidget class. " alt="" coords="336,267,416,296"/>
-<area shape="rect" id="node6" href="$dc/d07/classwektor3d.html" title="The wektor3d class. " alt="" coords="124,5,199,35"/>
-<area shape="rect" id="node8" href="$de/def/structMset.html" title="The Mset struct. " alt="" coords="221,171,272,200"/>
-<area shape="rect" id="node11" href="$d1/de1/structwektor3i.html" title="The wektor3i struct. " alt="" coords="239,5,308,35"/>
-<area shape="rect" id="node13" href="$d3/dc6/classGradient.html" title="Klasa Gradient oblicza skalę barw dla przedziału 0.0&#45;1.0. " alt="" coords="296,171,365,200"/>
-<area shape="rect" id="node15" href="$d3/dac/classGeoDat.html" title="The GeoDat class. " alt="" coords="389,171,456,200"/>
-<area shape="rect" id="node17" href="$da/d07/structVset.html" title="The Vset struct. " alt="" coords="480,171,528,200"/>
-<area shape="rect" id="node19" href="$d6/d62/classGeoModel.html" title="The GeoModel class. " alt="" coords="552,171,632,200"/>
-<area shape="rect" id="node21" href="$d0/df3/classGeoCube.html" title="Klasa GeoCube. " alt="" coords="656,171,733,200"/>
+<area shape="rect" id="node2" href="$d4/dc5/classGLWidget.html" title="The GLWidget class. " alt="" coords="339,243,419,269"/>
+<area shape="rect" id="node4" href="$dc/d07/classwektor3d.html" title="The wektor3d class. " alt="" coords="123,5,197,32"/>
+<area shape="rect" id="node5" href="$de/def/structMset.html" title="The Mset struct. " alt="" coords="221,153,272,180"/>
+<area shape="rect" id="node6" href="$d1/de1/structwektor3i.html" title="The wektor3i struct. " alt="" coords="238,5,309,32"/>
+<area shape="rect" id="node7" href="$d3/dc6/classGradient.html" title="Klasa Gradient oblicza skalę barw dla przedziału 0.0&#45;1.0. " alt="" coords="297,153,367,180"/>
+<area shape="rect" id="node8" href="$d3/dac/classGeoDat.html" title="The GeoDat class. " alt="" coords="392,153,459,180"/>
+<area shape="rect" id="node9" href="$da/d07/structVset.html" title="The Vset struct. " alt="" coords="483,153,533,180"/>
+<area shape="rect" id="node10" href="$d6/d62/classGeoModel.html" title="The GeoModel class. " alt="" coords="557,153,638,180"/>
+<area shape="rect" id="node11" href="$d0/df3/classGeoCube.html" title="Klasa GeoCube. " alt="" coords="663,153,740,180"/>
 </map>
