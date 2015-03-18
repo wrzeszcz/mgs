@@ -107,7 +107,7 @@ public:
     void wypiszGlo(ostream& os, std::string sep = "\t");
     ///
     /// \brief wypiszGlo - zapisuje do vec współrzedne punktów owartosci wiekszej niz limit przesyniete o -ofset
-    /// \param vec - vektor
+    /// \param vec - vektor (dodaje do vektora ! nie czysci)
     /// \param limit - wartosc graniczna
     /// \param ofset - przesuniecie współrzednych
     ///
@@ -144,7 +144,7 @@ public:
     int size(){return dim3i.x * dim3i.y * dim3i.z;}
     ///
     /// \brief getSpac
-    /// \return doble - rozmiar bloku
+    /// \return double - rozmiar bloku
     ///
     double getSpac(){return spacing;}
     ///
@@ -190,7 +190,7 @@ private:
     ///
     double spacing;
     ///
-    /// \brief inicjuj
+    /// \brief inicjuj - alokacja pamięci
     ///
     void   inicjuj(); 
     ///

@@ -262,6 +262,11 @@ bool GeoDat::wypisz_plik (string fileName, string sep)
     return true;
 }
 //------------------------------------------------------------------------------
+int GeoDat::polacz(const GeoDat &tab2, int od_poz)
+{
+
+}
+//------------------------------------------------------------------------------
 int GeoDat::dolacz(GeoDat& tab2, bool nadpisz)
 {
     GeoMapa::iterator git;

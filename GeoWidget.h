@@ -39,7 +39,7 @@ public:
     GeoWidget(QWidget *parent = 0);
     ///
     /// \brief GeoWidget
-    /// \param ptrModel
+    /// \param ptrModel - wskażnik na model
     /// \param parent
     ///
     GeoWidget(GeoModel *ptrModel, QWidget *parent = 0);

@@ -33,122 +33,122 @@
 
 using namespace std;
 ///
-/// \brief GeoMapa
+/// \brief GeoMapa - struktura danych
 ///
 typedef map<wektor3d,wektor3d> GeoMapa;
 ///
-/// \brief The GeoDat class
+/// \brief The GeoDat class - dane
 ///
 class GeoDat
 {
 public:
     ///
-    /// \brief GeoDat
+    /// \brief GeoDat - konstruktor
     ///
     GeoDat();
     ~GeoDat();
     ///
-    /// \brief dodaj_rek
+    /// \brief dodaj_rek - dodaje rekord geo3d (wsp, dane)
     /// \param rek
-    /// \param nadpisz
+    /// \param nadpisz - bool - czy nadpisać jeśli dane o takich samych wspólrzednych istnieją
     ///
     void dodaj_rek (geo3d rek,bool nadpisz);
     ///
     /// \brief dodaj_rek
-    /// \param wsp
-    /// \param geoval
-    /// \param nadpisz
+    /// \param wsp - wektor współrzednych
+    /// \param geoval - wektor danych
+    /// \param nadpisz - bool - czy nadpisać jeśli dane o takich samych wspólrzednych istnieją
     ///
     void dodaj_rek (wektor3d wsp, wektor3d geoval, bool nadpisz);
     ///
     /// \brief dodaj_rek
-    /// \param linia
-    /// \param sep
-    /// \param nadpisz
+    /// \param linia - strig z danymi
+    /// \param sep - separator danych
+    /// \param nadpisz - bool - czy nadpisać jeśli dane o takich samych wspólrzednych istnieją
     ///
     void dodaj_rek (string linia, string sep, bool nadpisz);
     ///
-    /// \brief usun
-    /// \param wsp
+    /// \brief usun - usuwa
+    /// \param wsp - wspólrzedny danych do usuniecia
     ///
     void usun (wektor3d wsp);
     ///
-    /// \brief usun
+    /// \brief usun - czyści i resetuje dane
     ///
     void usun ();
     ///
-    /// \brief get_rek
-    /// \param nr
-    /// \return
+    /// \brief get_rek - zwraca rekord o danym indexie
+    /// \param nr - kolejny index
+    /// \return - geo3d
     ///
     geo3d getRek(unsigned int nr);
     ///
-    /// \brief get_rek
-    /// \param wsp
-    /// \return
+    /// \brief get_rek - zwraca rekord o danych współrzednych
+    /// \param wsp - wspołrzedne
+    /// \return - geo3d
     ///
     geo3d get_rek(wektor3d wsp);
     ///
-    /// \brief get_rek
-    /// \param git
-    /// \return
+    /// \brief get_rek - zwraca rekord dla iteratora
+    /// \param git - iterator
+    /// \return vector z danymi rekordu
     ///
     vector<double> get_rek(GeoMapa::iterator git);
     ///
-    /// \brief wypisz
-    /// \param os
-    /// \param sep
+    /// \brief wypisz - wypisuje do strumienia
+    /// \param os - referancja do strumienia
+    /// \param sep - separator
     ///
     void wypisz    (std::ostream& os, string sep="\t"); 
     ///
-    /// \brief wczytaj
-    /// \param is
+    /// \brief wczytaj - wczytuje dane ze strumienia
+    /// \param is - referencja do strumienia
     ///
     void wczytaj   (istream& is);
     ///
-    /// \brief wczytaj
-    /// \param is
-    /// \param sep
-    /// \param sred
+    /// \brief wczytaj - wczytuje dane ze strumienia
+    /// \param is - referencja do strumienia
+    /// \param sep - separator
+    /// \param sred - bool - czy usreniać dane dla zdublowanych współrzednych
     ///
     void wczytaj   (istream& is, string sep="\t", bool sred=true);
     ///
-    /// \brief wypisz_xyz
-    /// \param os
-    /// \param sep
+    /// \brief wypisz_xyz - wypisuje współrzedne do strumienia
+    /// \param os - referancja do strumienia
+    /// \param sep - separator
     ///
     void wypisz_xyz(ostream& os, string sep="\t");
     ///
-    /// \brief wypisz_xyz
-    /// \param vec
-    /// \param ofs
+    /// \brief wypisz_xyz - wypisuje współrzedne vekctora
+    /// \param vec - referencja do vectora
+    /// \param ofs - wektor przesuniecia
     ///
     void wypisz_xyz(vector<wektor3d> &vec, wektor3d ofs);
     ///
-    /// \brief wypisz_dat
+    /// \brief wypisz_dat - wypisuje dane do vekctora
     /// \param vec
     ///
     void wypisz_dat(vector<geo3d> &vec);
     ///
-    /// \brief wypisz_dat
+    /// \brief wypisz_dat - wypisuje dane w otoczeniu punktu do vekctora
     /// \param vec
-    /// \param centr
-    /// \param r
+    /// \param centr - punkt centralny
+    /// \param r - promień
     ///
     void wypisz_dat(vector<geo3d> &vec, wektor3d centr, double r);
     ///
-    /// \brief wczytaj_plik
-    /// \param fileName
-    /// \param sep
-    /// \param sred
-    /// \return
+    /// \brief wczytaj_plik - wczytuje dane z pliku
+    /// \param fileName - nazwa
+    /// \param sep - separatory
+    /// \param sred - czy usreniać dane dla zdublowanych współrzednych
+    /// \return true jeśli sukces
     ///
     bool wczytaj_plik(string fileName, string sep="\t", bool sred=true);
     ///
-    /// \brief wypisz_plik
-    /// \param fileName
-    /// \param sep
-    /// \return
+    /// \brief wypisz_plik - zapisuje dane do pliku
+    /// \param fileName - nazwa
+    /// \param sep - separator
+    /// \return true jeśli sukces
     ///
     bool wypisz_plik (string fileName, string sep="\t");
     ///
@@ -159,109 +159,109 @@ public:
     ///
     int polacz(const GeoDat& tab2, int  od_poz);
     ///
-    /// \brief dolacz
-    /// \param tab2
-    /// \param nadpisz
+    /// \brief dolacz - kopiuje dane
+    /// \param tab2 - GeoDad
+    /// \param nadpisz - czy napsac zadublowanie
     /// \return
     ///
     int dolacz(GeoDat& tab2, bool nadpisz);
     ///
-    /// \brief calc_min_zakres
-    /// \return
+    /// \brief calc_min_zakres - oblicza zakres współrzędnych
+    /// \return wektor z nim wartosciamy współrzędnych
     ///
     wektor3d calc_min_zakres();
     ///
-    /// \brief calc_max_zakres
-    /// \return
+    /// \brief calc_max_zakres - oblicza zakres współrzędnych
+    /// \return wektor z max wartościami współrzędnych
     ///
     wektor3d calc_max_zakres();
     ///
-    /// \brief update_min_max
+    /// \brief update_min_max - aktualizacja
     ///
     void update_min_max();
     ///
     /// \brief get_min_zakres
-    /// \return
+    /// \return wektor z min wartościami współrzędnych
     ///
     wektor3d get_min_zakres(){return min_zakres;}
     ///
     /// \brief get_max_zakres
-    /// \return
+    /// \return wektor z max wartościami współrzednych
     ///
     wektor3d get_max_zakres(){return max_zakres;}
     ///
     /// \brief get_min_value
-    /// \return
+    /// \return wektor z min wartościami danych
     ///
     wektor3d get_min_value(){return min_value;}
     ///
     /// \brief get_max_value
-    /// \return
+    /// \return wektor z max wartościami danych
     ///
     wektor3d get_max_value(){return max_value;}
     ///
     /// \brief get_srodek
-    /// \return
+    /// \return współrzedne pkt centalnego bloku danych
     ///
     wektor3d get_srodek();
     ///
     /// \brief get_srodek_A
-    /// \return
+    /// \return współrzedne pkt centalnego bloku danych przesuniete o wektor poczatkowy
     ///
     wektor3d get_srodek_A();
     ///
     /// \brief get_wymiary
-    /// \return
+    /// \return wymiary bloku danych
     ///
     wektor3d get_wymiary();
     ///
     /// \brief get_size
-    /// \return
+    /// \return liczebność
     ///
     int get_size()const{return geoMap.size();}
     ///
     /// \brief get_begin
-    /// \return
+    /// \return iterator
     ///
     GeoMapa::iterator get_begin(){return geoMap.begin();}
     ///
     /// \brief get_end
-    /// \return
+    /// \return iterator
     ///
     GeoMapa::iterator get_end(){return geoMap.end();}
 private:
     ///
-    /// \brief min_zakres
+    /// \brief min_zakres - wektor najmniejszych wartosci współrzęnych odpowiednio x,y,z
     ///
     wektor3d min_zakres;
     ///
-    /// \brief max_zakres
+    /// \brief max_zakres - wektor największych wartosci współrzęnych odpowiednio x,y,z
     ///
     wektor3d max_zakres;
     ///
-    /// \brief min_value
+    /// \brief min_value - wektor najmniejszych wartosci danych odpowiednio x,y,z
     ///
     wektor3d min_value;
     ///
-    /// \brief max_value
+    /// \brief max_value - wektor najwiekszych wartosci danych odpowiednio x,y,z
     ///
     wektor3d max_value;
     ///
-    /// \brief geoMap
+    /// \brief geoMap - mapa
     ///
     GeoMapa geoMap;
     ///
-    /// \brief it
+    /// \brief it - iterator
     ///
     GeoMapa::iterator it;
     ///
-    /// \brief dist
+    /// \brief dist - obiket funkcyjny () oblicza odległość
     ///
     Odl dist;
     ///
     /// \brief str2double
-    /// \param s
-    /// \return
+    /// \param s - anpis
+    /// \return double
     ///
     double str2double(string s)
      {
