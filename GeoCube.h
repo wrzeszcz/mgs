@@ -29,7 +29,7 @@
 
 using namespace std;
 ///
-/// \brief Klasa GeoCube
+/// \brief Klasa GeoCube - dane modelu
 ///
 class GeoCube
 {
@@ -74,21 +74,21 @@ public:
     wektor3d getRek(int a,int b, int c);
     ///
     /// \brief setRekLok - ustawia wartość bloku lokalnie
-    /// \param poz - wektor okreslajacy pozycje
+    /// \param poz - wektor okreslajacy index tablicy trójwumiarowej (0,0,0 == początek modelu)
     /// \param dane - wektor danych
     ///
     void setRekLok(wektor3i poz, wektor3d dane);
     ///
-    /// \brief setRekGlo
-    /// \param poz
-    /// \param dane
+    /// \brief setRekGlo - ustawia wartosć bloku globalnie
+    /// \param poz -  wektor okreslający globalnie współrzedne
+    /// \param dane - wektor danych
     ///
     void setRekGlo(wektor3d poz, wektor3d dane);
     ///
-    /// \brief wypiszLok
-    /// \param os
-    /// \param tylkoXYZ
-    /// \param limit
+    /// \brief wypiszLok - wypisuje dane (wsp. lokalne - indexy) do strumienia
+    /// \param os - referencja do strumienia
+    /// \param tylkoXYZ - bool - czy wypisac tylko indexy
+    /// \param limit - wypisje tylko dla wartości wiekszych niż limit (dla x w wektrorze danych)
     ///
     void wypiszLok(ostream& os, bool tylkoXYZ, double limit);
     ///
@@ -106,10 +106,10 @@ public:
     ///
     void wypiszGlo(ostream& os, std::string sep = "\t");
     ///
-    /// \brief wypiszGlo
-    /// \param vec
-    /// \param limit
-    /// \param ofset
+    /// \brief wypiszGlo - zapisuje do vec współrzedne punktów owartosci wiekszej niz limit przesyniete o -ofset
+    /// \param vec - vektor
+    /// \param limit - wartosc graniczna
+    /// \param ofset - przesuniecie współrzednych
     ///
     void wypiszGlo(vector<wektor3d> &vec, double limit, wektor3d ofset);
     ///

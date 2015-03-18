@@ -51,8 +51,8 @@ GeoWidgetDane::~GeoWidgetDane()
 //------------------------------------------------------------------------------
 void GeoWidgetDane::create_view()
 {
-    tableView = new QTableView();
-    itemModel = new QStandardItemModel();
+    tableView = new QTableView(this);
+    itemModel = new QStandardItemModel(this);
     //datModel = new DatModel(this, dane);
     QStringList labels;
     labels << "X" << "Y" << "Z" << "Par 1" << "Par 2" << "Par 3";
