@@ -63,12 +63,12 @@ void GeoCube::inicjuj()
     int a(0),b(0);
     try
     {
-    cube = new wektor3d**[dim3i.x];
-    for (a=0; a < dim3i.x; ++a)
-    {
-        cube [a] = new wektor3d*[dim3i.y];
-        for (b=0; b < dim3i.y; ++b) cube[a][b]= new wektor3d[dim3i.z];
-    }
+        cube = new wektor3d**[dim3i.x];
+        for (a=0; a < dim3i.x; ++a)
+        {
+            cube [a] = new wektor3d*[dim3i.y];
+            for (b=0; b < dim3i.y; ++b) cube[a][b]= new wektor3d[dim3i.z];
+        }
     }
     catch (std::exception &ex)
     {
@@ -98,7 +98,7 @@ void GeoCube::wypiszLok(ostream &os, bool tylkoXYZ, double limit)
     }
 }
 //------------------------------------------------------------------------------
-void GeoCube::wypiszGlo(ostream &os, bool tylkoXYZ, double limit, string sep)
+void GeoCube::wypiszGlo(ostream &os, bool tylkoXYZ, double limit, const string &sep)
 {
     os.setf(ios::fixed);
     os.precision(6);
@@ -131,7 +131,7 @@ void GeoCube::wypiszGlo(ostream &os, bool tylkoXYZ, double limit, string sep)
     }
 }
 //------------------------------------------------------------------------------
-void GeoCube::wypiszGlo(ostream &os, string sep)
+void GeoCube::wypiszGlo(ostream &os, const string &sep)
 {
     os.setf(ios::fixed);
     os.precision(6);

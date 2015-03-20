@@ -29,21 +29,21 @@
 #include <algorithm>
 
 ///
-/// \brief The GeoKriging class
+/// \brief The GeoKriging class - interpolator
 ///
 class GeoKriging
 {
 public:
     ///
-    /// \brief GeoKriging
+    /// \brief GeoKriging - konstruktor()
     ///
     GeoKriging();
     ///
-    /// \brief GeoKriging
-    /// \param vario
-    /// \param nugget
+    /// \brief GeoKriging - konstruktor
+    /// \param vario - model variogramu
+    /// \param nugget - efekt samorodka
     /// \param sill
-    /// \param range
+    /// \param range -
     /// \param minO
     /// \param maxO
     ///

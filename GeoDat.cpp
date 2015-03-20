@@ -151,7 +151,7 @@ std::vector<double> GeoDat::get_rek(GeoMapa::iterator git)
     return ret;
 }
 //--------------------------------------------------------------------
-void GeoDat::wypisz(std::ostream& os, string s)
+void GeoDat::wypisz(std::ostream& os, const string &s)
 {
     wektor3d w,d;
     os.setf(ios::fixed);
@@ -164,7 +164,7 @@ void GeoDat::wypisz(std::ostream& os, string s)
     }
 }
 //------------------------------------------------------------------------------
-void GeoDat::wypisz_xyz (std::ostream& os, string s)
+void GeoDat::wypisz_xyz (std::ostream& os, const string &s)
 {
     wektor3d w;
     os.setf(ios::fixed);
@@ -224,14 +224,14 @@ void GeoDat::wypisz_dat(std::vector<geo3d> &vec, wektor3d centr, double promien)
 //------------------------------------------------------------------------------
 void GeoDat::wczytaj(std::istream& is)
 {
-    double x(0.0),y(0.0),z(0.0),a(0.0),b(0.0),c(0.);
+    double x(0.0),y(0.0),z(0.0),a(0.0),b(0.0),c(0.0);
     while(is >> x >> y >> z >> a >> b >> c)
     {
         dodaj_rek(wektor3d(x,y,z),wektor3d(a,b,c),true);
     }
 }
 //------------------------------------------------------------------------------
-void GeoDat::wczytaj(istream& is, string s, bool sred)
+void GeoDat::wczytaj(istream& is, const string &s, bool sred)
 {
     std::string linia;
     while(!is.eof())
@@ -241,19 +241,19 @@ void GeoDat::wczytaj(istream& is, string s, bool sred)
     }
 }
 //------------------------------------------------------------------------------
-bool GeoDat::wczytaj_plik(string fileName, string sep, bool sred)
+bool GeoDat::wczytaj_plik(const string &fileName, const string &sep, bool sred)
 {
     ifstream plik(fileName.c_str()) ;
     if (plik.is_open())
     {
-        wczytaj (plik,sep,sred);
+        wczytaj (plik, sep, sred);
         plik.close();
         return true;
     }
     return false;
 }
 //------------------------------------------------------------------------------
-bool GeoDat::wypisz_plik (string fileName, string sep)
+bool GeoDat::wypisz_plik (const string &fileName, const string &sep)
 {
     ofstream plik(fileName.c_str());
     if (!plik.is_open()) return false;
@@ -262,9 +262,25 @@ bool GeoDat::wypisz_plik (string fileName, string sep)
     return true;
 }
 //------------------------------------------------------------------------------
-int GeoDat::polacz(const GeoDat &tab2, int od_poz)
+int GeoDat::polacz(GeoDat &tab2, int od_poz)
 {
-
+    GeoMapa::iterator git;
+    git = tab2.get_begin();
+    int poz = 0;
+    int ile = 0;
+    for(; git!=tab2.get_end(); ++git)
+    {
+        if(poz >= od_poz)
+        {
+           if(geoMap.find(git->first) != geoMap.end())
+           {
+               geoMap[git->first] = geoMap[git->first] + git->second;
+               ile++;
+           }
+        }
+        else poz++;
+    }
+    return ile;
 }
 //------------------------------------------------------------------------------
 int GeoDat::dolacz(GeoDat& tab2, bool nadpisz)
@@ -273,7 +289,7 @@ int GeoDat::dolacz(GeoDat& tab2, bool nadpisz)
     git = tab2.get_begin();
     for(; git!=tab2.get_end(); ++git)
         dodaj_rek(git->first,git->second,nadpisz);
-    return 0;
+    return tab2.get_size();
 }
 //------------------------------------------------------------------------------
 wektor3d GeoDat::calc_min_zakres()

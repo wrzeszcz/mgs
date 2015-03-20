@@ -49,19 +49,19 @@ public:
     ///
     /// \brief getRekLok - zwraca wartość w bloku (pozycja podana lokalnie) - po przekroczeniu zakresu zwaraca wektor(0,0,0)
     /// \param poz - index tablicy 3 wymiarowej (0,0,0 == początek modelu)
-    /// \return wektor3d
+    /// \return wektor3d - dane dla bloku
     ///
     wektor3d getRekLok(wektor3i  poz);
     ///
     /// \brief getRekGlo - zwraca wartość w bloku (pozycja podana globalnie) - po przekroczeniu zakresu zwaraca wektor(0,0,0)
-    /// \param poz - współrzedne X,Y,Z
-    /// \return wektor3d
+    /// \param poz - współrzędne X,Y,Z bloku
+    /// \return wektor3d - dane dla bloku
     ///
     wektor3d getRekGlo(wektor3d poz);
     ///
-    /// \brief getRek - jak getRekLok ale bez sprawdzania zakresu
+    /// \brief getRek - jak getRekLok, ale bez sprawdzania zakresu
     /// \param poz - index tablicy 3 wymiarowej (0,0,0 == początek modelu)
-    /// \return wektor3d
+    /// \return wektor3d - dane dla bloku
     ///
     wektor3d getRek(wektor3i poz);
     ///
@@ -69,7 +69,7 @@ public:
     /// \param a - index X
     /// \param b - index Y
     /// \param c - index Z
-    /// \return wektor3d
+    /// \return wektor3d - dane dla bloku
     ///
     wektor3d getRek(int a,int b, int c);
     ///
@@ -98,18 +98,18 @@ public:
     /// \param limit - referencja do strumienia
     /// \param sep - separator (domyślnie tabulacja)
     ///
-    void wypiszGlo(ostream& os, bool tylkoXYZ, double limit, string sep = "\t");
+    void wypiszGlo(ostream& os, bool tylkoXYZ, double limit, const std::string &sep = "\t");
     ///
     /// \brief wypiszGlo - wypisuje dane (wsp. globalne) do strumienia
     /// \param os - referencja do strumienia
     /// \param sep - separator (domyślnie tabulacja)
     ///
-    void wypiszGlo(ostream& os, std::string sep = "\t");
+    void wypiszGlo(ostream& os, const std::string &sep = "\t");
     ///
     /// \brief wypiszGlo - zapisuje do vec współrzedne punktów owartosci wiekszej niz limit przesyniete o -ofset
-    /// \param vec - vektor (dodaje do vektora ! nie czysci)
+    /// \param vec - vektor (dodaje do vektora)
     /// \param limit - wartosc graniczna
-    /// \param ofset - przesuniecie współrzednych
+    /// \param ofset - przesunięcie współrzędnych
     ///
     void wypiszGlo(vector<wektor3d> &vec, double limit, wektor3d ofset);
     ///

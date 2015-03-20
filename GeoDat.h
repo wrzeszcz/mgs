@@ -48,28 +48,28 @@ public:
     GeoDat();
     ~GeoDat();
     ///
-    /// \brief dodaj_rek - dodaje rekord geo3d (wsp, dane)
-    /// \param rek
-    /// \param nadpisz - bool - czy nadpisać jeśli dane o takich samych wspólrzednych istnieją
+    /// \brief dodaj_rek - dodaje rekord geo3d (współrzędne, dane)
+    /// \param rekord
+    /// \param nadpisz - bool - czy nadpisać jeśli dane o takich samych współrzędnych istnieją w mapie
     ///
-    void dodaj_rek (geo3d rek,bool nadpisz);
+    void dodaj_rek (geo3d rek, bool nadpisz);
     ///
     /// \brief dodaj_rek
     /// \param wsp - wektor współrzednych
     /// \param geoval - wektor danych
-    /// \param nadpisz - bool - czy nadpisać jeśli dane o takich samych wspólrzednych istnieją
+    /// \param nadpisz - bool - czy nadpisać jeśli dane o takich samych współrzędnych istnieją w mapie
     ///
     void dodaj_rek (wektor3d wsp, wektor3d geoval, bool nadpisz);
     ///
     /// \brief dodaj_rek
-    /// \param linia - strig z danymi
+    /// \param linia - napis z danymi
     /// \param sep - separator danych
-    /// \param nadpisz - bool - czy nadpisać jeśli dane o takich samych wspólrzednych istnieją
+    /// \param nadpisz - bool - czy nadpisać jeśli dane o takich samych współrzędnych istnieją w mapie
     ///
     void dodaj_rek (string linia, string sep, bool nadpisz);
     ///
     /// \brief usun - usuwa
-    /// \param wsp - wspólrzedny danych do usuniecia
+    /// \param wsp - współrzędne danych do usunięcia
     ///
     void usun (wektor3d wsp);
     ///
@@ -83,13 +83,13 @@ public:
     ///
     geo3d getRek(unsigned int nr);
     ///
-    /// \brief get_rek - zwraca rekord o danych współrzednych
+    /// \brief get_rek - zwraca rekord o danych współrzędnych
     /// \param wsp - wspołrzedne
     /// \return - geo3d
     ///
     geo3d get_rek(wektor3d wsp);
     ///
-    /// \brief get_rek - zwraca rekord dla iteratora
+    /// \brief get_rek - zwraca rekord o danym iteratorze
     /// \param git - iterator
     /// \return vector z danymi rekordu
     ///
@@ -99,25 +99,25 @@ public:
     /// \param os - referancja do strumienia
     /// \param sep - separator
     ///
-    void wypisz    (std::ostream& os, string sep="\t"); 
+    void wypisz(std::ostream& os, const string &sep="\t");
     ///
     /// \brief wczytaj - wczytuje dane ze strumienia
     /// \param is - referencja do strumienia
     ///
-    void wczytaj   (istream& is);
+    void wczytaj(istream& is);
     ///
     /// \brief wczytaj - wczytuje dane ze strumienia
     /// \param is - referencja do strumienia
     /// \param sep - separator
-    /// \param sred - bool - czy usreniać dane dla zdublowanych współrzednych
+    /// \param sred - bool - czy uśreniać dane dla zdublowanych współrzędnych
     ///
-    void wczytaj   (istream& is, string sep="\t", bool sred=true);
+    void wczytaj(istream& is, const string &sep="\t", bool sred=true);
     ///
     /// \brief wypisz_xyz - wypisuje współrzedne do strumienia
     /// \param os - referancja do strumienia
     /// \param sep - separator
     ///
-    void wypisz_xyz(ostream& os, string sep="\t");
+    void wypisz_xyz(ostream& os, const string &sep="\t");
     ///
     /// \brief wypisz_xyz - wypisuje współrzedne vekctora
     /// \param vec - referencja do vectora
@@ -125,49 +125,49 @@ public:
     ///
     void wypisz_xyz(vector<wektor3d> &vec, wektor3d ofs);
     ///
-    /// \brief wypisz_dat - wypisuje dane do vekctora
-    /// \param vec
+    /// \brief wypisz_dat - wypisuje dane do vector'a (czyści vector)
+    /// \param vector
     ///
     void wypisz_dat(vector<geo3d> &vec);
     ///
-    /// \brief wypisz_dat - wypisuje dane w otoczeniu punktu do vekctora
-    /// \param vec
+    /// \brief wypisz_dat - wypisuje dane w otoczeniu punktu do vector'a (cysci vector)
+    /// \param vector
     /// \param centr - punkt centralny
     /// \param r - promień
     ///
     void wypisz_dat(vector<geo3d> &vec, wektor3d centr, double r);
     ///
     /// \brief wczytaj_plik - wczytuje dane z pliku
-    /// \param fileName - nazwa
-    /// \param sep - separatory
+    /// \param fileName - nazwa pliku
+    /// \param sep - separator pola
     /// \param sred - czy usreniać dane dla zdublowanych współrzednych
     /// \return true jeśli sukces
     ///
-    bool wczytaj_plik(string fileName, string sep="\t", bool sred=true);
+    bool wczytaj_plik(const string &fileName, const string &sep="\t", bool sred=true);
     ///
     /// \brief wypisz_plik - zapisuje dane do pliku
     /// \param fileName - nazwa
     /// \param sep - separator
     /// \return true jeśli sukces
     ///
-    bool wypisz_plik (string fileName, string sep="\t");
+    bool wypisz_plik (const string &fileName, const string &sep="\t");
     ///
-    /// \brief polacz
-    /// \param tab2
-    /// \param od_poz
-    /// \return
+    /// \brief polacz - dodaje dane z tab2 do odpowiadających rekordów GeoDat (jeśli znajdzie klucz)
+    /// \param tab2 - GeoDat
+    /// \param od_poz - zaczyna dodawać od danej pozucji
+    /// \return ilośc zmodyfikowanych rekordów
     ///
-    int polacz(const GeoDat& tab2, int  od_poz);
+    int polacz(GeoDat& tab2, int  od_poz);
     ///
-    /// \brief dolacz - kopiuje dane
-    /// \param tab2 - GeoDad
-    /// \param nadpisz - czy napsac zadublowanie
-    /// \return
+    /// \brief dolacz - kopiuje dane do GeoDat
+    /// \param tab2 - GeoDat
+    /// \param nadpisz - czy nadpisać zadublowane dane
+    /// \return ilość rekordów dołączonych
     ///
     int dolacz(GeoDat& tab2, bool nadpisz);
     ///
     /// \brief calc_min_zakres - oblicza zakres współrzędnych
-    /// \return wektor z nim wartosciamy współrzędnych
+    /// \return wektor z minimalnymi wartościami współrzędnych
     ///
     wektor3d calc_min_zakres();
     ///
@@ -181,37 +181,37 @@ public:
     void update_min_max();
     ///
     /// \brief get_min_zakres
-    /// \return wektor z min wartościami współrzędnych
+    /// \return wektor z minimalnymi wartościami współrzędnych
     ///
     wektor3d get_min_zakres(){return min_zakres;}
     ///
     /// \brief get_max_zakres
-    /// \return wektor z max wartościami współrzednych
+    /// \return wektor z maksymalnymi wartościami współrzędnych
     ///
     wektor3d get_max_zakres(){return max_zakres;}
     ///
     /// \brief get_min_value
-    /// \return wektor z min wartościami danych
+    /// \return wektor z minimalnymi wartościami danych
     ///
     wektor3d get_min_value(){return min_value;}
     ///
     /// \brief get_max_value
-    /// \return wektor z max wartościami danych
+    /// \return wektor z maksymalnymi wartościami danych
     ///
     wektor3d get_max_value(){return max_value;}
     ///
     /// \brief get_srodek
-    /// \return współrzedne pkt centalnego bloku danych
+    /// \return współrzędne punktu centalnego bloku danych
     ///
     wektor3d get_srodek();
     ///
     /// \brief get_srodek_A
-    /// \return współrzedne pkt centalnego bloku danych przesuniete o wektor poczatkowy
+    /// \return współrzedne punktu centalnego bloku danych przesunięte o wektor początkowy
     ///
     wektor3d get_srodek_A();
     ///
     /// \brief get_wymiary
-    /// \return wymiary bloku danych
+    /// \return wymiary (rozmiar) bloku danych
     ///
     wektor3d get_wymiary();
     ///
@@ -255,7 +255,7 @@ private:
     ///
     GeoMapa::iterator it;
     ///
-    /// \brief dist - obiket funkcyjny () oblicza odległość
+    /// \brief dist - obiekt funkcyjny ( wektor3d, wektor3d ) oblicza odległość
     ///
     Odl dist;
     ///
@@ -264,13 +264,13 @@ private:
     /// \return double
     ///
     double str2double(string s)
-     {
+    {
          stringstream ss("");
          double dd;
          ss << s;
          ss >> dd;
          return dd;
-     }
+    }
 };
 
 #endif // GEODAT_H
