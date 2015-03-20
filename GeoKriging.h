@@ -42,17 +42,17 @@ public:
     /// \brief GeoKriging - konstruktor
     /// \param vario - model variogramu
     /// \param nugget - efekt samorodka
-    /// \param sill
-    /// \param range -
-    /// \param minO
-    /// \param maxO
+    /// \param sill - próg nasycenia
+    /// \param range - zasięg korelacji
+    /// \param minO - minimalna ilość danych w otoczeniu
+    /// \param maxO - maksymalna ilość danych w otoczeniu
     ///
     GeoKriging(variogram vario, double nugget, double sill, double range, int minO, int maxO);
     ///
-    /// \brief GeoKriging
-    /// \param m
-    /// \param minO
-    /// \param maxO
+    /// \brief GeoKriging - konstruktor
+    /// \param m - model semiwaruigramu
+    /// \param minO - minimalna ilość danych w otoczeniu
+    /// \param maxO - maksymalna ilość danych w otoczeniu
     ///
     GeoKriging(GeoVariogramModel &m , int minO, int maxO);
     ///
