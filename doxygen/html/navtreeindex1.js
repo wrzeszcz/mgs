@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"d4/dc5/classGLWidget.html#acedac1a5f3041d169100127f499f8bf1":[1,0,24,30],
 "d4/dc5/classGLWidget.html#ad12f23ba7f15bff12e813117c89aabbd":[1,0,24,13],
 "d4/dc5/classGLWidget.html#ad6dd10a5dbcd65a50b88fb907674ec14":[1,0,24,15],
 "d4/dc5/classGLWidget.html#ade15f01c257c904e00510bb9873baac1":[1,0,24,24],
@@ -240,6 +239,7 @@ var NAVTREEINDEX1 =
 "dd/d0c/classGeoWidget3D.html#af76b1c6ddb159041471a05c9be01e885":[1,0,18,7],
 "dd/d0c/classGeoWidget3D.html#af89be6e8bb80e016c59fb6654260e26e":[1,0,18,3],
 "dd/d0c/classGeoWidget3D.html#afcf282cb11b20f02c2da72ecae07b389":[1,0,18,15],
+"dd/d2e/md__home_marek_dev_DYPLOM_mgeostat_README.html":[0],
 "dd/d52/GLWidget_8cpp.html":[2,0,27],
 "dd/d62/classGeoDoubleSpin.html":[1,0,10],
 "dd/d62/classGeoDoubleSpin.html#a08350e6fe4e82c12fd53bf1195a8bcc7":[1,0,10,0],

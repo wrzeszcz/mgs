@@ -57,71 +57,71 @@ public:
     GeoKriging(GeoVariogramModel &m , int minO, int maxO);
     ///
     /// \brief GeoKriging
-    /// \param s
+    /// \param s - parametry interpolacji
     ///
     GeoKriging(Set_interpolacja &s);
     ///
-    /// \brief o_kriging
-    /// \param pkt
-    /// \param otoczenie
-    /// \return
+    /// \brief o_kriging - kriging zwykły
+    /// \param pkt - punkt dla którego wykonane jest obliczenie
+    /// \param otoczenie - zbiór danych w otoczeniu szukanego punktu
+    /// \return wartość interpolowana
     ///
     wektor3d o_kriging (wektor3d pkt,std::vector<geo3d> &otoczenie);
     ///
-    /// \brief set_parametry
-    /// \param vario
-    /// \param nugget
-    /// \param sill
-    /// \param range
-    /// \param minO
-    /// \param maxO
+    /// \brief set_parametry - ustawia parametru interpolacji
+    /// \param vario - typ wyliczeniowy - model semivariogramu
+    /// \param nugget - efekt samorodka
+    /// \param sill - próg nasycenia
+    /// \param range - zasięg koralaci
+    /// \param minO - minimalna ilość danych w otoczeniu
+    /// \param maxO - maksymalna ilość danych w otoczeniu
     ///
     void set_parametry(variogram vario, double nugget, double sill, double range, int minO, int maxO);
     ///
     /// \brief set_variogram
-    /// \param v
+    /// \param v - typ wyliczeniowy - model wariogramu
     ///
     void set_variogram(variogram v){cur_vario = v;}
     ///
     /// \brief set_nugget
-    /// \param n
+    /// \param n - efekt samorodka
     ///
     void set_nugget(double n){c0 = n;}
     ///
     /// \brief set_sill
-    /// \param s
+    /// \param s - próg nasycenia
     ///
     void set_sill  (double s){c1 = s;}
     ///
     /// \brief set_range
-    /// \param r
+    /// \param r - zasieg korelacji
     ///
     void set_range (double r){a = r;}
     ///
     /// \brief set_minOt
-    /// \param minO
+    /// \param minO - minimalna ilośc danych w otoczeniu
     ///
     void set_minOt(int minO){minOt = minO;}
     ///
     /// \brief set_maxOt
-    /// \param maxO
+    /// \param maxO - maksymalna ilosc danych w otoczeniu
     ///
     void set_maxOt(int maxO){maxOt = maxO;}
     ///
     /// \brief set_geoWariogramModel
-    /// \param m
+    /// \param m - model teoretyczny
     ///
     void set_geoWariogramModel(GeoVariogramModel &m){variogram_model=m;}
 private:
     ///
-    /// \brief spr_otoczenie
-    /// \param pkt
-    /// \param otoczenie
-    /// \param max
+    /// \brief spr_otoczenie - redukuje otoczenie do max liczby najbliższych punktów
+    /// \param pkt - analizowany punkt
+    /// \param otoczenie - zbiór punktów w jego otoczeniu
+    /// \param max - dopuszczona liczebność otoczenia
     ///
     void spr_otoczenie(const wektor3d &pkt,std::vector<geo3d> &otocz, int max);
     ///
-    /// \brief cur_vario
+    /// \brief cur_vario - typ modelu semivariogramu teoretycznego
     ///
     variogram cur_vario;
     ///

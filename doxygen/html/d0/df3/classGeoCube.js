@@ -21,8 +21,8 @@ var classGeoCube =
     [ "size_y", "d0/df3/classGeoCube.html#ab066d0efc769fbe8e3620d14f4f6ef19", null ],
     [ "size_z", "d0/df3/classGeoCube.html#ad0712b20bc40c6f9e9ee4e6e9052c701", null ],
     [ "wyczysc", "d0/df3/classGeoCube.html#a0181f9866cf74d00f869cf2920f40d63", null ],
-    [ "wypiszGlo", "d0/df3/classGeoCube.html#a6369fefed167152a1ef7f8a5cd0d0f40", null ],
-    [ "wypiszGlo", "d0/df3/classGeoCube.html#ae3c4b6a1f2ee8e0cc39a02650f18e97c", null ],
+    [ "wypiszGlo", "d0/df3/classGeoCube.html#acb5754a8824ad68fb23fe2b29b60fb70", null ],
+    [ "wypiszGlo", "d0/df3/classGeoCube.html#acaf14362573add6b838dfb7eb30f3643", null ],
     [ "wypiszGlo", "d0/df3/classGeoCube.html#a2e9e3526be46f92b56e5e4e7da821100", null ],
     [ "wypiszLok", "d0/df3/classGeoCube.html#a1719fe756483e3eeee78eb589f073cb1", null ]
 ];

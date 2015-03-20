@@ -1,7 +1,7 @@
 var NAVTREE =
 [
   [ "MGS", "index.html", [
-    [ "mgeostat", "d0/df4/md__home_marek_DYPLOM_mgeostat_README.html", null ],
+    [ "MGS", "dd/d2e/md__home_marek_dev_DYPLOM_mgeostat_README.html", null ],
     [ "Klasy", null, [
       [ "Lista klas", "annotated.html", "annotated" ],
       [ "Indeks klas", "classes.html", null ],
@@ -31,7 +31,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"d4/dc5/classGLWidget.html#acedac1a5f3041d169100127f499f8bf1",
+"d4/dc5/classGLWidget.html#ad12f23ba7f15bff12e813117c89aabbd",
 "dd/d6e/classGLWidget2D.html#ae25029d217d3355ba4045fd0ca64c385"
 ];
 
