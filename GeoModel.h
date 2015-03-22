@@ -32,7 +32,7 @@ using namespace std;
 
 //------------------------------------------------------------------------------
 ///
-/// \brief The GeoModel class
+/// \brief The GeoModel class - moduł obliczeniowy
 ///
 class GeoModel
 {
@@ -43,154 +43,154 @@ public:
     GeoModel();
     ~GeoModel();  
     ///
-    /// \brief wczytaj_dane
-    /// \param fileName
-    /// \param sep
-    /// \param nowe
-    /// \param sred
+    /// \brief wczytaj_dane - wczytuje dane z pliku
+    /// \param fileName - nazwa pliku
+    /// \param sep - separator pól (domyślnie tabulacja)
+    /// \param nowe - czy usunać istniejące dane
+    /// \param sred - czy uśrednić dane dla powtarzających się współrzędnych
     ///
     void wczytaj_dane(string fileName,
                       string sep="\t",bool nowe = true, bool sred = true);  
     ///
-    /// \brief wczytaj_proj
-    /// \param _modset
-    /// \param _intep
+    /// \brief wczytaj_proj - wcztuje projekt
+    /// \param _modset - ustawienia modelu
+    /// \param _intep - ustawienia interpolacji
     ///
     bool wczytaj_proj(Mset _modset, Set_interpolacja _intep);
     ///
-    /// \brief wypiszXYZdane
-    /// \param os
+    /// \brief wypiszXYZdane - wypisuje dane do strumienia
+    /// \param os - referencja do strumienia
     ///
     void wypiszXYZdane (ostream &os);
     ///
-    /// \brief wypiszXYZmodel
-    /// \param os
-    /// \param tylkoZasoby
+    /// \brief wypiszXYZmodel - wypisuje model do strumienia
+    /// \param os - referencja do strumienia
+    /// \param tylkoZasoby - czy pisać tylko bloki zasobów
     ///
     void wypiszXYZmodel(ostream &os, bool tylkoZasoby);
     ///
-    /// \brief wypisz_dane
-    /// \param fileName
-    /// \param sep
+    /// \brief wypisz_dane - zapsiuje dane do pliku
+    /// \param fileName - nazwa pliku
+    /// \param sep - separator pola (domyślnie tabulator)
     ///
     void wypisz_dane  (string fileName, string sep="\t");
     ///
-    /// \brief wypisz_model
-    /// \param fileName
-    /// \param sep
+    /// \brief wypisz_model - zapisuju model do pliku
+    /// \param fileName - nawa pliku
+    /// \param sep  - separator pola (domyślnie tabulator)
     ///
     void wypisz_model (string fileName, string sep="\t");
     ///
-    /// \brief wypisz_zasoby
-    /// \param fileName
-    /// \param sep
+    /// \brief wypisz_zasoby - zapisuje zasoby do pliku
+    /// \param fileName - nazwa pliku
+    /// \param sep - separator pola (domyślnie tabulator)
     ///
     void wypisz_zasoby(string fileName, string sep="\t");
     ///
-    /// \brief wypisz_raport
-    /// \param fileName
+    /// \brief wypisz_raport - zapsiuje raport do pliku
+    /// \param fileName - nazwa pliku
     ///
     void wypisz_raport(string fileName);
     ///
-    /// \brief wypisz_vario
-    /// \param fileName
+    /// \brief wypisz_vario - zapisuje dane wariogramu do pliku
+    /// \param fileName - nazwa pliku
     ///
     void wypisz_vario (string fileName);
     ///
-    /// \brief get_xyz_dane
-    /// \param vec
+    /// \brief get_xyz_dane - zapisuje do vectora dane
+    /// \param vec - vector wynikowy
     /// \param centr
     ///
     void get_xyz_dane (std::vector<wektor3d> &vec,bool centr);
     ///
-    /// \brief get_xyz_model
-    /// \param vec
+    /// \brief get_xyz_model - zapisuje do vectora model
+    /// \param vec - vector wynikowy
     /// \param centr
     /// \param zasoby
     ///
     void get_xyz_model(std::vector<wektor3d> &vec,bool centr, bool zasoby);
     ///
     /// \brief ptr_dane
-    /// \return
+    /// \return wskaźnik do obiektu danych
     ///
     GeoDat  *ptr_dane() {return dane;}
     ///
     /// \brief ptr_cube
-    /// \return
+    /// \return wskażnik do obiketu modelu GeoCube
     ///
     GeoCube *ptr_cube() {return cube;}
     ///
     /// \brief ptr_mset
-    /// \return
+    /// \return wskaźnik do obiektu ustawień
     ///
     Mset    *ptr_mset() {return modset;}
     ///
     /// \brief ptr_vario
-    /// \return
+    /// \return wskaźnik do obiketu wariogramu
     ///
     GeoVariogram *ptr_vario(){return curVariogram;}
     ///
     /// \brief get_iset
-    /// \return
+    /// \return aktualne ustawienia interpolacji
     ///
     Set_interpolacja get_iset(){return last_set;}
     ///
     /// \brief set_iset
-    /// \param s
+    /// \param ustawienia interpolacji
     ///
     void set_iset(Set_interpolacja s){last_set = s;}
     ///
-    /// \brief glob2lok
+    /// \brief glob2lok - konwertuje współrzędne globalne do lokalnych
     /// \param wsp
-    /// \return
+    /// \return współrzedne lokalne
     ///
     wektor3d glob2lok(wektor3d wsp);
     ///
-    /// \brief lok2glob
+    /// \brief lok2glob - konwertuje współrzędne lokalne na globalne
     /// \param wsp
-    /// \return
+    /// \return współrzędne globalne
     ///
     wektor3d lok2glob(wektor3d wsp);
     ///
-    /// \brief updateModel
+    /// \brief updateModel - aktualizauje model
     ///
     void updateModel();
     ///
-    /// \brief resetModel
+    /// \brief resetModel - resetuje wszystkie dane modelu
     ///
     void resetModel();
     ///
-    /// \brief interpolacja
+    /// \brief interpolacja - interpoluje wybraną metodą
     /// \param ustawienia
-    /// \param metod
+    /// \param metod - typ wyliczeniowy
     /// \return
     ///
     bool interpolacja(Set_interpolacja ustawienia, METODA metod);
     ///
-    /// \brief calc_invdist
+    /// \brief calc_invdist - interpoluje metodą odwrotnych odległości
     /// \param ustawienia
     ///
     void calc_invdist(Set_interpolacja ustawienia);
     ///
-    /// \brief calc_okriging
+    /// \brief calc_okriging - interpoluje metodą krigingu zwykłego
     /// \param ustawienia
     ///
     void calc_okriging(Set_interpolacja ustawienia);  
     ///
     /// \brief policzZasoby
-    /// \return
+    /// \return zasoby
     ///
     wektor3d policzZasoby();
     ///
     /// \brief analizaZasoby
     /// \param _ileKlas
-    /// \return
+    /// \return vector z zasobany dla danych przedziałów
     ///
     std::vector<geo3d> analizaZasoby(int _ileKlas);
     ///
     /// \brief analizaZasobyReport
     /// \param _ileKlas
-    /// \return
+    /// \return raport
     ///
     std::string analizaZasobyReport(int _ileKlas, int precyzja_liczb);
     ///
@@ -200,7 +200,7 @@ public:
     void setGeoSet(Mset gset){*modset = gset;}
     ///
     /// \brief create_rapor
-    /// \return
+    /// \return raport
     ///
     std::string recreate_rapor(const std::string& datetimeStr);
     ///
@@ -229,12 +229,12 @@ public:
     void calc_variogram(wektor3d ust);
     ///
     /// \brief get_last_set
-    /// \return
+    /// \return aktualne ustawienia interpolacji
     ///
     Set_interpolacja get_last_set(){return last_set;}
     ///
     /// \brief get_progres
-    /// \return
+    /// \return postęp opracji
     ///
     Progres get_progres(){return progres;}
     ///
