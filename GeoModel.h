@@ -162,7 +162,7 @@ public:
     ///
     /// \brief interpolacja - interpoluje wybraną metodą
     /// \param ustawienia
-    /// \param metod - typ wyliczeniowy
+    /// \param metod - typ wyliczeniowy metoda interpolacji
     /// \return
     ///
     bool interpolacja(Set_interpolacja ustawienia, METODA metod);
@@ -184,7 +184,7 @@ public:
     ///
     /// \brief analizaZasoby
     /// \param _ileKlas
-    /// \return vector z zasobany dla danych przedziałów
+    /// \return vector z zasobami dla danych przedziałów
     ///
     std::vector<geo3d> analizaZasoby(int _ileKlas);
     ///

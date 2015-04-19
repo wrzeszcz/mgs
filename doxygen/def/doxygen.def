@@ -3413,13 +3413,13 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '52';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-wczytaj_dane
+wczytaj_dane - wczytuje dane z pliku
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param fileName
-\param sep
-\param nowe
-\param sred
+\param fileName - nazwa pliku
+\param sep - separator pól (domyślnie tabulacja)
+\param nowe - czy usunać istniejące dane
+\param sred - czy uśrednić dane dla powtarzających się współrzędnych
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3446,11 +3446,11 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '59';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-wczytaj_proj
+wczytaj_proj - wcztuje projekt
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param _modset
-\param _intep
+\param _modset - ustawienia modelu
+\param _intep - ustawienia interpolacji
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3471,10 +3471,10 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '64';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-wypiszXYZdane
+wypiszXYZdane - wypisuje dane do strumienia
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param os
+\param os - referencja do strumienia
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3501,11 +3501,11 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '70';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-wypiszXYZmodel
+wypiszXYZmodel - wypisuje model do strumienia
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param os
-\param tylkoZasoby
+\param os - referencja do strumienia
+\param tylkoZasoby - czy pisać tylko bloki zasobów
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3535,11 +3535,11 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '76';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-wypisz_dane
+wypisz_dane - zapsiuje dane do pliku
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param fileName
-\param sep
+\param fileName - nazwa pliku
+\param sep - separator pola (domyślnie tabulator)
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3569,11 +3569,11 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '82';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-wypisz_model
+wypisz_model - zapisuju model do pliku
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param fileName
-\param sep
+\param fileName - nawa pliku
+\param sep  - separator pola (domyślnie tabulator)
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3603,11 +3603,11 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '88';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-wypisz_zasoby
+wypisz_zasoby - zapisuje zasoby do pliku
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param fileName
-\param sep
+\param fileName - nazwa pliku
+\param sep - separator pola (domyślnie tabulator)
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3628,10 +3628,10 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '93';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-wypisz_raport
+wypisz_raport - zapsiuje raport do pliku
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param fileName
+\param fileName - nazwa pliku
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3652,10 +3652,10 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '98';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-wypisz_vario
+wypisz_vario - zapisuje dane wariogramu do pliku
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param fileName
+\param fileName - nazwa pliku
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3682,10 +3682,10 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '104';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-get_xyz_dane
+get_xyz_dane - zapisuje do vectora dane
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param vec
+\param vec - vector wynikowy
 \param centr
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
@@ -3719,10 +3719,10 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '111';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-get_xyz_model
+get_xyz_model - zapisuje do vectora model
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param vec
+\param vec - vector wynikowy
 \param centr
 \param zasoby
 _EnD_oF_dEf_TeXt_;
@@ -3742,7 +3742,7 @@ _EnD_oF_dEf_TeXt_;
 ptr_dane
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\return
+\return wskaźnik do obiektu danych
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3760,7 +3760,7 @@ _EnD_oF_dEf_TeXt_;
 ptr_cube
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\return
+\return wskażnik do obiketu modelu GeoCube
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3778,7 +3778,7 @@ _EnD_oF_dEf_TeXt_;
 ptr_mset
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\return
+\return wskaźnik do obiektu ustawień
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3796,7 +3796,7 @@ _EnD_oF_dEf_TeXt_;
 ptr_vario
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\return
+\return wskaźnik do obiketu wariogramu
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3814,7 +3814,7 @@ _EnD_oF_dEf_TeXt_;
 get_iset
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\return
+\return aktualne ustawienia interpolacji
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3838,7 +3838,7 @@ _EnD_oF_dEf_TeXt_;
 set_iset
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\param s
+\param ustawienia interpolacji
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3859,11 +3859,11 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '147';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-glob2lok
+glob2lok - konwertuje współrzędne globalne do lokalnych
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 \param wsp
-\return
+\return współrzedne lokalne
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3884,11 +3884,11 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '153';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-lok2glob
+lok2glob - konwertuje współrzędne lokalne na globalne
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 \param wsp
-\return
+\return współrzędne globalne
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -3903,7 +3903,7 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '157';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-updateModel
+updateModel - aktualizauje model
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -3921,7 +3921,7 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '161';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-resetModel
+resetModel - resetuje wszystkie dane modelu
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 
@@ -3951,11 +3951,11 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '168';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-interpolacja
+interpolacja - interpoluje wybraną metodą
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 \param ustawienia
-\param metod
+\param metod - typ wyliczeniowy
 \return
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
@@ -3977,7 +3977,7 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '173';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-calc_invdist
+calc_invdist - interpoluje metodą odwrotnych odległości
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 \param ustawienia
@@ -4001,7 +4001,7 @@ _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
       sec-mem-desc-line = '178';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-calc_okriging
+calc_okriging - interpoluje metodą krigingu zwykłego
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 \param ustawienia
@@ -4022,7 +4022,7 @@ _EnD_oF_dEf_TeXt_;
 policzZasoby
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\return
+\return zasoby
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -4047,7 +4047,7 @@ analizaZasoby
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 \param _ileKlas
-\return
+\return vector z zasobany dla danych przedziałów
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -4078,7 +4078,7 @@ analizaZasobyReport
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
 \param _ileKlas
-\return
+\return raport
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -4126,7 +4126,7 @@ _EnD_oF_dEf_TeXt_;
 create_rapor
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\return
+\return raport
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -4252,7 +4252,7 @@ _EnD_oF_dEf_TeXt_;
 get_last_set
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\return
+\return aktualne ustawienia interpolacji
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -4270,7 +4270,7 @@ _EnD_oF_dEf_TeXt_;
 get_progres
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-\return
+\return postęp opracji
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -4508,7 +4508,7 @@ _EnD_oF_dEf_TeXt_;
   cp-filename  = '/home/marek/dev/DYPLOM/mgeostat/GeoModel.h';
   cp-fileline  = '38';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
-The GeoModel class.
+The GeoModel class - moduł obliczeniowy.
 _EnD_oF_dEf_TeXt_;
   cp-documentation = <<_EnD_oF_dEf_TeXt_
 

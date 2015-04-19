@@ -129,27 +129,27 @@ private:
     ///
     GeoVariogramModel variogram_model;
     ///
-    /// \brief c0
+    /// \brief c0 - efekt samorodka
     ///
     double c0;
     ///
-    /// \brief c1
+    /// \brief c1 - próg nasycenia
     ///
     double c1;
     ///
-    /// \brief a
+    /// \brief a - zasięg korelacji
     ///
     double a;
     ///
-    /// \brief minOt
+    /// \brief minOt - mninimalna liczebność otoczenia
     ///
     int minOt;
     ///
-    /// \brief maxOt
+    /// \brief maxOt - maksymalna ilość uwzględnionych danych z otoczenia
     ///
     int maxOt;
     ///
-    /// \brief dist
+    /// \brief dist - obiekt funkcyjny obliczajacy odległość
     ///
     Odl dist;
 };
