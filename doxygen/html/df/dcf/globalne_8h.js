@@ -51,6 +51,7 @@ var globalne_8h =
     [ "operator<<", "df/dcf/globalne_8h.html#a21e9228b4bbff4d198752a17e83ff68b", null ],
     [ "operator>>", "df/dcf/globalne_8h.html#a16996a06d3a50139843d243ffdf19834", null ],
     [ "operator>>", "df/dcf/globalne_8h.html#afd50bfa8bf830e7d402e8a60e8739912", null ],
+    [ "operator>>", "df/dcf/globalne_8h.html#a9b607a84b6bd6779ce9c5b9b2f6c5ece", null ],
     [ "operator>>", "df/dcf/globalne_8h.html#a133bacfdeae2be4b87b731960025fc2f", null ],
     [ "operator>>", "df/dcf/globalne_8h.html#aab9b1e16a75177f56299f7812a76a07c", null ],
     [ "NULLDAT", "df/dcf/globalne_8h.html#abd8d9d37ff2f6367a7eae5456bbc0304", null ]

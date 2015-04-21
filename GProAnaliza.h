@@ -40,6 +40,7 @@ public:
     ///
     /// \brief GProAnaliza
     /// \param zasoby
+    /// \param model
     /// \param parent
     ///
     GProAnaliza(GeoZasoby *zasoby,GeoModel *model, QWidget *parent = 0);

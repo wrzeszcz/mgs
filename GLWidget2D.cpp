@@ -139,7 +139,7 @@ void GLWidget2D::paint_model()
                 }
                 if(widok.zasoby)
                 {
-                    if (cube->getRek(a,b,Z).x > sett->cutoff)
+                    if (cube->getRek(a,b,Z).x > sett->cutoff  )
                     {
                         glColor3f(0.1f,0.1f,0.1f);
                         paintBlok(cube2w(wektor3d(a,b,0),*sett),sett->sp);
@@ -311,5 +311,7 @@ void GLWidget2D::paintQuad(geo3d a, geo3d b, geo3d c, geo3d d)
     glEnd();
 
 }
+
+
 //------------------------------------------------------------------------------
 

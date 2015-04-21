@@ -61,7 +61,7 @@ class GMainWin : public QMainWindow
 public:
     ///
     /// \brief GMainWin
-    /// \param wskaźnik na rodzica
+    /// \param parent wskaźnik na rodzica
     ///
     GMainWin(QWidget *parent = 0);
     ~GMainWin();

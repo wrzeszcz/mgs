@@ -49,7 +49,7 @@ public:
     ~GeoDat();
     ///
     /// \brief dodaj_rek - dodaje rekord geo3d (współrzędne, dane)
-    /// \param rekord
+    /// \param rek - rekord
     /// \param nadpisz - bool - czy nadpisać jeśli dane o takich samych współrzędnych istnieją w mapie
     ///
     void dodaj_rek (geo3d rek, bool nadpisz);
@@ -126,12 +126,12 @@ public:
     void wypisz_xyz(vector<wektor3d> &vec, wektor3d ofs);
     ///
     /// \brief wypisz_dat - wypisuje dane do vector'a (czyści vector)
-    /// \param vector
+    /// \param vec - vector
     ///
     void wypisz_dat(vector<geo3d> &vec);
     ///
     /// \brief wypisz_dat - wypisuje dane w otoczeniu punktu do vector'a (cysci vector)
-    /// \param vector
+    /// \param vec - vector
     /// \param centr - punkt centralny
     /// \param r - promień
     ///

@@ -306,6 +306,7 @@ void GeoModel::wczytaj_model(string fileName, string )
     if(in.is_open())
     {
         if( !(in >> *modset)) return;
+        in.close();
     }
     else return;
     fstream we(modset->name.c_str());
@@ -318,6 +319,7 @@ void GeoModel::wczytaj_model(string fileName, string )
             //cout << tmp << endl;
             cube->setRekGlo(tmp.xyz, tmp.dat);
         }
+        we.close();
     }
 }
 //------------------------------------------------------------------------------

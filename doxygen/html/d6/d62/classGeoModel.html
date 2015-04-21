@@ -144,6 +144,9 @@ Metody publiczne</h2></td></tr>
 <tr class="memitem:a8d4c52dd31b40e6cf0028a230d085124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d62/classGeoModel.html#a8d4c52dd31b40e6cf0028a230d085124">wypisz_model</a> (string fileName, string sep=&quot;\t&quot;)</td></tr>
 <tr class="memdesc:a8d4c52dd31b40e6cf0028a230d085124"><td class="mdescLeft">&#160;</td><td class="mdescRight">wypisz_model - zapisuju model do pliku  <a href="#a8d4c52dd31b40e6cf0028a230d085124">Więcej...</a><br /></td></tr>
 <tr class="separator:a8d4c52dd31b40e6cf0028a230d085124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83849448135316e39dc45cc6b6ff2dbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d62/classGeoModel.html#a83849448135316e39dc45cc6b6ff2dbe">wczytaj_model</a> (string fileName, string sep=&quot;\t&quot;)</td></tr>
+<tr class="memdesc:a83849448135316e39dc45cc6b6ff2dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">wczytaj_model  <a href="#a83849448135316e39dc45cc6b6ff2dbe">Więcej...</a><br /></td></tr>
+<tr class="separator:a83849448135316e39dc45cc6b6ff2dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d8c6807c968cb405de70036a109d10f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d62/classGeoModel.html#a5d8c6807c968cb405de70036a109d10f">wypisz_zasoby</a> (string fileName, string sep=&quot;\t&quot;)</td></tr>
 <tr class="memdesc:a5d8c6807c968cb405de70036a109d10f"><td class="mdescLeft">&#160;</td><td class="mdescRight">wypisz_zasoby - zapisuje zasoby do pliku  <a href="#a5d8c6807c968cb405de70036a109d10f">Więcej...</a><br /></td></tr>
 <tr class="separator:a5d8c6807c968cb405de70036a109d10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,7 +301,7 @@ Metody publiczne</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Zwraca</dt><dd>vector z zasobany dla danych przedziałów </dd></dl>
+<dl class="section return"><dt>Zwraca</dt><dd>vector z zasobami dla danych przedziałów </dd></dl>
 
 </div>
 </div>
@@ -330,10 +333,11 @@ Metody publiczne</h2></td></tr>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
     <tr><td class="paramname">_ileKlas</td><td></td></tr>
+    <tr><td class="paramname">precyzja_liczb</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Zwraca</dt><dd>raport </dd></dl>
+<dl class="section return"><dt>Zwraca</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -402,7 +406,7 @@ Metody publiczne</h2></td></tr>
 <p>calc_variogram </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rozmiar_klasy</td><td></td></tr>
+    <tr><td class="paramname">ust</td><td>- rozmiar_klasy </td></tr>
   </table>
   </dd>
 </dl>
@@ -642,7 +646,7 @@ Metody publiczne</h2></td></tr>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
     <tr><td class="paramname">ustawienia</td><td></td></tr>
-    <tr><td class="paramname">metod</td><td>- typ wyliczeniowy </td></tr>
+    <tr><td class="paramname">metod</td><td>- typ wyliczeniowy metoda interpolacji </td></tr>
   </table>
   </dd>
 </dl>
@@ -692,7 +696,7 @@ Metody publiczne</h2></td></tr>
 <p>nowy_variogram </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rozmiar_klasy</td><td></td></tr>
+    <tr><td class="paramname">ust</td><td>- rozmiar_klasy </td></tr>
   </table>
   </dd>
 </dl>
@@ -965,7 +969,7 @@ Metody publiczne</h2></td></tr>
 <p>set_iset </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ustawienia</td><td>interpolacji </td></tr>
+    <tr><td class="paramname">s</td><td>- ustawienia interpolacji </td></tr>
   </table>
   </dd>
 </dl>
@@ -1096,6 +1100,41 @@ Metody publiczne</h2></td></tr>
     <tr><td class="paramname">sep</td><td>- separator pól (domyślnie tabulacja) </td></tr>
     <tr><td class="paramname">nowe</td><td>- czy usunać istniejące dane </td></tr>
     <tr><td class="paramname">sred</td><td>- czy uśrednić dane dla powtarzających się współrzędnych </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a83849448135316e39dc45cc6b6ff2dbe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GeoModel::wczytaj_model </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>sep</em> = <code>&quot;\t&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>wczytaj_model </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td></td></tr>
+    <tr><td class="paramname">sep</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1350,8 +1389,8 @@ Metody publiczne</h2></td></tr>
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
-<li>/home/marek/dev/DYPLOM/mgeostat/<a class="el" href="../../">GeoModel.h</a></li>
-<li>/home/marek/dev/DYPLOM/mgeostat/<a class="el" href="../../">GeoModel.cpp</a></li>
+<li>/home/marek/dev/DYPLOM/mgs/<a class="el" href="../../">GeoModel.h</a></li>
+<li>/home/marek/dev/DYPLOM/mgs/<a class="el" href="../../">GeoModel.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1359,7 +1398,7 @@ Metody publiczne</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d6/d62/classGeoModel.html">GeoModel</a></li>
-    <li class="footer">Wygenerowano N, 22 mar 2015 21:03:15 dla MGS programem
+    <li class="footer">Wygenerowano Wt, 21 kwi 2015 22:40:48 dla MGS programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

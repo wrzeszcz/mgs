@@ -32,6 +32,7 @@ var classGeoModel =
     [ "setGeoSet", "d6/d62/classGeoModel.html#a76360404f4f2132a32ac3d64e7beb565", null ],
     [ "updateModel", "d6/d62/classGeoModel.html#a0f36d6806ce21bce78c4b6e862fbbdab", null ],
     [ "wczytaj_dane", "d6/d62/classGeoModel.html#a628bf5a19f264e2dbc60575bf6fb9ad8", null ],
+    [ "wczytaj_model", "d6/d62/classGeoModel.html#a83849448135316e39dc45cc6b6ff2dbe", null ],
     [ "wczytaj_proj", "d6/d62/classGeoModel.html#a7a5a98639a4babd01e90adcfd09d865d", null ],
     [ "wypisz_dane", "d6/d62/classGeoModel.html#aeb8e5d2a6c3b2af48cd66c7645ec6058", null ],
     [ "wypisz_model", "d6/d62/classGeoModel.html#a8d4c52dd31b40e6cf0028a230d085124", null ],

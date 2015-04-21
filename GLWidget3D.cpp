@@ -148,7 +148,7 @@ void GLWidget3D::paint_model()
                 {
                     glPolygonMode(GL_FRONT_AND_BACK,GL_LINE);
                     glColor3f(0.5,0.5,0.5);
-                    glLineWidth(0.5);
+                    glLineWidth(1.0);
                     paintBlok(pkt,sett->sp,-1.0);
                 }
                 if(widok.zasoby && c<=z)

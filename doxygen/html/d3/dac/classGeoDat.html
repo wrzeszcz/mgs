@@ -147,9 +147,9 @@ Metody publiczne</h2></td></tr>
 <tr class="memitem:a554d083485b5022e799a9145484a6e12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d64/structgeo3d.html">geo3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dac/classGeoDat.html#a554d083485b5022e799a9145484a6e12">get_rek</a> (<a class="el" href="../../dc/d07/classwektor3d.html">wektor3d</a> wsp)</td></tr>
 <tr class="memdesc:a554d083485b5022e799a9145484a6e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_rek - zwraca rekord o danych współrzędnych  <a href="#a554d083485b5022e799a9145484a6e12">Więcej...</a><br /></td></tr>
 <tr class="separator:a554d083485b5022e799a9145484a6e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef0435d98a064d1a5a96ad13d0031fd4"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dac/classGeoDat.html#aef0435d98a064d1a5a96ad13d0031fd4">get_rek</a> (GeoMapa::iterator git)</td></tr>
-<tr class="memdesc:aef0435d98a064d1a5a96ad13d0031fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_rek - zwraca rekord o danym iteratorze  <a href="#aef0435d98a064d1a5a96ad13d0031fd4">Więcej...</a><br /></td></tr>
-<tr class="separator:aef0435d98a064d1a5a96ad13d0031fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061adbe073289f2e26659826ec49958d"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dac/classGeoDat.html#a061adbe073289f2e26659826ec49958d">get_rek</a> (GeoMapa::iterator git)</td></tr>
+<tr class="memdesc:a061adbe073289f2e26659826ec49958d"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_rek - zwraca rekord o danym iteratorze  <a href="#a061adbe073289f2e26659826ec49958d">Więcej...</a><br /></td></tr>
+<tr class="separator:a061adbe073289f2e26659826ec49958d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a304e81e9e35ed54f5d6342f75dd324ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dac/classGeoDat.html#a304e81e9e35ed54f5d6342f75dd324ad">wypisz</a> (std::ostream &amp;os, const string &amp;sep=&quot;\t&quot;)</td></tr>
 <tr class="memdesc:a304e81e9e35ed54f5d6342f75dd324ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">wypisz - wypisuje do strumienia  <a href="#a304e81e9e35ed54f5d6342f75dd324ad">Więcej...</a><br /></td></tr>
 <tr class="separator:a304e81e9e35ed54f5d6342f75dd324ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,7 +322,7 @@ Metody publiczne</h2></td></tr>
 <p>dodaj_rek - dodaje rekord <a class="el" href="../../df/d64/structgeo3d.html" title="The geo3d struct. ">geo3d</a> (współrzędne, dane) </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rekord</td><td></td></tr>
+    <tr><td class="paramname">rek</td><td>- rekord </td></tr>
     <tr><td class="paramname">nadpisz</td><td>- bool - czy nadpisać jeśli dane o takich samych współrzędnych istnieją w mapie </td></tr>
   </table>
   </dd>
@@ -631,12 +631,12 @@ Metody publiczne</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aef0435d98a064d1a5a96ad13d0031fd4"></a>
+<a class="anchor" id="a061adbe073289f2e26659826ec49958d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; double &gt; GeoDat::get_rek </td>
+          <td class="memname">vector&lt; double &gt; GeoDat::get_rek </td>
           <td>(</td>
           <td class="paramtype">GeoMapa::iterator&#160;</td>
           <td class="paramname"><em>git</em></td><td>)</td>
@@ -1016,7 +1016,7 @@ Metody publiczne</h2></td></tr>
 <p>wypisz_dat - wypisuje dane do vector'a (czyści vector) </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vector</td><td></td></tr>
+    <tr><td class="paramname">vec</td><td>- vector </td></tr>
   </table>
   </dd>
 </dl>
@@ -1056,7 +1056,7 @@ Metody publiczne</h2></td></tr>
 <p>wypisz_dat - wypisuje dane w otoczeniu punktu do vector'a (cysci vector) </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vector</td><td></td></tr>
+    <tr><td class="paramname">vec</td><td>- vector </td></tr>
     <tr><td class="paramname">centr</td><td>- punkt centralny </td></tr>
     <tr><td class="paramname">r</td><td>- promień </td></tr>
   </table>
@@ -1172,8 +1172,8 @@ Metody publiczne</h2></td></tr>
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
-<li>/home/marek/dev/DYPLOM/mgeostat/<a class="el" href="../../">GeoDat.h</a></li>
-<li>/home/marek/dev/DYPLOM/mgeostat/<a class="el" href="../../">GeoDat.cpp</a></li>
+<li>/home/marek/dev/DYPLOM/mgs/<a class="el" href="../../">GeoDat.h</a></li>
+<li>/home/marek/dev/DYPLOM/mgs/<a class="el" href="../../">GeoDat.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1181,7 +1181,7 @@ Metody publiczne</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/dac/classGeoDat.html">GeoDat</a></li>
-    <li class="footer">Wygenerowano N, 22 mar 2015 21:03:15 dla MGS programem
+    <li class="footer">Wygenerowano Wt, 21 kwi 2015 22:40:48 dla MGS programem
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

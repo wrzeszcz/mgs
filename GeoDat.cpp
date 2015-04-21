@@ -139,9 +139,9 @@ geo3d GeoDat::get_rek(wektor3d wsp)
     return ret;
 }
 //------------------------------------------------------------------------------
-std::vector<double> GeoDat::get_rek(GeoMapa::iterator git)
+vector<double> GeoDat::get_rek(GeoMapa::iterator git)
 {
-    std::vector<double> ret;
+    vector<double> ret;
     ret.push_back(git->first.x);
     ret.push_back(git->first.y);
     ret.push_back(git->first.z);
@@ -151,7 +151,7 @@ std::vector<double> GeoDat::get_rek(GeoMapa::iterator git)
     return ret;
 }
 //--------------------------------------------------------------------
-void GeoDat::wypisz(std::ostream& os, const string &s)
+void GeoDat::wypisz(ostream& os, const string &s)
 {
     wektor3d w,d;
     os.setf(ios::fixed);
@@ -164,7 +164,7 @@ void GeoDat::wypisz(std::ostream& os, const string &s)
     }
 }
 //------------------------------------------------------------------------------
-void GeoDat::wypisz_xyz (std::ostream& os, const string &s)
+void GeoDat::wypisz_xyz (ostream& os, const string &s)
 {
     wektor3d w;
     os.setf(ios::fixed);
@@ -176,7 +176,7 @@ void GeoDat::wypisz_xyz (std::ostream& os, const string &s)
     }
 }
 //------------------------------------------------------------------------------
-void GeoDat::wypisz_xyz(std::vector<wektor3d> &vec, wektor3d ofs)
+void GeoDat::wypisz_xyz(vector<wektor3d> &vec, wektor3d ofs)
 {
     wektor3d w;
     vec.clear();
@@ -187,7 +187,7 @@ void GeoDat::wypisz_xyz(std::vector<wektor3d> &vec, wektor3d ofs)
     }
 }
 //------------------------------------------------------------------------------
-void GeoDat::wypisz_dat(std::vector<geo3d> &vec)
+void GeoDat::wypisz_dat(vector<geo3d> &vec)
 {
     wektor3d w,d;
     geo3d tmp;
@@ -203,7 +203,7 @@ void GeoDat::wypisz_dat(std::vector<geo3d> &vec)
     }
 }
 //------------------------------------------------------------------------------
-void GeoDat::wypisz_dat(std::vector<geo3d> &vec, wektor3d centr, double promien)
+void GeoDat::wypisz_dat(vector<geo3d> &vec, wektor3d centr, double promien)
 {
     wektor3d w,d;
     geo3d tmp;
@@ -222,7 +222,7 @@ void GeoDat::wypisz_dat(std::vector<geo3d> &vec, wektor3d centr, double promien)
     }
 }
 //------------------------------------------------------------------------------
-void GeoDat::wczytaj(std::istream& is)
+void GeoDat::wczytaj(istream& is)
 {
     double x(0.0),y(0.0),z(0.0),a(0.0),b(0.0),c(0.0);
     while(is >> x >> y >> z >> a >> b >> c)
@@ -233,7 +233,7 @@ void GeoDat::wczytaj(std::istream& is)
 //------------------------------------------------------------------------------
 void GeoDat::wczytaj(istream& is, const string &s, bool sred)
 {
-    std::string linia;
+    string linia;
     while(!is.eof())
     {
         getline   (is, linia);

@@ -34,7 +34,7 @@ public:
     Gradient();
     ///
     /// \brief get_kolor
-    /// \param double od 0.0 do 1.0
+    /// \param poz - double od 0.0 do 1.0
     /// \return kolor w skali barw
     ///
     QColor get_kolor(double poz);

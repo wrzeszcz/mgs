@@ -1,12 +1,12 @@
-<map id="/home/marek/DYPLOM/mgeostat/GLWidget.h" name="/home/marek/DYPLOM/mgeostat/GLWidget.h">
-<area shape="rect" id="node2" href="$dc/dc1/GLWidget2D_8h.html" title="/home/marek/DYPLOM\l/mgeostat/GLWidget2D.h" alt="" coords="221,95,391,136"/>
-<area shape="rect" id="node7" href="$d8/dde/GLWidget3D_8h.html" title="/home/marek/DYPLOM\l/mgeostat/GLWidget3D.h" alt="" coords="426,95,597,136"/>
-<area shape="rect" id="node11" href="$dd/d52/GLWidget_8cpp.html" title="/home/marek/DYPLOM\l/mgeostat/GLWidget.cpp" alt="" coords="621,95,788,136"/>
-<area shape="rect" id="node3" href="$d3/d0a/GeoWidget2D_8h.html" title="/home/marek/DYPLOM\l/mgeostat/GeoWidget2D.h" alt="" coords="12,184,189,225"/>
-<area shape="rect" id="node6" href="$d8/d3a/GLWidget2D_8cpp.html" title="/home/marek/DYPLOM\l/mgeostat/GLWidget2D.cpp" alt="" coords="214,184,398,225"/>
-<area shape="rect" id="node4" href="$d3/d69/GeoWidget2D_8cpp.html" title="/home/marek/DYPLOM\l/mgeostat/GeoWidget2D.cpp" alt="" coords="5,273,196,315"/>
-<area shape="rect" id="node5" href="$d0/dc8/GMainWin_8cpp.html" title="/home/marek/DYPLOM\l/mgeostat/GMainWin.cpp" alt="" coords="221,273,391,315"/>
-<area shape="rect" id="node8" href="$d4/d5c/GeoWidget3D_8h.html" title="/home/marek/DYPLOM\l/mgeostat/GeoWidget3D.h" alt="" coords="423,184,600,225"/>
-<area shape="rect" id="node10" href="$d7/d3c/GLWidget3D_8cpp.html" title="/home/marek/DYPLOM\l/mgeostat/GLWidget3D.cpp" alt="" coords="625,184,809,225"/>
-<area shape="rect" id="node9" href="$d7/d87/GeoWidget3D_8cpp.html" title="/home/marek/DYPLOM\l/mgeostat/GeoWidget3D.cpp" alt="" coords="416,273,607,315"/>
+<map id="/home/marek/dev/DYPLOM/mgs/GLWidget.h" name="/home/marek/dev/DYPLOM/mgs/GLWidget.h">
+<area shape="rect" id="node2" href="$dc/dc1/GLWidget2D_8h.html" title="/home/marek/dev/DYPLOM\l/mgs/GLWidget2D.h" alt="" coords="212,95,395,136"/>
+<area shape="rect" id="node7" href="$d8/dde/GLWidget3D_8h.html" title="/home/marek/dev/DYPLOM\l/mgs/GLWidget3D.h" alt="" coords="419,95,601,136"/>
+<area shape="rect" id="node11" href="$dd/d52/GLWidget_8cpp.html" title="/home/marek/dev/DYPLOM\l/mgs/GLWidget.cpp" alt="" coords="625,95,808,136"/>
+<area shape="rect" id="node3" href="$d3/d0a/GeoWidget2D_8h.html" title="/home/marek/dev/DYPLOM\l/mgs/GeoWidget2D.h" alt="" coords="5,184,188,225"/>
+<area shape="rect" id="node6" href="$d8/d3a/GLWidget2D_8cpp.html" title="/home/marek/dev/DYPLOM\l/mgs/GLWidget2D.cpp" alt="" coords="212,184,395,225"/>
+<area shape="rect" id="node4" href="$d3/d69/GeoWidget2D_8cpp.html" title="/home/marek/dev/DYPLOM\l/mgs/GeoWidget2D.cpp" alt="" coords="5,273,188,315"/>
+<area shape="rect" id="node5" href="$d0/dc8/GMainWin_8cpp.html" title="/home/marek/dev/DYPLOM\l/mgs/GMainWin.cpp" alt="" coords="212,273,395,315"/>
+<area shape="rect" id="node8" href="$d4/d5c/GeoWidget3D_8h.html" title="/home/marek/dev/DYPLOM\l/mgs/GeoWidget3D.h" alt="" coords="419,184,601,225"/>
+<area shape="rect" id="node10" href="$d7/d3c/GLWidget3D_8cpp.html" title="/home/marek/dev/DYPLOM\l/mgs/GLWidget3D.cpp" alt="" coords="625,184,808,225"/>
+<area shape="rect" id="node9" href="$d7/d87/GeoWidget3D_8cpp.html" title="/home/marek/dev/DYPLOM\l/mgs/GeoWidget3D.cpp" alt="" coords="419,273,601,315"/>
 </map>

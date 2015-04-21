@@ -1,6 +1,6 @@
 var classGProDialog =
 [
-    [ "GProDialog", "db/deb/classGProDialog.html#a6187bc6717d061499626ded7e3c2a1ea", null ],
+    [ "GProDialog", "db/deb/classGProDialog.html#a82bc249b1581084009e0827f989c00a5", null ],
     [ "~GProDialog", "db/deb/classGProDialog.html#a8fc534339735c9b4654f33f815ec046c", null ],
     [ "get_set_interp", "db/deb/classGProDialog.html#a3b06c349d51ea09e755f07ee57041ba9", null ],
     [ "slot_max_otocz", "db/deb/classGProDialog.html#ae68b323e0a8062e8d068e1e477025124", null ],

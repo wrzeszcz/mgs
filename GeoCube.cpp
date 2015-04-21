@@ -201,9 +201,9 @@ void GeoCube::setRekLok(wektor3i poz, wektor3d dane)
 void GeoCube::setRekGlo(wektor3d poz, wektor3d dane)
 {
     wektor3i lokal;
-    lokal.x = (int)((poz.x-start3d.x)/spacing);
-    lokal.y = (int)((poz.y-start3d.y)/spacing);
-    lokal.z = (int)((poz.z-start3d.z)/spacing);
+    lokal.x = (int)(((poz.x-start3d.x)/spacing)+.001);
+    lokal.y = (int)(((poz.y-start3d.y)/spacing)+.001);
+    lokal.z = (int)(((poz.z-start3d.z)/spacing)+.001);
     setRekLok(lokal,dane);
 }
 //------------------------------------------------------------------------------

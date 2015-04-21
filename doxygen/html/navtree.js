@@ -1,7 +1,7 @@
 var NAVTREE =
 [
   [ "MGS", "index.html", [
-    [ "MGS", "dd/d2e/md__home_marek_dev_DYPLOM_mgeostat_README.html", null ],
+    [ "MGS", "d8/d7c/md__home_marek_dev_DYPLOM_mgs_README.html", null ],
     [ "Klasy", null, [
       [ "Lista klas", "annotated.html", "annotated" ],
       [ "Indeks klas", "classes.html", null ],
@@ -32,7 +32,7 @@ var NAVTREEINDEX =
 [
 ".html",
 "d4/dc5/classGLWidget.html#ad12f23ba7f15bff12e813117c89aabbd",
-"dd/d6e/classGLWidget2D.html#ae25029d217d3355ba4045fd0ca64c385"
+"dd/d6e/classGLWidget2D.html#add8e8acc90074c673fc0438ed6742fac"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

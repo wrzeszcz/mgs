@@ -98,13 +98,13 @@ public:
     /// \param limit - referencja do strumienia
     /// \param sep - separator (domyślnie tabulacja)
     ///
-    void wypiszGlo(ostream& os, bool tylkoXYZ, double limit, const std::string &sep = "\t");
+    void wypiszGlo(ostream& os, bool tylkoXYZ, double limit, const string &sep = "\t");
     ///
     /// \brief wypiszGlo - wypisuje dane (wsp. globalne) do strumienia
     /// \param os - referencja do strumienia
     /// \param sep - separator (domyślnie tabulacja)
     ///
-    void wypiszGlo(ostream& os, const std::string &sep = "\t");
+    void wypiszGlo(ostream& os, const string &sep = "\t");
     ///
     /// \brief wypiszGlo - zapisuje do vec współrzedne punktów owartosci wiekszej niz limit przesyniete o -ofset
     /// \param vec - vektor (dodaje do vektora)

@@ -65,9 +65,10 @@ public:
     ///
     /// \brief GProDialog
     /// \param s struktura zawierająca ustawienia intepolacji (Set_interpolacja)
-    /// \param wskaźnik na wideget rodzica
+    /// \param m metoda interpolacji
+    /// \param parent wskaźnik na wideget rodzica
     ///
-    GProDialog(Set_interpolacja s, METODA, QWidget *parent = 0);
+    GProDialog(Set_interpolacja s, METODA m, QWidget *parent = 0);
     ///
     /// \brief ~GProDialog
     ///

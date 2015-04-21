@@ -37,7 +37,7 @@ public:
     ///
     /// \brief GeoVariogram
     /// \param dane
-    /// \param rozmiar_klasy
+    /// \param ustawienie rozmiar_klasy
     ///
     GeoVariogram(GeoDat *dane, wektor3d ustawienie);
     ///
@@ -47,7 +47,7 @@ public:
     GeoVariogram(GeoDat *dane);
     ///
     /// \brief recalc
-    /// \param rozmiar_klasy
+    /// \param ustawienie rozmiar_klasy
     ///
     void recalc(wektor3d ustawienie);
     ///
@@ -57,7 +57,7 @@ public:
     ///
     /// \brief set_dane
     /// \param dane
-    /// \param rozmiar_klasy
+    /// \param ustawienie - rozmiar_klasy
     ///
     void set_dane(GeoDat *dane, wektor3d ustawienie);
     ///

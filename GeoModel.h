@@ -142,7 +142,7 @@ public:
     Set_interpolacja get_iset(){return last_set;}
     ///
     /// \brief set_iset
-    /// \param ustawienia interpolacji
+    /// \param s - ustawienia interpolacji
     ///
     void set_iset(Set_interpolacja s){last_set = s;}
     ///
@@ -196,7 +196,8 @@ public:
     ///
     /// \brief analizaZasobyReport
     /// \param _ileKlas
-    /// \return raport
+    /// \param precyzja_liczb
+    /// \return
     ///
     std::string analizaZasobyReport(int _ileKlas, int precyzja_liczb);
     ///
@@ -225,12 +226,12 @@ public:
     string raport_get(){return strRaport;}
     ///
     /// \brief nowy_variogram
-    /// \param rozmiar_klasy
+    /// \param  ust - rozmiar_klasy
     ///
     void nowy_variogram(wektor3d ust);
     ///
     /// \brief calc_variogram
-    /// \param rozmiar_klasy
+    /// \param ust - rozmiar_klasy
     ///
     void calc_variogram(wektor3d ust);
     ///
