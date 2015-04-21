@@ -303,6 +303,11 @@ inline ostream& operator << (ostream& os, const geo3d &d)
 {
     return os << d.xyz << " " << d.dat;
 }
+inline istream& operator >> (istream& is, geo3d &d)
+{
+    is >> d.xyz >> d.dat;
+    return is;
+}
 //------------------------------------------------------------------------------
 // funktatory
 ///
@@ -605,7 +610,7 @@ struct Vset
     Vset():
         zakres(true),
         dane(true),
-        siatka(true),
+        siatka(false),
         wezel(false),
         zasoby(true),
         perspektywa(true),

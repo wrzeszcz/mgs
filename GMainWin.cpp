@@ -239,7 +239,7 @@ void GMainWin::createActions()
 
     actionHelp = new QAction(QIcon(":/instr"), tr("&Instrukcja"), this);
     actionHelp->setStatusTip(tr("Krótka instrukcja obsługi"));
-    connect(actionAbout, SIGNAL(triggered()), this, SLOT(slot_instrukcja()));
+    connect(actionHelp, SIGNAL(triggered()), this, SLOT(slot_instrukcja()));
 }
 //------------------------------------------------------------------------------
 void GMainWin::createMenus()
@@ -256,7 +256,7 @@ void GMainWin::createMenus()
     subMenuOpen = menuData->addMenu(QIcon(":/open_dat"),"Wczytaj");
     subMenuOpen->addAction(actionOpenData);
     subMenuOpen->addAction(actionOpenModel);
-    subMenuOpen->addAction(actionOpenSurf);
+    //subMenuOpen->addAction(actionOpenSurf);
     subMenuSave = menuData->addMenu(QIcon(":/save"),"Zapisz");
     subMenuSave->addAction(actionZapiszDane);
     subMenuSave->addAction(actionZapiszModel);
@@ -275,7 +275,7 @@ void GMainWin::createMenus()
     menuZasoby->addAction(actionAnaliza);
 
     menuTools = menuBar()->addMenu(tr("&Narzędzia"));
-    menuTools->addAction(actionToolSend);
+    //menuTools->addAction(actionToolSend);
     menuTools->addAction(actionToolPdf);
 
     menuWindow = menuBar()->addMenu(tr("&Widok"));
@@ -478,8 +478,17 @@ void GMainWin::slot_wczytaj_dane()
 //------------------------------------------------------------------------------
 void GMainWin::slot_wczytaj_model()
 {
-    QMessageBox::information(this,"INFORMACJA","to do - slot_wczytaj_model");
-
+    QString fileName = QFileDialog::getOpenFileName(this,
+                               tr("Otwórz plik *set modelu"),
+                               QString(),
+                               tr("ASCII SET (*.set);;Wszystkie (*)"));
+    if(!fileName.isEmpty())
+    {
+        QMessageBox::information(this,"INFORMACJA",fileName);
+        curModel->wczytaj_model(fileName.toStdString(),"\t");
+        proSet->updateView();
+        emit signal_zmiana_danych();
+    }
 }
 //------------------------------------------------------------------------------
 void GMainWin::slot_wczytaj_surf()
@@ -495,7 +504,7 @@ void GMainWin::slot_about()
 
 void GMainWin::slot_instrukcja()
 {
-
+    QMessageBox::information(this,"INFORMACJA","to do - instrukcja");
 }
 //------------------------------------------------------------------------------
 void GMainWin::updateWindowMenu()

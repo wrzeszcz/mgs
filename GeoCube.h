@@ -171,7 +171,7 @@ public:
     /// \brief reset_min_max - resetuje min-max
     ///
     void reset_min_max();
-
+    ///
 private:
     ///
     /// \brief cube - dynamiczna tablica 3-wymiarowa

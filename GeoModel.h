@@ -81,6 +81,12 @@ public:
     ///
     void wypisz_model (string fileName, string sep="\t");
     ///
+    /// \brief wczytaj_model
+    /// \param fileName
+    /// \param sep
+    ///
+    void wczytaj_model(string fileName, string sep="\t");
+    ///
     /// \brief wypisz_zasoby - zapisuje zasoby do pliku
     /// \param fileName - nazwa pliku
     /// \param sep - separator pola (domyślnie tabulator)

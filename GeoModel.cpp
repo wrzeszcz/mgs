@@ -296,8 +296,28 @@ void GeoModel::wypisz_model(string fileName, string sep)
     if(ofs.is_open())
     {
         ofs << *modset;
-
         ofs.close();
+    }
+}
+
+void GeoModel::wczytaj_model(string fileName, string )
+{
+    fstream in(fileName.c_str());
+    if(in.is_open())
+    {
+        if( !(in >> *modset)) return;
+    }
+    else return;
+    fstream we(modset->name.c_str());
+    if(we.is_open())
+    {
+        updateModel();
+        geo3d tmp;
+        while(we >> tmp)
+        {
+            //cout << tmp << endl;
+            cube->setRekGlo(tmp.xyz, tmp.dat);
+        }
     }
 }
 //------------------------------------------------------------------------------
@@ -377,4 +397,5 @@ wektor3d GeoModel::inv_dist(const wektor3d& pkt, double promien, double potega)
      progres.pmin = progres.pcur = 0;
      if(curVariogram) curVariogram->recalc(ust);
  }
+
 //------------------------------------------------------------------------------
