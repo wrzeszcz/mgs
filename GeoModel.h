@@ -295,6 +295,7 @@ private:
     /// \brief progres
     ///
     Progres progres;
+    double err;
 };
 //------------------------------------------------------------------------------
 #endif // GEOMODEL_H

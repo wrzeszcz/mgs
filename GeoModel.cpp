@@ -162,12 +162,14 @@ void GeoModel::calc_okriging(Set_interpolacja ustaw)
 wektor3d GeoModel::policzZasoby()
 {
     GeoZasoby gZasoby(modset,cube);
+    err = gZasoby.getError();
     return gZasoby.get_zasoby();
 }
 //------------------------------------------------------------------------------
 std::vector<geo3d> GeoModel::analizaZasoby(int _ileKlas)
 {
     GeoZasoby gZasoby(modset,cube);
+    err = gZasoby.getError();
     vector<geo3d> analiza = gZasoby.analiza_zasoby(_ileKlas);
     return analiza;
 }
@@ -175,6 +177,7 @@ std::vector<geo3d> GeoModel::analizaZasoby(int _ileKlas)
 string GeoModel::analizaZasobyReport(int _ileKlas, int p)
 {
     GeoZasoby gZasoby(modset,cube);
+    err = gZasoby.getError();
     vector<geo3d> analiza = gZasoby.analiza_zasoby(_ileKlas);
     if(!analiza.size()) return "brak danych";
     wektor3d suma;
@@ -216,15 +219,15 @@ std::string GeoModel::recreate_rapor(const std::string& datetimeStr)
             "dane: "+ modset->name + "\n"
             "wiersze:\t\t" + cos2str(dane->get_size()) + "\n"
             "początek xyz:\t"+ cos2str(modset->start) + "\n"
-            "końcowe xyz:\t"+ cos2str(dane->get_max_zakres())+"\n"
-            "min wartość:\t"+ cos2str(dane->get_min_value())+"\n"
-            "max wartość:\t"+ cos2str(dane->get_max_value())+"\n\n"
+            "końcowe  xyz:\t"+ cos2str(dane->get_max_zakres())+"\n"
+            "min  wartość:\t"+ cos2str(dane->get_min_value())+"\n"
+            "max  wartość:\t"+ cos2str(dane->get_max_value())+"\n\n"
             "MODEL ==========================================================\n"
             "wymiary modelu: \t"+       cos2str(modset->grid) + "\n"
             "rozmiar bloku : \t"+       cos2str(modset->sp) + "\n"
-            "początek xyz:\t"+          cos2str(modset->start) + "\n"
-            "wymiary xyz:\t"+           cos2str(modset->get_wymiary()) + "\n"
-            "ilość bloków: \t"+         cos2str(modset->get_bloki()) + "\n"
+            "początek xyz  :\t"+          cos2str(modset->start) + "\n"
+            "wymiary  xyz  :\t"+           cos2str(modset->get_wymiary()) + "\n"
+            "ilość bloków  :\t"+         cos2str(modset->get_bloki()) + "\n"
             "objętość modelu: \t"+      cos2str(modset->get_objetosc()) + "\n"
             "gęstość przestrzenna: \t"+ cos2str(modset->gestosc) + "\n"
             "masa modelu: \t"+          cos2str(modset->get_masa()) + "\n"
@@ -235,6 +238,7 @@ std::string GeoModel::recreate_rapor(const std::string& datetimeStr)
             "zasoby wynosza: \t\t"+ cos2str(zas.x) + "\tton\n"+
             "w "+cos2str(zas.y)+" blokach "
             "o objętości "+cos2str(zas.y*modset->sp*modset->sp*modset->sp)+"\n"
+            "błąd = +- " + cos2str(err) +" ("+ cos2str( (zas.x!=0.0)?(err/zas.x)*100:0,3)  +"%)\n"
             "dla poszczególnych przedziałow całego modelu:\n"
             + this->analizaZasobyReport(modset->klasy_zas,7) +"\n\n"
             "INTERPOLACJA ====================================================\n"

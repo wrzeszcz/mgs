@@ -51,9 +51,10 @@ wektor3d GeoZasoby::przelicz_zasoby()
                 if(blok.x > cutof)
                 {
                     licz2++;
-                    blok2 = blok2 + policzBlok(blok,modelSet->sp);
+                    blok2 = blok2 + policzBlok(blok,modelSet->sp);                  
                 }
             }
+    error = blok2.z;
     blok2.y=licz2;
     blok2.z=licz1;
     return blok2;
@@ -77,6 +78,7 @@ wektor3d GeoZasoby::przelicz_zasoby(double _minp, double _maxp)
                     blok2 = blok2 + policzBlok(blok,modelSet->sp);
                 }
             }
+    error = blok2.z;
     blok2.y=licz2;
     blok2.z=licz1;
     return blok2;
@@ -157,6 +159,6 @@ wektor3d GeoZasoby::policzBlok(wektor3d parametry, double rozmiar)
     else if (modelSet->jednostki == PROCENTY) dzielnik = 100.0;
     masa_bloku = (rozmiar*rozmiar*rozmiar)*modelSet->gestosc;
     masa_kop = masa_bloku * parametry.x / dzielnik;
-    return wektor3d(masa_kop,masa_bloku,0);
+    return wektor3d(masa_kop,masa_bloku, masa_bloku*parametry.y / dzielnik);
 }
 //------------------------------------------------------------------------------

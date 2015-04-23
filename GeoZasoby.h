@@ -85,6 +85,11 @@ public:
     /// \param ile
     ///
     void set_klasy(int ile){ileKlas = ile;}
+    ///
+    /// \brief getError
+    /// \return
+    ///
+    double getError()const {return error;}
 
 private:
     ///
@@ -122,6 +127,8 @@ private:
     /// \brief ileKlas
     ///
     int ileKlas;
+
+    double error;
 };
 
 #endif // GEOZASOBY_H
