@@ -40,7 +40,7 @@ public:
     ///
     virtual ~geoApplication() {}
     ///
-    /// \brief notify
+    /// \brief notify - przechwytuwanie wyjątków std
     /// \param receiver_
     /// \param event_
     /// \return
